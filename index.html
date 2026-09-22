@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#07110d">
+<meta name="description" content="RawMask Studio is an iPhone photo editor for RAW photos with automatic and manual masks. Everything runs on your iPhone.">
+<title>RawMask Studio</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230c1a15'/%3E%3Ccircle cx='16' cy='16' r='8.5' fill='none' stroke='%233ee6d2' stroke-width='3'/%3E%3C/svg%3E">
+<style>
+:root {
+  color-scheme: dark;
+  --bg: #07110d;
+  --surface: #0c1a15;
+  --surface-2: #10231c;
+  --border: #1d3a30;
+  --text: #e3f0eb;
+  --muted: #9bb7ad;
+  --accent: #3ee6d2;
+  --accent-soft: rgba(62, 230, 210, 0.12);
+  --accent-ink: #03201b;
+  --radius: 14px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+.wrap { max-width: 44rem; margin: 0 auto; padding: 0 16px; }
+header.site { border-bottom: 1px solid var(--border); }
+header.site .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 12px; min-height: 60px; padding-top: 8px; padding-bottom: 8px; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 650; letter-spacing: -0.01em; }
+.brand svg { flex: none; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; }
+nav a { display: block; padding: 7px 11px; border-radius: 999px; color: var(--muted); text-decoration: none; font-size: 15px; }
+nav a:hover { color: var(--text); background: var(--surface-2); }
+nav a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
+main.wrap { padding-top: 44px; padding-bottom: 56px; }
+h1 { font-size: clamp(2rem, 7vw, 2.8rem); line-height: 1.12; letter-spacing: -0.02em; margin: 0 0 12px; }
+h2 { font-size: 1.25rem; line-height: 1.3; letter-spacing: -0.01em; margin: 44px 0 10px; }
+h3 { font-size: 1.02rem; line-height: 1.35; margin: 0 0 6px; }
+p { margin: 0 0 14px; }
+.eyebrow { color: var(--accent); font-size: 13px; font-weight: 650; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; }
+.lead { font-size: 1.15rem; color: var(--muted); max-width: 36rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.button { display: inline-block; padding: 11px 18px; border-radius: 999px; font-weight: 600; font-size: 15px; text-decoration: none; }
+.button.primary { background: var(--accent); color: var(--accent-ink); }
+.button.secondary { border: 1px solid var(--border); color: var(--text); background: var(--surface); }
+.button:hover { text-decoration: none; filter: brightness(1.08); }
+.features { list-style: none; margin: 16px 0 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 12px; }
+@media (min-width: 600px) { .features { grid-template-columns: 1fr 1fr; } }
+.features li { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; }
+.features p { margin: 0; color: var(--muted); font-size: 15px; }
+.callout { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--radius); padding: 16px 18px; margin: 24px 0; }
+.callout p:last-child { margin-bottom: 0; }
+.muted { color: var(--muted); }
+footer.site { border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; padding-top: 20px; padding-bottom: 28px; }
+footer.site ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 16px; }
+footer.site a { color: var(--muted); }
+footer.site a:hover { color: var(--text); }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./">
+      <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#10231c"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="#3ee6d2" stroke-width="3"/></svg>
+      RawMask Studio
+    </a>
+    <nav aria-label="Site">
+      <ul>
+        <li><a href="./" aria-current="page">Home</a></li>
+        <li><a href="privacy/">Privacy</a></li>
+        <li><a href="support/">Support</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="eyebrow">Photo editor for iPhone</p>
+  <h1>RawMask Studio</h1>
+  <p class="lead">Edit RAW photos from your Photos library with precise masks and careful adjustments. Everything, including automatic object masking, runs on your iPhone.</p>
+  <div class="actions">
+    <a class="button primary" href="support/">Get support</a>
+    <a class="button secondary" href="privacy/">Privacy policy</a>
+  </div>
+
+  <h2>What you can do</h2>
+  <ul class="features">
+    <li>
+      <h3>Edit RAW and regular photos</h3>
+      <p>Open a photo from Apple Photos and adjust framing, light, color, detail, focus, and effects with a live preview.</p>
+    </li>
+    <li>
+      <h3>Automatic object masks</h3>
+      <p>An image segmentation model built into the app finds objects in your photo so you can edit them on their own.</p>
+    </li>
+    <li>
+      <h3>Manual masks</h3>
+      <p>Add radial, linear, brush, and rectangle masks. Move and resize them, paint to add or subtract, and feather the edges.</p>
+    </li>
+    <li>
+      <h3>Presets</h3>
+      <p>Save adjustments you like as presets and apply them to other photos.</p>
+    </li>
+    <li>
+      <h3>Save and export</h3>
+      <p>Save your edit to Photos, save a copy, or export a JPEG, HEIF, or TIFF file through the share sheet.</p>
+    </li>
+    <li>
+      <h3>Private by design</h3>
+      <p>No account, no analytics, no ads, no tracking. The app never sends your photos or data to us or to anyone else.</p>
+    </li>
+  </ul>
+
+  <div class="callout">
+    <p><strong>Requirements:</strong> iPhone with iOS 17 or later.</p>
+    <p class="muted">Questions or problems? Visit the <a href="support/">support page</a>. Details about how the app handles your photos are in the <a href="privacy/">privacy policy</a>.</p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>Copyright 2026 Besarion Turmanauli</span>
+    <ul>
+      <li><a href="privacy/">Privacy</a></li>
+      <li><a href="support/">Support</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
