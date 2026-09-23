@@ -1,0 +1,764 @@
+{
+ "_note": "One entry per site language. 'id' names the strings file (src/strings/<id>.json); 'asc' lists the App Store Connect locales served by it; 'slug' is the URL folder ('' = site root); 'badge' is the Apple badge file in assets/badges/.",
+ "locales": [
+  {
+   "id": "ar-SA",
+   "asc": [
+    "ar-SA"
+   ],
+   "slug": "ar",
+   "lang": "ar",
+   "hreflang": [
+    "ar"
+   ],
+   "dir": "rtl",
+   "og_locale": "ar_SA",
+   "name": "العربية",
+   "english_name": "Arabic",
+   "badge": "ar-ar"
+  },
+  {
+   "id": "bn-BD",
+   "asc": [
+    "bn-BD"
+   ],
+   "slug": "bn",
+   "lang": "bn",
+   "hreflang": [
+    "bn"
+   ],
+   "dir": "ltr",
+   "og_locale": "bn_BD",
+   "name": "বাংলা",
+   "english_name": "Bangla",
+   "badge": "bn-in"
+  },
+  {
+   "id": "ca",
+   "asc": [
+    "ca"
+   ],
+   "slug": "ca",
+   "lang": "ca",
+   "hreflang": [
+    "ca"
+   ],
+   "dir": "ltr",
+   "og_locale": "ca_ES",
+   "name": "Català",
+   "english_name": "Catalan",
+   "badge": "ca-es"
+  },
+  {
+   "id": "zh-Hans",
+   "asc": [
+    "zh-Hans"
+   ],
+   "slug": "zh-hans",
+   "lang": "zh-Hans",
+   "hreflang": [
+    "zh-Hans"
+   ],
+   "dir": "ltr",
+   "og_locale": "zh_CN",
+   "name": "简体中文",
+   "english_name": "Chinese (Simplified)",
+   "badge": "zh-cn"
+  },
+  {
+   "id": "zh-Hant",
+   "asc": [
+    "zh-Hant"
+   ],
+   "slug": "zh-hant",
+   "lang": "zh-Hant",
+   "hreflang": [
+    "zh-Hant"
+   ],
+   "dir": "ltr",
+   "og_locale": "zh_TW",
+   "name": "繁體中文",
+   "english_name": "Chinese (Traditional)",
+   "badge": "zh-tw"
+  },
+  {
+   "id": "hr",
+   "asc": [
+    "hr"
+   ],
+   "slug": "hr",
+   "lang": "hr",
+   "hreflang": [
+    "hr"
+   ],
+   "dir": "ltr",
+   "og_locale": "hr_HR",
+   "name": "Hrvatski",
+   "english_name": "Croatian",
+   "badge": "hr-hr"
+  },
+  {
+   "id": "cs",
+   "asc": [
+    "cs"
+   ],
+   "slug": "cs",
+   "lang": "cs",
+   "hreflang": [
+    "cs"
+   ],
+   "dir": "ltr",
+   "og_locale": "cs_CZ",
+   "name": "Čeština",
+   "english_name": "Czech",
+   "badge": "cs-cz"
+  },
+  {
+   "id": "da",
+   "asc": [
+    "da"
+   ],
+   "slug": "da",
+   "lang": "da",
+   "hreflang": [
+    "da"
+   ],
+   "dir": "ltr",
+   "og_locale": "da_DK",
+   "name": "Dansk",
+   "english_name": "Danish",
+   "badge": "da-dk"
+  },
+  {
+   "id": "nl-NL",
+   "asc": [
+    "nl-NL"
+   ],
+   "slug": "nl",
+   "lang": "nl",
+   "hreflang": [
+    "nl"
+   ],
+   "dir": "ltr",
+   "og_locale": "nl_NL",
+   "name": "Nederlands",
+   "english_name": "Dutch",
+   "badge": "nl-nl"
+  },
+  {
+   "id": "en",
+   "asc": [
+    "en-US",
+    "en-GB",
+    "en-AU",
+    "en-CA"
+   ],
+   "slug": "",
+   "lang": "en",
+   "hreflang": [
+    "en",
+    "x-default"
+   ],
+   "dir": "ltr",
+   "og_locale": "en_US",
+   "name": "English",
+   "english_name": "English",
+   "badge": "en-us"
+  },
+  {
+   "id": "fi",
+   "asc": [
+    "fi"
+   ],
+   "slug": "fi",
+   "lang": "fi",
+   "hreflang": [
+    "fi"
+   ],
+   "dir": "ltr",
+   "og_locale": "fi_FI",
+   "name": "Suomi",
+   "english_name": "Finnish",
+   "badge": "fi-fi"
+  },
+  {
+   "id": "fr-FR",
+   "asc": [
+    "fr-FR"
+   ],
+   "slug": "fr",
+   "lang": "fr",
+   "hreflang": [
+    "fr"
+   ],
+   "dir": "ltr",
+   "og_locale": "fr_FR",
+   "name": "Français",
+   "english_name": "French",
+   "badge": "fr-fr"
+  },
+  {
+   "id": "fr-CA",
+   "asc": [
+    "fr-CA"
+   ],
+   "slug": "fr-ca",
+   "lang": "fr-CA",
+   "hreflang": [
+    "fr-CA"
+   ],
+   "dir": "ltr",
+   "og_locale": "fr_CA",
+   "name": "Français (Canada)",
+   "english_name": "French (Canada)",
+   "badge": "fr-fr"
+  },
+  {
+   "id": "de-DE",
+   "asc": [
+    "de-DE"
+   ],
+   "slug": "de",
+   "lang": "de",
+   "hreflang": [
+    "de"
+   ],
+   "dir": "ltr",
+   "og_locale": "de_DE",
+   "name": "Deutsch",
+   "english_name": "German",
+   "badge": "de-de"
+  },
+  {
+   "id": "el",
+   "asc": [
+    "el"
+   ],
+   "slug": "el",
+   "lang": "el",
+   "hreflang": [
+    "el"
+   ],
+   "dir": "ltr",
+   "og_locale": "el_GR",
+   "name": "Ελληνικά",
+   "english_name": "Greek",
+   "badge": "el-gr"
+  },
+  {
+   "id": "gu-IN",
+   "asc": [
+    "gu-IN"
+   ],
+   "slug": "gu",
+   "lang": "gu",
+   "hreflang": [
+    "gu"
+   ],
+   "dir": "ltr",
+   "og_locale": "gu_IN",
+   "name": "ગુજરાતી",
+   "english_name": "Gujarati",
+   "badge": "gu-in"
+  },
+  {
+   "id": "he",
+   "asc": [
+    "he"
+   ],
+   "slug": "he",
+   "lang": "he",
+   "hreflang": [
+    "he"
+   ],
+   "dir": "rtl",
+   "og_locale": "he_IL",
+   "name": "עברית",
+   "english_name": "Hebrew",
+   "badge": "he-il"
+  },
+  {
+   "id": "hi",
+   "asc": [
+    "hi"
+   ],
+   "slug": "hi",
+   "lang": "hi",
+   "hreflang": [
+    "hi"
+   ],
+   "dir": "ltr",
+   "og_locale": "hi_IN",
+   "name": "हिन्दी",
+   "english_name": "Hindi",
+   "badge": "en-us"
+  },
+  {
+   "id": "hu",
+   "asc": [
+    "hu"
+   ],
+   "slug": "hu",
+   "lang": "hu",
+   "hreflang": [
+    "hu"
+   ],
+   "dir": "ltr",
+   "og_locale": "hu_HU",
+   "name": "Magyar",
+   "english_name": "Hungarian",
+   "badge": "hu-hu"
+  },
+  {
+   "id": "id",
+   "asc": [
+    "id"
+   ],
+   "slug": "id",
+   "lang": "id",
+   "hreflang": [
+    "id"
+   ],
+   "dir": "ltr",
+   "og_locale": "id_ID",
+   "name": "Bahasa Indonesia",
+   "english_name": "Indonesian",
+   "badge": "id-id"
+  },
+  {
+   "id": "it",
+   "asc": [
+    "it"
+   ],
+   "slug": "it",
+   "lang": "it",
+   "hreflang": [
+    "it"
+   ],
+   "dir": "ltr",
+   "og_locale": "it_IT",
+   "name": "Italiano",
+   "english_name": "Italian",
+   "badge": "it-it"
+  },
+  {
+   "id": "ja",
+   "asc": [
+    "ja"
+   ],
+   "slug": "ja",
+   "lang": "ja",
+   "hreflang": [
+    "ja"
+   ],
+   "dir": "ltr",
+   "og_locale": "ja_JP",
+   "name": "日本語",
+   "english_name": "Japanese",
+   "badge": "ja-jp"
+  },
+  {
+   "id": "kn-IN",
+   "asc": [
+    "kn-IN"
+   ],
+   "slug": "kn",
+   "lang": "kn",
+   "hreflang": [
+    "kn"
+   ],
+   "dir": "ltr",
+   "og_locale": "kn_IN",
+   "name": "ಕನ್ನಡ",
+   "english_name": "Kannada",
+   "badge": "kn-in"
+  },
+  {
+   "id": "ko",
+   "asc": [
+    "ko"
+   ],
+   "slug": "ko",
+   "lang": "ko",
+   "hreflang": [
+    "ko"
+   ],
+   "dir": "ltr",
+   "og_locale": "ko_KR",
+   "name": "한국어",
+   "english_name": "Korean",
+   "badge": "ko-kr"
+  },
+  {
+   "id": "ms",
+   "asc": [
+    "ms"
+   ],
+   "slug": "ms",
+   "lang": "ms",
+   "hreflang": [
+    "ms"
+   ],
+   "dir": "ltr",
+   "og_locale": "ms_MY",
+   "name": "Bahasa Melayu",
+   "english_name": "Malay",
+   "badge": "ms-my"
+  },
+  {
+   "id": "ml-IN",
+   "asc": [
+    "ml-IN"
+   ],
+   "slug": "ml",
+   "lang": "ml",
+   "hreflang": [
+    "ml"
+   ],
+   "dir": "ltr",
+   "og_locale": "ml_IN",
+   "name": "മലയാളം",
+   "english_name": "Malayalam",
+   "badge": "ml-in"
+  },
+  {
+   "id": "mr-IN",
+   "asc": [
+    "mr-IN"
+   ],
+   "slug": "mr",
+   "lang": "mr",
+   "hreflang": [
+    "mr"
+   ],
+   "dir": "ltr",
+   "og_locale": "mr_IN",
+   "name": "मराठी",
+   "english_name": "Marathi",
+   "badge": "mr-in"
+  },
+  {
+   "id": "no",
+   "asc": [
+    "no"
+   ],
+   "slug": "no",
+   "lang": "nb",
+   "hreflang": [
+    "no",
+    "nb"
+   ],
+   "dir": "ltr",
+   "og_locale": "nb_NO",
+   "name": "Norsk",
+   "english_name": "Norwegian",
+   "badge": "no-no"
+  },
+  {
+   "id": "or-IN",
+   "asc": [
+    "or-IN"
+   ],
+   "slug": "or",
+   "lang": "or",
+   "hreflang": [
+    "or"
+   ],
+   "dir": "ltr",
+   "og_locale": "or_IN",
+   "name": "ଓଡ଼ିଆ",
+   "english_name": "Odia",
+   "badge": "or-in"
+  },
+  {
+   "id": "pl",
+   "asc": [
+    "pl"
+   ],
+   "slug": "pl",
+   "lang": "pl",
+   "hreflang": [
+    "pl"
+   ],
+   "dir": "ltr",
+   "og_locale": "pl_PL",
+   "name": "Polski",
+   "english_name": "Polish",
+   "badge": "pl-pl"
+  },
+  {
+   "id": "pt-BR",
+   "asc": [
+    "pt-BR"
+   ],
+   "slug": "pt-br",
+   "lang": "pt-BR",
+   "hreflang": [
+    "pt-BR",
+    "pt"
+   ],
+   "dir": "ltr",
+   "og_locale": "pt_BR",
+   "name": "Português (Brasil)",
+   "english_name": "Portuguese (Brazil)",
+   "badge": "pt-br"
+  },
+  {
+   "id": "pt-PT",
+   "asc": [
+    "pt-PT"
+   ],
+   "slug": "pt-pt",
+   "lang": "pt-PT",
+   "hreflang": [
+    "pt-PT"
+   ],
+   "dir": "ltr",
+   "og_locale": "pt_PT",
+   "name": "Português (Portugal)",
+   "english_name": "Portuguese (Portugal)",
+   "badge": "pt-pt"
+  },
+  {
+   "id": "pa-IN",
+   "asc": [
+    "pa-IN"
+   ],
+   "slug": "pa",
+   "lang": "pa",
+   "hreflang": [
+    "pa"
+   ],
+   "dir": "ltr",
+   "og_locale": "pa_IN",
+   "name": "ਪੰਜਾਬੀ",
+   "english_name": "Punjabi",
+   "badge": "pa-in"
+  },
+  {
+   "id": "ro",
+   "asc": [
+    "ro"
+   ],
+   "slug": "ro",
+   "lang": "ro",
+   "hreflang": [
+    "ro"
+   ],
+   "dir": "ltr",
+   "og_locale": "ro_RO",
+   "name": "Română",
+   "english_name": "Romanian",
+   "badge": "ro-ro"
+  },
+  {
+   "id": "ru",
+   "asc": [
+    "ru"
+   ],
+   "slug": "ru",
+   "lang": "ru",
+   "hreflang": [
+    "ru"
+   ],
+   "dir": "ltr",
+   "og_locale": "ru_RU",
+   "name": "Русский",
+   "english_name": "Russian",
+   "badge": "ru-ru"
+  },
+  {
+   "id": "sk",
+   "asc": [
+    "sk"
+   ],
+   "slug": "sk",
+   "lang": "sk",
+   "hreflang": [
+    "sk"
+   ],
+   "dir": "ltr",
+   "og_locale": "sk_SK",
+   "name": "Slovenčina",
+   "english_name": "Slovak",
+   "badge": "sk-sk"
+  },
+  {
+   "id": "sl-SI",
+   "asc": [
+    "sl-SI"
+   ],
+   "slug": "sl",
+   "lang": "sl",
+   "hreflang": [
+    "sl"
+   ],
+   "dir": "ltr",
+   "og_locale": "sl_SI",
+   "name": "Slovenščina",
+   "english_name": "Slovenian",
+   "badge": "sl-si"
+  },
+  {
+   "id": "es-MX",
+   "asc": [
+    "es-MX"
+   ],
+   "slug": "es-mx",
+   "lang": "es-MX",
+   "hreflang": [
+    "es-MX",
+    "es"
+   ],
+   "dir": "ltr",
+   "og_locale": "es_MX",
+   "name": "Español (México)",
+   "english_name": "Spanish (Mexico)",
+   "badge": "es-mx"
+  },
+  {
+   "id": "es-ES",
+   "asc": [
+    "es-ES"
+   ],
+   "slug": "es-es",
+   "lang": "es-ES",
+   "hreflang": [
+    "es-ES"
+   ],
+   "dir": "ltr",
+   "og_locale": "es_ES",
+   "name": "Español (España)",
+   "english_name": "Spanish (Spain)",
+   "badge": "es-es"
+  },
+  {
+   "id": "sv",
+   "asc": [
+    "sv"
+   ],
+   "slug": "sv",
+   "lang": "sv",
+   "hreflang": [
+    "sv"
+   ],
+   "dir": "ltr",
+   "og_locale": "sv_SE",
+   "name": "Svenska",
+   "english_name": "Swedish",
+   "badge": "sv-se"
+  },
+  {
+   "id": "ta-IN",
+   "asc": [
+    "ta-IN"
+   ],
+   "slug": "ta",
+   "lang": "ta",
+   "hreflang": [
+    "ta"
+   ],
+   "dir": "ltr",
+   "og_locale": "ta_IN",
+   "name": "தமிழ்",
+   "english_name": "Tamil",
+   "badge": "ta-in"
+  },
+  {
+   "id": "te-IN",
+   "asc": [
+    "te-IN"
+   ],
+   "slug": "te",
+   "lang": "te",
+   "hreflang": [
+    "te"
+   ],
+   "dir": "ltr",
+   "og_locale": "te_IN",
+   "name": "తెలుగు",
+   "english_name": "Telugu",
+   "badge": "te-in"
+  },
+  {
+   "id": "th",
+   "asc": [
+    "th"
+   ],
+   "slug": "th",
+   "lang": "th",
+   "hreflang": [
+    "th"
+   ],
+   "dir": "ltr",
+   "og_locale": "th_TH",
+   "name": "ไทย",
+   "english_name": "Thai",
+   "badge": "th-th"
+  },
+  {
+   "id": "tr",
+   "asc": [
+    "tr"
+   ],
+   "slug": "tr",
+   "lang": "tr",
+   "hreflang": [
+    "tr"
+   ],
+   "dir": "ltr",
+   "og_locale": "tr_TR",
+   "name": "Türkçe",
+   "english_name": "Turkish",
+   "badge": "tr-tr"
+  },
+  {
+   "id": "uk",
+   "asc": [
+    "uk"
+   ],
+   "slug": "uk",
+   "lang": "uk",
+   "hreflang": [
+    "uk"
+   ],
+   "dir": "ltr",
+   "og_locale": "uk_UA",
+   "name": "Українська",
+   "english_name": "Ukrainian",
+   "badge": "uk-ua"
+  },
+  {
+   "id": "ur-PK",
+   "asc": [
+    "ur-PK"
+   ],
+   "slug": "ur",
+   "lang": "ur",
+   "hreflang": [
+    "ur"
+   ],
+   "dir": "rtl",
+   "og_locale": "ur_PK",
+   "name": "اردو",
+   "english_name": "Urdu",
+   "badge": "ur-in"
+  },
+  {
+   "id": "vi",
+   "asc": [
+    "vi"
+   ],
+   "slug": "vi",
+   "lang": "vi",
+   "hreflang": [
+    "vi"
+   ],
+   "dir": "ltr",
+   "og_locale": "vi_VN",
+   "name": "Tiếng Việt",
+   "english_name": "Vietnamese",
+   "badge": "vi-vn"
+  }
+ ]
+}
