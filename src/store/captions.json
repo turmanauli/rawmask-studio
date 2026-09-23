@@ -294,11 +294,11 @@
    "שמרו בתמונות. חזרו למקור בכל עת."
   ],
   "subs": [
-   "מסכות לתמונות RAW באייפון.",
+   "מסכות לתמונות RAW ב-⁠iPhone.",
    "זיהוי במכשיר עצמו יוצר עבורכם מסכות לאנשים, למכוניות ולבעלי חיים.",
    "רדיאלית, ליניארית, במכחול או במלבן. ואז הוסיפו, החסירו או רככו קצוות.",
    "לכל מסכה חשיפה, צבע, פרטים ופוקוס משלה.",
-   "העריכות נשארות הפיכות, ושום דבר לא יוצא מהאייפון שלכם."
+   "העריכות נשארות הפיכות, ושום דבר לא יוצא מה-⁠iPhone שלכם."
   ],
   "uiNote": "ממשק האפליקציה זמין כרגע באנגלית.",
   "backTranslation": "01: \"Edit only what you selected.\" / \"Masks for RAW photos on iPhone.\" 02: \"The app finds the subject.\" / \"Detection on the device itself creates masks for people, cars and animals for you.\" 03: \"Draw a mask any way you like.\" / \"Radial, linear, with a brush or a rectangle. Then add, subtract or soften edges.\" 04: \"Adjust light and color inside the mask.\" / \"Each mask has its own exposure, color, detail and focus.\" 05: \"Save to Photos. Revert to the original anytime.\" / \"Edits stay reversible, and nothing leaves your iPhone.\" uiNote: \"The app's interface is currently available in English.\""
@@ -845,11 +845,11 @@
    "Photos میں محفوظ، جب چاہیں واپس۔"
   ],
   "subs": [
-   "آئی فون پر RAW تصاویر کے لیے ماسک۔",
+   "iPhone پر RAW تصاویر کے لیے ماسک۔",
    "آن ڈیوائس پہچان آپ کے لیے گاڑیوں، لوگوں اور جانوروں کو ماسک کرتی ہے۔",
    "ریڈیل، لینیئر، برش یا مستطیل۔ پھر شامل کریں، گھٹائیں یا فیدر کریں۔",
    "ہر ماسک کا اپنا ایکسپوژر، رنگ، ڈیٹیل اور فوکس۔",
-   "ترامیم ہمیشہ قابلِ واپسی، اور کچھ بھی آئی فون سے باہر نہیں جاتا۔"
+   "ترامیم ہمیشہ قابلِ واپسی، اور کچھ بھی iPhone سے باہر نہیں جاتا۔"
   ],
   "uiNote": "ایپ کا انٹرفیس فی الحال انگریزی میں ہے۔",
   "backTranslation": "01: \"Edit only the selected part.\" / \"Masks for RAW photos on iPhone.\" 02: \"Automatic subject detection.\" / \"On-device detection masks cars, people and animals for you.\" 03: \"Make masks however you like.\" / \"Radial, linear, brush or rectangle. Then add, subtract or feather.\" 04: \"Refine light and color in the mask.\" / \"Each mask has its own exposure, color, detail and focus.\" 05: \"Saved in Photos, back whenever you want.\" (Photos kept as the app name, since iOS has no Urdu localization) / \"Edits are always reversible, and nothing leaves the iPhone.\" uiNote: \"The app's interface is currently in English.\" Headlines use the Urdu full stop consistently."
