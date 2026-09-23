@@ -1,0 +1,313 @@
+{
+  "common": {
+    "nav_label": "Nettsted",
+    "nav_home": "Hjem",
+    "nav_privacy": "Personvern",
+    "nav_support": "Brukerstøtte",
+    "lang_label": "Språk",
+    "badge_alt": "Last ned fra App Store",
+    "copyright": "Copyright 2026 Besarion Turmanauli",
+    "translation_notice": "Denne siden er en oversettelse av den <a href=\"{english_url}\">engelske versjonen</a>. Ved avvik mellom de to versjonene har den engelske versjonen forrang."
+  },
+  "home": {
+    "description": "RawMask Studio er en bilderedigeringsapp for RAW-bilder på iPhone, med automatiske og manuelle masker. Alt skjer på iPhonen din.",
+    "eyebrow": "Bilderedigering for iPhone",
+    "btn_support": "Få hjelp",
+    "btn_privacy": "Personvernerklæring",
+    "screenshots_heading": "Skjermbilder",
+    "features_heading": "Dette kan du gjøre",
+    "store_headings": [
+      "Masker for selektiv redigering",
+      "RAW, ProRAW, JPEG og HEIC",
+      "En oversiktlig arbeidsflyt, steg for steg",
+      "Sammenlign og gjenbruk",
+      "Lagre uten å miste originalen",
+      "Personvern som utgangspunkt"
+    ],
+    "requirements": "<strong>Systemkrav:</strong> iPhone med iOS 17 eller nyere.",
+    "help": "Spørsmål eller problemer? Gå til <a href=\"{support_url}\">brukerstøttesiden</a>. I <a href=\"{privacy_url}\">personvernerklæringen</a> finner du nærmere informasjon om hvordan appen håndterer bildene dine."
+  },
+  "support": {
+    "title": "Brukerstøtte - RawMask Studio",
+    "description": "Hjelp og kontaktinformasjon for RawMask Studio for iPhone: åpning av bilder, tilgang til Bilder, masker, lagring og eksport.",
+    "h1": "Brukerstøtte",
+    "meta": "Hjelp til RawMask Studio for iPhone.",
+    "ui_labels_note": "Navnene på knapper og menyer nedenfor står på engelsk, akkurat slik de vises i appen.",
+    "contact": "<strong>Kontakt:</strong> send e-post til <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>",
+    "contact_note": "Oppgi gjerne hvilken iPhone-modell og iOS-versjon du har, og beskriv kort hva som skjedde og hva du hadde forventet. Du trenger ikke å sende bilder. Det holder som regel å beskrive bildet (for eksempel kameraet eller filformatet).",
+    "faq_heading": "Vanlige spørsmål",
+    "faq": [
+      {
+        "q": "Hvordan åpner jeg et bilde?",
+        "blocks": [
+          {
+            "p": "Trykk på bildeknappen øverst til venstre i redigeringsvisningen, og velg <span class=\"ui\" lang=\"en\">Open photo</span>. Bildevelgeren åpnes, og du velger ett bilde. RawMask Studio redigerer ett bilde om gangen. Live Photos vises foreløpig ikke i bildevelgeren."
+          }
+        ]
+      },
+      {
+        "q": "Hvilke bilder kan jeg redigere?",
+        "blocks": [
+          {
+            "p": "RAW-bilder som Apples innebygde RAW-støtte kan lese, inkludert Apple ProRAW og RAW-filer fra mange kameraer, samt vanlige bilder som HEIC og JPEG."
+          }
+        ]
+      },
+      {
+        "q": "Hvorfor ber appen om tilgang til Bilder?",
+        "blocks": [
+          {
+            "p": "RawMask Studio åpner bilder fra Bilder-biblioteket ditt og lagrer redigeringer tilbake dit, og derfor ber iOS deg om tillatelse. Du kan gi full tilgang eller begrenset tilgang, som bare omfatter de bildene du plukker ut. I begge tilfeller åpner appen bare det bildet du velger. Se <a href=\"{privacy_url}\">personvernerklæringen</a> for mer informasjon."
+          }
+        ]
+      },
+      {
+        "q": "Jeg valgte begrenset tilgang og finner ikke et bilde",
+        "blocks": [
+          {
+            "p": "Med begrenset tilgang kan appen bare åpne de bildene du har gitt tilgang til. Slik gir du tilgang til flere bilder:"
+          },
+          {
+            "ul": [
+              "Trykk på <span class=\"ui\" lang=\"en\">More options</span> (knappen ...) i appen, og trykk deretter på <span class=\"ui\" lang=\"en\">Manage allowed photos</span> under <span class=\"ui\" lang=\"en\">Photos access</span>, eller",
+              "åpne <span class=\"path\">Innstillinger &gt; Personvern og sikkerhet &gt; Bilder &gt; RawMask Studio</span> og endre utvalget, eller velg Full tilgang."
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Appen sier at tilgangen til Bilder er slått av",
+        "blocks": [
+          {
+            "p": "Åpne <span class=\"path\">Innstillinger &gt; Personvern og sikkerhet &gt; Bilder &gt; RawMask Studio</span>, velg Begrenset tilgang eller Full tilgang, og gå deretter tilbake til appen og åpne et bilde på nytt."
+          }
+        ]
+      },
+      {
+        "q": "Hvordan fungerer masker?",
+        "blocks": [
+          {
+            "p": "Justeringene gjelder enten hele bildet eller en maske. Åpne menyen til bildeknappen øverst til venstre: bruk <span class=\"ui\" lang=\"en\">Edit target</span> til å velge hva du redigerer, og <span class=\"ui\" lang=\"en\">Add mask</span> til å legge til en maske av typen <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span> eller <span class=\"ui\" lang=\"en\">Rectangle</span>. Du kan flytte en maske og endre størrelsen på den, male for å legge til i eller trekke fra masken og myke opp kanten med <span class=\"ui\" lang=\"en\">Feather</span>."
+          }
+        ]
+      },
+      {
+        "q": "Hva er automatiske objektmasker?",
+        "blocks": [
+          {
+            "p": "RawMask Studio inneholder en bildesegmenteringsmodell som finner objekter i bildet ditt, for eksempel personer, dyr og hverdagsgjenstander, og gjør hvert av dem tilgjengelig som en maske du kan redigere for seg. Modellen kjører helt og holdent på iPhonen din. Hvis den ikke fanger opp objektet du er ute etter, kan du bruke en manuell maske i stedet eller justere <span class=\"ui\" lang=\"en\">Detection confidence</span> og <span class=\"ui\" lang=\"en\">Mask threshold</span> under <span class=\"ui\" lang=\"en\">More options</span> &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>."
+          }
+        ]
+      },
+      {
+        "q": "Trenger jeg internettilkobling?",
+        "blocks": [
+          {
+            "p": "Nei. Redigering og automatiske masker fungerer uten internettilkobling. Det eneste unntaket er et bilde som er lagret i iCloud-bilder, der originalen ikke ligger på iPhonen din: da må Bilder laste ned originalen fra iCloud før bildet kan redigeres."
+          }
+        ]
+      },
+      {
+        "q": "Hvordan lagrer eller eksporterer jeg redigeringen?",
+        "blocks": [
+          {
+            "p": "Trykk på <span class=\"ui\" lang=\"en\">More options</span> (knappen ...), og gå til <span class=\"ui\" lang=\"en\">Save and export</span>:"
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> oppdaterer bildet i biblioteket ditt. Bilder tar vare på originalen, så du kan gå tilbake til den senere med Tilbakestill i Bilder-appen.",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> legger til det redigerte bildet som et nytt bilde og lar originalen være uendret.",
+              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> lager en JPEG-, HEIF- eller TIFF-fil i den størrelsen og kvaliteten du velger, og åpner delingsarket, slik at du kan lagre filen i Filer eller sende den til en annen app."
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Hvor lagres forhåndsinnstillingene mine?",
+        "blocks": [
+          {
+            "p": "På iPhonen din, i appens eget lagringsområde. De lastes ikke opp noe sted. Du kan slette forhåndsinnstillinger i appen, og de fjernes når du sletter appen."
+          }
+        ]
+      },
+      {
+        "q": "Hvilke enheter støttes?",
+        "blocks": [
+          {
+            "p": "iPhone med iOS 17 eller nyere."
+          }
+        ]
+      },
+      {
+        "q": "Samler RawMask Studio inn dataene mine?",
+        "blocks": [
+          {
+            "p": "Nei. Det finnes ingen konto, analyseverktøy, reklame eller sporing, og appen sender ikke bildene eller dataene dine til oss eller til noen andre. Les hele <a href=\"{privacy_url}\">personvernerklæringen</a>."
+          }
+        ]
+      }
+    ],
+    "still_heading": "Trenger du fortsatt hjelp?",
+    "still_text": "Send e-post til <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>, så svarer vi deg."
+  },
+  "privacy": {
+    "title": "Personvernerklæring - RawMask Studio",
+    "description": "Personvernerklæring for RawMask Studio for iPhone. Appen samler ikke inn noen data, og bildene redigeres på iPhonen din.",
+    "h1": "Personvernerklæring",
+    "meta": "RawMask Studio for iPhone. Ikrafttredelsesdato: 23. september 2026.",
+    "summary": "<strong>Kort fortalt:</strong> RawMask Studio samler ikke inn noen data. Det finnes ingen konto, ingen analyseverktøy, ingen reklame og ingen sporing. Bildene dine redigeres på iPhonen din, og appen sender aldri bildene dine, redigeringene dine eller noen annen informasjon til oss eller til noen andre.",
+    "sections": [
+      {
+        "id": "who-we-are",
+        "h2": "Hvem vi er",
+        "blocks": [
+          {
+            "p": "RawMask Studio er utviklet og utgitt av Besarion Turmanauli, en selvstendig utvikler. I denne erklæringen viser «vi», «oss» og «vår» til utvikleren. Du kan kontakte oss via opplysningene i avsnittet <a href=\"#contact\">Kontakt</a> nedenfor."
+          }
+        ]
+      },
+      {
+        "id": "information-we-collect",
+        "h2": "Informasjon vi samler inn",
+        "blocks": [
+          {
+            "p": "Ingen. RawMask Studio verken samler inn, overfører, selger eller deler personopplysninger. Appen sender ingen bilder, redigeringer, masker, forhåndsinnstillinger, innstillinger, enhetsidentifikatorer, bruksdata eller diagnostikkdata til oss eller til noen tredjepart, og vi driver ingen server som mottar data fra appen. Det finnes ingen innlogging og ingen konto."
+          }
+        ]
+      },
+      {
+        "id": "on-device-processing",
+        "h2": "Behandlingen skjer på iPhonen din",
+        "blocks": [
+          {
+            "p": "All bildebehandling skjer på enheten din. Dette omfatter lesing av RAW-filer, bruk av justeringer for lys, farge, detaljer, fokus og effekter, gjengivelse av forhåndsvisninger og oppretting av masker."
+          },
+          {
+            "p": "Automatiske objektmasker lages av en bildesegmenteringsmodell (RF-DETR) som er innebygd i appen og kjører på iPhonen din ved hjelp av Apples Core ML. Modellen lastes ikke ned fra internett, og bildene dine sendes ikke noe sted for å bli analysert."
+          }
+        ]
+      },
+      {
+        "id": "photos-access",
+        "h2": "Tilgang til Bilder-biblioteket ditt",
+        "blocks": [
+          {
+            "p": "RawMask Studio bruker Bilder fra Apple til å åpne og lagre bilder. iOS ber deg om tillatelse før appen kan få tilgang til biblioteket ditt. Du kan gi tilgang til hele biblioteket eller bare til bildene du velger, og du kan når som helst endre dette i <span class=\"path\">Innstillinger &gt; Personvern og sikkerhet &gt; Bilder &gt; RawMask Studio</span>."
+          },
+          {
+            "h3": "Hva appen leser"
+          },
+          {
+            "p": "Bare bildet du velger i bildevelgeren, ett bilde om gangen. For å redigere bildet leser appen bildedataene og opplysningene som trengs for redigeringen, for eksempel dimensjoner, opptaksdato, filformat og en eventuell tidligere redigering fra RawMask Studio som er lagret sammen med bildet. Appen verken blar gjennom, skanner eller indekserer resten av biblioteket ditt."
+          },
+          {
+            "h3": "Hva appen skriver"
+          },
+          {
+            "p": "Ingenting, med mindre du ber om det. Ingenting lagres automatisk i biblioteket ditt."
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> oppdaterer det aktuelle bildet i biblioteket ditt med den redigerte versjonen og lagrer samtidig opplysninger om redigeringsinnstillingene dine, som Bilder oppbevarer sammen med bildet slik at redigeringen kan åpnes igjen senere. Bilder tar vare på originalen, og du kan gå tilbake til den med Tilbakestill i Bilder-appen.",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> legger til det redigerte bildet som et nytt bilde. Originalen endres ikke."
+            ]
+          },
+          {
+            "h3": "iCloud-bilder"
+          },
+          {
+            "p": "Hvis du bruker iCloud-bilder og originalen i full oppløsning av det valgte bildet ikke er lagret på iPhonen din, kan Apples rammeverk for Bilder laste den ned fra iCloud slik at bildet kan redigeres. Bildene du lagrer, kan også bli synkronisert via iCloud-bilder i henhold til innstillingene dine hos Apple. Disse overføringene skjer mellom enheten din og din egen iCloud-konto, håndteres av Apple og omfattes av Apples personvernerklæring. Ingenting sendes til oss."
+          }
+        ]
+      },
+      {
+        "id": "export",
+        "h2": "Eksport og deling",
+        "blocks": [
+          {
+            "p": "Når du trykker på <span class=\"ui\" lang=\"en\">Export photo</span>, lager appen bildefilen du ba om, og åpner delingsarket i iOS. Filen går bare dit du selv velger å sende den, for eksempel til Filer, Meldinger eller en annen app, og der behandles den i henhold til mottakerens egen personvernpraksis. Den midlertidige filen som appen lager for eksporten, oppbevares i appens private lagringsområde på iPhonen din og slettes automatisk når den ikke lenger trengs."
+          }
+        ]
+      },
+      {
+        "id": "on-device-storage",
+        "h2": "Informasjon som lagres på enheten din",
+        "blocks": [
+          {
+            "p": "For at appen skal være slik du forlot den, lagrer den en liten mengde informasjon i sitt eget lagringsområde på iPhonen din:"
+          },
+          {
+            "ul": [
+              "forhåndsinnstillinger du lagrer (navnene og justeringsverdiene deres),",
+              "innstillinger for redigeringsvisningen, for eksempel hvilke redigeringssteg som vises, rekkefølgen på dem og hvilken stil som brukes for å sammenligne før og etter, og",
+              "innstillinger for automatiske masker."
+            ]
+          },
+          {
+            "p": "Denne informasjonen blir værende på enheten din og sendes ikke til oss. Du kan når som helst slette en forhåndsinnstilling i appen, og hvis du sletter appen, fjernes all denne informasjonen. I likhet med andre appdata kan den bli inkludert i sikkerhetskopier du tar av iPhonen din, i henhold til iOS-innstillingene dine."
+          }
+        ]
+      },
+      {
+        "id": "no-third-parties",
+        "h2": "Ingen tredjepartstjenester, analyseverktøy, reklame eller sporing",
+        "blocks": [
+          {
+            "p": "RawMask Studio inneholder ingen programvare fra tredjeparter for analyse, reklame, krasjrapportering eller sporing. Appen bruker ikke reklameidentifikatoren og sporer deg ikke på tvers av apper eller nettsteder som eies av andre selskaper."
+          },
+          {
+            "p": "Hvis du i iOS har valgt å dele analysedata med apputviklere (<span class=\"path\">Innstillinger &gt; Personvern og sikkerhet &gt; Analyse og forbedringer</span>), kan Apple dele krasjrapporter og aggregert bruksstatistikk med oss i en form som ikke identifiserer deg. Dette styres av Apple og av innstillingene dine, ikke av appen."
+          }
+        ]
+      },
+      {
+        "id": "purchases",
+        "h2": "Kjøp",
+        "blocks": [
+          {
+            "p": "RawMask Studio er for øyeblikket gratis. Hvis det i fremtiden blir lagt til kjøp i appen eller betalte funksjoner, vil betalinger bli behandlet av Apple gjennom App Store i henhold til Apples vilkår og personvernerklæring, og vi vil ikke motta betalingsopplysningene dine. Vi vil oppdatere denne erklæringen før en slik endring trer i kraft."
+          }
+        ]
+      },
+      {
+        "id": "children",
+        "h2": "Barn",
+        "blocks": [
+          {
+            "p": "RawMask Studio er en generell app for bilderedigering og er ikke spesielt rettet mot barn. Siden appen ikke samler inn personopplysninger fra noen, samler den heller ikke inn personopplysninger fra barn."
+          }
+        ]
+      },
+      {
+        "id": "your-choices",
+        "h2": "Dine valg",
+        "blocks": [
+          {
+            "p": "Siden vi verken samler inn eller oppbevarer noen data om deg, har vi ingen personopplysninger om deg som du kan få innsyn i, eller som kan rettes, eksporteres eller slettes. Du har selv kontrollen på enheten din: du kan endre eller trekke tilbake tilgangen til Bilder i Innstillinger i iOS, slette forhåndsinnstillinger i appen, fjerne redigeringer eller kopier i Bilder-appen og slette appen for å fjerne appens lokale data."
+          }
+        ]
+      },
+      {
+        "id": "changes",
+        "h2": "Endringer i denne erklæringen",
+        "blocks": [
+          {
+            "p": "Hvis appens håndtering av informasjon endres, for eksempel hvis en fremtidig funksjon må sende data ut fra enheten din, vil vi oppdatere denne erklæringen og appens personverninformasjon i App Store før den aktuelle versjonen blir utgitt, og vi vil endre ikrafttredelsesdatoen øverst på denne siden."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "h2": "Kontakt",
+        "blocks": [
+          {
+            "p": "Hvis du har spørsmål om denne erklæringen eller om personvernet ditt når du bruker RawMask Studio, kan du kontakte:"
+          },
+          {
+            "p": "Besarion Turmanauli<br>\nE-post: <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>"
+          }
+        ]
+      }
+    ]
+  }
+}

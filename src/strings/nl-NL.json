@@ -1,0 +1,313 @@
+{
+  "common": {
+    "nav_label": "Website",
+    "nav_home": "Home",
+    "nav_privacy": "Privacy",
+    "nav_support": "Support",
+    "lang_label": "Taal",
+    "badge_alt": "Download in de App Store",
+    "copyright": "Copyright 2026 Besarion Turmanauli",
+    "translation_notice": "Deze pagina is een vertaling van de <a href=\"{english_url}\">Engelse versie</a>. Bij verschillen tussen de twee versies prevaleert de Engelse versie."
+  },
+  "home": {
+    "description": "RawMask Studio is een foto-editor voor RAW-foto's op de iPhone, met automatische en handmatige maskers. Alles draait op je iPhone.",
+    "eyebrow": "Foto-editor voor iPhone",
+    "btn_support": "Hulp krijgen",
+    "btn_privacy": "Privacybeleid",
+    "screenshots_heading": "Schermafbeeldingen",
+    "features_heading": "Wat je ermee kunt",
+    "store_headings": [
+      "Maskers voor selectief bewerken",
+      "RAW, ProRAW, JPEG en HEIC",
+      "Een heldere workflow, stap voor stap",
+      "Vergelijken en hergebruiken",
+      "Bewaren zonder het origineel kwijt te raken",
+      "Privacy staat voorop"
+    ],
+    "requirements": "<strong>Vereisten:</strong> iPhone met iOS 17 of nieuwer.",
+    "help": "Vragen of problemen? Ga naar de <a href=\"{support_url}\">supportpagina</a>. Hoe de app met je foto's omgaat, lees je in het <a href=\"{privacy_url}\">privacybeleid</a>."
+  },
+  "support": {
+    "title": "Support - RawMask Studio",
+    "description": "Hulp en contact voor RawMask Studio voor iPhone: foto's openen, toegang tot Foto's, maskers, bewaren en exporteren.",
+    "h1": "Support",
+    "meta": "Hulp bij RawMask Studio voor iPhone.",
+    "ui_labels_note": "De namen van knoppen en menu's hieronder staan in het Engels, precies zoals ze in de app worden weergegeven.",
+    "contact": "<strong>Contact:</strong> stuur een e-mail naar <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>",
+    "contact_note": "Vermeld daarbij je iPhone-model, je iOS-versie en een korte beschrijving van wat er gebeurde en wat je had verwacht. Je hoeft geen foto's mee te sturen; een beschrijving van de foto (bijvoorbeeld de camera of het bestandsformaat) is meestal genoeg.",
+    "faq_heading": "Veelgestelde vragen",
+    "faq": [
+      {
+        "q": "Hoe open ik een foto?",
+        "blocks": [
+          {
+            "p": "Tik linksboven in de editor op de fotoknop en kies <span class=\"ui\" lang=\"en\">Open photo</span>. De fotokiezer van Foto's wordt geopend en daarin kies je één foto. RawMask Studio bewerkt één foto tegelijk. Live Photos worden momenteel niet in de fotokiezer weergegeven."
+          }
+        ]
+      },
+      {
+        "q": "Welke foto's kan ik bewerken?",
+        "blocks": [
+          {
+            "p": "RAW-foto's die de ingebouwde RAW-ondersteuning van Apple kan lezen, waaronder Apple ProRAW en RAW-bestanden van veel camera's, en daarnaast gewone foto's zoals HEIC en JPEG."
+          }
+        ]
+      },
+      {
+        "q": "Waarom vraagt de app om toegang tot Foto's?",
+        "blocks": [
+          {
+            "p": "RawMask Studio opent foto's uit je bibliotheek in Foto's van Apple en bewaart bewerkingen daar ook weer in. Daarom vraagt iOS om je toestemming. Je kunt volledige toegang geven, of beperkte toegang tot alleen de foto's die je selecteert. In beide gevallen opent de app alleen de foto die jij kiest. Zie het <a href=\"{privacy_url}\">privacybeleid</a> voor meer informatie."
+          }
+        ]
+      },
+      {
+        "q": "Ik heb beperkte toegang gekozen en kan een foto niet vinden",
+        "blocks": [
+          {
+            "p": "Met beperkte toegang kan de app alleen de foto's openen die je hebt toegestaan. Zo sta je meer foto's toe:"
+          },
+          {
+            "ul": [
+              "Tik in de app op <span class=\"ui\" lang=\"en\">More options</span> (de ...-knop) en tik daarna onder <span class=\"ui\" lang=\"en\">Photos access</span> op <span class=\"ui\" lang=\"en\">Manage allowed photos</span>, of",
+              "open <span class=\"path\">Instellingen &gt; Privacy en beveiliging &gt; Foto's &gt; RawMask Studio</span> en wijzig de selectie of kies 'Volledige toegang'."
+            ]
+          }
+        ]
+      },
+      {
+        "q": "De app meldt dat toegang tot Foto's is uitgeschakeld",
+        "blocks": [
+          {
+            "p": "Open <span class=\"path\">Instellingen &gt; Privacy en beveiliging &gt; Foto's &gt; RawMask Studio</span>, kies 'Beperkte toegang' of 'Volledige toegang', ga dan terug naar de app en open opnieuw een foto."
+          }
+        ]
+      },
+      {
+        "q": "Hoe werken maskers?",
+        "blocks": [
+          {
+            "p": "Aanpassingen gelden voor de hele foto of voor een masker. Open linksboven het menu van de fotoknop: met <span class=\"ui\" lang=\"en\">Edit target</span> kies je wat je bewerkt, en met <span class=\"ui\" lang=\"en\">Add mask</span> voeg je een masker van het type <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span> of <span class=\"ui\" lang=\"en\">Rectangle</span> toe. Je kunt een masker verplaatsen en van formaat veranderen, door te schilderen delen toevoegen of aftrekken, en de rand verzachten met <span class=\"ui\" lang=\"en\">Feather</span>."
+          }
+        ]
+      },
+      {
+        "q": "Wat zijn automatische objectmaskers?",
+        "blocks": [
+          {
+            "p": "RawMask Studio bevat een model voor beeldsegmentatie dat objecten in je foto vindt, zoals mensen, dieren en alledaagse dingen, en elk daarvan aanbiedt als een masker dat je los kunt bewerken. Het model draait volledig op je iPhone. Herkent het model het object dat je wilt niet, gebruik dan een handmatig masker of pas <span class=\"ui\" lang=\"en\">Detection confidence</span> en <span class=\"ui\" lang=\"en\">Mask threshold</span> aan onder <span class=\"ui\" lang=\"en\">More options</span> &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>."
+          }
+        ]
+      },
+      {
+        "q": "Heb ik een internetverbinding nodig?",
+        "blocks": [
+          {
+            "p": "Nee. Bewerken en automatische maskers werken offline. De enige uitzondering is een foto in iCloud-foto's waarvan het origineel niet op je iPhone staat: Foto's moet het origineel dan eerst van iCloud downloaden voordat de foto kan worden bewerkt."
+          }
+        ]
+      },
+      {
+        "q": "Hoe bewaar of exporteer ik mijn bewerking?",
+        "blocks": [
+          {
+            "p": "Tik op <span class=\"ui\" lang=\"en\">More options</span> (de ...-knop) en ga naar <span class=\"ui\" lang=\"en\">Save and export</span>:"
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> werkt de foto in je bibliotheek bij. Foto's behoudt het origineel, zodat je daar later naar kunt teruggaan met 'Herstel' in de Foto's-app.",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> voegt de bewerkte afbeelding toe als nieuwe foto en laat het origineel ongewijzigd.",
+              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> maakt een JPEG-, HEIF- of TIFF-bestand in de afmetingen en de kwaliteit die je kiest en opent het deelmenu, zodat je het bestand in Bestanden kunt bewaren of naar een andere app kunt sturen."
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Waar worden mijn presets opgeslagen?",
+        "blocks": [
+          {
+            "p": "Op je iPhone, in de eigen opslag van de app. Ze worden nergens naartoe geüpload. Je kunt presets in de app verwijderen, en als je de app verwijdert, worden ze ook gewist."
+          }
+        ]
+      },
+      {
+        "q": "Welke apparaten worden ondersteund?",
+        "blocks": [
+          {
+            "p": "iPhone met iOS 17 of nieuwer."
+          }
+        ]
+      },
+      {
+        "q": "Verzamelt RawMask Studio mijn gegevens?",
+        "blocks": [
+          {
+            "p": "Nee. Er is geen account, geen analytics, geen advertenties en geen tracking, en de app stuurt je foto's of gegevens niet naar ons of naar iemand anders. Lees het volledige <a href=\"{privacy_url}\">privacybeleid</a>."
+          }
+        ]
+      }
+    ],
+    "still_heading": "Nog hulp nodig?",
+    "still_text": "Stuur een e-mail naar <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>, dan nemen we contact met je op."
+  },
+  "privacy": {
+    "title": "Privacybeleid - RawMask Studio",
+    "description": "Privacybeleid van RawMask Studio voor iPhone. De app verzamelt geen gegevens; foto's worden op je iPhone bewerkt.",
+    "h1": "Privacybeleid",
+    "meta": "RawMask Studio voor iPhone. Ingangsdatum: 23 september 2026.",
+    "summary": "<strong>Kort gezegd:</strong> RawMask Studio verzamelt geen gegevens. Er is geen account, geen analytics, geen advertenties en geen tracking. Je foto's worden op je iPhone bewerkt, en de app stuurt je foto's, je bewerkingen of andere informatie nooit naar ons of naar iemand anders.",
+    "sections": [
+      {
+        "id": "who-we-are",
+        "h2": "Wie we zijn",
+        "blocks": [
+          {
+            "p": "RawMask Studio wordt ontwikkeld en uitgegeven door Besarion Turmanauli, een individuele ontwikkelaar. In dit beleid verwijzen 'we', 'ons' en 'onze' naar de ontwikkelaar. Je kunt ons bereiken via de gegevens bij <a href=\"#contact\">Contact</a> hieronder."
+          }
+        ]
+      },
+      {
+        "id": "information-we-collect",
+        "h2": "Informatie die we verzamelen",
+        "blocks": [
+          {
+            "p": "Geen. RawMask Studio verzamelt, verzendt, verkoopt of deelt geen persoonsgegevens. De app stuurt je foto's, bewerkingen, maskers, presets, instellingen, apparaat-ID's, gebruiksgegevens of diagnostische gegevens niet naar ons of naar derden, en we beheren geen server die gegevens van de app ontvangt. Er is geen inlog en geen account."
+          }
+        ]
+      },
+      {
+        "id": "on-device-processing",
+        "h2": "Verwerking vindt plaats op je iPhone",
+        "blocks": [
+          {
+            "p": "Alle fotoverwerking vindt plaats op je apparaat. Dat omvat het lezen van RAW-bestanden, het toepassen van aanpassingen voor licht, kleur, detail, focus en effecten, het renderen van voorvertoningen en het maken van maskers."
+          },
+          {
+            "p": "Automatische objectmaskers worden gemaakt door een model voor beeldsegmentatie (RF-DETR) dat in de app is ingebouwd en op je iPhone draait met Core ML van Apple. Het model wordt niet van internet gedownload, en je foto's worden nergens naartoe gestuurd om te worden geanalyseerd."
+          }
+        ]
+      },
+      {
+        "id": "photos-access",
+        "h2": "Toegang tot je bibliotheek in Foto's",
+        "blocks": [
+          {
+            "p": "RawMask Studio gebruikt Foto's van Apple om afbeeldingen te openen en te bewaren. iOS vraagt je om toestemming voordat de app toegang krijgt tot je bibliotheek. Je kunt toegang geven tot je volledige bibliotheek of alleen tot de foto's die je selecteert, en je kunt dit op elk moment wijzigen via <span class=\"path\">Instellingen &gt; Privacy en beveiliging &gt; Foto's &gt; RawMask Studio</span>."
+          },
+          {
+            "h3": "Wat de app leest"
+          },
+          {
+            "p": "Alleen de foto die je in de fotokiezer kiest, één foto tegelijk. Om die foto te bewerken, leest de app de beeldgegevens ervan en de informatie die nodig is voor het bewerken, zoals de afmetingen, de opnamedatum, het bestandsformaat en een eventuele eerdere RawMask Studio-bewerking die bij de foto is bewaard. De app bladert niet door de rest van je bibliotheek en scant of indexeert die ook niet."
+          },
+          {
+            "h3": "Wat de app in je bibliotheek bewaart"
+          },
+          {
+            "p": "Niets, tenzij je daarom vraagt. Er wordt niets automatisch in je bibliotheek bewaard."
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> bewaart de bewerkte versie bij die foto in je bibliotheek, samen met gegevens over je bewerkingsinstellingen die Foto's bij de foto bijhoudt, zodat de bewerking later opnieuw kan worden geopend. Foto's behoudt het origineel, en je kunt het origineel in de Foto's-app herstellen.",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> voegt de bewerkte afbeelding toe als nieuwe foto. Het origineel wordt niet gewijzigd."
+            ]
+          },
+          {
+            "h3": "iCloud-foto's"
+          },
+          {
+            "p": "Als je iCloud-foto's gebruikt en het origineel in volledige resolutie van de foto die je kiest niet op je iPhone staat, kan het Photos-framework van Apple dat origineel van iCloud downloaden, zodat de foto kan worden bewerkt. Foto's die je bewaart, kunnen ook door iCloud-foto's worden gesynchroniseerd, afhankelijk van je Apple-instellingen. Deze overdrachten vinden plaats tussen je apparaat en je eigen iCloud-account, worden door Apple afgehandeld en vallen onder het privacybeleid van Apple. Er wordt niets naar ons gestuurd."
+          }
+        ]
+      },
+      {
+        "id": "export",
+        "h2": "Exporteren en delen",
+        "blocks": [
+          {
+            "p": "Als je op <span class=\"ui\" lang=\"en\">Export photo</span> tikt, maakt de app het afbeeldingsbestand waar je om hebt gevraagd en opent het deelmenu van iOS. Het bestand gaat alleen naar de bestemming die jij kiest, zoals Bestanden, Berichten of een andere app, en die bestemming verwerkt het volgens haar eigen privacypraktijken. Het tijdelijke bestand dat de app voor de export maakt, wordt bewaard in de privéopslag van de app op je iPhone en wordt automatisch verwijderd zodra het niet meer nodig is."
+          }
+        ]
+      },
+      {
+        "id": "on-device-storage",
+        "h2": "Informatie die op je apparaat wordt opgeslagen",
+        "blocks": [
+          {
+            "p": "Om ervoor te zorgen dat de app werkt zoals je hem hebt achtergelaten, bewaart hij een kleine hoeveelheid informatie in zijn eigen opslag op je iPhone:"
+          },
+          {
+            "ul": [
+              "presets die je bewaart (hun namen en aanpassingswaarden),",
+              "voorkeuren voor de editor, zoals welke bewerkingssecties worden getoond, hun volgorde en de weergave van de vergelijking tussen voor en na, en",
+              "instellingen voor automatische maskers."
+            ]
+          },
+          {
+            "p": "Deze informatie blijft op je apparaat en wordt niet naar ons gestuurd. Je kunt een preset op elk moment in de app verwijderen, en als je de app verwijdert, wordt al deze informatie gewist. Net als andere appgegevens kan deze informatie worden opgenomen in reservekopieën die je van je iPhone maakt, afhankelijk van je iOS-instellingen."
+          }
+        ]
+      },
+      {
+        "id": "no-third-parties",
+        "h2": "Geen diensten van derden, analytics, advertenties of tracking",
+        "blocks": [
+          {
+            "p": "RawMask Studio bevat geen software van derden voor analytics, advertenties, crashrapportage of tracking. De app gebruikt de advertentie-ID niet en volgt je niet in apps of op websites van andere bedrijven."
+          },
+          {
+            "p": "Als je in iOS hebt gekozen om analysegegevens met appontwikkelaars te delen (<span class=\"path\">Instellingen &gt; Privacy en beveiliging &gt; Analyse en verbeteringen</span>), kan Apple ons crashrapporten en geaggregeerde gebruiksstatistieken verstrekken in een vorm waarin je niet te identificeren bent. Dit wordt bepaald door Apple en door je instellingen, niet door de app."
+          }
+        ]
+      },
+      {
+        "id": "purchases",
+        "h2": "Aankopen",
+        "blocks": [
+          {
+            "p": "RawMask Studio is momenteel gratis. Als er in de toekomst in-app-aankopen of betaalde functies worden toegevoegd, worden betalingen door Apple verwerkt via de App Store, onder de voorwaarden en het privacybeleid van Apple, en ontvangen wij je betalingsgegevens niet. We werken dit beleid bij voordat een dergelijke wijziging van kracht wordt."
+          }
+        ]
+      },
+      {
+        "id": "children",
+        "h2": "Kinderen",
+        "blocks": [
+          {
+            "p": "RawMask Studio is een algemene app voor fotobewerking en is niet specifiek op kinderen gericht. Omdat de app van niemand persoonsgegevens verzamelt, worden er ook geen persoonsgegevens van kinderen verzameld."
+          }
+        ]
+      },
+      {
+        "id": "your-choices",
+        "h2": "Je keuzes",
+        "blocks": [
+          {
+            "p": "Omdat we geen gegevens over je verzamelen of bewaren, zijn er aan onze kant geen persoonsgegevens om in te zien, te corrigeren, te exporteren of te verwijderen. Op je apparaat houd je zelf de controle: je kunt de toegang tot Foto's wijzigen of intrekken in Instellingen van iOS, presets verwijderen in de app, bewerkingen of kopieën verwijderen in de Foto's-app, en de app verwijderen om de lokale gegevens ervan te wissen."
+          }
+        ]
+      },
+      {
+        "id": "changes",
+        "h2": "Wijzigingen in dit beleid",
+        "blocks": [
+          {
+            "p": "Als de manier waarop de app met informatie omgaat verandert, bijvoorbeeld als een toekomstige functie gegevens vanaf je apparaat moet versturen, werken we dit beleid en de privacygegevens van de app in de App Store bij voordat die versie wordt uitgebracht, en passen we de ingangsdatum bovenaan deze pagina aan."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "h2": "Contact",
+        "blocks": [
+          {
+            "p": "Heb je een vraag over dit beleid of over je privacy bij het gebruik van RawMask Studio, neem dan contact op met:"
+          },
+          {
+            "p": "Besarion Turmanauli<br>\nE-mail: <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>"
+          }
+        ]
+      }
+    ]
+  }
+}

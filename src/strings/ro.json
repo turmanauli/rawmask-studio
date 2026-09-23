@@ -1,0 +1,313 @@
+{
+  "common": {
+    "nav_label": "Site",
+    "nav_home": "Acasă",
+    "nav_privacy": "Confidențialitate",
+    "nav_support": "Asistență",
+    "lang_label": "Limbă",
+    "badge_alt": "Descărcați de pe App Store",
+    "copyright": "Copyright 2026 Besarion Turmanauli",
+    "translation_notice": "Această pagină este o traducere a <a href=\"{english_url}\">versiunii în limba engleză</a>. În cazul unor diferențe între cele două versiuni, prevalează versiunea în limba engleză."
+  },
+  "home": {
+    "description": "RawMask Studio este un editor de fotografii RAW pentru iPhone, cu măști automate și manuale. Totul rulează pe iPhone-ul tău.",
+    "eyebrow": "Editor foto pentru iPhone",
+    "btn_support": "Obține asistență",
+    "btn_privacy": "Politica de confidențialitate",
+    "screenshots_heading": "Capturi de ecran",
+    "features_heading": "Ce poți face",
+    "store_headings": [
+      "Măști pentru editare selectivă",
+      "RAW, ProRAW, JPEG și HEIC",
+      "Un flux de lucru clar, pas cu pas",
+      "Compară și refolosește",
+      "Salvare fără să pierzi originalul",
+      "Pozele tale rămân private"
+    ],
+    "requirements": "<strong>Cerințe:</strong> iPhone cu iOS 17 sau o versiune ulterioară.",
+    "help": "Ai întrebări sau probleme? Accesează <a href=\"{support_url}\">pagina de asistență</a>. Detalii despre modul în care aplicația gestionează fotografiile tale găsești în <a href=\"{privacy_url}\">politica de confidențialitate</a>."
+  },
+  "support": {
+    "title": "Asistență - RawMask Studio",
+    "description": "Ajutor și contact pentru RawMask Studio pe iPhone: deschiderea fotografiilor, accesul la Poze, măștile, salvarea și exportul.",
+    "h1": "Asistență",
+    "meta": "Ajutor pentru RawMask Studio pe iPhone.",
+    "ui_labels_note": "Denumirile butoanelor și ale meniurilor de mai jos sunt în engleză, exact așa cum apar în aplicație.",
+    "contact": "<strong>Contact:</strong> trimite un e-mail la <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>",
+    "contact_note": "Te rugăm să menționezi modelul de iPhone, versiunea iOS și o scurtă descriere a ceea ce s-a întâmplat și a ceea ce te așteptai să se întâmple. Nu este nevoie să trimiți fotografii; de obicei este suficient să descrii fotografia (de exemplu, aparatul foto sau formatul fișierului).",
+    "faq_heading": "Întrebări frecvente",
+    "faq": [
+      {
+        "q": "Cum deschid o fotografie?",
+        "blocks": [
+          {
+            "p": "Atinge butonul foto din stânga sus a editorului și alege <span class=\"ui\" lang=\"en\">Open photo</span>. Se deschide selectorul de poze, în care alegi o fotografie. RawMask Studio editează câte o fotografie pe rând. Deocamdată, Live Photos nu sunt afișate în selector."
+          }
+        ]
+      },
+      {
+        "q": "Ce fotografii pot edita?",
+        "blocks": [
+          {
+            "p": "Fotografii RAW pe care le poate citi suportul RAW integrat oferit de Apple, inclusiv Apple ProRAW și fișiere RAW de la multe aparate foto, precum și fotografii obișnuite, cum ar fi HEIC și JPEG."
+          }
+        ]
+      },
+      {
+        "q": "De ce cere aplicația acces la Poze?",
+        "blocks": [
+          {
+            "p": "RawMask Studio deschide fotografii din biblioteca ta Poze și salvează editările tot acolo, așa că iOS îți cere permisiunea. Poți permite accesul complet sau accesul limitat doar la fotografiile pe care le alegi. În ambele cazuri, aplicația deschide doar fotografia pe care o alegi. Consultă <a href=\"{privacy_url}\">politica de confidențialitate</a> pentru detalii."
+          }
+        ]
+      },
+      {
+        "q": "Am ales accesul limitat și nu găsesc o fotografie",
+        "blocks": [
+          {
+            "p": "Cu accesul limitat, aplicația poate deschide doar fotografiile la care i-ai permis accesul. Pentru a permite accesul la mai multe fotografii:"
+          },
+          {
+            "ul": [
+              "în aplicație, atinge <span class=\"ui\" lang=\"en\">More options</span> (butonul ...), apoi, în secțiunea <span class=\"ui\" lang=\"en\">Photos access</span>, atinge <span class=\"ui\" lang=\"en\">Manage allowed photos</span> sau",
+              "deschide <span class=\"path\">Configurări &gt; Intimitate și securitate &gt; Poze &gt; RawMask Studio</span> și modifică selecția sau alege Acces complet."
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Aplicația spune că accesul la Poze este dezactivat",
+        "blocks": [
+          {
+            "p": "Deschide <span class=\"path\">Configurări &gt; Intimitate și securitate &gt; Poze &gt; RawMask Studio</span>, alege Acces limitat sau Acces complet, apoi revino în aplicație și deschide din nou o fotografie."
+          }
+        ]
+      },
+      {
+        "q": "Cum funcționează măștile?",
+        "blocks": [
+          {
+            "p": "Reglajele se aplică fie întregii fotografii, fie unei măști. Deschide meniul butonului foto din stânga sus: folosește <span class=\"ui\" lang=\"en\">Edit target</span> pentru a alege ce editezi și <span class=\"ui\" lang=\"en\">Add mask</span> pentru a adăuga o mască <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span> sau <span class=\"ui\" lang=\"en\">Rectangle</span>. Poți muta și redimensiona o mască, poți picta pe ea pentru a adăuga sau a scoate zone și îi poți estompa marginea cu <span class=\"ui\" lang=\"en\">Feather</span>."
+          }
+        ]
+      },
+      {
+        "q": "Ce sunt măștile automate pentru obiecte?",
+        "blocks": [
+          {
+            "p": "RawMask Studio include un model de segmentare a imaginii care găsește obiecte în fotografie, precum oameni, animale și lucruri de zi cu zi, și îl oferă pe fiecare sub forma unei măști pe care o poți edita separat. Modelul rulează în întregime pe iPhone-ul tău. Dacă nu detectează obiectul dorit, folosește în schimb o mască manuală sau ajustează setările <span class=\"ui\" lang=\"en\">Detection confidence</span> și <span class=\"ui\" lang=\"en\">Mask threshold</span> din <span class=\"ui\" lang=\"en\">More options</span> &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>."
+          }
+        ]
+      },
+      {
+        "q": "Am nevoie de o conexiune la internet?",
+        "blocks": [
+          {
+            "p": "Nu. Editarea și măștile automate funcționează offline. Singura excepție este o fotografie stocată în Poze iCloud al cărei original nu se află pe iPhone-ul tău: Poze trebuie să descarce originalul din iCloud înainte ca fotografia să poată fi editată."
+          }
+        ]
+      },
+      {
+        "q": "Cum salvez sau export editarea?",
+        "blocks": [
+          {
+            "p": "Atinge <span class=\"ui\" lang=\"en\">More options</span> (butonul ...) și mergi la <span class=\"ui\" lang=\"en\">Save and export</span>:"
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> actualizează fotografia din biblioteca ta. Poze păstrează originalul, așa că poți reveni la el mai târziu folosind opțiunea Reveniți la original din aplicația Poze.",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> adaugă imaginea editată ca fotografie nouă și lasă originalul neschimbat.",
+              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> creează un fișier JPEG, HEIF sau TIFF la dimensiunea și calitatea alese de tine și deschide meniul de partajare, ca să îl poți salva în Fișiere sau trimite către altă aplicație."
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Unde sunt stocate presetările mele?",
+        "blocks": [
+          {
+            "p": "Pe iPhone-ul tău, în spațiul de stocare propriu al aplicației. Nu sunt încărcate nicăieri. Poți șterge presetări din aplicație, iar ștergerea aplicației le elimină."
+          }
+        ]
+      },
+      {
+        "q": "Ce dispozitive sunt compatibile?",
+        "blocks": [
+          {
+            "p": "iPhone cu iOS 17 sau o versiune ulterioară."
+          }
+        ]
+      },
+      {
+        "q": "RawMask Studio îmi colectează datele?",
+        "blocks": [
+          {
+            "p": "Nu. Nu există cont, instrumente de analiză, publicitate sau urmărire, iar aplicația nu trimite fotografiile sau datele tale către noi sau către altcineva. Citește integral <a href=\"{privacy_url}\">politica de confidențialitate</a>."
+          }
+        ]
+      }
+    ],
+    "still_heading": "Mai ai nevoie de ajutor?",
+    "still_text": "Scrie-ne la <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a> și îți vom răspunde."
+  },
+  "privacy": {
+    "title": "Politica de confidențialitate - RawMask Studio",
+    "description": "Politica de confidențialitate a aplicației RawMask Studio pentru iPhone. Aplicația nu colectează niciun fel de date; fotografiile sunt editate pe iPhone-ul tău.",
+    "h1": "Politica de confidențialitate",
+    "meta": "RawMask Studio pentru iPhone. Data intrării în vigoare: 23 septembrie 2026.",
+    "summary": "<strong>Pe scurt:</strong> RawMask Studio nu colectează niciun fel de date. Nu există cont, instrumente de analiză, publicitate sau urmărire. Fotografiile tale sunt editate pe iPhone-ul tău, iar aplicația nu trimite niciodată fotografiile tale, editările tale sau alte informații, nici către noi, nici către altcineva.",
+    "sections": [
+      {
+        "id": "who-we-are",
+        "h2": "Cine suntem",
+        "blocks": [
+          {
+            "p": "RawMask Studio este dezvoltată și publicată de Besarion Turmanauli, dezvoltator individual. În această politică, termenii „noi”, „ne” și „nostru” se referă la dezvoltator. Ne poți contacta folosind datele din secțiunea <a href=\"#contact\">Contact</a> de mai jos."
+          }
+        ]
+      },
+      {
+        "id": "information-we-collect",
+        "h2": "Informațiile pe care le colectăm",
+        "blocks": [
+          {
+            "p": "Niciuna. RawMask Studio nu colectează, nu transmite, nu vinde și nu partajează informații personale. Aplicația nu trimite către noi sau către vreo terță parte fotografiile, editările, măștile, presetările, setările, identificatorii dispozitivului, datele de utilizare sau datele de diagnosticare ale tale, iar noi nu operăm niciun server care să primească date de la aplicație. Nu există autentificare și nici cont."
+          }
+        ]
+      },
+      {
+        "id": "on-device-processing",
+        "h2": "Procesarea are loc pe iPhone-ul tău",
+        "blocks": [
+          {
+            "p": "Toată procesarea fotografiilor are loc pe dispozitivul tău. Aceasta include citirea fișierelor RAW, aplicarea reglajelor de lumină, culoare, detalii, focalizare și efecte, generarea previzualizărilor și crearea măștilor."
+          },
+          {
+            "p": "Măștile automate pentru obiecte sunt create de un model de segmentare a imaginii (RF-DETR), inclus în aplicație, care rulează pe iPhone-ul tău folosind Core ML de la Apple. Modelul nu este descărcat de pe internet, iar fotografiile tale nu sunt trimise nicăieri pentru a fi analizate."
+          }
+        ]
+      },
+      {
+        "id": "photos-access",
+        "h2": "Accesul la biblioteca Poze",
+        "blocks": [
+          {
+            "p": "RawMask Studio folosește biblioteca Poze de la Apple pentru a deschide și a salva imagini. iOS îți cere permisiunea înainte ca aplicația să poată accesa biblioteca ta. Poți permite accesul la întreaga bibliotecă sau doar la fotografiile pe care le selectezi și poți modifica oricând această opțiune în <span class=\"path\">Configurări &gt; Intimitate și securitate &gt; Poze &gt; RawMask Studio</span>."
+          },
+          {
+            "h3": "Ce citește aplicația"
+          },
+          {
+            "p": "Doar fotografia pe care o alegi în selectorul de poze, câte o fotografie pe rând. Pentru a o edita, aplicația citește datele de imagine ale acelei fotografii și detaliile necesare pentru editare, cum ar fi dimensiunile, data fotografierii, formatul fișierului și orice editare anterioară făcută cu RawMask Studio și salvată împreună cu ea. Aplicația nu răsfoiește, nu scanează și nu indexează restul bibliotecii tale."
+          },
+          {
+            "h3": "Ce salvează aplicația"
+          },
+          {
+            "p": "Nimic, cu excepția cazului în care îi ceri acest lucru. Nimic nu este salvat automat în biblioteca ta."
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> salvează versiunea editată în fotografia respectivă din biblioteca ta, împreună cu o înregistrare a setărilor tale de editare, pe care Poze o păstrează alături de fotografie, astfel încât editarea să poată fi redeschisă ulterior. Poze păstrează originalul, iar tu poți reveni la el în aplicația Poze.",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> adaugă imaginea editată ca fotografie nouă. Originalul nu este modificat."
+            ]
+          },
+          {
+            "h3": "Poze iCloud"
+          },
+          {
+            "p": "Dacă folosești Poze iCloud și originalul la rezoluție completă al fotografiei pe care o alegi nu este stocat pe iPhone-ul tău, framework-ul Poze de la Apple îl poate descărca din iCloud pentru ca fotografia să poată fi editată. Fotografiile pe care le salvezi pot fi, de asemenea, sincronizate prin Poze iCloud, în funcție de setările tale Apple. Aceste transferuri au loc între dispozitivul tău și propriul tău cont iCloud, sunt gestionate de Apple și fac obiectul politicii de confidențialitate a Apple. Nu ni se trimite nimic."
+          }
+        ]
+      },
+      {
+        "id": "export",
+        "h2": "Exportul și partajarea",
+        "blocks": [
+          {
+            "p": "Când atingi <span class=\"ui\" lang=\"en\">Export photo</span>, aplicația creează fișierul imagine pe care l-ai solicitat și deschide meniul de partajare din iOS. Fișierul ajunge doar acolo unde alegi să îl trimiți, de exemplu în Fișiere, în Mesaje sau în altă aplicație, iar destinația respectivă îl gestionează conform propriilor practici de confidențialitate. Fișierul temporar pe care aplicația îl creează pentru export este păstrat în spațiul de stocare privat al aplicației de pe iPhone-ul tău și este șters automat când nu mai este necesar."
+          }
+        ]
+      },
+      {
+        "id": "on-device-storage",
+        "h2": "Informații stocate pe dispozitivul tău",
+        "blocks": [
+          {
+            "p": "Pentru ca aplicația să funcționeze așa cum ai lăsat-o, aceasta păstrează o cantitate mică de informații în propriul spațiu de stocare de pe iPhone-ul tău:"
+          },
+          {
+            "ul": [
+              "presetările pe care le salvezi (numele lor și valorile reglajelor);",
+              "preferințele editorului, cum ar fi secțiunile de editare afișate, ordinea acestora și stilul comparației înainte și după;",
+              "setările pentru măștile automate."
+            ]
+          },
+          {
+            "p": "Aceste informații rămân pe dispozitivul tău și nu ne sunt trimise. Poți șterge oricând o presetare din aplicație, iar ștergerea aplicației elimină toate aceste informații. La fel ca alte date ale aplicațiilor, ele pot fi incluse în backupurile iPhone-ului pe care le faci, în funcție de setările tale iOS."
+          }
+        ]
+      },
+      {
+        "id": "no-third-parties",
+        "h2": "Fără servicii terțe, instrumente de analiză, publicitate sau urmărire",
+        "blocks": [
+          {
+            "p": "RawMask Studio nu conține software terț de analiză, publicitate, raportare a opririlor subite sau urmărire. Nu folosește identificatorul de publicitate și nu îți urmărește activitatea în aplicații sau site-uri web deținute de alte companii."
+          },
+          {
+            "p": "Dacă ai ales în iOS să partajezi datele de analiză cu dezvoltatorii de aplicații (<span class=\"path\">Configurări &gt; Intimitate și securitate &gt; Analiză și îmbunătățiri</span>), Apple ne poate furniza rapoarte privind opririle subite și statistici de utilizare agregate, într-o formă care nu te identifică. Acest lucru este controlat de Apple și de setările tale, nu de aplicație."
+          }
+        ]
+      },
+      {
+        "id": "purchases",
+        "h2": "Achiziții",
+        "blocks": [
+          {
+            "p": "RawMask Studio este în prezent gratuită. Dacă în viitor vor fi adăugate achiziții în aplicație sau funcții plătite, plățile vor fi procesate de Apple prin App Store, conform termenilor și politicii de confidențialitate ale Apple, iar noi nu vom primi detaliile tale de plată. Vom actualiza această politică înainte ca orice astfel de modificare să intre în vigoare."
+          }
+        ]
+      },
+      {
+        "id": "children",
+        "h2": "Copii",
+        "blocks": [
+          {
+            "p": "RawMask Studio este o aplicație generală de editare foto și nu se adresează în mod specific copiilor. Deoarece aplicația nu colectează informații personale de la nimeni, nu colectează informații personale nici de la copii."
+          }
+        ]
+      },
+      {
+        "id": "your-choices",
+        "h2": "Opțiunile tale",
+        "blocks": [
+          {
+            "p": "Deoarece nu colectăm și nu deținem niciun fel de date despre tine, nu există de partea noastră date personale care să poată fi accesate, corectate, exportate sau șterse. Controlul rămâne la tine, pe dispozitivul tău: poți modifica sau revoca accesul la Poze din aplicația Configurări, poți șterge presetări din aplicație, poți elimina editările sau copiile din aplicația Poze și poți șterge aplicația pentru a-i elimina datele locale."
+          }
+        ]
+      },
+      {
+        "id": "changes",
+        "h2": "Modificări ale acestei politici",
+        "blocks": [
+          {
+            "p": "Dacă modul în care aplicația gestionează informațiile se schimbă, de exemplu, dacă o funcție viitoare ar avea nevoie să trimită date în afara dispozitivului tău, vom actualiza această politică și detaliile de confidențialitate ale aplicației din App Store înainte de lansarea acelei versiuni și vom modifica data intrării în vigoare din partea de sus a acestei pagini."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "h2": "Contact",
+        "blocks": [
+          {
+            "p": "Dacă ai o întrebare despre această politică sau despre confidențialitatea ta atunci când folosești RawMask Studio, contactează:"
+          },
+          {
+            "p": "Besarion Turmanauli<br>\nE-mail: <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>"
+          }
+        ]
+      }
+    ]
+  }
+}

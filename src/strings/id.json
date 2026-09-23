@@ -1,0 +1,313 @@
+{
+  "common": {
+    "nav_label": "Situs",
+    "nav_home": "Beranda",
+    "nav_privacy": "Privasi",
+    "nav_support": "Dukungan",
+    "lang_label": "Bahasa",
+    "badge_alt": "Download di App Store",
+    "copyright": "Hak Cipta 2026 Besarion Turmanauli",
+    "translation_notice": "Halaman ini merupakan terjemahan dari <a href=\"{english_url}\">versi bahasa Inggris</a>. Apabila terdapat perbedaan antara kedua versi tersebut, yang berlaku adalah versi bahasa Inggris."
+  },
+  "home": {
+    "description": "RawMask Studio adalah editor foto iPhone untuk foto RAW dengan mask otomatis dan manual. Semuanya berjalan di iPhone Anda.",
+    "eyebrow": "Editor foto untuk iPhone",
+    "btn_support": "Dapatkan dukungan",
+    "btn_privacy": "Kebijakan privasi",
+    "screenshots_heading": "Tangkapan layar",
+    "features_heading": "Yang bisa Anda lakukan",
+    "store_headings": [
+      "Mask untuk edit selektif",
+      "RAW, ProRAW, JPEG, dan HEIC",
+      "Alur edit bertahap yang jelas",
+      "Bandingkan dan gunakan lagi",
+      "Simpan tanpa kehilangan foto asli",
+      "Privasi terjaga"
+    ],
+    "requirements": "<strong>Persyaratan:</strong> iPhone dengan iOS 17 atau lebih baru.",
+    "help": "Ada pertanyaan atau masalah? Kunjungi <a href=\"{support_url}\">halaman dukungan</a>. Detail tentang cara aplikasi menangani foto Anda tersedia di <a href=\"{privacy_url}\">kebijakan privasi</a>."
+  },
+  "support": {
+    "title": "Dukungan - RawMask Studio",
+    "description": "Bantuan dan kontak RawMask Studio untuk iPhone: membuka foto, akses ke Foto, mask, menyimpan, dan mengekspor.",
+    "h1": "Dukungan",
+    "meta": "Bantuan RawMask Studio untuk iPhone.",
+    "ui_labels_note": "Nama tombol dan menu di bawah ini ditulis dalam bahasa Inggris, persis seperti yang tampil di aplikasi.",
+    "contact": "<strong>Kontak:</strong> email <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>",
+    "contact_note": "Mohon sertakan model iPhone dan versi iOS Anda, serta penjelasan singkat tentang apa yang terjadi dan apa yang Anda harapkan. Anda tidak perlu mengirim foto; penjelasan tentang fotonya (misalnya kamera atau format file) biasanya sudah cukup.",
+    "faq_heading": "Pertanyaan yang sering diajukan",
+    "faq": [
+      {
+        "q": "Bagaimana cara membuka foto?",
+        "blocks": [
+          {
+            "p": "Ketuk tombol foto di kiri atas editor, lalu pilih <span class=\"ui\" lang=\"en\">Open photo</span>. Setelah pemilih foto terbuka, pilih satu foto. RawMask Studio mengedit satu foto dalam satu waktu. Live Photos saat ini tidak ditampilkan di pemilih foto."
+          }
+        ]
+      },
+      {
+        "q": "Foto apa saja yang bisa saya edit?",
+        "blocks": [
+          {
+            "p": "Foto RAW yang dapat dibaca oleh dukungan RAW bawaan Apple, termasuk Apple ProRAW dan file RAW dari banyak kamera, serta foto biasa seperti HEIC dan JPEG."
+          }
+        ]
+      },
+      {
+        "q": "Mengapa aplikasi meminta akses ke Foto?",
+        "blocks": [
+          {
+            "p": "RawMask Studio membuka foto dari perpustakaan Foto Apple Anda dan menyimpan hasil edit kembali ke sana, sehingga iOS meminta izin Anda. Anda dapat mengizinkan akses penuh, atau akses terbatas hanya ke foto yang Anda tentukan. Apa pun pilihan Anda, aplikasi hanya membuka foto yang Anda pilih. Lihat <a href=\"{privacy_url}\">kebijakan privasi</a> untuk detailnya."
+          }
+        ]
+      },
+      {
+        "q": "Saya memilih akses terbatas dan tidak dapat menemukan foto",
+        "blocks": [
+          {
+            "p": "Dengan akses terbatas, aplikasi hanya dapat membuka foto yang telah Anda izinkan. Untuk mengizinkan lebih banyak foto:"
+          },
+          {
+            "ul": [
+              "Di aplikasi, ketuk <span class=\"ui\" lang=\"en\">More options</span> (tombol ...), lalu di bagian <span class=\"ui\" lang=\"en\">Photos access</span> ketuk <span class=\"ui\" lang=\"en\">Manage allowed photos</span>, atau",
+              "buka <span class=\"path\">Pengaturan &gt; Privasi &amp; Keamanan &gt; Foto &gt; RawMask Studio</span>, lalu ubah pilihan foto atau pilih Akses Penuh."
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Aplikasi menampilkan pesan bahwa akses ke Foto nonaktif",
+        "blocks": [
+          {
+            "p": "Buka <span class=\"path\">Pengaturan &gt; Privasi &amp; Keamanan &gt; Foto &gt; RawMask Studio</span>, pilih Akses Terbatas atau Akses Penuh, lalu kembali ke aplikasi dan buka foto lagi."
+          }
+        ]
+      },
+      {
+        "q": "Bagaimana cara kerja mask?",
+        "blocks": [
+          {
+            "p": "Penyesuaian diterapkan ke seluruh foto atau ke sebuah mask. Buka menu tombol foto di kiri atas: gunakan <span class=\"ui\" lang=\"en\">Edit target</span> untuk memilih apa yang sedang Anda edit, dan <span class=\"ui\" lang=\"en\">Add mask</span> untuk menambahkan mask <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span>, atau <span class=\"ui\" lang=\"en\">Rectangle</span>. Anda dapat memindahkan dan mengubah ukuran mask, menyapukan kuas untuk menambah atau mengurangi area mask, serta menghaluskan tepinya dengan <span class=\"ui\" lang=\"en\">Feather</span>."
+          }
+        ]
+      },
+      {
+        "q": "Apa itu mask objek otomatis?",
+        "blocks": [
+          {
+            "p": "RawMask Studio dilengkapi model segmentasi gambar yang menemukan objek di foto Anda, seperti orang, hewan, dan benda sehari-hari, lalu menyediakan masing-masing objek sebagai mask yang dapat Anda edit secara terpisah. Model ini berjalan sepenuhnya di iPhone Anda. Jika model tidak mendeteksi objek yang Anda inginkan, gunakan mask manual sebagai gantinya, atau sesuaikan <span class=\"ui\" lang=\"en\">Detection confidence</span> dan <span class=\"ui\" lang=\"en\">Mask threshold</span> di <span class=\"ui\" lang=\"en\">More options</span> &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>."
+          }
+        ]
+      },
+      {
+        "q": "Apakah saya memerlukan koneksi internet?",
+        "blocks": [
+          {
+            "p": "Tidak. Pengeditan dan mask otomatis berfungsi secara offline. Satu-satunya pengecualian adalah foto di Foto iCloud yang versi aslinya tidak tersimpan di iPhone Anda: app Foto harus mengunduh versi asli tersebut dari iCloud sebelum foto dapat diedit."
+          }
+        ]
+      },
+      {
+        "q": "Bagaimana cara menyimpan atau mengekspor hasil edit saya?",
+        "blocks": [
+          {
+            "p": "Ketuk <span class=\"ui\" lang=\"en\">More options</span> (tombol ...), lalu buka <span class=\"ui\" lang=\"en\">Save and export</span>:"
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> memperbarui foto di perpustakaan Anda. App Foto tetap menyimpan foto aslinya, sehingga nanti Anda dapat kembali ke foto asli melalui opsi Kembalikan di app Foto.",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> menambahkan gambar hasil edit sebagai foto baru, sementara foto aslinya tidak berubah.",
+              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> membuat file JPEG, HEIF, atau TIFF dengan ukuran dan kualitas pilihan Anda, lalu membuka menu Bagikan, sehingga Anda dapat menyimpannya ke app File atau mengirimkannya ke aplikasi lain."
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Di mana preset saya disimpan?",
+        "blocks": [
+          {
+            "p": "Di iPhone Anda, dalam penyimpanan milik aplikasi itu sendiri. Preset tidak diunggah ke mana pun. Anda dapat menghapus preset di aplikasi, dan semua preset akan ikut terhapus jika aplikasi dihapus."
+          }
+        ]
+      },
+      {
+        "q": "Perangkat apa saja yang didukung?",
+        "blocks": [
+          {
+            "p": "iPhone dengan iOS 17 atau lebih baru."
+          }
+        ]
+      },
+      {
+        "q": "Apakah RawMask Studio mengumpulkan data saya?",
+        "blocks": [
+          {
+            "p": "Tidak. Tidak ada akun, analitik, iklan, atau pelacakan, dan aplikasi tidak mengirim foto atau data Anda kepada kami maupun kepada pihak lain mana pun. Baca <a href=\"{privacy_url}\">kebijakan privasi</a> selengkapnya."
+          }
+        ]
+      }
+    ],
+    "still_heading": "Masih butuh bantuan?",
+    "still_text": "Kirim email ke <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a> dan kami akan membalas Anda."
+  },
+  "privacy": {
+    "title": "Kebijakan Privasi - RawMask Studio",
+    "description": "Kebijakan privasi RawMask Studio untuk iPhone. Aplikasi ini tidak mengumpulkan data apa pun; foto diedit di iPhone Anda.",
+    "h1": "Kebijakan Privasi",
+    "meta": "RawMask Studio untuk iPhone. Tanggal berlaku: 23 September 2026.",
+    "summary": "<strong>Singkatnya:</strong> RawMask Studio tidak mengumpulkan data apa pun. Tidak ada akun, tidak ada analitik, tidak ada iklan, dan tidak ada pelacakan. Foto Anda diedit di iPhone Anda, dan aplikasi tidak pernah mengirim foto Anda, hasil edit Anda, atau informasi lain apa pun kepada kami maupun kepada pihak lain mana pun.",
+    "sections": [
+      {
+        "id": "who-we-are",
+        "h2": "Siapa kami",
+        "blocks": [
+          {
+            "p": "RawMask Studio dikembangkan dan diterbitkan oleh Besarion Turmanauli, seorang pengembang perorangan. Dalam kebijakan ini, kata \"kami\" dan \"milik kami\" merujuk pada pengembang tersebut. Anda dapat menghubungi kami melalui detail di bagian <a href=\"#contact\">Kontak</a> di bawah."
+          }
+        ]
+      },
+      {
+        "id": "information-we-collect",
+        "h2": "Informasi yang kami kumpulkan",
+        "blocks": [
+          {
+            "p": "Tidak ada. RawMask Studio tidak mengumpulkan, mengirimkan, menjual, atau membagikan informasi pribadi. Aplikasi ini tidak mengirim foto, hasil edit, mask, preset, pengaturan, pengenal perangkat, data penggunaan, atau data diagnostik Anda kepada kami atau kepada pihak ketiga mana pun, dan kami tidak mengoperasikan server apa pun yang menerima data dari aplikasi. Tidak ada login dan tidak ada akun."
+          }
+        ]
+      },
+      {
+        "id": "on-device-processing",
+        "h2": "Pemrosesan dilakukan di iPhone Anda",
+        "blocks": [
+          {
+            "p": "Semua pemrosesan foto dilakukan di perangkat Anda. Ini mencakup membaca file RAW, menerapkan penyesuaian cahaya, warna, detail, fokus, dan efek, merender pratinjau, serta membuat mask."
+          },
+          {
+            "p": "Mask objek otomatis dibuat oleh model segmentasi gambar (RF-DETR) yang disertakan di dalam aplikasi dan berjalan di iPhone Anda menggunakan Core ML dari Apple. Model ini tidak diunduh dari internet, dan foto Anda tidak dikirim ke mana pun untuk dianalisis."
+          }
+        ]
+      },
+      {
+        "id": "photos-access",
+        "h2": "Akses ke perpustakaan Foto Anda",
+        "blocks": [
+          {
+            "p": "RawMask Studio menggunakan app Foto dari Apple untuk membuka dan menyimpan gambar. iOS meminta izin Anda sebelum aplikasi dapat mengakses perpustakaan Anda. Anda dapat mengizinkan akses ke seluruh perpustakaan Anda atau hanya ke foto yang Anda pilih, dan Anda dapat mengubahnya kapan saja di <span class=\"path\">Pengaturan &gt; Privasi &amp; Keamanan &gt; Foto &gt; RawMask Studio</span>."
+          },
+          {
+            "h3": "Apa yang dibaca aplikasi"
+          },
+          {
+            "p": "Hanya foto yang Anda pilih di pemilih foto, satu foto dalam satu waktu. Untuk mengeditnya, aplikasi membaca data gambar foto tersebut beserta detail yang diperlukan untuk pengeditan, seperti dimensi, tanggal pengambilan, format file, dan hasil edit RawMask Studio sebelumnya (jika ada) yang tersimpan bersama foto tersebut. Aplikasi tidak menelusuri, memindai, atau mengindeks bagian lain dari perpustakaan Anda."
+          },
+          {
+            "h3": "Apa yang ditulis aplikasi"
+          },
+          {
+            "p": "Tidak ada, kecuali Anda memintanya. Tidak ada yang disimpan ke perpustakaan Anda secara otomatis."
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> menyimpan versi hasil edit ke foto tersebut di perpustakaan Anda, beserta catatan pengaturan edit Anda yang disimpan app Foto bersama foto itu agar hasil edit dapat dibuka kembali nanti. App Foto tetap menyimpan foto aslinya, dan Anda dapat mengembalikan foto ke versi asli di app Foto.",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> menambahkan gambar hasil edit sebagai foto baru. Foto aslinya tidak diubah."
+            ]
+          },
+          {
+            "h3": "Foto iCloud"
+          },
+          {
+            "p": "Jika Anda menggunakan Foto iCloud dan versi asli beresolusi penuh dari foto yang Anda pilih tidak tersimpan di iPhone Anda, framework Foto milik Apple dapat mengunduhnya dari iCloud agar foto tersebut dapat diedit. Foto yang Anda simpan juga dapat disinkronkan oleh Foto iCloud sesuai dengan pengaturan Apple Anda. Transfer ini terjadi antara perangkat Anda dan akun iCloud Anda sendiri, ditangani oleh Apple, dan tunduk pada kebijakan privasi Apple. Tidak ada yang dikirim kepada kami."
+          }
+        ]
+      },
+      {
+        "id": "export",
+        "h2": "Mengekspor dan berbagi",
+        "blocks": [
+          {
+            "p": "Saat Anda mengetuk <span class=\"ui\" lang=\"en\">Export photo</span>, aplikasi membuat file gambar yang Anda minta dan membuka menu Bagikan iOS. File tersebut hanya dikirim ke tujuan yang Anda pilih, seperti app File, Pesan, atau aplikasi lain, dan tujuan tersebut menanganinya sesuai dengan praktik privasinya sendiri. File sementara yang dibuat aplikasi untuk ekspor disimpan di penyimpanan pribadi aplikasi di iPhone Anda dan dihapus secara otomatis saat tidak lagi diperlukan."
+          }
+        ]
+      },
+      {
+        "id": "on-device-storage",
+        "h2": "Informasi yang disimpan di perangkat Anda",
+        "blocks": [
+          {
+            "p": "Agar aplikasi tetap bekerja seperti saat terakhir Anda menggunakannya, aplikasi menyimpan sedikit informasi di penyimpanannya sendiri di iPhone Anda:"
+          },
+          {
+            "ul": [
+              "preset yang Anda simpan (nama dan nilai penyesuaiannya),",
+              "preferensi editor, seperti bagian edit mana yang ditampilkan, urutannya, dan gaya perbandingan sebelum dan sesudah, serta",
+              "pengaturan mask otomatis."
+            ]
+          },
+          {
+            "p": "Informasi ini tetap berada di perangkat Anda dan tidak dikirim kepada kami. Anda dapat menghapus preset di aplikasi kapan saja, dan semua informasi ini akan ikut terhapus jika Anda menghapus aplikasi. Seperti data aplikasi lainnya, informasi ini dapat disertakan dalam cadangan iPhone yang Anda buat, sesuai dengan pengaturan iOS Anda."
+          }
+        ]
+      },
+      {
+        "id": "no-third-parties",
+        "h2": "Tanpa layanan pihak ketiga, analitik, iklan, atau pelacakan",
+        "blocks": [
+          {
+            "p": "RawMask Studio tidak berisi perangkat lunak analitik, iklan, pelaporan crash, atau pelacakan dari pihak ketiga. Aplikasi ini tidak menggunakan pengenal iklan dan tidak melacak Anda di berbagai aplikasi atau situs web milik perusahaan lain."
+          },
+          {
+            "p": "Jika Anda telah memilih di iOS untuk berbagi analitik dengan pengembang app (<span class=\"path\">Pengaturan &gt; Privasi &amp; Keamanan &gt; Analitik &amp; Peningkatan</span>), Apple dapat memberikan laporan crash dan statistik penggunaan agregat kepada kami dalam bentuk yang tidak mengidentifikasi Anda. Hal ini dikendalikan oleh Apple dan oleh pengaturan Anda, bukan oleh aplikasi."
+          }
+        ]
+      },
+      {
+        "id": "purchases",
+        "h2": "Pembelian",
+        "blocks": [
+          {
+            "p": "RawMask Studio saat ini gratis. Jika pembelian dalam aplikasi atau fitur berbayar ditambahkan di masa mendatang, pembayaran akan diproses oleh Apple melalui App Store berdasarkan ketentuan dan kebijakan privasi Apple, dan kami tidak akan menerima detail pembayaran Anda. Kami akan memperbarui kebijakan ini sebelum perubahan semacam itu berlaku."
+          }
+        ]
+      },
+      {
+        "id": "children",
+        "h2": "Anak-anak",
+        "blocks": [
+          {
+            "p": "RawMask Studio adalah aplikasi pengeditan foto untuk penggunaan umum dan tidak secara khusus ditujukan untuk anak-anak. Karena aplikasi ini tidak mengumpulkan informasi pribadi dari siapa pun, aplikasi ini juga tidak mengumpulkan informasi pribadi dari anak-anak."
+          }
+        ]
+      },
+      {
+        "id": "your-choices",
+        "h2": "Pilihan Anda",
+        "blocks": [
+          {
+            "p": "Karena kami tidak mengumpulkan atau menyimpan data apa pun tentang Anda, tidak ada data pribadi di pihak kami yang dapat diakses, diperbaiki, diekspor, atau dihapus. Anda tetap memegang kendali di perangkat Anda: Anda dapat mengubah atau mencabut akses ke Foto di Pengaturan iOS, menghapus preset di aplikasi, menghapus hasil edit atau salinan di app Foto, serta menghapus aplikasi beserta data lokalnya."
+          }
+        ]
+      },
+      {
+        "id": "changes",
+        "h2": "Perubahan pada kebijakan ini",
+        "blocks": [
+          {
+            "p": "Jika cara aplikasi menangani informasi berubah, misalnya jika fitur di masa mendatang perlu mengirim data keluar dari perangkat Anda, kami akan memperbarui kebijakan ini dan detail privasi aplikasi di App Store sebelum versi tersebut dirilis, dan kami akan mengubah tanggal berlaku di bagian atas halaman ini."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "h2": "Kontak",
+        "blocks": [
+          {
+            "p": "Jika Anda memiliki pertanyaan tentang kebijakan ini atau tentang privasi Anda saat menggunakan RawMask Studio, silakan hubungi:"
+          },
+          {
+            "p": "Besarion Turmanauli<br>\nEmail: <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>"
+          }
+        ]
+      }
+    ]
+  }
+}

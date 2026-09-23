@@ -231,7 +231,7 @@ a:hover { text-decoration-thickness: 2px; }
 a:focus-visible, summary:focus-visible, .shots:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
 .wrap { max-width: 44rem; margin: 0 auto; padding: 0 16px; }
 header.site { border-bottom: 1px solid var(--border); }
-header.site .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 12px; min-height: 60px; padding-top: 8px; padding-bottom: 8px; }
+header.site .wrap { position: relative; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 12px; min-height: 60px; padding-top: 8px; padding-bottom: 8px; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 650; letter-spacing: -0.01em; }
 .brand img { flex: none; }
 .header-end { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 8px; margin-inline-start: auto; }
@@ -239,11 +239,10 @@ nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap
 nav a { display: block; padding: 7px 11px; border-radius: 999px; color: var(--muted); text-decoration: none; font-size: 15px; }
 nav a:hover { color: var(--text); background: var(--surface-2); }
 nav a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
-.lang { position: relative; }
 .lang summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 6px; padding: 6px 11px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); font-size: 15px; }
 .lang summary::-webkit-details-marker { display: none; }
 .lang summary:hover, .lang[open] summary { color: var(--text); background: var(--surface-2); }
-.lang ul { position: absolute; top: calc(100% + 6px); inset-inline-end: 0; z-index: 10; list-style: none; margin: 0; padding: 8px; width: min(34rem, calc(100vw - 32px)); max-height: min(70vh, 30rem); overflow: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); gap: 2px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5); }
+.lang ul { position: absolute; top: calc(100% - 2px); inset-inline-end: 16px; z-index: 10; list-style: none; margin: 0; padding: 8px; width: min(34rem, calc(100% - 32px)); max-height: min(70vh, 30rem); overflow: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); gap: 2px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5); }
 .lang li a { display: block; padding: 6px 10px; border-radius: 8px; color: var(--text); text-decoration: none; font-size: 15px; }
 .lang li a:hover { background: var(--surface-2); }
 .lang li a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
@@ -402,10 +401,11 @@ class Site:
         langs = []
         for other in self.locales:
             current = ' aria-current="page"' if other is loc else ""
-            direction = ' dir="rtl"' if other["dir"] == "rtl" else ""
-            langs.append('        <li><a href="%s" hreflang="%s" lang="%s"%s%s>%s</a></li>' % (
-                rel(here, page_dir(other, page)), other["hreflang"][0], other["lang"], direction, current,
-                html.escape(other["name"])))
+            name = html.escape(other["name"])
+            if other["dir"] == "rtl":
+                name = '<span dir="rtl">%s</span>' % name
+            langs.append('        <li><a href="%s" hreflang="%s" lang="%s"%s>%s</a></li>' % (
+                rel(here, page_dir(other, page)), other["hreflang"][0], other["lang"], current, name))
         return "\n".join([
             '<header class="site">',
             '  <div class="wrap">',
@@ -420,7 +420,7 @@ class Site:
             '      </ul>',
             '    </nav>',
             '    <details class="lang">',
-            '      <summary>%s<span class="visually-hidden">%s: </span>%s</summary>' % (
+            '      <summary>%s<span class="visually-hidden">%s </span>%s</summary>' % (
                 GLOBE, html.escape(plain(s["lang_label"])), html.escape(loc["name"])),
             '      <ul>',
             *langs,
@@ -543,7 +543,9 @@ class Site:
                 '    <p>%s</p>' % s["contact"],
                 '    <p>%s</p>' % s["contact_note"]]
         if loc["id"] != "en":
-            out.append('    <p class="muted">%s %s</p>' % (html.escape(self.ui_notes[loc["id"]]), s["ui_labels_note"]))
+            note = self.ui_notes[loc["id"]]
+            gap = "" if note.endswith("\u3002") else " "  # no space after an ideographic full stop
+            out.append('    <p class="muted">%s%s%s</p>' % (html.escape(note), gap, s["ui_labels_note"]))
         out += ['  </div>', '', '  <h2 id="faq">%s</h2>' % s["faq_heading"], '  <div class="faq">']
         for i, item in enumerate(s["faq"]):
             if i:

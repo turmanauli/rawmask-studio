@@ -1,0 +1,313 @@
+{
+  "common": {
+    "nav_label": "Webhely",
+    "nav_home": "Kezdőlap",
+    "nav_privacy": "Adatvédelem",
+    "nav_support": "Támogatás",
+    "lang_label": "Nyelv",
+    "badge_alt": "Letölthető az App Store-ból",
+    "copyright": "Copyright 2026 Besarion Turmanauli",
+    "translation_notice": "Ez az oldal az <a href=\"{english_url}\">angol nyelvű változat</a> fordítása. Ha a két változat eltér egymástól, az angol nyelvű változat az irányadó."
+  },
+  "home": {
+    "description": "A RawMask Studio iPhone-os fotószerkesztő RAW-fotókhoz, automatikus és kézi maszkokkal. Minden az iPhone-odon fut.",
+    "eyebrow": "Fotószerkesztő iPhone-ra",
+    "btn_support": "Támogatás kérése",
+    "btn_privacy": "Adatvédelmi szabályzat",
+    "screenshots_heading": "Képernyőképek",
+    "features_heading": "Mire használhatod?",
+    "store_headings": [
+      "Maszkok a célzott szerkesztéshez",
+      "RAW, ProRAW, JPEG és HEIC",
+      "Átlátható, lépésről lépésre haladó munkafolyamat",
+      "Összevetés és presetek",
+      "Mentés az eredeti elvesztése nélkül",
+      "A fotóid nálad maradnak"
+    ],
+    "requirements": "<strong>Követelmények:</strong> iOS 17 vagy újabb rendszerű iPhone.",
+    "help": "Kérdésed van, vagy problémába ütköztél? Látogass el a <a href=\"{support_url}\">támogatási oldalra</a>. Azt, hogy az app hogyan kezeli a fotóidat, részletesen az <a href=\"{privacy_url}\">adatvédelmi szabályzat</a> írja le."
+  },
+  "support": {
+    "title": "Támogatás - RawMask Studio",
+    "description": "Súgó és kapcsolat az iPhone-ra készült RawMask Studio apphoz: fotók megnyitása, hozzáférés a Fotókhoz, maszkok, mentés és exportálás.",
+    "h1": "Támogatás",
+    "meta": "Súgó az iPhone-ra készült RawMask Studio apphoz.",
+    "ui_labels_note": "Az alábbiakban a gombok és menük nevét angolul adjuk meg, pontosan úgy, ahogy az appban megjelennek.",
+    "contact": "<strong>Kapcsolat:</strong> e-mailben, a <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a> címen",
+    "contact_note": "Kérjük, add meg az iPhone-od típusát és az iOS verzióját, és írd le röviden, mi történt, és mire számítottál. Fotót nem kell küldened; általában elég, ha leírod, milyen fotóról van szó (például milyen fényképezőgéppel készült, vagy milyen a fájlformátuma).",
+    "faq_heading": "Gyakori kérdések",
+    "faq": [
+      {
+        "q": "Hogyan nyithatok meg egy fotót?",
+        "blocks": [
+          {
+            "p": "Koppints a szerkesztő bal felső sarkában lévő fotógombra, és válaszd az <span class=\"ui\" lang=\"en\">Open photo</span> lehetőséget. Megnyílik a Fotók fotóválasztója, ahol kiválaszthatsz egy fotót. A RawMask Studio egyszerre egy fotót szerkeszt. A Live Photos képek jelenleg nem jelennek meg a fotóválasztóban."
+          }
+        ]
+      },
+      {
+        "q": "Milyen fotókat szerkeszthetek?",
+        "blocks": [
+          {
+            "p": "Azokat a RAW-fotókat, amelyeket az Apple beépített RAW-támogatása be tud olvasni, beleértve az Apple ProRAW-felvételeket és számos fényképezőgép RAW-fájljait, valamint a hagyományos fotókat, például a HEIC és JPEG formátumúakat."
+          }
+        ]
+      },
+      {
+        "q": "Miért kér az app hozzáférést a Fotókhoz?",
+        "blocks": [
+          {
+            "p": "A RawMask Studio az Apple Fotók appban lévő fotókönyvtáradból nyitja meg a fotókat, és oda is menti vissza a szerkesztéseket, ezért az iOS engedélyt kér tőled. Megadhatsz teljes hozzáférést vagy csak az általad kiválasztott fotókra kiterjedő korlátozott hozzáférést. Az app mindkét esetben csak azt a fotót nyitja meg, amelyet kiválasztasz. A részleteket az <a href=\"{privacy_url}\">adatvédelmi szabályzatban</a> találod."
+          }
+        ]
+      },
+      {
+        "q": "Korlátozott hozzáférést adtam meg, és nem találok egy fotót",
+        "blocks": [
+          {
+            "p": "Korlátozott hozzáférés esetén az app csak azokat a fotókat tudja megnyitni, amelyeket engedélyeztél. Ha további fotókat szeretnél engedélyezni:"
+          },
+          {
+            "ul": [
+              "az appban koppints a <span class=\"ui\" lang=\"en\">More options</span> gombra (a ... gomb), majd a <span class=\"ui\" lang=\"en\">Photos access</span> résznél koppints a <span class=\"ui\" lang=\"en\">Manage allowed photos</span> lehetőségre, vagy",
+              "nyisd meg a <span class=\"path\">Beállítások &gt; Adatvédelem és biztonság &gt; Fotók &gt; RawMask Studio</span> menüpontot, és módosítsd a kijelölést, vagy válaszd a Teljes hozzáférés lehetőséget."
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Az app szerint ki van kapcsolva a hozzáférés a Fotókhoz",
+        "blocks": [
+          {
+            "p": "Nyisd meg a <span class=\"path\">Beállítások &gt; Adatvédelem és biztonság &gt; Fotók &gt; RawMask Studio</span> menüpontot, válaszd a Korlátozott hozzáférés vagy a Teljes hozzáférés lehetőséget, majd térj vissza az appba, és nyiss meg újra egy fotót."
+          }
+        ]
+      },
+      {
+        "q": "Hogyan működnek a maszkok?",
+        "blocks": [
+          {
+            "p": "A beállítások vagy a teljes fotóra, vagy egy maszkra vonatkoznak. Nyisd meg a bal felső sarokban lévő fotógomb menüjét: az <span class=\"ui\" lang=\"en\">Edit target</span> menüben választhatod ki, mit szerkesztesz, az <span class=\"ui\" lang=\"en\">Add mask</span> menüvel pedig <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span> vagy <span class=\"ui\" lang=\"en\">Rectangle</span> típusú maszkot adhatsz hozzá. A maszkot áthelyezheted és átméretezheted, festéssel bővítheted vagy szűkítheted, a szélét pedig a <span class=\"ui\" lang=\"en\">Feather</span> beállítással lágyíthatod."
+          }
+        ]
+      },
+      {
+        "q": "Mik azok az automatikus objektummaszkok?",
+        "blocks": [
+          {
+            "p": "A RawMask Studio tartalmaz egy képszegmentáló modellt, amely megtalálja a fotódon lévő objektumokat, például embereket, állatokat és hétköznapi tárgyakat, és mindegyiket külön szerkeszthető maszkként kínálja fel. A modell teljes egészében az iPhone-odon fut. Ha nem ismeri fel a kívánt objektumot, használj helyette kézi maszkot, vagy módosítsd a <span class=\"ui\" lang=\"en\">Detection confidence</span> és a <span class=\"ui\" lang=\"en\">Mask threshold</span> értékét a <span class=\"ui\" lang=\"en\">More options</span> &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span> menüben."
+          }
+        ]
+      },
+      {
+        "q": "Szükségem van internetkapcsolatra?",
+        "blocks": [
+          {
+            "p": "Nem. A szerkesztés és az automatikus maszkok internetkapcsolat nélkül is működnek. Az egyetlen kivétel az iCloud-fotókban tárolt olyan fotó, amelynek az eredetije nincs az iPhone-odon: ilyenkor a Fotóknak le kell töltenie az eredetit az iCloudból, mielőtt a fotó szerkeszthető lenne."
+          }
+        ]
+      },
+      {
+        "q": "Hogyan menthetem vagy exportálhatom a szerkesztést?",
+        "blocks": [
+          {
+            "p": "Koppints a <span class=\"ui\" lang=\"en\">More options</span> gombra (a ... gomb), és lépj a <span class=\"ui\" lang=\"en\">Save and export</span> részhez:"
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong>: frissíti a fotót a könyvtáradban. A Fotók megőrzi az eredetit, így később a Fotók app Visszaállítás funkciójával visszatérhetsz hozzá.",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong>: új fotóként adja hozzá a szerkesztett képet, az eredetit pedig változatlanul hagyja.",
+              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong>: a választott méretben és minőségben JPEG-, HEIF- vagy TIFF-fájlt hoz létre, és megnyitja a Megosztás menüt, így a fájlt mentheted a Fájlok appba, vagy elküldheted egy másik appnak."
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Hol tárolódnak a presetjeim?",
+        "blocks": [
+          {
+            "p": "Az iPhone-odon, az app saját tárhelyén. Sehová nem töltődnek fel. A preseteket törölheted az appban, és az app törlésével ezek is törlődnek."
+          }
+        ]
+      },
+      {
+        "q": "Milyen eszközök támogatottak?",
+        "blocks": [
+          {
+            "p": "iOS 17 vagy újabb rendszerű iPhone."
+          }
+        ]
+      },
+      {
+        "q": "Gyűjt adatokat rólam a RawMask Studio?",
+        "blocks": [
+          {
+            "p": "Nem. Nincs fiók, analitika, hirdetés vagy követés, és az app sem nekünk, sem másnak nem küldi el a fotóidat vagy az adataidat. Olvasd el a teljes <a href=\"{privacy_url}\">adatvédelmi szabályzatot</a>."
+          }
+        ]
+      }
+    ],
+    "still_heading": "Továbbra is segítségre van szükséged?",
+    "still_text": "Írj a <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a> címre, és válaszolunk."
+  },
+  "privacy": {
+    "title": "Adatvédelmi szabályzat - RawMask Studio",
+    "description": "Az iPhone-ra készült RawMask Studio adatvédelmi szabályzata. Az app semmilyen adatot nem gyűjt; a fotók szerkesztése az iPhone-odon történik.",
+    "h1": "Adatvédelmi szabályzat",
+    "meta": "RawMask Studio iPhone-ra. Hatálybalépés napja: 2026. szeptember 23.",
+    "summary": "<strong>Röviden:</strong> a RawMask Studio semmilyen adatot nem gyűjt. Nincs fiók, nincs analitika, nincsenek hirdetések, és nincs követés. A fotóid szerkesztése az iPhone-odon történik, és az app soha nem küldi el sem nekünk, sem másnak a fotóidat, a szerkesztéseidet vagy bármilyen más információt.",
+    "sections": [
+      {
+        "id": "who-we-are",
+        "h2": "Kik vagyunk",
+        "blocks": [
+          {
+            "p": "A RawMask Studio fejlesztője és kiadója Besarion Turmanauli egyéni fejlesztő. Ebben a szabályzatban a „mi”, „minket” és „miénk” szavak, valamint a többes szám első személyű megfogalmazások a fejlesztőt jelölik. Az alábbi <a href=\"#contact\">Kapcsolat</a> részben megadott elérhetőségeken érhetsz el minket."
+          }
+        ]
+      },
+      {
+        "id": "information-we-collect",
+        "h2": "Az általunk gyűjtött adatok",
+        "blocks": [
+          {
+            "p": "Nincsenek ilyenek. A RawMask Studio nem gyűjt, nem továbbít, nem értékesít és nem oszt meg személyes adatokat. Az app nem küldi el sem nekünk, sem harmadik félnek a fotóidat, szerkesztéseidet, maszkjaidat, preseteidet, beállításaidat, eszközazonosítóidat, használati adataidat vagy diagnosztikai adataidat, és nem üzemeltetünk olyan szervert, amely adatokat fogadna az appból. Nincs bejelentkezés, és nincs fiók."
+          }
+        ]
+      },
+      {
+        "id": "on-device-processing",
+        "h2": "A feldolgozás az iPhone-odon történik",
+        "blocks": [
+          {
+            "p": "A fotók feldolgozása teljes egészében az eszközödön történik. Ide tartozik a RAW-fájlok beolvasása, a fény-, szín-, részlet-, fókusz- és effektbeállítások alkalmazása, az előnézetek renderelése és a maszkok létrehozása."
+          },
+          {
+            "p": "Az automatikus objektummaszkokat egy képszegmentáló modell (RF-DETR) hozza létre, amely az app része, és az Apple Core ML technológiájával az iPhone-odon fut. Az app nem tölti le a modellt az internetről, és a fotóidat sem küldi el sehová elemzésre."
+          }
+        ]
+      },
+      {
+        "id": "photos-access",
+        "h2": "Hozzáférés a fotókönyvtáradhoz",
+        "blocks": [
+          {
+            "p": "A RawMask Studio az Apple Fotók appot használja a képek megnyitásához és mentéséhez. Mielőtt az app hozzáférhetne a könyvtáradhoz, az iOS engedélyt kér tőled. Engedélyezheted a hozzáférést a teljes könyvtáradhoz vagy csak az általad kiválasztott fotókhoz, és ezt bármikor módosíthatod a <span class=\"path\">Beállítások &gt; Adatvédelem és biztonság &gt; Fotók &gt; RawMask Studio</span> menüpontban."
+          },
+          {
+            "h3": "Mit olvas be az app"
+          },
+          {
+            "p": "Csak azt a fotót, amelyet a fotóválasztóban kiválasztasz, egyszerre egyet. A szerkesztéshez az app beolvassa a fotó képadatait és az ehhez szükséges további adatait, például a méreteit, a készítés dátumát, a fájlformátumát, valamint a vele együtt mentett esetleges korábbi RawMask Studio-szerkesztést. Az app nem böngészi, nem vizsgálja át és nem indexeli a könyvtárad többi részét."
+          },
+          {
+            "h3": "Mit ír az app a könyvtáradba"
+          },
+          {
+            "p": "Semmit, hacsak nem kéred. Az app semmit sem ment automatikusan a könyvtáradba."
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong>: a szerkesztett változatot az adott fotóhoz menti a könyvtáradban, a szerkesztési beállításaid leírásával együtt, amelyet a Fotók a fotó mellett megőriz, hogy a szerkesztést később újra meg lehessen nyitni. A Fotók megőrzi az eredetit, és a Fotók appban visszaállíthatod a fotót az eredeti állapotára.",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong>: új fotóként adja hozzá a szerkesztett képet. Az eredeti nem változik."
+            ]
+          },
+          {
+            "h3": "iCloud-fotók"
+          },
+          {
+            "p": "Ha használod az iCloud-fotókat, és a kiválasztott fotó teljes felbontású eredetije nincs az iPhone-odon tárolva, az Apple Fotók keretrendszere letöltheti azt az iCloudból, hogy szerkeszthető legyen. Emellett az általad mentett fotókat az iCloud-fotók az Apple-beállításaidnak megfelelően szinkronizálhatja. Ezek az adatátvitelek az eszközöd és a saját iCloud-fiókod között zajlanak, az Apple kezeli őket, és az Apple adatvédelmi szabályzata vonatkozik rájuk. Hozzánk semmi sem jut el."
+          }
+        ]
+      },
+      {
+        "id": "export",
+        "h2": "Exportálás és megosztás",
+        "blocks": [
+          {
+            "p": "Amikor az <span class=\"ui\" lang=\"en\">Export photo</span> gombra koppintasz, az app létrehozza a kért képfájlt, és megnyitja az iOS Megosztás menüjét. A fájl csak oda kerül, ahová te küldöd, például a Fájlokba, az Üzenetekbe vagy egy másik appba, és azt a célhely a saját adatvédelmi gyakorlata szerint kezeli. Az exportáláshoz létrehozott ideiglenes fájlt az app az iPhone-odon, a saját privát tárhelyén tartja, és automatikusan törli, amikor már nincs rá szükség."
+          }
+        ]
+      },
+      {
+        "id": "on-device-storage",
+        "h2": "Az eszközödön tárolt adatok",
+        "blocks": [
+          {
+            "p": "Annak érdekében, hogy az app úgy működjön, ahogy legutóbb hagytad, kis mennyiségű adatot tárol a saját tárhelyén az iPhone-odon:"
+          },
+          {
+            "ul": [
+              "az általad mentett preseteket (a nevüket és a beállítási értékeiket),",
+              "a szerkesztő beállításait, például azt, hogy mely szerkesztési részek jelennek meg és milyen sorrendben, valamint az előtte-utána összevetés módját, és",
+              "az automatikus maszkok beállításait."
+            ]
+          },
+          {
+            "p": "Ezek az adatok az eszközödön maradnak, és az app nem küldi el őket nekünk. Egy presetet bármikor törölhetsz az appban, az app törlésével pedig ezek az adatok mind törlődnek. Más appadatokhoz hasonlóan ezek is bekerülhetnek az iPhone-odról általad készített biztonsági mentésekbe, az iOS-beállításaidnak megfelelően."
+          }
+        ]
+      },
+      {
+        "id": "no-third-parties",
+        "h2": "Nincs harmadik féltől származó szolgáltatás, analitika, hirdetés vagy követés",
+        "blocks": [
+          {
+            "p": "A RawMask Studio nem tartalmaz harmadik féltől származó analitikai, hirdetési, összeomlás-jelentő vagy követő szoftvert. Nem használja a hirdetési azonosítót, és nem követ téged más cégek tulajdonában lévő appokban vagy webhelyeken."
+          },
+          {
+            "p": "Ha az iOS-ben úgy döntöttél, hogy megosztod az elemzési adatokat az appfejlesztőkkel (<span class=\"path\">Beállítások &gt; Adatvédelem és biztonság &gt; Elemzések és fejlesztések</span>), az Apple összeomlási jelentéseket és összesített használati statisztikákat adhat át nekünk olyan formában, amely nem azonosít téged. Ezt az Apple és a beállításaid szabályozzák, nem az app."
+          }
+        ]
+      },
+      {
+        "id": "purchases",
+        "h2": "Vásárlások",
+        "blocks": [
+          {
+            "p": "A RawMask Studio jelenleg ingyenes. Ha a jövőben alkalmazáson belüli vásárlások vagy fizetős funkciók kerülnek az appba, a fizetéseket az Apple dolgozza fel az App Store-on keresztül, az Apple feltételei és adatvédelmi szabályzata szerint, és mi nem kapjuk meg a fizetési adataidat. Minden ilyen változás hatálybalépése előtt frissíteni fogjuk ezt a szabályzatot."
+          }
+        ]
+      },
+      {
+        "id": "children",
+        "h2": "Gyermekek",
+        "blocks": [
+          {
+            "p": "A RawMask Studio általános fotószerkesztő app, és nem kifejezetten gyermekeknek szól. Mivel az app senkitől sem gyűjt személyes adatokat, gyermekektől sem gyűjt személyes adatokat."
+          }
+        ]
+      },
+      {
+        "id": "your-choices",
+        "h2": "Választási lehetőségeid",
+        "blocks": [
+          {
+            "p": "Mivel semmilyen adatot nem gyűjtünk és nem tárolunk rólad, nálunk nincs olyan személyes adat, amelyhez hozzáférhetnél, vagy amelyet helyesbíthetnél, exportálhatnál vagy törölhetnél. Az irányítás az eszközödön a te kezedben marad: az iOS Beállításaiban módosíthatod vagy visszavonhatod a Fotókhoz való hozzáférést, az appban törölheted a preseteket, a Fotók appban eltávolíthatod a szerkesztéseket vagy a másolatokat, és az app törlésével eltávolíthatod a helyi adatait."
+          }
+        ]
+      },
+      {
+        "id": "changes",
+        "h2": "A szabályzat módosításai",
+        "blocks": [
+          {
+            "p": "Ha megváltozik az, ahogyan az app az adatokat kezeli, például ha egy jövőbeli funkciónak adatokat kellene küldenie az eszközödről, akkor az adott verzió megjelenése előtt frissítjük ezt a szabályzatot és az app App Store-ban közzétett adatvédelmi információit, és módosítjuk az oldal tetején szereplő hatálybalépési dátumot."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "h2": "Kapcsolat",
+        "blocks": [
+          {
+            "p": "Ha kérdésed van ezzel a szabályzattal vagy a RawMask Studio használata során a magánszférád védelmével kapcsolatban, itt veheted fel velünk a kapcsolatot:"
+          },
+          {
+            "p": "Besarion Turmanauli<br>\nE-mail: <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>"
+          }
+        ]
+      }
+    ]
+  }
+}

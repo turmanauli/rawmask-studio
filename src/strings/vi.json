@@ -1,0 +1,313 @@
+{
+  "common": {
+    "nav_label": "Trang web",
+    "nav_home": "Trang chủ",
+    "nav_privacy": "Quyền riêng tư",
+    "nav_support": "Hỗ trợ",
+    "lang_label": "Ngôn ngữ",
+    "badge_alt": "Tải về trên App Store",
+    "copyright": "Bản quyền 2026 Besarion Turmanauli",
+    "translation_notice": "Trang này là bản dịch của <a href=\"{english_url}\">phiên bản tiếng Anh</a>. Trong trường hợp có sự khác biệt giữa hai phiên bản, phiên bản tiếng Anh sẽ được ưu tiên áp dụng."
+  },
+  "home": {
+    "description": "RawMask Studio là ứng dụng chỉnh ảnh RAW dành cho iPhone, có mặt nạ tự động và thủ công. Mọi thao tác đều diễn ra ngay trên iPhone của bạn.",
+    "eyebrow": "Ứng dụng chỉnh ảnh cho iPhone",
+    "btn_support": "Nhận hỗ trợ",
+    "btn_privacy": "Chính sách quyền riêng tư",
+    "screenshots_heading": "Ảnh chụp màn hình",
+    "features_heading": "Những gì bạn có thể làm",
+    "store_headings": [
+      "Mặt nạ để chỉnh sửa từng vùng",
+      "RAW, ProRAW, JPEG và HEIC",
+      "Quy trình từng bước, rõ ràng",
+      "So sánh và dùng lại",
+      "Lưu mà vẫn giữ ảnh gốc",
+      "Bảo vệ quyền riêng tư"
+    ],
+    "requirements": "<strong>Yêu cầu:</strong> iPhone chạy iOS 17 trở lên.",
+    "help": "Bạn có câu hỏi hoặc gặp sự cố? Hãy truy cập <a href=\"{support_url}\">trang hỗ trợ</a>. Thông tin chi tiết về cách ứng dụng xử lý ảnh của bạn được trình bày trong <a href=\"{privacy_url}\">chính sách quyền riêng tư</a>."
+  },
+  "support": {
+    "title": "Hỗ trợ - RawMask Studio",
+    "description": "Trợ giúp và thông tin liên hệ cho RawMask Studio dành cho iPhone: mở ảnh, quyền truy cập Ảnh, mặt nạ, lưu và xuất ảnh.",
+    "h1": "Hỗ trợ",
+    "meta": "Trợ giúp về RawMask Studio dành cho iPhone.",
+    "ui_labels_note": "Vì vậy, tên các nút và menu dưới đây được ghi bằng tiếng Anh, đúng như hiển thị trong ứng dụng.",
+    "contact": "<strong>Liên hệ:</strong> gửi email tới <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>",
+    "contact_note": "Vui lòng cho biết kiểu máy iPhone, phiên bản iOS của bạn, cùng mô tả ngắn về điều đã xảy ra và kết quả bạn mong đợi. Bạn không cần gửi ảnh; thường chỉ cần mô tả bức ảnh (ví dụ: máy ảnh đã chụp hoặc định dạng tệp) là đủ.",
+    "faq_heading": "Câu hỏi thường gặp",
+    "faq": [
+      {
+        "q": "Làm thế nào để mở ảnh?",
+        "blocks": [
+          {
+            "p": "Chạm vào nút ảnh ở góc trên bên trái của trình chỉnh sửa và chọn <span class=\"ui\" lang=\"en\">Open photo</span>. Trình chọn ảnh sẽ mở ra để bạn chọn một ảnh. RawMask Studio chỉnh sửa từng ảnh một. Live Photos hiện không hiển thị trong trình chọn ảnh."
+          }
+        ]
+      },
+      {
+        "q": "Tôi có thể chỉnh sửa những loại ảnh nào?",
+        "blocks": [
+          {
+            "p": "Ảnh RAW mà tính năng hỗ trợ RAW tích hợp sẵn của Apple có thể đọc được, bao gồm Apple ProRAW và tệp RAW từ nhiều dòng máy ảnh, cũng như ảnh thông thường như HEIC và JPEG."
+          }
+        ]
+      },
+      {
+        "q": "Tại sao ứng dụng yêu cầu quyền truy cập Ảnh?",
+        "blocks": [
+          {
+            "p": "RawMask Studio mở ảnh từ thư viện Ảnh của bạn và lưu bản chỉnh sửa trở lại thư viện đó, vì vậy iOS sẽ yêu cầu bạn cấp quyền. Bạn có thể cho phép truy cập đầy đủ, hoặc truy cập giới hạn chỉ vào những ảnh bạn chọn. Dù chọn cách nào, ứng dụng cũng chỉ mở bức ảnh bạn chọn. Xem <a href=\"{privacy_url}\">chính sách quyền riêng tư</a> để biết thêm chi tiết."
+          }
+        ]
+      },
+      {
+        "q": "Tôi đã chọn truy cập giới hạn và không tìm thấy ảnh",
+        "blocks": [
+          {
+            "p": "Với quyền truy cập giới hạn, ứng dụng chỉ có thể mở những ảnh bạn đã cho phép. Để cho phép thêm ảnh:"
+          },
+          {
+            "ul": [
+              "Trong ứng dụng, chạm vào <span class=\"ui\" lang=\"en\">More options</span> (nút ...), sau đó trong mục <span class=\"ui\" lang=\"en\">Photos access</span>, chạm vào <span class=\"ui\" lang=\"en\">Manage allowed photos</span>, hoặc",
+              "mở <span class=\"path\">Cài đặt &gt; Quyền riêng tư &amp; Bảo mật &gt; Ảnh &gt; RawMask Studio</span> rồi thay đổi lựa chọn hoặc chọn Truy cập đầy đủ."
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Ứng dụng báo quyền truy cập Ảnh đang tắt",
+        "blocks": [
+          {
+            "p": "Mở <span class=\"path\">Cài đặt &gt; Quyền riêng tư &amp; Bảo mật &gt; Ảnh &gt; RawMask Studio</span>, chọn Truy cập giới hạn hoặc Truy cập đầy đủ, sau đó quay lại ứng dụng và mở lại ảnh."
+          }
+        ]
+      },
+      {
+        "q": "Mặt nạ hoạt động như thế nào?",
+        "blocks": [
+          {
+            "p": "Các điều chỉnh được áp dụng cho toàn bộ ảnh hoặc cho một mặt nạ. Mở menu của nút ảnh ở góc trên bên trái: dùng <span class=\"ui\" lang=\"en\">Edit target</span> để chọn phần bạn đang chỉnh sửa, và <span class=\"ui\" lang=\"en\">Add mask</span> để thêm mặt nạ <span class=\"ui\" lang=\"en\">Radial</span> (xuyên tâm), <span class=\"ui\" lang=\"en\">Linear</span> (tuyến tính), <span class=\"ui\" lang=\"en\">Brush</span> (cọ vẽ) hoặc <span class=\"ui\" lang=\"en\">Rectangle</span> (hình chữ nhật). Bạn có thể di chuyển và thay đổi kích thước mặt nạ, tô để thêm vào hoặc bớt đi vùng mặt nạ, và làm mềm viền mặt nạ bằng <span class=\"ui\" lang=\"en\">Feather</span>."
+          }
+        ]
+      },
+      {
+        "q": "Mặt nạ đối tượng tự động là gì?",
+        "blocks": [
+          {
+            "p": "RawMask Studio tích hợp một mô hình phân đoạn ảnh có khả năng tìm các đối tượng trong ảnh của bạn, chẳng hạn như người, động vật và đồ vật thường ngày, rồi đưa ra từng đối tượng dưới dạng một mặt nạ mà bạn có thể chỉnh sửa riêng. Mô hình này chạy hoàn toàn trên iPhone của bạn. Nếu mô hình không nhận ra đối tượng bạn muốn, hãy chuyển sang dùng mặt nạ thủ công, hoặc điều chỉnh <span class=\"ui\" lang=\"en\">Detection confidence</span> và <span class=\"ui\" lang=\"en\">Mask threshold</span> trong <span class=\"ui\" lang=\"en\">More options</span> &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>."
+          }
+        ]
+      },
+      {
+        "q": "Tôi có cần kết nối internet không?",
+        "blocks": [
+          {
+            "p": "Không. Tính năng chỉnh sửa và mặt nạ tự động đều hoạt động ngoại tuyến. Ngoại lệ duy nhất là ảnh được lưu trong Ảnh iCloud mà bản gốc không có trên iPhone của bạn: ứng dụng Ảnh phải tải bản gốc về từ iCloud trước khi ảnh có thể được chỉnh sửa."
+          }
+        ]
+      },
+      {
+        "q": "Làm thế nào để lưu hoặc xuất ảnh đã chỉnh sửa?",
+        "blocks": [
+          {
+            "p": "Chạm vào <span class=\"ui\" lang=\"en\">More options</span> (nút ...) và đi tới <span class=\"ui\" lang=\"en\">Save and export</span>:"
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> cập nhật ảnh trong thư viện của bạn. Ứng dụng Ảnh giữ lại bản gốc, vì vậy sau này bạn có thể khôi phục lại bản gốc trong ứng dụng Ảnh.",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> thêm ảnh đã chỉnh sửa thành một ảnh mới và giữ nguyên bản gốc.",
+              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> tạo tệp JPEG, HEIF hoặc TIFF với kích thước và chất lượng bạn chọn, rồi mở bảng chia sẻ để bạn lưu tệp vào ứng dụng Tệp hoặc gửi sang ứng dụng khác."
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Preset của tôi được lưu ở đâu?",
+        "blocks": [
+          {
+            "p": "Trên iPhone của bạn, trong bộ nhớ riêng của ứng dụng. Preset không được tải lên bất cứ đâu. Bạn có thể xóa preset trong ứng dụng, và việc xóa ứng dụng cũng sẽ xóa chúng."
+          }
+        ]
+      },
+      {
+        "q": "Những thiết bị nào được hỗ trợ?",
+        "blocks": [
+          {
+            "p": "iPhone chạy iOS 17 trở lên."
+          }
+        ]
+      },
+      {
+        "q": "RawMask Studio có thu thập dữ liệu của tôi không?",
+        "blocks": [
+          {
+            "p": "Không. Không có tài khoản, công cụ phân tích, quảng cáo hay theo dõi, và ứng dụng không gửi ảnh hay dữ liệu của bạn cho chúng tôi hoặc cho bất kỳ ai khác. Đọc toàn bộ <a href=\"{privacy_url}\">chính sách quyền riêng tư</a>."
+          }
+        ]
+      }
+    ],
+    "still_heading": "Bạn vẫn cần trợ giúp?",
+    "still_text": "Hãy gửi email tới <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>, chúng tôi sẽ phản hồi bạn."
+  },
+  "privacy": {
+    "title": "Chính sách quyền riêng tư - RawMask Studio",
+    "description": "Chính sách quyền riêng tư của RawMask Studio dành cho iPhone. Ứng dụng không thu thập bất kỳ dữ liệu nào; ảnh được chỉnh sửa ngay trên iPhone của bạn.",
+    "h1": "Chính sách quyền riêng tư",
+    "meta": "RawMask Studio dành cho iPhone. Ngày có hiệu lực: 23 tháng 9 năm 2026.",
+    "summary": "<strong>Tóm tắt:</strong> RawMask Studio không thu thập bất kỳ dữ liệu nào. Không có tài khoản, không có công cụ phân tích, không có quảng cáo và không theo dõi. Ảnh của bạn được chỉnh sửa trên iPhone của bạn, và ứng dụng không bao giờ gửi ảnh, bản chỉnh sửa hay bất kỳ thông tin nào khác của bạn cho chúng tôi hoặc cho bất kỳ ai khác.",
+    "sections": [
+      {
+        "id": "who-we-are",
+        "h2": "Chúng tôi là ai",
+        "blocks": [
+          {
+            "p": "RawMask Studio do Besarion Turmanauli, một nhà phát triển cá nhân, phát triển và phát hành. Trong chính sách này, “chúng tôi” và “của chúng tôi” dùng để chỉ nhà phát triển. Bạn có thể liên hệ với chúng tôi qua thông tin trong mục <a href=\"#contact\">Liên hệ</a> bên dưới."
+          }
+        ]
+      },
+      {
+        "id": "information-we-collect",
+        "h2": "Thông tin chúng tôi thu thập",
+        "blocks": [
+          {
+            "p": "Không có. RawMask Studio không thu thập, truyền, bán hoặc chia sẻ thông tin cá nhân. Ứng dụng không gửi ảnh, bản chỉnh sửa, mặt nạ, preset, cài đặt, mã định danh thiết bị, dữ liệu sử dụng hay dữ liệu chẩn đoán của bạn cho chúng tôi hoặc cho bất kỳ bên thứ ba nào, và chúng tôi không vận hành bất kỳ máy chủ nào nhận dữ liệu từ ứng dụng. Ứng dụng không có chức năng đăng nhập và không có tài khoản."
+          }
+        ]
+      },
+      {
+        "id": "on-device-processing",
+        "h2": "Việc xử lý diễn ra trên iPhone của bạn",
+        "blocks": [
+          {
+            "p": "Toàn bộ quá trình xử lý ảnh đều diễn ra trên thiết bị của bạn. Việc này bao gồm đọc tệp RAW, áp dụng các điều chỉnh về ánh sáng, màu sắc, chi tiết, lấy nét và hiệu ứng, kết xuất bản xem trước và tạo mặt nạ."
+          },
+          {
+            "p": "Mặt nạ đối tượng tự động được tạo bởi một mô hình phân đoạn ảnh (RF-DETR) được tích hợp sẵn trong ứng dụng và chạy trên iPhone của bạn bằng Core ML của Apple. Mô hình này không được tải về từ internet, và ảnh của bạn không bị gửi đi bất cứ đâu để phân tích."
+          }
+        ]
+      },
+      {
+        "id": "photos-access",
+        "h2": "Quyền truy cập thư viện Ảnh của bạn",
+        "blocks": [
+          {
+            "p": "RawMask Studio dùng thư viện Ảnh của Apple để mở và lưu hình ảnh. iOS sẽ xin phép bạn trước khi ứng dụng có thể truy cập thư viện của bạn. Bạn có thể cho phép truy cập toàn bộ thư viện hoặc chỉ những ảnh bạn chọn, và có thể thay đổi lựa chọn này bất cứ lúc nào trong <span class=\"path\">Cài đặt &gt; Quyền riêng tư &amp; Bảo mật &gt; Ảnh &gt; RawMask Studio</span>."
+          },
+          {
+            "h3": "Những gì ứng dụng đọc"
+          },
+          {
+            "p": "Chỉ bức ảnh bạn chọn trong trình chọn ảnh, mỗi lần một ảnh. Để chỉnh sửa ảnh đó, ứng dụng đọc dữ liệu hình ảnh của ảnh đó và các thông tin cần thiết cho việc chỉnh sửa, chẳng hạn như kích thước, ngày chụp, định dạng tệp và mọi bản chỉnh sửa trước đó bằng RawMask Studio được lưu cùng ảnh. Ứng dụng không duyệt, quét hay lập chỉ mục phần còn lại trong thư viện của bạn."
+          },
+          {
+            "h3": "Những gì ứng dụng ghi"
+          },
+          {
+            "p": "Không có gì, trừ khi bạn yêu cầu. Không có gì được tự động lưu vào thư viện của bạn."
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> lưu phiên bản đã chỉnh sửa vào chính ảnh đó trong thư viện của bạn, kèm theo bản ghi các thiết lập chỉnh sửa mà ứng dụng Ảnh lưu giữ cùng ảnh để bản chỉnh sửa có thể được mở lại sau này. Ứng dụng Ảnh giữ lại bản gốc, và bạn có thể khôi phục về bản gốc trong ứng dụng Ảnh.",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> thêm ảnh đã chỉnh sửa thành một ảnh mới. Bản gốc không bị thay đổi."
+            ]
+          },
+          {
+            "h3": "Ảnh iCloud"
+          },
+          {
+            "p": "Nếu bạn dùng Ảnh iCloud và bản gốc có độ phân giải đầy đủ của bức ảnh bạn chọn không được lưu trên iPhone của bạn, framework Photos của Apple có thể tải bản gốc đó về từ iCloud để ảnh có thể được chỉnh sửa. Những ảnh bạn lưu cũng có thể được Ảnh iCloud đồng bộ hóa theo cài đặt Apple của bạn. Các hoạt động truyền dữ liệu này diễn ra giữa thiết bị của bạn và tài khoản iCloud của chính bạn, do Apple xử lý và thuộc phạm vi điều chỉnh của chính sách quyền riêng tư của Apple. Không có gì được gửi cho chúng tôi."
+          }
+        ]
+      },
+      {
+        "id": "export",
+        "h2": "Xuất và chia sẻ",
+        "blocks": [
+          {
+            "p": "Khi bạn chạm vào <span class=\"ui\" lang=\"en\">Export photo</span>, ứng dụng tạo tệp ảnh theo yêu cầu của bạn và mở bảng chia sẻ của iOS. Tệp chỉ được gửi đến nơi bạn chọn, chẳng hạn như ứng dụng Tệp, Tin nhắn hoặc một ứng dụng khác, và nơi nhận đó sẽ xử lý tệp theo cách thức bảo vệ quyền riêng tư của riêng mình. Tệp tạm thời mà ứng dụng tạo ra để xuất được lưu trong bộ nhớ riêng của ứng dụng trên iPhone của bạn và sẽ tự động bị xóa khi không còn cần thiết."
+          }
+        ]
+      },
+      {
+        "id": "on-device-storage",
+        "h2": "Thông tin được lưu trên thiết bị của bạn",
+        "blocks": [
+          {
+            "p": "Để ứng dụng hoạt động đúng như lúc bạn rời đi, ứng dụng lưu một lượng nhỏ thông tin trong bộ nhớ riêng của mình trên iPhone của bạn:"
+          },
+          {
+            "ul": [
+              "các preset bạn lưu (tên và giá trị điều chỉnh của chúng),",
+              "tùy chọn của trình chỉnh sửa, chẳng hạn như những phần chỉnh sửa nào được hiển thị, thứ tự của chúng và kiểu so sánh trước và sau, và",
+              "cài đặt mặt nạ tự động."
+            ]
+          },
+          {
+            "p": "Thông tin này nằm trên thiết bị của bạn và không được gửi cho chúng tôi. Bạn có thể xóa preset trong ứng dụng bất cứ lúc nào, và việc xóa ứng dụng sẽ xóa toàn bộ thông tin này. Giống như dữ liệu của các ứng dụng khác, thông tin này có thể được đưa vào các bản sao lưu iPhone do bạn tạo, tùy theo cài đặt iOS của bạn."
+          }
+        ]
+      },
+      {
+        "id": "no-third-parties",
+        "h2": "Không có dịch vụ bên thứ ba, phân tích, quảng cáo hay theo dõi",
+        "blocks": [
+          {
+            "p": "RawMask Studio không chứa phần mềm phân tích, quảng cáo, báo cáo sự cố hay theo dõi của bên thứ ba. Ứng dụng không sử dụng mã định danh quảng cáo và không theo dõi bạn trên các ứng dụng hoặc trang web thuộc sở hữu của các công ty khác."
+          },
+          {
+            "p": "Nếu bạn đã chọn chia sẻ dữ liệu phân tích với nhà phát triển ứng dụng trong iOS (<span class=\"path\">Cài đặt &gt; Quyền riêng tư &amp; Bảo mật &gt; Phân tích &amp; Cải tiến</span>), Apple có thể cung cấp cho chúng tôi báo cáo sự cố và số liệu thống kê sử dụng tổng hợp ở dạng không nhận dạng được bạn. Việc này do Apple và cài đặt của bạn kiểm soát, không phải do ứng dụng."
+          }
+        ]
+      },
+      {
+        "id": "purchases",
+        "h2": "Giao dịch mua",
+        "blocks": [
+          {
+            "p": "RawMask Studio hiện được cung cấp miễn phí. Nếu sau này có thêm giao dịch mua trong ứng dụng hoặc tính năng trả phí, các khoản thanh toán sẽ được Apple xử lý thông qua App Store theo các điều khoản và chính sách quyền riêng tư của Apple, và chúng tôi sẽ không nhận được thông tin thanh toán của bạn. Chúng tôi sẽ cập nhật chính sách này trước khi bất kỳ thay đổi nào như vậy có hiệu lực."
+          }
+        ]
+      },
+      {
+        "id": "children",
+        "h2": "Trẻ em",
+        "blocks": [
+          {
+            "p": "RawMask Studio là ứng dụng chỉnh sửa ảnh phổ thông và không dành riêng cho trẻ em. Vì ứng dụng không thu thập thông tin cá nhân từ bất kỳ ai, nên ứng dụng cũng không thu thập thông tin cá nhân từ trẻ em."
+          }
+        ]
+      },
+      {
+        "id": "your-choices",
+        "h2": "Lựa chọn của bạn",
+        "blocks": [
+          {
+            "p": "Vì chúng tôi không thu thập hay lưu giữ bất kỳ dữ liệu nào về bạn, nên phía chúng tôi không có dữ liệu cá nhân nào để truy cập, sửa đổi, xuất hoặc xóa. Bạn luôn nắm quyền kiểm soát trên thiết bị của mình: bạn có thể thay đổi hoặc thu hồi quyền truy cập Ảnh trong Cài đặt của iOS, xóa preset trong ứng dụng, gỡ bỏ bản chỉnh sửa hoặc bản sao trong ứng dụng Ảnh, và xóa ứng dụng để xóa dữ liệu cục bộ của ứng dụng."
+          }
+        ]
+      },
+      {
+        "id": "changes",
+        "h2": "Thay đổi đối với chính sách này",
+        "blocks": [
+          {
+            "p": "Nếu cách ứng dụng xử lý thông tin thay đổi, chẳng hạn khi một tính năng trong tương lai cần gửi dữ liệu ra khỏi thiết bị của bạn, chúng tôi sẽ cập nhật chính sách này và thông tin chi tiết về quyền riêng tư của ứng dụng trên App Store trước khi phát hành phiên bản đó, đồng thời thay đổi ngày có hiệu lực ở đầu trang này."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "h2": "Liên hệ",
+        "blocks": [
+          {
+            "p": "Nếu bạn có câu hỏi về chính sách này hoặc về quyền riêng tư của bạn khi sử dụng RawMask Studio, vui lòng liên hệ:"
+          },
+          {
+            "p": "Besarion Turmanauli<br>\nEmail: <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>"
+          }
+        ]
+      }
+    ]
+  }
+}

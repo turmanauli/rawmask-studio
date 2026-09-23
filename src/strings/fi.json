@@ -1,0 +1,313 @@
+{
+  "common": {
+    "nav_label": "Sivusto",
+    "nav_home": "Etusivu",
+    "nav_privacy": "Tietosuoja",
+    "nav_support": "Tuki",
+    "lang_label": "Kieli",
+    "badge_alt": "Lataa App Storesta",
+    "copyright": "Copyright 2026 Besarion Turmanauli",
+    "translation_notice": "Tämä sivu on käännös <a href=\"{english_url}\">englanninkielisestä versiosta</a>. Jos versiot poikkeavat toisistaan, englanninkielinen versio on ratkaiseva."
+  },
+  "home": {
+    "description": "RawMask Studio on iPhonen kuvaeditori RAW-kuville, ja siinä on automaattiset ja manuaaliset maskit. Kaikki toimii suoraan iPhonessasi.",
+    "eyebrow": "Kuvaeditori iPhonelle",
+    "btn_support": "Ohjeet ja tuki",
+    "btn_privacy": "Tietosuojakäytäntö",
+    "screenshots_heading": "Kuvakaappaukset",
+    "features_heading": "Mitä voit tehdä",
+    "store_headings": [
+      "Maskit valikoivaan muokkaukseen",
+      "RAW, ProRAW, JPEG ja HEIC",
+      "Selkeä työnkulku vaihe vaiheelta",
+      "Vertaa ja käytä uudelleen",
+      "Alkuperäinen säilyy aina",
+      "Yksityisyys ensin"
+    ],
+    "requirements": "<strong>Vaatimukset:</strong> iPhone, jossa on iOS 17 tai uudempi.",
+    "help": "Kysyttävää tai ongelmia? Käy <a href=\"{support_url}\">tukisivulla</a>. <a href=\"{privacy_url}\">Tietosuojakäytännössä</a> kerrotaan tarkemmin, miten sovellus käsittelee kuviasi."
+  },
+  "support": {
+    "title": "Tuki - RawMask Studio",
+    "description": "iPhonen RawMask Studio -sovelluksen ohjeet ja yhteystiedot: kuvien avaaminen, pääsy Kuviin, maskit, tallentaminen ja vieminen.",
+    "h1": "Tuki",
+    "meta": "Ohjeita iPhonen RawMask Studio -sovellukseen.",
+    "ui_labels_note": "Alla mainitut painikkeiden ja valikoiden nimet ovat englanniksi, täsmälleen siinä muodossa kuin ne näkyvät sovelluksessa.",
+    "contact": "<strong>Yhteystiedot:</strong> sähköposti <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>",
+    "contact_note": "Kerro viestissäsi iPhonesi malli, iOS-versio sekä lyhyesti, mitä tapahtui ja mitä odotit tapahtuvan. Kuvia ei tarvitse lähettää, sillä yleensä riittää, että kuvailet kuvaa (esimerkiksi kerrot kameran tai tiedostomuodon).",
+    "faq_heading": "Usein kysytyt kysymykset",
+    "faq": [
+      {
+        "q": "Miten avaan kuvan?",
+        "blocks": [
+          {
+            "p": "Napauta editorin vasemmassa yläkulmassa olevaa kuvapainiketta ja valitse <span class=\"ui\" lang=\"en\">Open photo</span>. Kuvanvalitsin avautuu, ja valitset siitä yhden kuvan. RawMask Studio muokkaa yhtä kuvaa kerrallaan. Live Photos -kuvia ei tällä hetkellä näytetä valitsimessa."
+          }
+        ]
+      },
+      {
+        "q": "Mitä kuvia voin muokata?",
+        "blocks": [
+          {
+            "p": "RAW-kuvia, joita Applen sisäänrakennettu RAW-tuki osaa lukea, myös Apple ProRAW -kuvia ja monien kameroiden RAW-tiedostoja, sekä tavallisia kuvia, kuten HEIC- ja JPEG-kuvia."
+          }
+        ]
+      },
+      {
+        "q": "Miksi sovellus pyytää pääsyä Kuviin?",
+        "blocks": [
+          {
+            "p": "RawMask Studio avaa kuvia Applen Kuvat-kirjastostasi ja tallentaa muokkaukset takaisin sinne, joten iOS pyytää siihen lupaasi. Voit sallia täyden pääsyn tai rajoitetun pääsyn vain valitsemiisi kuviin. Kummassakin tapauksessa sovellus avaa vain valitsemasi kuvan. Lisätietoja on <a href=\"{privacy_url}\">tietosuojakäytännössä</a>."
+          }
+        ]
+      },
+      {
+        "q": "Valitsin rajoitetun pääsyn enkä löydä kuvaa",
+        "blocks": [
+          {
+            "p": "Kun pääsy on rajoitettu, sovellus voi avata vain ne kuvat, joihin olet sallinut pääsyn. Voit sallia lisää kuvia näin:"
+          },
+          {
+            "ul": [
+              "Napauta sovelluksessa <span class=\"ui\" lang=\"en\">More options</span> (...-painike) ja napauta sitten kohdan <span class=\"ui\" lang=\"en\">Photos access</span> alla vaihtoehtoa <span class=\"ui\" lang=\"en\">Manage allowed photos</span>, tai",
+              "avaa <span class=\"path\">Asetukset &gt; Tietosuoja ja turvallisuus &gt; Kuvat &gt; RawMask Studio</span> ja muuta valintaa tai valitse Täysi pääsy."
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Sovellus ilmoittaa, että pääsy Kuviin on pois päältä",
+        "blocks": [
+          {
+            "p": "Avaa <span class=\"path\">Asetukset &gt; Tietosuoja ja turvallisuus &gt; Kuvat &gt; RawMask Studio</span>, valitse Rajoitettu pääsy tai Täysi pääsy, palaa sitten sovellukseen ja avaa kuva uudelleen."
+          }
+        ]
+      },
+      {
+        "q": "Miten maskit toimivat?",
+        "blocks": [
+          {
+            "p": "Säädöt kohdistuvat joko koko kuvaan tai maskiin. Avaa vasemman yläkulman kuvapainikkeen valikko: valitse kohdasta <span class=\"ui\" lang=\"en\">Edit target</span>, mitä muokkaat, ja lisää maski kohdasta <span class=\"ui\" lang=\"en\">Add mask</span> (<span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span> tai <span class=\"ui\" lang=\"en\">Rectangle</span>). Voit siirtää maskia ja muuttaa sen kokoa, lisätä tai vähentää maskin aluetta maalaamalla sekä pehmentää sen reunaa <span class=\"ui\" lang=\"en\">Feather</span>-säädöllä."
+          }
+        ]
+      },
+      {
+        "q": "Mitä automaattiset kohdemaskit ovat?",
+        "blocks": [
+          {
+            "p": "RawMask Studio sisältää kuvasegmentointimallin, joka löytää kuvastasi kohteita, kuten ihmisiä, eläimiä ja arkisia esineitä, ja tarjoaa jokaisen niistä maskina, jota voit muokata erikseen. Malli toimii kokonaan iPhonessasi. Jos se ei tunnista haluamaasi kohdetta, käytä sen sijaan manuaalista maskia tai säädä asetuksia <span class=\"ui\" lang=\"en\">Detection confidence</span> ja <span class=\"ui\" lang=\"en\">Mask threshold</span> kohdassa <span class=\"ui\" lang=\"en\">More options</span> &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>."
+          }
+        ]
+      },
+      {
+        "q": "Tarvitsenko internetyhteyden?",
+        "blocks": [
+          {
+            "p": "Et tarvitse. Muokkaus ja automaattiset maskit toimivat ilman verkkoyhteyttä. Ainoa poikkeus on iCloud-kuviin tallennettu kuva, jonka alkuperäinen ei ole iPhonessasi: Kuvat-apin on ladattava alkuperäinen iCloudista, ennen kuin sitä voi muokata."
+          }
+        ]
+      },
+      {
+        "q": "Miten tallennan tai vien muokkaukseni?",
+        "blocks": [
+          {
+            "p": "Napauta <span class=\"ui\" lang=\"en\">More options</span> (...-painike) ja siirry kohtaan <span class=\"ui\" lang=\"en\">Save and export</span>:"
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> päivittää kuvan kirjastossasi. Kuvat säilyttää alkuperäisen, joten voit palata siihen myöhemmin Kuvat-apin Palauta-toiminnolla.",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> lisää muokatun kuvan uutena kuvana ja jättää alkuperäisen ennalleen.",
+              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> luo valitsemasi kokoisen ja laatuisen JPEG-, HEIF- tai TIFF-tiedoston ja avaa Jaa-valikon, josta voit tallentaa tiedoston Tiedostoihin tai lähettää sen toiseen sovellukseen."
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Mihin esiasetukseni tallennetaan?",
+        "blocks": [
+          {
+            "p": "iPhoneesi, sovelluksen omaan tallennustilaan. Niitä ei lähetetä minnekään. Voit poistaa esiasetuksia sovelluksessa, ja ne poistuvat, kun poistat sovelluksen."
+          }
+        ]
+      },
+      {
+        "q": "Mitä laitteita tuetaan?",
+        "blocks": [
+          {
+            "p": "iPhonea, jossa on iOS 17 tai uudempi."
+          }
+        ]
+      },
+      {
+        "q": "Kerääkö RawMask Studio tietojani?",
+        "blocks": [
+          {
+            "p": "Ei kerää. Sovelluksessa ei ole tiliä, analytiikkaa, mainontaa eikä seurantaa, eikä sovellus lähetä kuviasi tai tietojasi meille eikä kenellekään muulle. Lue koko <a href=\"{privacy_url}\">tietosuojakäytäntö</a>."
+          }
+        ]
+      }
+    ],
+    "still_heading": "Tarvitsetko vielä apua?",
+    "still_text": "Lähetä sähköpostia osoitteeseen <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>, niin vastaamme sinulle."
+  },
+  "privacy": {
+    "title": "Tietosuojakäytäntö - RawMask Studio",
+    "description": "iPhonen RawMask Studio -sovelluksen tietosuojakäytäntö. Sovellus ei kerää mitään tietoja, ja kuvat muokataan iPhonessasi.",
+    "h1": "Tietosuojakäytäntö",
+    "meta": "RawMask Studio iPhonelle. Voimaantulopäivä: 23. syyskuuta 2026.",
+    "summary": "<strong>Lyhyesti:</strong> RawMask Studio ei kerää mitään tietoja. Sovelluksessa ei ole tiliä, analytiikkaa, mainontaa eikä seurantaa. Kuvasi muokataan iPhonessasi, eikä sovellus koskaan lähetä kuviasi, muokkauksiasi tai mitään muita tietoja meille eikä kenellekään muulle.",
+    "sections": [
+      {
+        "id": "who-we-are",
+        "h2": "Keitä olemme",
+        "blocks": [
+          {
+            "p": "RawMask Studio -sovelluksen kehittää ja julkaisee yksityishenkilönä toimiva kehittäjä Besarion Turmanauli. Tässä tietosuojakäytännössä sanat ”me”, ”meitä” ja ”meidän” tarkoittavat kehittäjää. Voit ottaa meihin yhteyttä alempana kohdassa <a href=\"#contact\">Yhteystiedot</a> annettujen tietojen avulla."
+          }
+        ]
+      },
+      {
+        "id": "information-we-collect",
+        "h2": "Keräämämme tiedot",
+        "blocks": [
+          {
+            "p": "Ei mitään. RawMask Studio ei kerää, siirrä, myy eikä jaa henkilötietoja. Sovellus ei lähetä kuviasi, muokkauksiasi, maskejasi, esiasetuksiasi, asetuksiasi, laitetunnisteita, käyttötietoja eikä diagnostiikkatietoja meille eikä millekään kolmannelle osapuolelle, emmekä ylläpidä mitään palvelinta, joka vastaanottaisi tietoja sovelluksesta. Sovelluksessa ei ole kirjautumista eikä tiliä."
+          }
+        ]
+      },
+      {
+        "id": "on-device-processing",
+        "h2": "Käsittely tapahtuu iPhonessasi",
+        "blocks": [
+          {
+            "p": "Kaikki kuvankäsittely tapahtuu laitteellasi. Tähän kuuluvat RAW-tiedostojen lukeminen, valo-, väri-, yksityiskohta-, tarkennus- ja tehostesäätöjen tekeminen, esikatselujen muodostaminen ja maskien luominen."
+          },
+          {
+            "p": "Automaattiset kohdemaskit luodaan kuvasegmentointimallilla (RF-DETR), joka sisältyy sovellukseen ja toimii iPhonessasi Applen Core ML:n avulla. Mallia ei ladata internetistä, eikä kuviasi lähetetä minnekään analysoitaviksi."
+          }
+        ]
+      },
+      {
+        "id": "photos-access",
+        "h2": "Pääsy Kuvat-kirjastoosi",
+        "blocks": [
+          {
+            "p": "RawMask Studio käyttää kuvien avaamiseen ja tallentamiseen Applen Kuvat-kirjastoa. iOS pyytää lupaasi, ennen kuin sovellus voi käyttää kirjastoasi. Voit sallia pääsyn koko kirjastoosi tai vain valitsemiisi kuviin, ja voit muuttaa tätä milloin tahansa kohdassa <span class=\"path\">Asetukset &gt; Tietosuoja ja turvallisuus &gt; Kuvat &gt; RawMask Studio</span>."
+          },
+          {
+            "h3": "Mitä sovellus lukee"
+          },
+          {
+            "p": "Vain kuvan, jonka valitset kuvanvalitsimessa, yhden kuvan kerrallaan. Muokatakseen kuvaa sovellus lukee sen kuvadatan ja muokkaamiseen tarvittavat tiedot, kuten kuvan mitat, kuvauspäivän, tiedostomuodon ja mahdollisen aiemman RawMask Studio -muokkauksen, joka on tallennettu kuvan yhteyteen. Sovellus ei selaa, skannaa eikä indeksoi muuta kirjastoasi."
+          },
+          {
+            "h3": "Mitä sovellus tallentaa"
+          },
+          {
+            "p": "Ei mitään, ellet itse pyydä. Kirjastoosi ei tallenneta mitään automaattisesti."
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> tallentaa muokatun version kyseiseen kuvaan kirjastossasi sekä muokkausasetustesi tiedot, jotka Kuvat säilyttää kuvan yhteydessä, jotta muokkauksen voi myöhemmin avata uudelleen. Kuvat säilyttää alkuperäisen, ja voit palauttaa sen Kuvat-apissa.",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> lisää muokatun kuvan uutena kuvana. Alkuperäistä ei muuteta."
+            ]
+          },
+          {
+            "h3": "iCloud-kuvat"
+          },
+          {
+            "p": "Jos käytät iCloud-kuvia eikä valitsemasi kuvan täyden resoluution alkuperäistä ole tallennettu iPhoneesi, Applen Kuvat-ohjelmistokehys voi ladata sen iCloudista, jotta sitä voidaan muokata. Lisäksi iCloud-kuvat voi synkronoida tallentamasi kuvat Apple-asetustesi mukaisesti. Nämä siirrot tapahtuvat laitteesi ja oman iCloud-tilisi välillä, Apple hoitaa ne, ja niihin sovelletaan Applen tietosuojakäytäntöä. Meille ei lähetetä mitään."
+          }
+        ]
+      },
+      {
+        "id": "export",
+        "h2": "Vieminen ja jakaminen",
+        "blocks": [
+          {
+            "p": "Kun napautat <span class=\"ui\" lang=\"en\">Export photo</span>, sovellus luo pyytämäsi kuvatiedoston ja avaa iOS:n Jaa-valikon. Tiedosto menee vain sinne, minne itse päätät sen lähettää, esimerkiksi Tiedostoihin, Viesteihin tai toiseen sovellukseen, ja kyseinen kohde käsittelee sitä omien tietosuojakäytäntöjensä mukaisesti. Väliaikainen tiedosto, jonka sovellus luo vientiä varten, säilytetään sovelluksen yksityisessä tallennustilassa iPhonessasi, ja se poistetaan automaattisesti, kun sitä ei enää tarvita."
+          }
+        ]
+      },
+      {
+        "id": "on-device-storage",
+        "h2": "Laitteellesi tallennettavat tiedot",
+        "blocks": [
+          {
+            "p": "Jotta sovellus pysyisi sellaisena kuin sen jätit, se säilyttää pienen määrän tietoja omassa tallennustilassaan iPhonessasi:"
+          },
+          {
+            "ul": [
+              "tallentamasi esiasetukset (niiden nimet ja säätöarvot),",
+              "editorin asetukset, kuten näytettävät muokkausosiot, niiden järjestys ja ennen ja jälkeen -vertailun tyyli, sekä",
+              "automaattisten maskien asetukset."
+            ]
+          },
+          {
+            "p": "Nämä tiedot pysyvät laitteellasi, eikä niitä lähetetä meille. Voit poistaa esiasetuksen sovelluksessa milloin tahansa, ja sovelluksen poistaminen poistaa kaikki nämä tiedot. Muiden sovellustietojen tavoin ne voivat sisältyä tekemiisi iPhonen varmuuskopioihin iOS-asetustesi mukaisesti."
+          }
+        ]
+      },
+      {
+        "id": "no-third-parties",
+        "h2": "Ei kolmansien osapuolten palveluita, analytiikkaa, mainontaa eikä seurantaa",
+        "blocks": [
+          {
+            "p": "RawMask Studio ei sisällä kolmansien osapuolten analytiikka-, mainonta-, kaatumisraportointi- eikä seurantaohjelmistoja. Se ei käytä mainostunnistetta eikä seuraa sinua muiden yritysten omistamissa sovelluksissa tai verkkosivustoilla."
+          },
+          {
+            "p": "Jos olet valinnut iOS:ssä, että analyysitietoja jaetaan apin kehittäjien kanssa (<span class=\"path\">Asetukset &gt; Tietosuoja ja turvallisuus &gt; Analyysi ja parannukset</span>), Apple voi antaa meille kaatumisraportteja ja koostettuja käyttötilastoja muodossa, josta sinua ei voi tunnistaa. Tätä hallitsevat Apple ja omat asetuksesi, ei sovellus."
+          }
+        ]
+      },
+      {
+        "id": "purchases",
+        "h2": "Ostot",
+        "blocks": [
+          {
+            "p": "RawMask Studio on tällä hetkellä ilmainen. Jos tulevaisuudessa lisätään sovelluksen sisäisiä ostoja tai maksullisia ominaisuuksia, Apple käsittelee maksut App Storen kautta Applen ehtojen ja tietosuojakäytännön mukaisesti, emmekä saa maksutietojasi. Päivitämme tämän käytännön, ennen kuin mikään tällainen muutos tulee voimaan."
+          }
+        ]
+      },
+      {
+        "id": "children",
+        "h2": "Lapset",
+        "blocks": [
+          {
+            "p": "RawMask Studio on yleiskäyttöinen kuvankäsittelysovellus, eikä sitä ole suunnattu erityisesti lapsille. Koska sovellus ei kerää henkilötietoja keneltäkään, se ei kerää henkilötietoja myöskään lapsilta."
+          }
+        ]
+      },
+      {
+        "id": "your-choices",
+        "h2": "Valintasi",
+        "blocks": [
+          {
+            "p": "Koska emme kerää emmekä säilytä sinusta mitään tietoja, meillä ei ole hallussamme henkilötietoja, joita voisi tarkastella, korjata, viedä tai poistaa. Päätösvalta säilyy sinulla omalla laitteellasi: voit muuttaa tai perua pääsyn Kuviin iOS:n Asetuksissa, poistaa esiasetuksia sovelluksessa, poistaa muokkauksia tai kopioita Kuvat-apissa sekä poistaa sovelluksen, jolloin myös sen paikalliset tiedot poistuvat."
+          }
+        ]
+      },
+      {
+        "id": "changes",
+        "h2": "Muutokset tähän käytäntöön",
+        "blocks": [
+          {
+            "p": "Jos sovelluksen tapa käsitellä tietoja muuttuu, esimerkiksi jos jokin tuleva ominaisuus edellyttää tietojen lähettämistä laitteeltasi, päivitämme tämän käytännön ja sovelluksen App Store -tietosuojatiedot ennen kyseisen version julkaisua ja muutamme tämän sivun yläosassa olevan voimaantulopäivän."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "h2": "Yhteystiedot",
+        "blocks": [
+          {
+            "p": "Jos sinulla on kysyttävää tästä käytännöstä tai yksityisyydestäsi RawMask Studio -sovellusta käyttäessäsi, ota yhteyttä:"
+          },
+          {
+            "p": "Besarion Turmanauli<br>\nSähköposti: <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>"
+          }
+        ]
+      }
+    ]
+  }
+}

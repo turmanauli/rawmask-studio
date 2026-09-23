@@ -1,0 +1,313 @@
+{
+  "common": {
+    "nav_label": "Lloc web",
+    "nav_home": "Inici",
+    "nav_privacy": "Privadesa",
+    "nav_support": "Assistència",
+    "lang_label": "Idioma",
+    "badge_alt": "Descarregar a l'App Store",
+    "copyright": "Copyright 2026 Besarion Turmanauli",
+    "translation_notice": "Aquesta pàgina és una traducció de la <a href=\"{english_url}\">versió en anglès</a>. En cas de discrepància entre les dues versions, preval la versió en anglès."
+  },
+  "home": {
+    "description": "RawMask Studio és un editor de fotos RAW per a iPhone amb màscares automàtiques i manuals. Tot es fa al teu iPhone.",
+    "eyebrow": "Editor de fotos per a iPhone",
+    "btn_support": "Obtenir assistència",
+    "btn_privacy": "Política de privadesa",
+    "screenshots_heading": "Captures de pantalla",
+    "features_heading": "Què pots fer",
+    "store_headings": [
+      "Màscares per a edicions selectives",
+      "RAW, ProRAW, JPEG i HEIC",
+      "Un flux de treball clar, pas a pas",
+      "Compara i reutilitza",
+      "Desa sense perdre l'original",
+      "Privadesa de sèrie"
+    ],
+    "requirements": "<strong>Requisits:</strong> iPhone amb l'iOS 17 o posterior.",
+    "help": "Tens preguntes o problemes? Visita la <a href=\"{support_url}\">pàgina d'assistència</a>. A la <a href=\"{privacy_url}\">política de privadesa</a> trobaràs els detalls sobre com tracta l'app les teves fotos."
+  },
+  "support": {
+    "title": "Assistència - RawMask Studio",
+    "description": "Ajuda i contacte de RawMask Studio per a iPhone: obrir fotos, accés a Fotos, màscares, desar i exportar.",
+    "h1": "Assistència",
+    "meta": "Ajuda de RawMask Studio per a iPhone.",
+    "ui_labels_note": "Els noms dels botons i dels menús que trobaràs a continuació estan en anglès, exactament com apareixen a l'app.",
+    "contact": "<strong>Contacte:</strong> escriu a <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>",
+    "contact_note": "Si us plau, indica el model del teu iPhone, la versió de l'iOS i una breu descripció del que ha passat i del que esperaves que passés. No cal que enviïs fotos; normalment n'hi ha prou de descriure la foto (per exemple, la càmera o el format de fitxer).",
+    "faq_heading": "Preguntes freqüents",
+    "faq": [
+      {
+        "q": "Com obro una foto?",
+        "blocks": [
+          {
+            "p": "Toca el botó de foto, a la part superior esquerra de l'editor, i tria <span class=\"ui\" lang=\"en\">Open photo</span>. S'obre el selector de Fotos i hi tries una foto. RawMask Studio edita una sola foto cada vegada. De moment, les Live Photos no es mostren al selector."
+          }
+        ]
+      },
+      {
+        "q": "Quines fotos puc editar?",
+        "blocks": [
+          {
+            "p": "Les fotos RAW que es poden llegir gràcies a la compatibilitat amb RAW integrada d'Apple, incloses les Apple ProRAW i els fitxers RAW de moltes càmeres, així com les fotos normals, com ara HEIC i JPEG."
+          }
+        ]
+      },
+      {
+        "q": "Per què l'app demana accés a Fotos?",
+        "blocks": [
+          {
+            "p": "RawMask Studio obre fotos de la teva fototeca de l'app Fotos i hi desa les edicions, per això l'iOS et demana permís. Pots permetre l'accés complet o un accés limitat només a les fotos que seleccionis. En tots dos casos, l'app només obre la foto que triïs. Consulta la <a href=\"{privacy_url}\">política de privadesa</a> per a més detalls."
+          }
+        ]
+      },
+      {
+        "q": "He triat l'accés limitat i no trobo una foto",
+        "blocks": [
+          {
+            "p": "Amb l'accés limitat, l'app només pot obrir les fotos que hagis permès. Per permetre'n més:"
+          },
+          {
+            "ul": [
+              "A l'app, toca <span class=\"ui\" lang=\"en\">More options</span> (el botó ...) i, a <span class=\"ui\" lang=\"en\">Photos access</span>, toca <span class=\"ui\" lang=\"en\">Manage allowed photos</span>, o bé",
+              "obre <span class=\"path\">Configuració &gt; Privadesa i seguretat &gt; Fotos &gt; RawMask Studio</span> i canvia la selecció o tria Accés complet."
+            ]
+          }
+        ]
+      },
+      {
+        "q": "L'app diu que l'accés a Fotos està desactivat",
+        "blocks": [
+          {
+            "p": "Obre <span class=\"path\">Configuració &gt; Privadesa i seguretat &gt; Fotos &gt; RawMask Studio</span>, tria Accés limitat o Accés complet i, després, torna a l'app i obre de nou una foto."
+          }
+        ]
+      },
+      {
+        "q": "Com funcionen les màscares?",
+        "blocks": [
+          {
+            "p": "Els ajustos s'apliquen o bé a tota la foto o bé a una màscara. Obre el menú del botó de foto, a la part superior esquerra: fes servir <span class=\"ui\" lang=\"en\">Edit target</span> per triar què edites i <span class=\"ui\" lang=\"en\">Add mask</span> per afegir una màscara <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span> o <span class=\"ui\" lang=\"en\">Rectangle</span>. Pots moure una màscara i canviar-ne la mida, pintar per afegir-hi o treure'n zones i suavitzar-ne la vora amb <span class=\"ui\" lang=\"en\">Feather</span>."
+          }
+        ]
+      },
+      {
+        "q": "Què són les màscares automàtiques d'objectes?",
+        "blocks": [
+          {
+            "p": "RawMask Studio inclou un model de segmentació d'imatges que troba objectes a la foto, com ara persones, animals i coses quotidianes, i t'ofereix cadascun com a màscara que pots editar per separat. El model funciona íntegrament al teu iPhone. Si no detecta l'objecte que vols, fes servir una màscara manual o ajusta <span class=\"ui\" lang=\"en\">Detection confidence</span> i <span class=\"ui\" lang=\"en\">Mask threshold</span> a <span class=\"ui\" lang=\"en\">More options</span> &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>."
+          }
+        ]
+      },
+      {
+        "q": "Necessito connexió a internet?",
+        "blocks": [
+          {
+            "p": "No. L'edició i les màscares automàtiques funcionen sense connexió. L'única excepció és una foto desada a Fotos d'iCloud l'original de la qual no és al teu iPhone: Fotos ha de descarregar l'original d'iCloud abans que es pugui editar."
+          }
+        ]
+      },
+      {
+        "q": "Com deso o exporto l'edició?",
+        "blocks": [
+          {
+            "p": "Toca <span class=\"ui\" lang=\"en\">More options</span> (el botó ...) i ves a <span class=\"ui\" lang=\"en\">Save and export</span>:"
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> actualitza la foto a la teva fototeca. Fotos conserva l'original, de manera que més endavant hi pots tornar revertint l'edició a l'app Fotos.",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> afegeix la imatge editada com a foto nova i deixa l'original sense canvis.",
+              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> crea un fitxer JPEG, HEIF o TIFF amb la mida i la qualitat que triïs i obre el full de compartir, perquè el puguis desar a Arxius o enviar-lo a una altra app."
+            ]
+          }
+        ]
+      },
+      {
+        "q": "On es desen els meus valors predefinits?",
+        "blocks": [
+          {
+            "p": "Al teu iPhone, a l'emmagatzematge propi de l'app. No es pugen enlloc. Pots eliminar valors predefinits a l'app, i si elimines l'app, també s'eliminen."
+          }
+        ]
+      },
+      {
+        "q": "Quins dispositius són compatibles?",
+        "blocks": [
+          {
+            "p": "iPhone amb l'iOS 17 o posterior."
+          }
+        ]
+      },
+      {
+        "q": "RawMask Studio recull les meves dades?",
+        "blocks": [
+          {
+            "p": "No. No hi ha cap compte, ni analítica, ni publicitat, ni seguiment, i l'app no envia les teves fotos ni les teves dades, ni a nosaltres ni a ningú més. Llegeix la <a href=\"{privacy_url}\">política de privadesa</a> completa."
+          }
+        ]
+      }
+    ],
+    "still_heading": "Encara necessites ajuda?",
+    "still_text": "Escriu a <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a> i et respondrem."
+  },
+  "privacy": {
+    "title": "Política de privadesa - RawMask Studio",
+    "description": "Política de privadesa de RawMask Studio per a iPhone. L'app no recull cap dada; les fotos s'editen al teu iPhone.",
+    "h1": "Política de privadesa",
+    "meta": "RawMask Studio per a iPhone. Data d'entrada en vigor: 23 de setembre de 2026.",
+    "summary": "<strong>En resum:</strong> RawMask Studio no recull cap dada. No hi ha cap compte, ni analítica, ni publicitat, ni seguiment. Les teves fotos s'editen al teu iPhone, i l'app no envia mai les teves fotos, les teves edicions ni cap altra informació, ni a nosaltres ni a ningú més.",
+    "sections": [
+      {
+        "id": "who-we-are",
+        "h2": "Qui som",
+        "blocks": [
+          {
+            "p": "RawMask Studio és una app desenvolupada i publicada per Besarion Turmanauli, un desenvolupador individual. En aquesta política, «nosaltres», «ens» i «nostre» fan referència al desenvolupador. Pots contactar amb nosaltres mitjançant les dades de l'apartat <a href=\"#contact\">Contacte</a>, més avall."
+          }
+        ]
+      },
+      {
+        "id": "information-we-collect",
+        "h2": "Informació que recollim",
+        "blocks": [
+          {
+            "p": "Cap. RawMask Studio no recull, transmet, ven ni comparteix informació personal. L'app no envia les teves fotos, edicions, màscares, valors predefinits, configuració, identificadors del dispositiu, dades d'ús ni de diagnòstic, ni a nosaltres ni a cap tercer, i no gestionem cap servidor que rebi dades de l'app. No hi ha inici de sessió ni cap compte."
+          }
+        ]
+      },
+      {
+        "id": "on-device-processing",
+        "h2": "El processament es fa al teu iPhone",
+        "blocks": [
+          {
+            "p": "Tot el processament de les fotos es fa al teu dispositiu. Això inclou llegir fitxers RAW, aplicar ajustos de llum, color, detall, enfocament i efectes, generar previsualitzacions i crear màscares."
+          },
+          {
+            "p": "Les màscares automàtiques d'objectes les crea un model de segmentació d'imatges (RF-DETR) que està inclòs dins l'app i s'executa al teu iPhone mitjançant el Core ML d'Apple. El model no es descarrega d'internet, i les teves fotos no s'envien enlloc perquè s'analitzin."
+          }
+        ]
+      },
+      {
+        "id": "photos-access",
+        "h2": "Accés a la teva fototeca",
+        "blocks": [
+          {
+            "p": "RawMask Studio utilitza Fotos d'Apple per obrir i desar imatges. L'iOS et demana permís abans que l'app pugui accedir a la teva fototeca. Pots permetre l'accés a tota la fototeca o només a les fotos que seleccionis, i ho pots canviar en qualsevol moment a <span class=\"path\">Configuració &gt; Privadesa i seguretat &gt; Fotos &gt; RawMask Studio</span>."
+          },
+          {
+            "h3": "Què llegeix l'app"
+          },
+          {
+            "p": "Només la foto que tries al selector de fotos, d'una en una. Per editar-la, l'app llegeix les dades d'imatge d'aquesta foto i la informació necessària per a l'edició, com ara les dimensions, la data de captura, el format de fitxer i qualsevol edició anterior de RawMask Studio que s'hi hagi desat. L'app no explora, no escaneja ni indexa la resta de la teva fototeca."
+          },
+          {
+            "h3": "Què escriu l'app"
+          },
+          {
+            "p": "Res, tret que tu li ho demanis. No es desa res a la fototeca automàticament."
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> desa la versió editada a aquesta foto de la teva fototeca, juntament amb un registre dels paràmetres de l'edició que Fotos conserva amb la foto perquè l'edició es pugui tornar a obrir més endavant. Fotos conserva l'original, i pots tornar-hi a l'app Fotos.",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> afegeix la imatge editada com a foto nova. L'original no es modifica."
+            ]
+          },
+          {
+            "h3": "Fotos d'iCloud"
+          },
+          {
+            "p": "Si utilitzes Fotos d'iCloud i l'original a resolució completa de la foto que tries no està desat al teu iPhone, el framework de Fotos d'Apple el pot descarregar d'iCloud perquè es pugui editar. Fotos d'iCloud també pot sincronitzar les fotos que desis, segons la teva configuració d'Apple. Aquestes transferències es fan entre el teu dispositiu i el teu propi compte d'iCloud, les gestiona Apple i es regeixen per la política de privadesa d'Apple. A nosaltres no se'ns envia res."
+          }
+        ]
+      },
+      {
+        "id": "export",
+        "h2": "Exportar i compartir",
+        "blocks": [
+          {
+            "p": "Quan toques <span class=\"ui\" lang=\"en\">Export photo</span>, l'app crea el fitxer d'imatge que has demanat i obre el full de compartir de l'iOS. El fitxer només va on tu decideixis enviar-lo, com ara Arxius, Missatges o una altra app, i aquesta destinació el tracta d'acord amb les seves pròpies pràctiques de privadesa. El fitxer temporal que l'app crea per a l'exportació es conserva a l'emmagatzematge privat de l'app al teu iPhone i s'elimina automàticament quan ja no és necessari."
+          }
+        ]
+      },
+      {
+        "id": "on-device-storage",
+        "h2": "Informació desada al teu dispositiu",
+        "blocks": [
+          {
+            "p": "Perquè l'app funcioni tal com la vas deixar, conserva una petita quantitat d'informació al seu propi emmagatzematge, al teu iPhone:"
+          },
+          {
+            "ul": [
+              "els valors predefinits que desis (els noms i els valors dels ajustos),",
+              "les preferències de l'editor, com ara quines seccions d'edició es mostren, en quin ordre i l'estil de la comparació de l'abans i el després, i",
+              "la configuració de les màscares automàtiques."
+            ]
+          },
+          {
+            "p": "Aquesta informació es queda al teu dispositiu i no se'ns envia. Pots eliminar un valor predefinit a l'app en qualsevol moment, i si elimines l'app, s'elimina tota aquesta informació. Com passa amb la resta de dades de les apps, es pot incloure a les còpies de seguretat de l'iPhone que facis, segons la teva configuració de l'iOS."
+          }
+        ]
+      },
+      {
+        "id": "no-third-parties",
+        "h2": "Sense serveis de tercers, analítica, publicitat ni seguiment",
+        "blocks": [
+          {
+            "p": "RawMask Studio no conté programari de tercers d'analítica, publicitat, informes d'errors ni seguiment. No utilitza l'identificador de publicitat i no fa el seguiment de la teva activitat a les apps ni als llocs web d'altres empreses."
+          },
+          {
+            "p": "Si a l'iOS has triat compartir dades d'anàlisi amb els desenvolupadors d'apps (<span class=\"path\">Configuració &gt; Privadesa i seguretat &gt; Anàlisi i millores</span>), Apple ens pot facilitar informes d'errors i estadístiques d'ús agregades en un format que no t'identifica. Això ho controlen Apple i la teva configuració, no l'app."
+          }
+        ]
+      },
+      {
+        "id": "purchases",
+        "h2": "Compres",
+        "blocks": [
+          {
+            "p": "Actualment, RawMask Studio és gratuïta. Si en el futur s'hi afegeixen compres dins l'app o funcions de pagament, Apple processarà els pagaments a través de l'App Store d'acord amb les condicions i la política de privadesa d'Apple, i nosaltres no rebrem les teves dades de pagament. Actualitzarem aquesta política abans que qualsevol canvi d'aquest tipus entri en vigor."
+          }
+        ]
+      },
+      {
+        "id": "children",
+        "h2": "Infants",
+        "blocks": [
+          {
+            "p": "RawMask Studio és una app d'edició de fotos d'ús general i no està adreçada específicament a infants. Com que l'app no recull informació personal de ningú, tampoc no recull informació personal d'infants."
+          }
+        ]
+      },
+      {
+        "id": "your-choices",
+        "h2": "Les teves opcions",
+        "blocks": [
+          {
+            "p": "Com que no recollim ni conservem cap dada sobre tu, per part nostra no hi ha cap dada personal que es pugui consultar, corregir, exportar o eliminar. El control el tens tu, al teu dispositiu: pots canviar o revocar l'accés a Fotos a la Configuració de l'iOS, eliminar valors predefinits a l'app, suprimir edicions o còpies a l'app Fotos i eliminar l'app per esborrar-ne les dades locals."
+          }
+        ]
+      },
+      {
+        "id": "changes",
+        "h2": "Canvis en aquesta política",
+        "blocks": [
+          {
+            "p": "Si canvia la manera com l'app tracta la informació, per exemple, si una funció futura necessita enviar dades fora del teu dispositiu, actualitzarem aquesta política i els detalls de privadesa de l'app a l'App Store abans de publicar aquella versió, i canviarem la data d'entrada en vigor que apareix a la part superior d'aquesta pàgina."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "h2": "Contacte",
+        "blocks": [
+          {
+            "p": "Si tens alguna pregunta sobre aquesta política o sobre la teva privadesa quan fas servir RawMask Studio, posa't en contacte amb:"
+          },
+          {
+            "p": "Besarion Turmanauli<br>\nCorreu electrònic: <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "common": {
+    "nav_label": "網站",
+    "nav_home": "首頁",
+    "nav_privacy": "隱私權",
+    "nav_support": "支援",
+    "lang_label": "語言",
+    "badge_alt": "App Store 下載",
+    "copyright": "版權所有 2026 Besarion Turmanauli",
+    "translation_notice": "本頁面係譯自<a href=\"{english_url}\">英文版本</a>。兩種版本內容如有不一致之處，以英文版本為準。"
+  },
+  "home": {
+    "description": "RawMask Studio 是一款適用於 iPhone 的 RAW 照片編輯 App，提供自動與手動遮罩。所有處理都在你的 iPhone 上執行。",
+    "eyebrow": "iPhone 修圖 App",
+    "btn_support": "取得支援",
+    "btn_privacy": "隱私權政策",
+    "screenshots_heading": "螢幕截圖",
+    "features_heading": "你能用它做什麼",
+    "store_headings": [
+      "遮罩，讓局部調整更精準",
+      "RAW、ProRAW、JPEG 與 HEIC 都能修",
+      "清楚好上手的逐步流程",
+      "隨時比較，輕鬆沿用",
+      "儲存時保留原始照片",
+      "重視隱私的設計"
+    ],
+    "requirements": "<strong>系統需求：</strong>搭載 iOS 17 或以上版本的 iPhone。",
+    "help": "有疑問或遇到問題嗎？請前往<a href=\"{support_url}\">支援頁面</a>。關於本 App 如何處理你的照片，詳情請參閱<a href=\"{privacy_url}\">隱私權政策</a>。"
+  },
+  "support": {
+    "title": "支援 - RawMask Studio",
+    "description": "iPhone 版 RawMask Studio 的使用說明與聯絡方式：開啟照片、「照片」取用權限、遮罩、儲存與輸出。",
+    "h1": "支援",
+    "meta": "iPhone 版 RawMask Studio 使用說明。",
+    "ui_labels_note": "以下提到的按鈕與選單名稱皆以英文呈現，與 App 中顯示的完全相同。",
+    "contact": "<strong>聯絡方式：</strong>電子郵件 <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>",
+    "contact_note": "請附上你的 iPhone 機型、iOS 版本，並簡短說明發生了什麼狀況，以及你原本預期的結果。不需要傳送照片；通常只要描述一下照片（例如拍攝的相機或檔案格式）就足夠了。",
+    "faq_heading": "常見問題",
+    "faq": [
+      {
+        "q": "如何開啟照片？",
+        "blocks": [
+          {
+            "p": "點一下編輯器左上角的照片按鈕，然後選擇 <span class=\"ui\" lang=\"en\">Open photo</span>。照片選取器隨即開啟，讓你選擇一張照片。RawMask Studio 一次只編輯一張照片。原況照片目前不會顯示在選取器中。"
+          }
+        ]
+      },
+      {
+        "q": "可以編輯哪些照片？",
+        "blocks": [
+          {
+            "p": "凡是 Apple 內建 RAW 支援能夠讀取的 RAW 照片都能編輯，包括 Apple ProRAW 以及許多相機拍攝的 RAW 檔案；此外也支援 HEIC、JPEG 等一般照片。"
+          }
+        ]
+      },
+      {
+        "q": "為什麼 App 要求「照片」取用權限？",
+        "blocks": [
+          {
+            "p": "RawMask Studio 會從你的 Apple「照片」圖庫開啟照片，並將編輯結果存回圖庫，因此 iOS 會徵求你的許可。你可以允許完整取用權限，或選擇有限制的取用權限，只讓 App 取用你挑選的照片。無論選擇哪一種，App 都只會開啟你所選擇的那張照片。詳情請參閱<a href=\"{privacy_url}\">隱私權政策</a>。"
+          }
+        ]
+      },
+      {
+        "q": "我選了有限制的取用權限，卻找不到某張照片",
+        "blocks": [
+          {
+            "p": "在有限制的取用權限下，App 只能開啟你已允許的照片。若要允許 App 取用更多照片："
+          },
+          {
+            "ul": [
+              "在 App 中點一下 <span class=\"ui\" lang=\"en\">More options</span>（... 按鈕），然後在 <span class=\"ui\" lang=\"en\">Photos access</span> 下方點一下 <span class=\"ui\" lang=\"en\">Manage allowed photos</span>；或",
+              "前往<span class=\"path\">設定 &gt; 隱私權與安全性 &gt; 照片 &gt; RawMask Studio</span>，更改所選的照片，或選擇「完整取用權限」。"
+            ]
+          }
+        ]
+      },
+      {
+        "q": "App 顯示「照片」取用權限已關閉",
+        "blocks": [
+          {
+            "p": "前往<span class=\"path\">設定 &gt; 隱私權與安全性 &gt; 照片 &gt; RawMask Studio</span>，選擇「有限制的取用權限」或「完整取用權限」，然後回到 App 重新開啟照片。"
+          }
+        ]
+      },
+      {
+        "q": "遮罩如何運作？",
+        "blocks": [
+          {
+            "p": "調整可以套用到整張照片，也可以只套用到某個遮罩。開啟左上角的照片按鈕選單：使用 <span class=\"ui\" lang=\"en\">Edit target</span> 選擇要編輯的對象，使用 <span class=\"ui\" lang=\"en\">Add mask</span> 新增 <span class=\"ui\" lang=\"en\">Radial</span>、<span class=\"ui\" lang=\"en\">Linear</span>、<span class=\"ui\" lang=\"en\">Brush</span> 或 <span class=\"ui\" lang=\"en\">Rectangle</span> 遮罩。你可以移動遮罩並調整大小，也可以用塗抹的方式增加或減去遮罩範圍，並使用 <span class=\"ui\" lang=\"en\">Feather</span> 柔化遮罩邊緣。"
+          }
+        ]
+      },
+      {
+        "q": "什麼是自動物件遮罩？",
+        "blocks": [
+          {
+            "p": "RawMask Studio 內建影像分割模型，可找出照片中的物件，例如人物、動物與日常物品，並為每個物件分別提供可單獨編輯的遮罩。這個模型完全在你的 iPhone 上執行。如果它沒有偵測到你想要的物件，可以改用手動遮罩，或在 <span class=\"ui\" lang=\"en\">More options</span> &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span> 中調整 <span class=\"ui\" lang=\"en\">Detection confidence</span> 與 <span class=\"ui\" lang=\"en\">Mask threshold</span>。"
+          }
+        ]
+      },
+      {
+        "q": "需要網路連線嗎？",
+        "blocks": [
+          {
+            "p": "不需要。編輯與自動遮罩都能離線使用。唯一的例外是儲存在 iCloud 照片中、但原始檔不在你 iPhone 上的照片：「照片」必須先從 iCloud 下載原始檔，才能進行編輯。"
+          }
+        ]
+      },
+      {
+        "q": "如何儲存或輸出編輯結果？",
+        "blocks": [
+          {
+            "p": "點一下 <span class=\"ui\" lang=\"en\">More options</span>（... 按鈕），然後前往 <span class=\"ui\" lang=\"en\">Save and export</span>："
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> 會更新你圖庫中的該張照片。「照片」會保留原始照片，因此你之後可以在「照片」App 中使用「回復」回到原始照片。",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> 會將編輯後的影像新增為一張新照片，原始照片保持不變。",
+              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> 會依你選擇的尺寸與品質建立 JPEG、HEIF 或 TIFF 檔案，並開啟分享表單，讓你將檔案儲存到「檔案」或傳送到其他 App。"
+            ]
+          }
+        ]
+      },
+      {
+        "q": "我的預設儲存在哪裡？",
+        "blocks": [
+          {
+            "p": "儲存在你的 iPhone 上，位於 App 本身的儲存空間中，不會上傳到任何地方。你可以在 App 中刪除預設，刪除 App 也會一併移除這些預設。"
+          }
+        ]
+      },
+      {
+        "q": "支援哪些裝置？",
+        "blocks": [
+          {
+            "p": "搭載 iOS 17 或以上版本的 iPhone。"
+          }
+        ]
+      },
+      {
+        "q": "RawMask Studio 會收集我的資料嗎？",
+        "blocks": [
+          {
+            "p": "不會。本 App 沒有帳號，也沒有分析、廣告或追蹤，而且不會將你的照片或資料傳送給我們或任何其他人。請閱讀完整的<a href=\"{privacy_url}\">隱私權政策</a>。"
+          }
+        ]
+      }
+    ],
+    "still_heading": "仍需要協助嗎？",
+    "still_text": "請寄電子郵件至 <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>，我們會回覆你。"
+  },
+  "privacy": {
+    "title": "隱私權政策 - RawMask Studio",
+    "description": "iPhone 版 RawMask Studio 的隱私權政策。本 App 不會收集任何資料；照片在你的 iPhone 上進行編輯。",
+    "h1": "隱私權政策",
+    "meta": "iPhone 版 RawMask Studio。生效日期：2026 年 9 月 23 日。",
+    "summary": "<strong>簡而言之：</strong>RawMask Studio 不會收集任何資料。沒有帳號、沒有分析、沒有廣告，也沒有追蹤。你的照片在你的 iPhone 上進行編輯，App 絕不會將你的照片、編輯內容或任何其他資訊傳送給我們或任何其他人。",
+    "sections": [
+      {
+        "id": "who-we-are",
+        "h2": "我們是誰",
+        "blocks": [
+          {
+            "p": "RawMask Studio 由個人開發者 Besarion Turmanauli 開發及發行。本政策中所稱「我們」及「我們的」，均指該開發者。你可以透過下方<a href=\"#contact\">聯絡方式</a>中的資訊與我們聯絡。"
+          }
+        ]
+      },
+      {
+        "id": "information-we-collect",
+        "h2": "我們收集的資訊",
+        "blocks": [
+          {
+            "p": "無。RawMask Studio 不會收集、傳輸、出售或分享個人資訊。本 App 不會將你的照片、編輯內容、遮罩、預設、設定、裝置識別碼、使用資料或診斷資料傳送給我們或任何第三方，我們也沒有營運任何接收 App 資料的伺服器。本 App 沒有登入機制，也沒有帳號。"
+          }
+        ]
+      },
+      {
+        "id": "on-device-processing",
+        "h2": "處理作業在你的 iPhone 上進行",
+        "blocks": [
+          {
+            "p": "所有照片處理都在你的裝置上進行，包括讀取 RAW 檔案，套用光線、色彩、細節、對焦與效果等調整，產生預覽畫面，以及建立遮罩。"
+          },
+          {
+            "p": "自動物件遮罩由影像分割模型（RF-DETR）建立，此模型內建於 App 中，並透過 Apple 的 Core ML 在你的 iPhone 上執行。此模型並非從網路下載，你的照片也不會被傳送到任何地方進行分析。"
+          }
+        ]
+      },
+      {
+        "id": "photos-access",
+        "h2": "取用你的「照片」圖庫",
+        "blocks": [
+          {
+            "p": "RawMask Studio 使用 Apple「照片」來開啟及儲存照片。在 App 取用你的圖庫之前，iOS 會先徵求你的許可。你可以允許取用整個圖庫，或僅允許取用你選取的照片，也可以隨時在<span class=\"path\">設定 &gt; 隱私權與安全性 &gt; 照片 &gt; RawMask Studio</span> 中更改這項設定。"
+          },
+          {
+            "h3": "App 會讀取的內容"
+          },
+          {
+            "p": "僅限你在照片選取器中選擇的照片，每次一張。為了編輯該照片，App 會讀取該照片的影像資料及編輯所需的詳細資訊，例如尺寸、拍攝日期、檔案格式，以及先前與照片一併儲存的任何 RawMask Studio 編輯內容。App 不會瀏覽或掃描你圖庫中的其餘內容，也不會為其建立索引。"
+          },
+          {
+            "h3": "App 會寫入的內容"
+          },
+          {
+            "p": "除非你要求，否則什麼都不會寫入。任何內容都不會自動儲存到你的圖庫。"
+          },
+          {
+            "ul": [
+              "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> 會將編輯後的版本儲存到你圖庫中的該張照片，並附上一份你的編輯設定紀錄；「照片」會將這份紀錄與照片一併保存，以便日後重新開啟編輯。「照片」會保留原始照片，你可以在「照片」App 中回復成原始照片。",
+              "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> 會將編輯後的影像新增為一張新照片。原始照片不會被更改。"
+            ]
+          },
+          {
+            "h3": "iCloud 照片"
+          },
+          {
+            "p": "如果你使用 iCloud 照片，而你所選照片的全解析度原始檔並未儲存在你的 iPhone 上，Apple 的「照片」框架可能會從 iCloud 下載該原始檔，以便進行編輯。你儲存的照片也可能會依照你的 Apple 設定，透過 iCloud 照片進行同步。這些傳輸發生在你的裝置與你自己的 iCloud 帳號之間，由 Apple 處理，並受 Apple 隱私權政策規範。任何內容都不會傳送給我們。"
+          }
+        ]
+      },
+      {
+        "id": "export",
+        "h2": "輸出與分享",
+        "blocks": [
+          {
+            "p": "當你點一下 <span class=\"ui\" lang=\"en\">Export photo</span> 時，App 會建立你要求的影像檔案，並開啟 iOS 分享表單。檔案只會傳送到你選擇的目的地，例如「檔案」、「訊息」或其他 App，並由該目的地依其自身的隱私權做法處理。App 為輸出所建立的暫存檔案會保存在你 iPhone 上的 App 私有儲存空間中，並會在不再需要時自動刪除。"
+          }
+        ]
+      },
+      {
+        "id": "on-device-storage",
+        "h2": "儲存在你裝置上的資訊",
+        "blocks": [
+          {
+            "p": "為了讓 App 維持你上次離開時的狀態，它會在你 iPhone 上的專屬儲存空間中保存少量資訊："
+          },
+          {
+            "ul": [
+              "你儲存的預設（預設名稱與調整數值）；",
+              "編輯器偏好設定，例如顯示哪些編輯區段、各區段的順序與修圖前後的比較樣式；以及",
+              "自動遮罩設定。"
+            ]
+          },
+          {
+            "p": "這些資訊會保留在你的裝置上，不會傳送給我們。你可以隨時在 App 中刪除預設，而刪除 App 會移除上述所有資訊。與其他 App 資料一樣，這些資訊可能會依你的 iOS 設定，包含在你所製作的 iPhone 備份中。"
+          }
+        ]
+      },
+      {
+        "id": "no-third-parties",
+        "h2": "不使用第三方服務、分析、廣告或追蹤",
+        "blocks": [
+          {
+            "p": "RawMask Studio 不含任何第三方分析、廣告、當機回報或追蹤軟體。本 App 不會使用廣告識別碼，也不會跨其他公司擁有的 App 或網站追蹤你。"
+          },
+          {
+            "p": "如果你已在 iOS 中選擇與 App 開發者分享分析資料（<span class=\"path\">設定 &gt; 隱私權與安全性 &gt; 分析與改進功能</span>），Apple 可能會以無法識別你身分的形式，向我們提供當機報告及彙總的使用統計資料。這是由 Apple 及你的設定所控制，而非由本 App 控制。"
+          }
+        ]
+      },
+      {
+        "id": "purchases",
+        "h2": "購買",
+        "blocks": [
+          {
+            "p": "RawMask Studio 目前為免費 App。若日後新增 App 內購買或付費功能，付款將由 Apple 透過 App Store 依據 Apple 的條款及隱私權政策處理，我們不會收到你的付款資料。在任何此類變更生效之前，我們會更新本政策。"
+          }
+        ]
+      },
+      {
+        "id": "children",
+        "h2": "兒童",
+        "blocks": [
+          {
+            "p": "RawMask Studio 是一般用途的照片編輯 App，並非專門以兒童為對象。由於本 App 不會向任何人收集個人資訊，因此也不會向兒童收集個人資訊。"
+          }
+        ]
+      },
+      {
+        "id": "your-choices",
+        "h2": "你的選擇",
+        "blocks": [
+          {
+            "p": "由於我們不會收集或持有任何關於你的資料，我們這一方並沒有任何個人資料可供存取、更正、匯出或刪除。你可以在自己的裝置上保有控制權：你可以在 iOS「設定」中更改或撤銷「照片」取用權限、在 App 中刪除預設、在「照片」App 中移除編輯內容或副本，以及刪除 App 以移除其本機資料。"
+          }
+        ]
+      },
+      {
+        "id": "changes",
+        "h2": "本政策的變更",
+        "blocks": [
+          {
+            "p": "如果 App 處理資訊的方式有所改變，例如未來某項功能需要將資料傳送到你的裝置以外，我們會在該版本發布之前，更新本政策及 App 在 App Store 上的隱私權詳細資訊，並更改本頁頂端的生效日期。"
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "h2": "聯絡方式",
+        "blocks": [
+          {
+            "p": "如果你對本政策，或對使用 RawMask Studio 時的隱私有任何疑問，請聯絡："
+          },
+          {
+            "p": "Besarion Turmanauli<br>\n電子郵件：<a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>"
+          }
+        ]
+      }
+    ]
+  }
+}
