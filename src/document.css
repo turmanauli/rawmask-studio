@@ -1,0 +1,100 @@
+main.wrap.document {
+  max-width: 920px;
+  padding-block: 72px 0;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.document h1 {
+  margin: 0 0 20px;
+  font-size: clamp(40px, 5.3vw, 64px);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -.045em;
+  overflow-wrap: anywhere;
+}
+
+.document h2 {
+  margin: 52px 0 22px;
+  padding-top: 30px;
+  border-top: 1px solid var(--border);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -.025em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+  scroll-margin-top: 24px;
+}
+
+.document h3 {
+  margin: 30px 0 15px;
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -.025em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.document p, .document ul { margin: 0 0 18px; color: var(--muted); }
+.document strong { color: var(--text); font-weight: 600; }
+.document .meta { margin-bottom: 12px; font-size: 16px; }
+.document .note { margin: 0; font-size: 14px; line-height: 1.75; }
+.document .callout {
+  margin: 36px 0 48px;
+  padding: 30px 32px;
+  border: 0;
+  border-radius: 20px;
+  background: var(--surface);
+}
+.document .callout p { font-size: 16px; }
+.document .callout p:first-child { color: var(--text); }
+.document .callout p:last-child { margin-bottom: 0; }
+.document .callout + h2 { margin-top: 0; padding-top: 0; border-top: 0; }
+.document .faq { border-top: 2px solid var(--border); }
+.document .faq section { padding: 28px 0; border-bottom: 1px solid var(--border); }
+.document .faq h3 { margin-top: 0; }
+.document .faq section > :last-child { margin-bottom: 0; }
+.document .faq + h2 { padding-top: 0; border-top: 0; }
+
+.document ul { padding-inline-start: 0; }
+.document li {
+  position: relative;
+  margin-bottom: 14px;
+  padding-inline-start: 28px;
+  color: var(--muted);
+}
+.document li::marker { color: transparent; }
+.document li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: .9em;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: var(--bullet-logo) center / contain no-repeat;
+}
+.document li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: 7px;
+  top: calc(.9em + 8px);
+  bottom: calc(-.9em - 6px);
+  width: 2px;
+  background: rgba(105, 200, 176, .35);
+  pointer-events: none;
+}
+html.no-tracking .document h3 { letter-spacing: normal; }
+
+@media (max-width: 660px) {
+  main.wrap.document { padding-top: 44px; font-size: 16px; }
+  .document h1 { font-size: 40px; margin-bottom: 18px; }
+  .document h2 { margin-top: 38px; padding-top: 24px; font-size: 23px; }
+  .document h3 { font-size: 19px; }
+  .document .meta { font-size: 15px; }
+  .document .callout { margin: 28px 0 36px; padding: 24px 22px; border-radius: 16px; }
+  .document .faq section { padding-block: 24px; }
+}

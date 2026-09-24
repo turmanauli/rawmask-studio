@@ -8,7 +8,7 @@ Usage:
   python3 src/build.py --check-site       verify the built site (links, hreflang, lang/dir, sitemap)
 
 Inputs: src/locales.json, src/strings/*.json, src/store/*.json, src/icons.json,
-assets/badges/*.svg and assets/screenshots/*/*.webp. Outputs: index.html,
+src/*.css, assets/badges/*.svg and assets/screenshots/*/*.webp. Outputs: index.html,
 support/index.html and privacy/index.html at the root (English) and under
 each language folder, plus sitemap.xml.
 """
@@ -365,7 +365,7 @@ class Site:
                '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">',
                '<meta http-equiv="Content-Security-Policy" content="%s">' % CSP,
                '<meta name="color-scheme" content="dark">',
-               '<meta name="theme-color" content="#07110d">',
+               '<meta name="theme-color" content="#081b16">',
                '<meta name="description" content="%s">' % attr(description),
                '<meta name="apple-itunes-app" content="app-id=%s">' % APP_ID,
                '<title>%s</title>' % html.escape(title, quote=False),
@@ -382,6 +382,12 @@ class Site:
                 '<meta name="twitter:card" content="summary">',
                 '<link rel="icon" type="image/png" href="%s">' % self.icons["favicon"]]
         css = CSS_BASE + {"home": CSS_HOME, "support": CSS_SUPPORT, "privacy": CSS_PRIVACY}[page]
+        design_css = []
+        for stylesheet in ("theme.css", "landing.css" if page == "home" else "document.css"):
+            with open(os.path.join(SRC, stylesheet), encoding="utf-8") as f:
+                design_css.append(f.read())
+        css += '\n/* Site design */\n:root { --bullet-logo: url("%s"); }\n%s\n/* End site design */\n' % (
+            self.icons["logo"], "\n".join(design_css))
         out += ['<style>', css.rstrip("\n"), '</style>', '</head>', '<body>']
         return "\n".join(out)
 
@@ -492,6 +498,7 @@ class Site:
         title = "RawMask Studio - %s" % store["subtitle"].strip()
         out = [self.head(loc, "home", title, description), self.header(loc, "home"), "",
                '<main class="wrap">',
+               '<section class="hero">',
                '  <p class="eyebrow">%s</p>' % s["eyebrow"],
                '  <h1>RawMask Studio</h1>',
                '  <p class="lead">%s</p>' % lead,
@@ -502,7 +509,8 @@ class Site:
                '  </div>']
         if loc["id"] != "en":
             out.append('  <p class="ui-note">%s</p>' % html.escape(self.ui_notes[loc["id"]]))
-        out += ['', '  <h2 id="screenshots">%s</h2>' % s["screenshots_heading"],
+        out += ['</section>', '<section class="showcase">',
+                '  <h2 id="screenshots">%s</h2>' % s["screenshots_heading"],
                 '  <ul class="shots" tabindex="0" aria-labelledby="screenshots">']
         folder = "en" if loc["id"] == "en" else loc["slug"]
         for i, name in enumerate(SHOTS):
@@ -512,7 +520,8 @@ class Site:
             lazy = "" if i < 2 else ' loading="lazy"'
             out.append('    <li><img src="%s-300.webp" srcset="%s-300.webp 300w, %s-600.webp 600w" sizes="200px" width="%d" height="%d" alt="%s"%s decoding="async"></li>' % (
                 base, base, base, w, h, attr("%s %s" % (cap_title.strip(), cap_sub.strip())), lazy))
-        out += ['  </ul>', '', '  <h2>%s</h2>' % s["features_heading"]]
+        out += ['  </ul>', '</section>', '<section class="capabilities">',
+                '  <h2>%s</h2>' % s["features_heading"]]
         intro, sections, outro = split_description(store["description"])
         if len(sections) != len(s["store_headings"]):
             raise SystemExit("%s: store description has %d sections but store_headings has %d"
@@ -523,19 +532,19 @@ class Site:
             out += ['    <li>', '      <h3>%s</h3>' % heading, '      <ul>']
             out += ['        <li>%s</li>' % html.escape(b) for b in bullets]
             out += ['      </ul>', '    </li>']
-        out.append('  </ul>')
+        out += ['  </ul>', '</section>', '<section class="closing">', '  <div class="closing-copy">']
         out += ['  <p class="outro">%s</p>' % "<br>\n".join(html.escape(l) for l in para) for para in outro]
-        out += ['', '  <div class="callout">',
+        out += ['  </div>', '  <div class="callout">',
                 '    <p>%s</p>' % s["requirements"],
                 '    <p class="muted">%s</p>' % fill(s["help"], links),
-                '  </div>', '</main>', '', self.footer(loc, "home")]
+                '  </div>', '</section>', '</main>', '', self.footer(loc, "home")]
         return "\n".join(out)
 
     def render_support(self, loc):
         s = self.strings[loc["id"]]["support"]
         links = self.links(loc, "support")
         out = [self.head(loc, "support", plain(s["title"]), plain(s["description"])), self.header(loc, "support"), "",
-               '<main class="wrap">',
+               '<main class="wrap document">',
                '  <h1>%s</h1>' % s["h1"],
                '  <p class="meta">%s</p>' % s["meta"]]
         out += self.translation_notice(loc, links)
@@ -561,7 +570,7 @@ class Site:
         s = self.strings[loc["id"]]["privacy"]
         links = self.links(loc, "privacy")
         out = [self.head(loc, "privacy", plain(s["title"]), plain(s["description"])), self.header(loc, "privacy"), "",
-               '<main class="wrap">',
+               '<main class="wrap document">',
                '  <h1>%s</h1>' % s["h1"],
                '  <p class="meta">%s</p>' % s["meta"]]
         out += self.translation_notice(loc, links)
