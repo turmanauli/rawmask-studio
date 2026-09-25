@@ -1,0 +1,1888 @@
+[
+ {
+  "locale": "ar-SA",
+  "mac": {
+   "titles": [
+    "عدّل فقط ما تحدده.",
+    "يجد العنصر الرئيسي بنفسه.",
+    "اقتصّ وسوِّ الميل وأضف إطارًا.",
+    "احفظ في الصور، وتراجع متى شئت.",
+    "اجعل المحرر على طريقتك.",
+    "اضبط ما يكتشفه."
+   ],
+   "subs": [
+    "أقنعة لصور RAW على Mac.",
+    "يرصد الجهاز السيارات والأشخاص والحيوانات ويُنشئ أقنعتها لك.",
+    "ثمانية إطارات، من خط رفيع إلى حافة فيلم.",
+    "تبقى تعديلاتك قابلة للتراجع، ولا يغادر أي شيء جهاز Mac.",
+    "احفظ إعداداتك المسبقة، وأبقِ فقط الخطوات التي تستخدمها، بترتيبك.",
+    "حدّد الثقة وحافة القناع وعدد العناصر. كل ذلك يعمل على جهاز Mac."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "عدّل فقط ما تحدده.",
+    "كل الأدوات تطفو فوق صورتك.",
+    "ارسم القناع كما تشاء.",
+    "امنح صورتك طابعًا.",
+    "اقتصّ وسوِّ الميل وأضف إطارًا.",
+    "احفظ في الصور، وتراجع متى شئت.",
+    "اجعل المحرر على طريقتك."
+   ],
+   "subs": [
+    "أقنعة لصور RAW على iPad.",
+    "اسحب اللوحات إلى أي مكان، في الوضعين الطولي والعرضي.",
+    "شعاعي أو خطي أو بالفرشاة أو مستطيل، ثم أضف إليه أو احذف منه ونعّم حوافه.",
+    "أنماط الفيلم والأبيض والأسود والعتيق والنوار والغرنج والريترو.",
+    "ثمانية إطارات، من خط رفيع إلى حافة فيلم.",
+    "تبقى تعديلاتك قابلة للتراجع، ولا يغادر أي شيء جهاز iPad.",
+    "احفظ إعداداتك المسبقة، وأبقِ فقط الخطوات التي تستخدمها، بترتيبك."
+   ]
+  }
+ },
+ {
+  "locale": "bn-BD",
+  "mac": {
+   "titles": [
+    "শুধু বাছাই করা অংশই এডিট করুন।",
+    "সাবজেক্ট খুঁজে নেবে অ্যাপ নিজেই।",
+    "ক্রপ, সোজা আর ফ্রেম করুন।",
+    "ফটো অ্যাপে সেভ করুন। যেকোনো সময় ফেরান।",
+    "এডিটর সাজান নিজের মতো।",
+    "কী শনাক্ত হবে, ঠিক করুন।"
+   ],
+   "subs": [
+    "Mac-এ RAW ছবির জন্য মাস্ক।",
+    "Mac-এই শনাক্ত করে গাড়ি, মানুষ ও প্রাণীর মাস্ক নিজে থেকে বানিয়ে দেয়।",
+    "সরু রেখা থেকে ফিল্ম এজ, আটটি বর্ডার।",
+    "এডিট সবসময় ফেরানো যায়, আর কিছুই আপনার Mac ছেড়ে যায় না।",
+    "প্রিসেট সেভ করুন, আর নিজের ক্রমে রাখুন শুধু দরকারি ধাপগুলো।",
+    "কনফিডেন্স, মাস্কের কিনারা আর অবজেক্টের সংখ্যা ঠিক করুন। সবই চলে আপনার Mac-এ।"
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "শুধু বাছাই করা অংশই এডিট করুন।",
+    "প্রতিটি টুল ভাসে ছবির ওপরে।",
+    "যেভাবে খুশি মাস্ক আঁকুন।",
+    "ছবিতে দিন নতুন লুক।",
+    "ক্রপ, সোজা আর ফ্রেম করুন।",
+    "ফটো অ্যাপে সেভ করুন। যেকোনো সময় ফেরান।",
+    "এডিটর সাজান নিজের মতো।"
+   ],
+   "subs": [
+    "iPad-এ RAW ছবির জন্য মাস্ক।",
+    "প্যালেট যেখানে খুশি টেনে নিন, যেকোনো ওরিয়েন্টেশনে।",
+    "রেডিয়াল, লিনিয়ার, ব্রাশ বা আয়তক্ষেত্র। তারপর যোগ-বাদ ও ফেদার করুন।",
+    "ফিল্ম, সাদা-কালো, ভিন্টেজ, নোয়া, গ্রাঞ্জ ও রেট্রো স্টাইল।",
+    "সরু রেখা থেকে ফিল্ম এজ, আটটি বর্ডার।",
+    "এডিট সবসময় ফেরানো যায়, আর কিছুই আপনার iPad ছেড়ে যায় না।",
+    "প্রিসেট সেভ করুন, আর নিজের ক্রমে রাখুন শুধু দরকারি ধাপগুলো।"
+   ]
+  }
+ },
+ {
+  "locale": "ca",
+  "mac": {
+   "titles": [
+    "Edita només el que triïs.",
+    "Detecta el subjecte per tu.",
+    "Retalla, redreça i emmarca.",
+    "Desa a Fotos. Sempre reversible.",
+    "Fes teu l'editor.",
+    "Ajusta què detecta."
+   ],
+   "subs": [
+    "Màscares per a fotos RAW al Mac.",
+    "La detecció al dispositiu crea màscares de cotxes, persones i animals.",
+    "Vuit vores, d'una línia fina a una vora de pel·lícula.",
+    "Els canvis es poden desfer i res no surt del teu Mac.",
+    "Desa valors predefinits i conserva només els passos que fas servir, en el teu ordre.",
+    "Defineix la confiança, la vora de la màscara i el nombre d'objectes. Tot funciona al teu Mac."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Edita només el que triïs.",
+    "Totes les eines floten sobre la foto.",
+    "Dibuixa la màscara com vulguis.",
+    "Dona-li un estil.",
+    "Retalla, redreça i emmarca.",
+    "Desa a Fotos. Sempre reversible.",
+    "Fes teu l'editor."
+   ],
+   "subs": [
+    "Màscares per a fotos RAW a l'iPad.",
+    "Arrossega les paletes on vulguis, en qualsevol orientació.",
+    "Radial, lineal, pinzell o rectangle. Després suma, resta o difumina.",
+    "Estils pel·lícula, blanc i negre, vintage, noir, grunge i retro.",
+    "Vuit vores, d'una línia fina a una vora de pel·lícula.",
+    "Els canvis es poden desfer i res no surt del teu iPad.",
+    "Desa valors predefinits i conserva només els passos que fas servir, en el teu ordre."
+   ]
+  }
+ },
+ {
+  "locale": "zh-Hans",
+  "mac": {
+   "titles": [
+    "选哪里，就改哪里。",
+    "自动识别主体。",
+    "裁剪、拉直、加边框。",
+    "存入“照片”，随时还原。",
+    "编辑器，按你的习惯来。",
+    "识别什么，由你调整。"
+   ],
+   "subs": [
+    "专为 Mac 上的 RAW 照片打造的蒙版工具。",
+    "设备端识别，自动为汽车、人物和动物生成蒙版。",
+    "八种边框，从细线到胶片边缘。",
+    "所有编辑均可还原，数据从不离开你的 Mac。",
+    "存储预设，只保留常用步骤，并按你的顺序排列。",
+    "调整置信度、蒙版边缘和对象数量，全部在你的 Mac 上运行。"
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "选哪里，就改哪里。",
+    "每个工具，都浮在照片上方。",
+    "蒙版，随心绘制。",
+    "给照片换个风格。",
+    "裁剪、拉直、加边框。",
+    "存入“照片”，随时还原。",
+    "编辑器，按你的习惯来。"
+   ],
+   "subs": [
+    "专为 iPad 上的 RAW 照片打造的蒙版工具。",
+    "面板随意拖动，横屏竖屏皆可。",
+    "径向、线性、画笔或矩形，再增减区域、羽化边缘。",
+    "胶片、黑白、复古、黑色电影、做旧和怀旧风格。",
+    "八种边框，从细线到胶片边缘。",
+    "所有编辑均可还原，数据从不离开你的 iPad。",
+    "存储预设，只保留常用步骤，并按你的顺序排列。"
+   ]
+  }
+ },
+ {
+  "locale": "zh-Hant",
+  "mac": {
+   "titles": [
+    "只編輯你選取的範圍。",
+    "自動為你找出主體。",
+    "裁切、拉直、加上邊框。",
+    "存入「照片」，隨時還原。",
+    "編輯器，照你的習慣來。",
+    "偵測什麼，由你調整。"
+   ],
+   "subs": [
+    "在 Mac 上為 RAW 照片套用遮罩。",
+    "在 Mac 上直接偵測，自動為汽車、人物與動物建立遮罩。",
+    "八種邊框，從細線到底片邊緣。",
+    "編輯始終可以復原，任何內容都不會離開你的 Mac。",
+    "儲存預設，只保留你用得到的步驟，順序由你決定。",
+    "設定信心度、遮罩邊緣與物件數量，全都在你的 Mac 上執行。"
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "只編輯你選取的範圍。",
+    "每個工具都浮在照片上方。",
+    "遮罩，想怎麼畫就怎麼畫。",
+    "為照片換個風格。",
+    "裁切、拉直、加上邊框。",
+    "存入「照片」，隨時還原。",
+    "編輯器，照你的習慣來。"
+   ],
+   "subs": [
+    "在 iPad 上為 RAW 照片套用遮罩。",
+    "面板隨處拖移，橫向、直向皆可。",
+    "放射狀、線性、筆刷或矩形，再用筆刷增減範圍、羽化邊緣。",
+    "底片、黑白、復古、黑色電影、做舊與懷舊風格。",
+    "八種邊框，從細線到底片邊緣。",
+    "編輯始終可以復原，任何內容都不會離開你的 iPad。",
+    "儲存預設，只保留你用得到的步驟，順序由你決定。"
+   ]
+  }
+ },
+ {
+  "locale": "hr",
+  "mac": {
+   "titles": [
+    "Uredi samo ono što odabereš.",
+    "Aplikacija sama pronalazi motiv.",
+    "Izreži, izravnaj i uokviri.",
+    "Spremi u Foto. Vrati kad želiš.",
+    "Prilagodi uređivač sebi.",
+    "Podesi što prepoznaje."
+   ],
+   "subs": [
+    "Maske za RAW fotografije na Macu.",
+    "Prepoznavanje na uređaju automatski maskira automobile, ljude i životinje.",
+    "Osam okvira, od tanke linije do ruba filma.",
+    "Izmjene se uvijek mogu poništiti, a ništa ne napušta tvoj Mac.",
+    "Spremi predloške i zadrži samo korake koje koristiš, svojim redom.",
+    "Postavi pouzdanost, rub maske i broj objekata. Sve radi na tvom Macu."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Uredi samo ono što odabereš.",
+    "Svaki alat lebdi iznad fotografije.",
+    "Nacrtaj masku kako želiš.",
+    "Daj joj novi izgled.",
+    "Izreži, izravnaj i uokviri.",
+    "Spremi u Foto. Vrati kad želiš.",
+    "Prilagodi uređivač sebi."
+   ],
+   "subs": [
+    "Maske za RAW fotografije na iPadu.",
+    "Povuci palete bilo kamo, u bilo kojoj orijentaciji.",
+    "Radijalna, linearna, pravokutna ili kistom. Dodaj, oduzmi ili omekšaj.",
+    "Filmski, crno-bijeli, vintage, noir, grunge i retro stilovi.",
+    "Osam okvira, od tanke linije do ruba filma.",
+    "Izmjene se uvijek mogu poništiti, a ništa ne napušta tvoj iPad.",
+    "Spremi predloške i zadrži samo korake koje koristiš, svojim redom."
+   ]
+  }
+ },
+ {
+  "locale": "cs",
+  "mac": {
+   "titles": [
+    "Upravte jen to, co vyberete.",
+    "Nechte aplikaci najít motiv.",
+    "Ořízněte, narovnejte, orámujte.",
+    "Uložte do Fotek. Kdykoli zpět.",
+    "Přizpůsobte si editor.",
+    "Nastavte, co detekuje."
+   ],
+   "subs": [
+    "Masky pro fotografie RAW na Macu.",
+    "Detekce přímo na Macu za vás vytvoří masky aut, lidí a zvířat.",
+    "Osm rámečků, od tenké linky po okraj filmu.",
+    "Úpravy lze vždy vrátit a nic neopustí váš Mac.",
+    "Uložte si předvolby a nechte jen kroky, které používáte, ve svém pořadí.",
+    "Nastavte spolehlivost, okraj masky a počet objektů. Vše běží na vašem Macu."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Upravte jen to, co vyberete.",
+    "Všechny nástroje plují nad fotkou.",
+    "Nakreslete masku, jak chcete.",
+    "Dejte fotce styl.",
+    "Ořízněte, narovnejte, orámujte.",
+    "Uložte do Fotek. Kdykoli zpět.",
+    "Přizpůsobte si editor."
+   ],
+   "subs": [
+    "Masky pro fotografie RAW na iPadu.",
+    "Palety přetáhněte kamkoli, na výšku i na šířku.",
+    "Kruh, přechod, štětec, obdélník. Pak přidejte, uberte, změkčete okraje.",
+    "Filmový, černobílý, vintage, noir, grunge a retro styl.",
+    "Osm rámečků, od tenké linky po okraj filmu.",
+    "Úpravy lze vždy vrátit a nic neopustí váš iPad.",
+    "Uložte si předvolby a nechte jen kroky, které používáte, ve svém pořadí."
+   ]
+  }
+ },
+ {
+  "locale": "da",
+  "mac": {
+   "titles": [
+    "Rediger kun det, du vælger.",
+    "Lad appen finde motivet.",
+    "Beskær, ret op og indram.",
+    "Gem i Fotos. Fortryd, når du vil.",
+    "Gør editoren til din egen.",
+    "Juster, hvad den finder."
+   ],
+   "subs": [
+    "Masker til RAW-fotos på Mac.",
+    "Motivgenkendelse på enheden maskerer biler, personer og dyr for dig.",
+    "Otte rammer, fra en tynd streg til en filmkant.",
+    "Redigeringer kan altid fortrydes, og intet forlader din Mac.",
+    "Gem forindstillinger, og behold kun de trin, du bruger, i din rækkefølge.",
+    "Indstil sikkerhed, maskekant og antal objekter. Det hele kører på din Mac."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Rediger kun det, du vælger.",
+    "Alle værktøjer svæver over dit foto.",
+    "Tegn masker, lige som du vil.",
+    "Giv billedet et look.",
+    "Beskær, ret op og indram.",
+    "Gem i Fotos. Fortryd, når du vil.",
+    "Gør editoren til din egen."
+   ],
+   "subs": [
+    "Masker til RAW-fotos på iPad.",
+    "Træk paletterne derhen, hvor du vil, på højkant og på tværs.",
+    "Radial, lineær, pensel, rektangel. Tilføj, fjern og blødgør kanter.",
+    "Stilarter som film, sort-hvid, vintage, noir, grunge og retro.",
+    "Otte rammer, fra en tynd streg til en filmkant.",
+    "Redigeringer kan altid fortrydes, og intet forlader din iPad.",
+    "Gem forindstillinger, og behold kun de trin, du bruger, i din rækkefølge."
+   ]
+  }
+ },
+ {
+  "locale": "nl-NL",
+  "mac": {
+   "titles": [
+    "Bewerk alleen je selectie.",
+    "Je onderwerp, vanzelf gevonden.",
+    "Bijsnijden, rechtzetten, omlijsten.",
+    "Naar Foto's. Altijd omkeerbaar.",
+    "Maak de editor van jou.",
+    "Stel de herkenning af."
+   ],
+   "subs": [
+    "Maskers voor RAW-foto's op je Mac.",
+    "Herkenning op je Mac maskeert auto's, mensen en dieren voor je.",
+    "Acht randen, van een dunne lijn tot een filmrand.",
+    "Je origineel blijft bewaard en niets verlaat je Mac.",
+    "Bewaar presets en houd alleen de stappen die je gebruikt, in jouw volgorde.",
+    "Kies betrouwbaarheid, maskerrand en aantal objecten. Alles draait op je Mac."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Bewerk alleen je selectie.",
+    "Elk hulpmiddel zweeft boven je foto.",
+    "Teken je masker zoals je wilt.",
+    "Geef je foto een look.",
+    "Bijsnijden, rechtzetten, omlijsten.",
+    "Naar Foto's. Altijd omkeerbaar.",
+    "Maak de editor van jou."
+   ],
+   "subs": [
+    "Maskers voor RAW-foto's op je iPad.",
+    "Sleep de paletten waarheen je wilt, staand of liggend.",
+    "Radiaal, lineair, penseel of rechthoek. Toevoegen, aftrekken, doezelen.",
+    "Film-, zwart-wit-, vintage-, noir-, grunge- en retrostijlen.",
+    "Acht randen, van een dunne lijn tot een filmrand.",
+    "Je origineel blijft bewaard en niets verlaat je iPad.",
+    "Bewaar presets en houd alleen de stappen die je gebruikt, in jouw volgorde."
+   ]
+  }
+ },
+ {
+  "locale": "fi",
+  "mac": {
+   "titles": [
+    "Muokkaa vain valitsemaasi.",
+    "Kohde löytyy itsestään.",
+    "Rajaa, suorista ja kehystä.",
+    "Kuviin talteen. Peru milloin vain.",
+    "Tee editorista omasi.",
+    "Säädä tunnistusta."
+   ],
+   "subs": [
+    "Maskit RAW-kuville Macissa.",
+    "Laitteen oma tunnistus maskaa autot, ihmiset ja eläimet puolestasi.",
+    "Kahdeksan kehystä ohuesta viivasta filmin reunaan.",
+    "Muokkaukset voi aina perua, eikä mikään lähde Macistasi.",
+    "Tallenna esiasetuksia ja pidä vain käyttämäsi vaiheet omassa järjestyksessäsi.",
+    "Aseta varmuus, maskin reuna ja kohteiden määrä. Kaikki toimii Macissasi."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Muokkaa vain valitsemaasi.",
+    "Jokainen työkalu kelluu kuvan päällä.",
+    "Piirrä maski miten haluat.",
+    "Anna kuvalle tyyli.",
+    "Rajaa, suorista ja kehystä.",
+    "Kuviin talteen. Peru milloin vain.",
+    "Tee editorista omasi."
+   ],
+   "subs": [
+    "Maskit RAW-kuville iPadissa.",
+    "Vedä paletit minne haluat, pysty- tai vaakasuunnassa.",
+    "Ympyrä, liukuma, sivellin tai suorakulmio. Lisää, vähennä tai pehmennä.",
+    "Filmi-, mustavalko-, vintage-, noir-, grunge- ja retrotyylit.",
+    "Kahdeksan kehystä ohuesta viivasta filmin reunaan.",
+    "Muokkaukset voi aina perua, eikä mikään lähde iPadistasi.",
+    "Tallenna esiasetuksia ja pidä vain käyttämäsi vaiheet omassa järjestyksessäsi."
+   ]
+  }
+ },
+ {
+  "locale": "fr-FR",
+  "mac": {
+   "titles": [
+    "Ne retouchez que la sélection.",
+    "Le sujet, détecté pour vous.",
+    "Recadrez, redressez, encadrez.",
+    "Dans Photos, toujours réversible.",
+    "Un éditeur à votre main.",
+    "Réglez la détection."
+   ],
+   "subs": [
+    "Des masques pour vos photos RAW sur Mac.",
+    "Personnes, voitures, animaux : détectés et masqués sur le Mac.",
+    "Huit bordures, du simple filet au bord de pellicule.",
+    "Revenez à l'original à tout moment. Rien ne quitte votre Mac.",
+    "Enregistrez des préréglages et gardez seulement vos étapes, dans votre ordre.",
+    "Confiance, bord du masque, nombre d'objets : tout tourne sur votre Mac."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Ne retouchez que la sélection.",
+    "Chaque outil flotte sur votre photo.",
+    "Tracez vos masques librement.",
+    "Donnez-lui du style.",
+    "Recadrez, redressez, encadrez.",
+    "Dans Photos, toujours réversible.",
+    "Un éditeur à votre main."
+   ],
+   "subs": [
+    "Des masques pour vos photos RAW sur iPad.",
+    "Placez les palettes où vous voulez, en portrait comme en paysage.",
+    "Radial, linéaire, pinceau ou rectangle. Ajoutez, retirez, adoucissez.",
+    "Styles argentique, noir et blanc, vintage, film noir, grunge et rétro.",
+    "Huit bordures, du simple filet au bord de pellicule.",
+    "Revenez à l'original à tout moment. Rien ne quitte votre iPad.",
+    "Enregistrez des préréglages et gardez seulement vos étapes, dans votre ordre."
+   ]
+  }
+ },
+ {
+  "locale": "fr-CA",
+  "mac": {
+   "titles": [
+    "Ne retouchez que la sélection.",
+    "Le sujet, détecté pour vous.",
+    "Recadrez, redressez, encadrez.",
+    "Dans Photos, toujours réversible.",
+    "Un éditeur à votre image.",
+    "Réglez la détection."
+   ],
+   "subs": [
+    "Des masques pour vos photos RAW sur Mac.",
+    "La détection sur le Mac masque pour vous personnes, autos et animaux.",
+    "Huit bordures, du simple filet au bord de pellicule.",
+    "Vos retouches restent réversibles et rien ne quitte votre Mac.",
+    "Enregistrez des préréglages et gardez seulement les étapes utiles, dans votre ordre.",
+    "Réglez la confiance, le bord du masque et le nombre d'objets. Tout se fait sur votre Mac."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Ne retouchez que la sélection.",
+    "Chaque outil flotte au-dessus de votre photo.",
+    "Tracez un masque à votre guise.",
+    "Donnez-lui du style.",
+    "Recadrez, redressez, encadrez.",
+    "Dans Photos, toujours réversible.",
+    "Un éditeur à votre image."
+   ],
+   "subs": [
+    "Des masques pour vos photos RAW sur iPad.",
+    "Déplacez les palettes où vous voulez, en portrait comme en paysage.",
+    "Radial, linéaire, pinceau ou rectangle. Ajoutez, retirez, estompez.",
+    "Styles argentique, noir et blanc, vintage, film noir, grunge et rétro.",
+    "Huit bordures, du simple filet au bord de pellicule.",
+    "Vos retouches restent réversibles et rien ne quitte votre iPad.",
+    "Enregistrez des préréglages et gardez seulement les étapes utiles, dans votre ordre."
+   ]
+  }
+ },
+ {
+  "locale": "de-DE",
+  "mac": {
+   "titles": [
+    "Bearbeite nur deine Auswahl.",
+    "Motive automatisch maskieren.",
+    "Zuschneiden, ausrichten, rahmen.",
+    "In Fotos sichern. Original bleibt.",
+    "Mach den Editor zu deinem.",
+    "Stell die Erkennung ein."
+   ],
+   "subs": [
+    "Masken für RAW-Fotos auf dem Mac.",
+    "Die Erkennung auf dem Gerät maskiert Autos, Menschen und Tiere.",
+    "Acht Rahmen, von der feinen Linie bis zum Filmrand.",
+    "Bearbeitungen bleiben umkehrbar, und nichts verlässt deinen Mac.",
+    "Sichere Presets und behalte nur deine Schritte, in deiner Reihenfolge.",
+    "Leg Konfidenz, Maskenkante und Objektanzahl fest. Alles läuft auf deinem Mac."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Bearbeite nur deine Auswahl.",
+    "Jedes Werkzeug schwebt über dem Foto.",
+    "Zeichne Masken, wie du willst.",
+    "Gib deinem Foto einen Look.",
+    "Zuschneiden, ausrichten, rahmen.",
+    "In Fotos sichern. Original bleibt.",
+    "Mach den Editor zu deinem."
+   ],
+   "subs": [
+    "Masken für RAW-Fotos auf dem iPad.",
+    "Zieh die Paletten, wohin du willst, im Hoch- und Querformat.",
+    "Radial, linear, Pinsel oder Rechteck. Erweitern, abziehen, weiche Kante.",
+    "Stile: Film, Schwarzweiß, Vintage, Noir, Grunge und Retro.",
+    "Acht Rahmen, von der feinen Linie bis zum Filmrand.",
+    "Bearbeitungen bleiben umkehrbar, und nichts verlässt dein iPad.",
+    "Sichere Presets und behalte nur deine Schritte, in deiner Reihenfolge."
+   ]
+  }
+ },
+ {
+  "locale": "el",
+  "mac": {
+   "titles": [
+    "Αλλάξτε μόνο ό,τι επιλέξετε.",
+    "Το θέμα εντοπίζεται αυτόματα.",
+    "Περικόψτε, ισιώστε, πλαισιώστε.",
+    "Αποθηκεύστε στις Φωτογραφίες.",
+    "Κάντε τον επεξεργαστή δικό σας.",
+    "Ρυθμίστε τι εντοπίζει."
+   ],
+   "subs": [
+    "Μάσκες για φωτογραφίες RAW στο Mac.",
+    "Η ανίχνευση στο Mac φτιάχνει μάσκες για ανθρώπους, αυτοκίνητα και ζώα.",
+    "Οκτώ πλαίσια, από λεπτή γραμμή έως άκρη φιλμ.",
+    "Επαναφορά ανά πάσα στιγμή. Τίποτα δεν φεύγει από το Mac σας.",
+    "Αποθηκεύστε προρυθμίσεις και κρατήστε μόνο τα βήματα που θέλετε, με τη σειρά σας.",
+    "Ορίστε βεβαιότητα, άκρη μάσκας και πλήθος αντικειμένων. Όλα τρέχουν στο Mac σας."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Αλλάξτε μόνο ό,τι επιλέξετε.",
+    "Κάθε εργαλείο αιωρείται πάνω από τη φωτογραφία.",
+    "Σχεδιάστε μάσκες όπως θέλετε.",
+    "Δώστε της στυλ.",
+    "Περικόψτε, ισιώστε, πλαισιώστε.",
+    "Αποθηκεύστε στις Φωτογραφίες.",
+    "Κάντε τον επεξεργαστή δικό σας."
+   ],
+   "subs": [
+    "Μάσκες για φωτογραφίες RAW στο iPad.",
+    "Σύρετε τις παλέτες όπου θέλετε, κάθετα ή οριζόντια.",
+    "Ακτινική, γραμμική, πινέλο ή ορθογώνιο. Προσθήκη, αφαίρεση, απάλυνση.",
+    "Στυλ φιλμ, ασπρόμαυρο, vintage, noir, grunge και ρετρό.",
+    "Οκτώ πλαίσια, από λεπτή γραμμή έως άκρη φιλμ.",
+    "Επαναφορά ανά πάσα στιγμή. Τίποτα δεν φεύγει από το iPad σας.",
+    "Αποθηκεύστε προρυθμίσεις και κρατήστε μόνο τα βήματα που θέλετε, με τη σειρά σας."
+   ]
+  }
+ },
+ {
+  "locale": "gu-IN",
+  "mac": {
+   "titles": [
+    "ફક્ત પસંદ કરેલો ભાગ એડિટ કરો.",
+    "ઍપ જાતે જ વિષય શોધી લેશે.",
+    "ક્રોપ કરો, સીધું કરો, ફ્રેમ કરો.",
+    "Photosમાં સાચવો. પછી પણ પાછું લો.",
+    "એડિટરને તમારું બનાવો.",
+    "શું શોધવું, તે નક્કી કરો."
+   ],
+   "subs": [
+    "Mac પર RAW ફોટો માટે માસ્ક.",
+    "Mac પર જ થતું ડિટેક્શન કાર, લોકો અને પ્રાણીઓને આપમેળે માસ્ક કરે છે.",
+    "પાતળી રેખાથી ફિલ્મ એજ સુધી, આઠ બોર્ડર.",
+    "ફેરફારો ગમે ત્યારે પાછા લઈ શકાય છે અને કશું Macની બહાર જતું નથી.",
+    "પ્રીસેટ સાચવો, અને ફક્ત વપરાતાં સ્ટેપ તમારા ક્રમમાં રાખો.",
+    "કોન્ફિડન્સ, માસ્ક એજ અને ઑબ્જેક્ટની સંખ્યા સેટ કરો. બધું તમારા Mac પર જ ચાલે છે."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "ફક્ત પસંદ કરેલો ભાગ એડિટ કરો.",
+    "દરેક ટૂલ ફોટો પર તરે છે.",
+    "મનગમતી રીતે માસ્ક દોરો.",
+    "ફોટોને નવો લુક આપો.",
+    "ક્રોપ કરો, સીધું કરો, ફ્રેમ કરો.",
+    "Photosમાં સાચવો. પછી પણ પાછું લો.",
+    "એડિટરને તમારું બનાવો."
+   ],
+   "subs": [
+    "iPad પર RAW ફોટો માટે માસ્ક.",
+    "પૅલેટને ગમે ત્યાં ખેંચો, કોઈ પણ ઓરિએન્ટેશનમાં.",
+    "રેડિયલ, લીનિયર, બ્રશ કે લંબચોરસ. પછી ઉમેરો, બાદ કરો કે ફેધર કરો.",
+    "ફિલ્મ, બ્લેક ઍન્ડ વ્હાઇટ, વિન્ટેજ, નોઇર, ગ્રન્જ અને રેટ્રો સ્ટાઇલ.",
+    "પાતળી રેખાથી ફિલ્મ એજ સુધી, આઠ બોર્ડર.",
+    "ફેરફારો ગમે ત્યારે પાછા લઈ શકાય છે અને કશું iPadની બહાર જતું નથી.",
+    "પ્રીસેટ સાચવો, અને ફક્ત વપરાતાં સ્ટેપ તમારા ક્રમમાં રાખો."
+   ]
+  }
+ },
+ {
+  "locale": "he",
+  "mac": {
+   "titles": [
+    "ערכו רק את מה שבחרתם.",
+    "האפליקציה מוצאת את האובייקט.",
+    "חתכו, יישרו ומסגרו.",
+    "שמרו בתמונות. חזרו למקור בכל עת.",
+    "התאימו את העורך לעצמכם.",
+    "כוונו את הזיהוי."
+   ],
+   "subs": [
+    "מסכות לתמונות RAW ב-⁠Mac.",
+    "זיהוי במכשיר עצמו יוצר עבורכם מסכות לאנשים, למכוניות ולבעלי חיים.",
+    "שמונה מסגרות, מקו דק ועד שולי פילם.",
+    "העריכות נשארות הפיכות, ושום דבר לא יוצא מה-⁠Mac שלכם.",
+    "שמרו פריסטים והשאירו רק את השלבים שאתם צריכים, בסדר שלכם.",
+    "הגדירו רמת ביטחון, קצה מסכה ומספר אובייקטים. הכול רץ ב-⁠Mac שלכם."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "ערכו רק את מה שבחרתם.",
+    "כל כלי מרחף מעל התמונה.",
+    "ציירו מסכה בכל דרך שתרצו.",
+    "תנו לתמונה מראה.",
+    "חתכו, יישרו ומסגרו.",
+    "שמרו בתמונות. חזרו למקור בכל עת.",
+    "התאימו את העורך לעצמכם."
+   ],
+   "subs": [
+    "מסכות לתמונות RAW ב-⁠iPad.",
+    "גררו את הלוחות לכל מקום, לאורך ולרוחב.",
+    "רדיאלית, ליניארית, במכחול או במלבן. ואז הוסיפו, החסירו או רככו קצוות.",
+    "סגנונות פילם, שחור-לבן, וינטג', נואר, גראנג' ורטרו.",
+    "שמונה מסגרות, מקו דק ועד שולי פילם.",
+    "העריכות נשארות הפיכות, ושום דבר לא יוצא מה-⁠iPad שלכם.",
+    "שמרו פריסטים והשאירו רק את השלבים שאתם צריכים, בסדר שלכם."
+   ]
+  }
+ },
+ {
+  "locale": "hi",
+  "mac": {
+   "titles": [
+    "जो चुनें, बस वही एडिट करें।",
+    "सब्जेक्ट ऐप खुद ढूँढेगा।",
+    "क्रॉप करें, सीधा करें, फ़्रेम करें।",
+    "तस्वीरें ऐप में सेव। कभी भी वापस लें।",
+    "एडिटर को अपना बनाएँ।",
+    "पहचान खुद ट्यून करें।"
+   ],
+   "subs": [
+    "Mac पर RAW फ़ोटो के लिए मास्क।",
+    "ऑन-डिवाइस पहचान कार, लोगों और जानवरों को अपने आप मास्क करती है।",
+    "पतली लाइन से फ़िल्म एज तक, आठ बॉर्डर।",
+    "हर बदलाव वापस लिया जा सकता है, और कुछ भी आपके Mac से बाहर नहीं जाता।",
+    "प्रीसेट सेव करें, और सिर्फ़ अपने काम के स्टेप अपने क्रम में रखें।",
+    "कॉन्फ़िडेंस, मास्क एज और ऑब्जेक्ट की संख्या सेट करें। सब कुछ आपके Mac पर चलता है।"
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "जो चुनें, बस वही एडिट करें।",
+    "हर टूल आपकी फ़ोटो पर तैरता है।",
+    "जैसे चाहें, वैसे मास्क बनाएँ।",
+    "फ़ोटो को नया लुक दें।",
+    "क्रॉप करें, सीधा करें, फ़्रेम करें।",
+    "तस्वीरें ऐप में सेव। कभी भी वापस लें।",
+    "एडिटर को अपना बनाएँ।"
+   ],
+   "subs": [
+    "iPad पर RAW फ़ोटो के लिए मास्क।",
+    "पैलेट कहीं भी खींचें, किसी भी ओरिएंटेशन में।",
+    "रेडियल, लीनियर, ब्रश या आयत। फिर जोड़ें, घटाएँ या फ़ेदर करें।",
+    "फ़िल्म, ब्लैक एंड व्हाइट, विंटेज, न्वार, ग्रंज और रेट्रो स्टाइल।",
+    "पतली लाइन से फ़िल्म एज तक, आठ बॉर्डर।",
+    "हर बदलाव वापस लिया जा सकता है, और कुछ भी आपके iPad से बाहर नहीं जाता।",
+    "प्रीसेट सेव करें, और सिर्फ़ अपने काम के स्टेप अपने क्रम में रखें।"
+   ]
+  }
+ },
+ {
+  "locale": "hu",
+  "mac": {
+   "titles": [
+    "Azt szerkeszd, amit kijelölsz.",
+    "Megtalálja helyetted a témát.",
+    "Vágd körbe, egyenesítsd, keretezd.",
+    "Mentsd a Fotókba. Visszavonható.",
+    "Szabd magadra a szerkesztőt.",
+    "Hangold a felismerést."
+   ],
+   "subs": [
+    "Maszkok RAW fotókhoz Macen.",
+    "A Macen futó felismerés autókat, embereket és állatokat maszkol.",
+    "Nyolc keret, a vékony vonaltól a filmszélig.",
+    "A módosítások bármikor visszavonhatók, és minden a Maceden marad.",
+    "Ments preseteket, és csak a használt lépéseket tartsd meg, a saját sorrendedben.",
+    "Állítsd be a megbízhatóságot, a maszk szélét és az objektumok számát. Minden a Maceden fut."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Azt szerkeszd, amit kijelölsz.",
+    "Minden eszköz a fotó fölött lebeg.",
+    "Rajzolj maszkot, ahogy tetszik.",
+    "Adj neki egyedi stílust.",
+    "Vágd körbe, egyenesítsd, keretezd.",
+    "Mentsd a Fotókba. Visszavonható.",
+    "Szabd magadra a szerkesztőt."
+   ],
+   "subs": [
+    "Maszkok RAW fotókhoz iPaden.",
+    "Húzd a palettákat bárhová, álló és fekvő helyzetben is.",
+    "Radiális, lineáris, ecset vagy téglalap. Bővítsd, szűkítsd, lágyítsd.",
+    "Film, fekete-fehér, vintage, noir, grunge és retro stílusok.",
+    "Nyolc keret, a vékony vonaltól a filmszélig.",
+    "A módosítások bármikor visszavonhatók, és minden az iPadeden marad.",
+    "Ments preseteket, és csak a használt lépéseket tartsd meg, a saját sorrendedben."
+   ]
+  }
+ },
+ {
+  "locale": "id",
+  "mac": {
+   "titles": [
+    "Edit hanya yang Anda pilih.",
+    "Subjek terdeteksi otomatis.",
+    "Crop, luruskan, dan beri bingkai.",
+    "Simpan ke Foto. Bisa dibatalkan.",
+    "Jadikan editor milik Anda.",
+    "Atur apa yang dideteksi."
+   ],
+   "subs": [
+    "Mask untuk foto RAW di Mac.",
+    "Deteksi di perangkat membuat mask mobil, orang, dan hewan untuk Anda.",
+    "Delapan bingkai, dari garis tipis hingga tepi film.",
+    "Foto asli tetap utuh, dan tak ada yang keluar dari Mac Anda.",
+    "Simpan preset, dan pertahankan hanya langkah yang Anda pakai, sesuai urutan Anda.",
+    "Atur keyakinan, tepi mask, dan jumlah objek. Semuanya berjalan di Mac Anda."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Edit hanya yang Anda pilih.",
+    "Semua alat melayang di atas foto.",
+    "Gambar mask sesuka Anda.",
+    "Beri foto gaya baru.",
+    "Crop, luruskan, dan beri bingkai.",
+    "Simpan ke Foto. Bisa dibatalkan.",
+    "Jadikan editor milik Anda."
+   ],
+   "subs": [
+    "Mask untuk foto RAW di iPad.",
+    "Seret palet ke mana saja, dalam orientasi apa pun.",
+    "Radial, linear, kuas, atau kotak. Lalu tambah, kurangi, haluskan tepi.",
+    "Gaya film, hitam putih, vintage, noir, grunge, dan retro.",
+    "Delapan bingkai, dari garis tipis hingga tepi film.",
+    "Foto asli tetap utuh, dan tak ada yang keluar dari iPad Anda.",
+    "Simpan preset, dan pertahankan hanya langkah yang Anda pakai, sesuai urutan Anda."
+   ]
+  }
+ },
+ {
+  "locale": "it",
+  "mac": {
+   "titles": [
+    "Modifica solo ciò che selezioni.",
+    "Trova il soggetto per te.",
+    "Ritaglia, raddrizza, incornicia.",
+    "Salva in Foto. Sempre reversibile.",
+    "Un editor su misura per te.",
+    "Regola cosa rileva."
+   ],
+   "subs": [
+    "Maschere per le foto RAW su Mac.",
+    "Maschere automatiche per persone, auto e animali, create su Mac.",
+    "Otto bordi, dal filo sottile al bordo pellicola.",
+    "L'originale resta intatto e niente esce dal tuo Mac.",
+    "Salva i preset e tieni solo i passaggi che usi, nel tuo ordine.",
+    "Imposta affidabilità, bordo maschera e numero di oggetti. Tutto gira sul tuo Mac."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Modifica solo ciò che selezioni.",
+    "Ogni strumento fluttua sulla foto.",
+    "Disegna la maschera come vuoi.",
+    "Dai un look alla foto.",
+    "Ritaglia, raddrizza, incornicia.",
+    "Salva in Foto. Sempre reversibile.",
+    "Un editor su misura per te."
+   ],
+   "subs": [
+    "Maschere per le foto RAW su iPad.",
+    "Trascina le palette dove vuoi, in verticale o in orizzontale.",
+    "Radiale, lineare, pennello o rettangolo. Poi aggiungi, togli o sfuma.",
+    "Stili pellicola, bianco e nero, vintage, noir, grunge e retrò.",
+    "Otto bordi, dal filo sottile al bordo pellicola.",
+    "L'originale resta intatto e niente esce dal tuo iPad.",
+    "Salva i preset e tieni solo i passaggi che usi, nel tuo ordine."
+   ]
+  }
+ },
+ {
+  "locale": "ja",
+  "mac": {
+   "titles": [
+    "選んだ部分だけ、編集。",
+    "被写体の選択は、おまかせ。",
+    "トリミング、傾き補正、フレーム。",
+    "「写真」に保存。復元も自在。",
+    "エディタを、自分仕様に。",
+    "検出内容を、細かく調整。"
+   ],
+   "subs": [
+    "Macで使える、RAW写真のためのマスク。",
+    "人物・車・動物をMac上で検出し、自動でマスク。",
+    "細い線からフィルム風まで、8種類のボーダー。",
+    "編集はいつでも元に戻せます。データはMacから出ません。",
+    "プリセットを保存し、使うステップだけを好きな順番に。",
+    "信頼度、マスクの境界、検出数を設定。すべてMac上で動作します。"
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "選んだ部分だけ、編集。",
+    "すべてのツールが、写真の上に。",
+    "マスクを自由自在に描く。",
+    "写真に、スタイルを。",
+    "トリミング、傾き補正、フレーム。",
+    "「写真」に保存。復元も自在。",
+    "エディタを、自分仕様に。"
+   ],
+   "subs": [
+    "iPadで使える、RAW写真のためのマスク。",
+    "パレットは縦でも横でも、好きな場所へ。",
+    "円形・線形・ブラシ・長方形。範囲の追加・除外やぼかしも自在。",
+    "フィルム、モノクロ、ヴィンテージ、ノワール、グランジ、レトロ。",
+    "細い線からフィルム風まで、8種類のボーダー。",
+    "編集はいつでも元に戻せます。データはiPadから出ません。",
+    "プリセットを保存し、使うステップだけを好きな順番に。"
+   ]
+  }
+ },
+ {
+  "locale": "kn-IN",
+  "mac": {
+   "titles": [
+    "ಆರಿಸಿದ್ದನ್ನು ಮಾತ್ರ ಎಡಿಟ್ ಮಾಡಿ.",
+    "ಸಬ್ಜೆಕ್ಟ್ ಅನ್ನು ಆ್ಯಪ್ ಹುಡುಕಲಿ.",
+    "ಕ್ರಾಪ್ ಮಾಡಿ, ನೇರಗೊಳಿಸಿ, ಫ್ರೇಮ್ ಹಾಕಿ.",
+    "ಫೋಟೋಗಳಲ್ಲಿ ಉಳಿಸಿ. ಬೇಕಾದಾಗ ಮರಳಿಸಿ.",
+    "ಎಡಿಟರ್ ಅನ್ನು ನಿಮ್ಮದಾಗಿಸಿ.",
+    "ಪತ್ತೆಹಚ್ಚುವಿಕೆಯನ್ನು ಹೊಂದಿಸಿ."
+   ],
+   "subs": [
+    "Mac ನಲ್ಲಿ RAW ಫೋಟೋಗಳಿಗೆ ಮಾಸ್ಕ್‌ಗಳು.",
+    "ಕಾರು, ಜನ, ಪ್ರಾಣಿಗಳನ್ನು Mac ನಲ್ಲೇ ಪತ್ತೆಹಚ್ಚಿ ಮಾಸ್ಕ್ ಮಾಡುತ್ತದೆ.",
+    "ತೆಳು ಗೆರೆಯಿಂದ ಫಿಲ್ಮ್ ಅಂಚಿನವರೆಗೆ, ಎಂಟು ಬಾರ್ಡರ್‌ಗಳು.",
+    "ಎಡಿಟ್‌ಗಳನ್ನು ಹಿಂತಿರುಗಿಸಬಹುದು. ಯಾವುದೂ ನಿಮ್ಮ Mac ಬಿಟ್ಟು ಹೋಗುವುದಿಲ್ಲ.",
+    "ಪ್ರೀಸೆಟ್‌ಗಳನ್ನು ಉಳಿಸಿ, ಬಳಸುವ ಹಂತಗಳನ್ನಷ್ಟೇ ನಿಮ್ಮ ಕ್ರಮದಲ್ಲಿ ಇರಿಸಿ.",
+    "ಕಾನ್ಫಿಡೆನ್ಸ್, ಮಾಸ್ಕ್ ಅಂಚು, ವಸ್ತುಗಳ ಸಂಖ್ಯೆ ಹೊಂದಿಸಿ. ಎಲ್ಲವೂ ನಿಮ್ಮ Mac ನಲ್ಲೇ ನಡೆಯುತ್ತದೆ."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "ಆರಿಸಿದ್ದನ್ನು ಮಾತ್ರ ಎಡಿಟ್ ಮಾಡಿ.",
+    "ಪ್ರತಿ ಟೂಲ್ ಫೋಟೋದ ಮೇಲೆ ತೇಲುತ್ತದೆ.",
+    "ನಿಮಗಿಷ್ಟ ಬಂದಂತೆ ಮಾಸ್ಕ್ ಬಿಡಿಸಿ.",
+    "ಫೋಟೋಗೆ ಹೊಸ ಲುಕ್ ಕೊಡಿ.",
+    "ಕ್ರಾಪ್ ಮಾಡಿ, ನೇರಗೊಳಿಸಿ, ಫ್ರೇಮ್ ಹಾಕಿ.",
+    "ಫೋಟೋಗಳಲ್ಲಿ ಉಳಿಸಿ. ಬೇಕಾದಾಗ ಮರಳಿಸಿ.",
+    "ಎಡಿಟರ್ ಅನ್ನು ನಿಮ್ಮದಾಗಿಸಿ."
+   ],
+   "subs": [
+    "iPad ನಲ್ಲಿ RAW ಫೋಟೋಗಳಿಗೆ ಮಾಸ್ಕ್‌ಗಳು.",
+    "ಪ್ಯಾಲೆಟ್‌ಗಳನ್ನು ಎಲ್ಲಿಗೆ ಬೇಕಾದರೂ ಎಳೆಯಿರಿ, ಲಂಬ ಅಥವಾ ಅಡ್ಡ ವೀಕ್ಷಣೆಯಲ್ಲಿ.",
+    "ರೇಡಿಯಲ್, ಲೀನಿಯರ್, ಬ್ರಷ್ ಅಥವಾ ಆಯತ. ನಂತರ ಸೇರಿಸಿ, ಕಳೆಯಿರಿ, ಅಂಚು ಮೃದುಗೊಳಿಸಿ.",
+    "ಫಿಲ್ಮ್, ಕಪ್ಪು-ಬಿಳುಪು, ವಿಂಟೇಜ್, ನ್ವಾರ್, ಗ್ರಂಜ್ ಮತ್ತು ರೆಟ್ರೋ ಶೈಲಿಗಳು.",
+    "ತೆಳು ಗೆರೆಯಿಂದ ಫಿಲ್ಮ್ ಅಂಚಿನವರೆಗೆ, ಎಂಟು ಬಾರ್ಡರ್‌ಗಳು.",
+    "ಎಡಿಟ್‌ಗಳನ್ನು ಹಿಂತಿರುಗಿಸಬಹುದು. ಯಾವುದೂ ನಿಮ್ಮ iPad ಬಿಟ್ಟು ಹೋಗುವುದಿಲ್ಲ.",
+    "ಪ್ರೀಸೆಟ್‌ಗಳನ್ನು ಉಳಿಸಿ, ಬಳಸುವ ಹಂತಗಳನ್ನಷ್ಟೇ ನಿಮ್ಮ ಕ್ರಮದಲ್ಲಿ ಇರಿಸಿ."
+   ]
+  }
+ },
+ {
+  "locale": "ko",
+  "mac": {
+   "titles": [
+    "선택한 곳만 편집하세요",
+    "피사체는 알아서 찾아요",
+    "자르고, 수평 맞추고, 프레임까지",
+    "사진에 저장, 언제든 복원",
+    "편집기를 내 방식대로",
+    "감지 방식도 직접 조절"
+   ],
+   "subs": [
+    "Mac에서 RAW 사진을 마스크로 보정해요",
+    "기기에서 바로 사람, 자동차, 동물을 찾아 마스킹해요",
+    "가는 선부터 필름 가장자리까지, 테두리 8종",
+    "편집은 되돌릴 수 있고, 아무것도 업로드되지 않아요",
+    "프리셋을 저장하고, 쓰는 단계만 원하는 순서로 남겨요",
+    "신뢰도, 마스크 경계, 객체 수를 설정해요. 모두 Mac에서 실행돼요"
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "선택한 곳만 편집하세요",
+    "모든 도구가 사진 위에 떠 있어요",
+    "마스크는 원하는 대로",
+    "사진에 분위기를 더하세요",
+    "자르고, 수평 맞추고, 프레임까지",
+    "사진에 저장, 언제든 복원",
+    "편집기를 내 방식대로"
+   ],
+   "subs": [
+    "iPad에서 RAW 사진을 마스크로 보정해요",
+    "팔레트는 가로, 세로 어디서든 원하는 곳으로 옮겨요",
+    "원형, 선형, 브러시, 사각형. 더하기, 빼기, 페더까지",
+    "필름, 흑백, 빈티지, 누아르, 그런지, 레트로 스타일",
+    "가는 선부터 필름 가장자리까지, 테두리 8종",
+    "편집은 되돌릴 수 있고, 아무것도 업로드되지 않아요",
+    "프리셋을 저장하고, 쓰는 단계만 원하는 순서로 남겨요"
+   ]
+  }
+ },
+ {
+  "locale": "ms",
+  "mac": {
+   "titles": [
+    "Sunting hanya yang anda pilih.",
+    "Biarkan apl mengesan subjek.",
+    "Pangkas, luruskan dan bingkaikan.",
+    "Simpan ke Foto. Boleh dipulihkan.",
+    "Jadikan editor milik anda.",
+    "Laras apa yang dikesan."
+   ],
+   "subs": [
+    "Topeng untuk foto RAW di Mac.",
+    "Topeng automatik untuk orang, kereta dan haiwan, dikesan pada peranti.",
+    "Lapan bingkai, dari garis nipis hingga tepi filem.",
+    "Suntingan boleh diundur dan tiada apa-apa keluar dari Mac anda.",
+    "Simpan pratetap dan kekalkan hanya langkah yang anda guna, ikut susunan anda.",
+    "Tetapkan keyakinan, tepi topeng dan bilangan objek. Semuanya berjalan pada Mac anda."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Sunting hanya yang anda pilih.",
+    "Setiap alat terapung di atas foto.",
+    "Lukis topeng sesuka hati.",
+    "Beri foto gaya tersendiri.",
+    "Pangkas, luruskan dan bingkaikan.",
+    "Simpan ke Foto. Boleh dipulihkan.",
+    "Jadikan editor milik anda."
+   ],
+   "subs": [
+    "Topeng untuk foto RAW di iPad.",
+    "Seret palet ke mana-mana, dalam apa jua orientasi.",
+    "Jejarian, linear, berus, segi empat tepat. Tambah, tolak, lembutkan tepi.",
+    "Gaya filem, hitam putih, vintaj, noir, grunge dan retro.",
+    "Lapan bingkai, dari garis nipis hingga tepi filem.",
+    "Suntingan boleh diundur dan tiada apa-apa keluar dari iPad anda.",
+    "Simpan pratetap dan kekalkan hanya langkah yang anda guna, ikut susunan anda."
+   ]
+  }
+ },
+ {
+  "locale": "ml-IN",
+  "mac": {
+   "titles": [
+    "തിരഞ്ഞെടുത്ത ഭാഗം മാത്രം എഡിറ്റ്.",
+    "സബ്ജക്റ്റിനെ ആപ്പ് കണ്ടെത്തും.",
+    "ക്രോപ്പ് ചെയ്യൂ, നേരെയാക്കൂ, ഫ്രെയിം ചെയ്യൂ.",
+    "Photos-ൽ സേവ്. എപ്പോഴും പഴയപടി.",
+    "എഡിറ്ററിനെ നിങ്ങളുടേതാക്കൂ.",
+    "കണ്ടെത്തൽ ട്യൂൺ ചെയ്യൂ."
+   ],
+   "subs": [
+    "Mac-ൽ RAW ഫോട്ടോകൾക്കായുള്ള മാസ്കുകൾ.",
+    "Mac-ലെ ഡിറ്റക്ഷൻ ആളുകളെയും കാറുകളെയും മൃഗങ്ങളെയും സ്വയം മാസ്ക് ചെയ്യും.",
+    "നേർത്ത വര മുതൽ ഫിലിം എഡ്ജ് വരെ, എട്ട് ബോർഡറുകൾ.",
+    "ഏത് എഡിറ്റും പഴയപടിയാക്കാം, ഒന്നും Mac വിട്ടുപോകില്ല.",
+    "പ്രീസെറ്റുകൾ സേവ് ചെയ്യൂ, ഉപയോഗിക്കുന്ന ഘട്ടങ്ങൾ മാത്രം നിങ്ങളുടെ ക്രമത്തിൽ വയ്ക്കൂ.",
+    "കോൺഫിഡൻസ്, മാസ്ക് എഡ്ജ്, ഒബ്ജക്റ്റ് എണ്ണം എന്നിവ സെറ്റ് ചെയ്യൂ. എല്ലാം നിങ്ങളുടെ Mac-ൽ തന്നെ."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "തിരഞ്ഞെടുത്ത ഭാഗം മാത്രം എഡിറ്റ്.",
+    "എല്ലാ ടൂളുകളും ഫോട്ടോയ്ക്ക് മുകളിൽ ഒഴുകിനിൽക്കും.",
+    "ഇഷ്ടമുള്ളപോലെ മാസ്ക് വരയ്ക്കൂ.",
+    "ഫോട്ടോയ്ക്ക് പുതിയ ലുക്ക് നൽകൂ.",
+    "ക്രോപ്പ് ചെയ്യൂ, നേരെയാക്കൂ, ഫ്രെയിം ചെയ്യൂ.",
+    "Photos-ൽ സേവ്. എപ്പോഴും പഴയപടി.",
+    "എഡിറ്ററിനെ നിങ്ങളുടേതാക്കൂ."
+   ],
+   "subs": [
+    "iPad-ൽ RAW ഫോട്ടോകൾക്കായുള്ള മാസ്കുകൾ.",
+    "പാലറ്റുകൾ എവിടേക്കും വലിച്ചുനീക്കൂ, ഏത് ഓറിയന്റേഷനിലും.",
+    "റേഡിയൽ, ലീനിയർ, ബ്രഷ്, ദീർഘചതുരം. ചേർക്കാം, കുറയ്ക്കാം, ഫെതർ ചെയ്യാം.",
+    "ഫിലിം, ബ്ലാക്ക് ആൻഡ് വൈറ്റ്, വിന്റേജ്, നോയർ, ഗ്രഞ്ച്, റെട്രോ സ്റ്റൈലുകൾ.",
+    "നേർത്ത വര മുതൽ ഫിലിം എഡ്ജ് വരെ, എട്ട് ബോർഡറുകൾ.",
+    "ഏത് എഡിറ്റും പഴയപടിയാക്കാം, ഒന്നും iPad വിട്ടുപോകില്ല.",
+    "പ്രീസെറ്റുകൾ സേവ് ചെയ്യൂ, ഉപയോഗിക്കുന്ന ഘട്ടങ്ങൾ മാത്രം നിങ്ങളുടെ ക്രമത്തിൽ വയ്ക്കൂ."
+   ]
+  }
+ },
+ {
+  "locale": "mr-IN",
+  "mac": {
+   "titles": [
+    "फक्त निवडलेलंच एडिट करा.",
+    "ॲपलाच सब्जेक्ट शोधू द्या.",
+    "क्रॉप करा, सरळ करा, फ्रेम करा.",
+    "फोटो ॲपमध्ये सेव्ह. कधीही पूर्ववत.",
+    "एडिटर बनवा तुमच्या मनासारखा.",
+    "काय ओळखायचं ते ठरवा."
+   ],
+   "subs": [
+    "Mac वर RAW फोटोंसाठी मास्क.",
+    "कार, माणसं आणि प्राण्यांचे मास्क Mac वरच आपोआप तयार होतात.",
+    "बारीक रेषेपासून फिल्म एजपर्यंत, आठ बॉर्डर.",
+    "बदल नेहमी पूर्ववत करता येतात आणि काहीही Mac च्या बाहेर जात नाही.",
+    "प्रीसेट सेव्ह करा आणि वापरत असलेल्या स्टेप्सच तुमच्या क्रमाने ठेवा.",
+    "कॉन्फिडन्स, मास्क एज आणि ऑब्जेक्ट्सची संख्या सेट करा. सगळं तुमच्या Mac वरच चालतं."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "फक्त निवडलेलंच एडिट करा.",
+    "प्रत्येक टूल फोटोवर तरंगतं.",
+    "हवा तसा मास्क रेखाटा.",
+    "फोटोला द्या नवा लूक.",
+    "क्रॉप करा, सरळ करा, फ्रेम करा.",
+    "फोटो ॲपमध्ये सेव्ह. कधीही पूर्ववत.",
+    "एडिटर बनवा तुमच्या मनासारखा."
+   ],
+   "subs": [
+    "iPad वर RAW फोटोंसाठी मास्क.",
+    "पॅलेट्स हवे तिथे ओढा, कोणत्याही ओरिएंटेशनमध्ये.",
+    "रेडियल, लिनियर, ब्रश किंवा आयत. मग भाग जोडा, वजा करा किंवा फेदर करा.",
+    "फिल्म, ब्लॅक अँड व्हाइट, व्हिंटेज, न्वार, ग्रंज आणि रेट्रो स्टाइल.",
+    "बारीक रेषेपासून फिल्म एजपर्यंत, आठ बॉर्डर.",
+    "बदल नेहमी पूर्ववत करता येतात आणि काहीही iPad च्या बाहेर जात नाही.",
+    "प्रीसेट सेव्ह करा आणि वापरत असलेल्या स्टेप्सच तुमच्या क्रमाने ठेवा."
+   ]
+  }
+ },
+ {
+  "locale": "no",
+  "mac": {
+   "titles": [
+    "Rediger bare det du velger.",
+    "La appen finne motivet.",
+    "Beskjær, rett opp og ramme inn.",
+    "Lagre i Bilder. Angre når du vil.",
+    "Gjør editoren til din egen.",
+    "Juster hva den finner."
+   ],
+   "subs": [
+    "Masker for RAW-bilder på Mac.",
+    "Gjenkjenning på Macen maskerer biler, personer og dyr for deg.",
+    "Åtte rammer, fra en tynn strek til en filmkant.",
+    "Originalen blir aldri overskrevet, og ingenting forlater Macen din.",
+    "Lagre forhåndsinnstillinger, og behold bare stegene du bruker, i din rekkefølge.",
+    "Angi sikkerhet, maskekant og antall objekter. Alt kjører på Macen din."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Rediger bare det du velger.",
+    "Alle verktøy svever over bildet.",
+    "Tegn masker slik du vil.",
+    "Gi bildet et nytt uttrykk.",
+    "Beskjær, rett opp og ramme inn.",
+    "Lagre i Bilder. Angre når du vil.",
+    "Gjør editoren til din egen."
+   ],
+   "subs": [
+    "Masker for RAW-bilder på iPad.",
+    "Dra palettene hvor du vil, stående eller liggende.",
+    "Radial, lineær, pensel, rektangel. Legg til, trekk fra, myk opp kanter.",
+    "Stiler som film, svart-hvitt, vintage, noir, grunge og retro.",
+    "Åtte rammer, fra en tynn strek til en filmkant.",
+    "Originalen blir aldri overskrevet, og ingenting forlater iPaden din.",
+    "Lagre forhåndsinnstillinger, og behold bare stegene du bruker, i din rekkefølge."
+   ]
+  }
+ },
+ {
+  "locale": "or-IN",
+  "mac": {
+   "titles": [
+    "କେବଳ ବାଛିଥିବା ଅଂଶ ଏଡିଟ୍ କରନ୍ତୁ।",
+    "ଫଟୋର ମୁଖ୍ୟ ବିଷୟ ଆପେ ଚିହ୍ନଟ ହେବ।",
+    "କ୍ରପ୍ କରନ୍ତୁ, ସିଧା କରନ୍ତୁ, ଫ୍ରେମ୍ ଦିଅନ୍ତୁ।",
+    "Photosରେ ସେଭ୍। ଯେବେ ବି ଫେରାନ୍ତୁ।",
+    "ଏଡିଟରକୁ ନିଜ ମନମୁତାବକ କରନ୍ତୁ।",
+    "କ'ଣ ଚିହ୍ନଟ ହେବ, ଆପଣ ଠିକ୍ କରନ୍ତୁ।"
+   ],
+   "subs": [
+    "Macରେ RAW ଫଟୋ ପାଇଁ ମାସ୍କ।",
+    "Macରେ ଚାଲୁଥିବା ଚିହ୍ନଟ ପ୍ରଣାଳୀ କାର୍, ଲୋକ ଓ ପଶୁଙ୍କୁ ଆପେ ମାସ୍କ କରେ।",
+    "ପତଳା ରେଖାଠାରୁ ଫିଲ୍ମ ଏଜ୍ ପର୍ଯ୍ୟନ୍ତ, ଆଠଟି ବର୍ଡର୍।",
+    "ଏଡିଟ୍ ସବୁବେଳେ ଫେରାଇହେବ, ଆଉ କିଛି ବି ଆପଣଙ୍କ Mac ବାହାରକୁ ଯାଏ ନାହିଁ।",
+    "ପ୍ରିସେଟ୍ ସେଭ୍ କରନ୍ତୁ, ଆଉ କେବଳ ଦରକାରୀ ଧାପଗୁଡ଼ିକୁ ନିଜ କ୍ରମରେ ରଖନ୍ତୁ।",
+    "କନଫିଡେନ୍ସ, ମାସ୍କ ଏଜ୍ ଓ ଅବଜେକ୍ଟ ସଂଖ୍ୟା ସେଟ୍ କରନ୍ତୁ। ସବୁକିଛି ଆପଣଙ୍କ Macରେ ହିଁ ଚାଲେ।"
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "କେବଳ ବାଛିଥିବା ଅଂଶ ଏଡିଟ୍ କରନ୍ତୁ।",
+    "ପ୍ରତିଟି ଟୁଲ୍ ଫଟୋ ଉପରେ ଭାସେ।",
+    "ଯେମିତି ଚାହିଁବେ ମାସ୍କ ଆଙ୍କନ୍ତୁ।",
+    "ଫଟୋକୁ ନୂଆ ଲୁକ୍ ଦିଅନ୍ତୁ।",
+    "କ୍ରପ୍ କରନ୍ତୁ, ସିଧା କରନ୍ତୁ, ଫ୍ରେମ୍ ଦିଅନ୍ତୁ।",
+    "Photosରେ ସେଭ୍। ଯେବେ ବି ଫେରାନ୍ତୁ।",
+    "ଏଡିଟରକୁ ନିଜ ମନମୁତାବକ କରନ୍ତୁ।"
+   ],
+   "subs": [
+    "iPadରେ RAW ଫଟୋ ପାଇଁ ମାସ୍କ।",
+    "ପ୍ୟାଲେଟ୍ ଯେଉଁଠି ଇଚ୍ଛା ଟାଣନ୍ତୁ, ଯେକୌଣସି ଓରିଏଣ୍ଟେସନରେ।",
+    "ରେଡିଆଲ୍, ଲିନିଅର୍, ବ୍ରଶ୍ ବା ଆୟତକ୍ଷେତ୍ର। ପରେ ଯୋଡ଼ନ୍ତୁ, ଘଟାନ୍ତୁ ବା ଫେଦର୍ କରନ୍ତୁ।",
+    "ଫିଲ୍ମ, ବ୍ଲାକ୍ ଆଣ୍ଡ ହ୍ୱାଇଟ୍, ଭିଣ୍ଟେଜ୍, ନୱାର୍, ଗ୍ରଞ୍ଜ୍ ଓ ରେଟ୍ରୋ ଷ୍ଟାଇଲ୍।",
+    "ପତଳା ରେଖାଠାରୁ ଫିଲ୍ମ ଏଜ୍ ପର୍ଯ୍ୟନ୍ତ, ଆଠଟି ବର୍ଡର୍।",
+    "ଏଡିଟ୍ ସବୁବେଳେ ଫେରାଇହେବ, ଆଉ କିଛି ବି ଆପଣଙ୍କ iPad ବାହାରକୁ ଯାଏ ନାହିଁ।",
+    "ପ୍ରିସେଟ୍ ସେଭ୍ କରନ୍ତୁ, ଆଉ କେବଳ ଦରକାରୀ ଧାପଗୁଡ଼ିକୁ ନିଜ କ୍ରମରେ ରଖନ୍ତୁ।"
+   ]
+  }
+ },
+ {
+  "locale": "pl",
+  "mac": {
+   "titles": [
+    "Edytuj tylko to, co zaznaczysz.",
+    "Niech obiekt znajdzie się sam.",
+    "Kadruj, prostuj, dodaj ramkę.",
+    "Zapisz w Zdjęciach. Bez ryzyka.",
+    "Dopasuj edytor do siebie.",
+    "Dostrój wykrywanie."
+   ],
+   "subs": [
+    "Maski do zdjęć RAW na Macu.",
+    "Wykrywanie na Macu samo tworzy maski aut, ludzi i zwierząt.",
+    "Osiem ramek, od cienkiej linii po brzeg kliszy.",
+    "Zmiany zawsze można cofnąć, a nic nie opuszcza Maca.",
+    "Zapisuj presety i zostaw tylko używane kroki, w swojej kolejności.",
+    "Ustaw pewność, krawędź maski i liczbę obiektów. Wszystko działa na Macu."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Edytuj tylko to, co zaznaczysz.",
+    "Każde narzędzie unosi się nad zdjęciem.",
+    "Narysuj maskę po swojemu.",
+    "Nadaj zdjęciu styl.",
+    "Kadruj, prostuj, dodaj ramkę.",
+    "Zapisz w Zdjęciach. Bez ryzyka.",
+    "Dopasuj edytor do siebie."
+   ],
+   "subs": [
+    "Maski do zdjęć RAW na iPadzie.",
+    "Przeciągaj palety, gdzie chcesz, w pionie i w poziomie.",
+    "Radialna, liniowa, pędzlem lub prostokątem. Dodawaj, odejmuj, wtapiaj.",
+    "Style: film, czerń i biel, vintage, noir, grunge i retro.",
+    "Osiem ramek, od cienkiej linii po brzeg kliszy.",
+    "Zmiany zawsze można cofnąć, a nic nie opuszcza iPada.",
+    "Zapisuj presety i zostaw tylko używane kroki, w swojej kolejności."
+   ]
+  }
+ },
+ {
+  "locale": "pt-BR",
+  "mac": {
+   "titles": [
+    "Edite só o que você selecionar.",
+    "Deixe o app achar o assunto.",
+    "Corte, endireite e enquadre.",
+    "Salve no Fotos. Desfaça depois.",
+    "Deixe o editor do seu jeito.",
+    "Ajuste o que ele detecta."
+   ],
+   "subs": [
+    "Máscaras para fotos RAW no Mac.",
+    "A detecção no Mac cria máscaras de pessoas, carros e animais.",
+    "Oito bordas, de um fio fino à borda de filme.",
+    "As edições são reversíveis e nada sai do seu Mac.",
+    "Salve presets e mantenha só as etapas que você usa, na sua ordem.",
+    "Defina confiança, borda da máscara e número de objetos. Tudo roda no seu Mac."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Edite só o que você selecionar.",
+    "Cada ferramenta flutua sobre a foto.",
+    "Desenhe a máscara do seu jeito.",
+    "Dê um novo visual à foto.",
+    "Corte, endireite e enquadre.",
+    "Salve no Fotos. Desfaça depois.",
+    "Deixe o editor do seu jeito."
+   ],
+   "subs": [
+    "Máscaras para fotos RAW no iPad.",
+    "Arraste as paletas para onde quiser, na vertical ou na horizontal.",
+    "Radial, linear, pincel ou retângulo. Adicione, subtraia ou suavize.",
+    "Estilos filme, preto e branco, vintage, noir, grunge e retrô.",
+    "Oito bordas, de um fio fino à borda de filme.",
+    "As edições são reversíveis e nada sai do seu iPad.",
+    "Salve presets e mantenha só as etapas que você usa, na sua ordem."
+   ]
+  }
+ },
+ {
+  "locale": "pt-PT",
+  "mac": {
+   "titles": [
+    "Edite só o que selecionar.",
+    "Deixe a app encontrar o motivo.",
+    "Recorte, endireite e enquadre.",
+    "Guarde em Fotografias e reverta.",
+    "Um editor à sua medida.",
+    "Ajuste o que é detetado."
+   ],
+   "subs": [
+    "Máscaras para fotos RAW no Mac.",
+    "A deteção no Mac cria máscaras de carros, pessoas e animais.",
+    "Oito molduras, de uma linha fina a uma orla de película.",
+    "As edições são sempre reversíveis e nada sai do seu Mac.",
+    "Guarde predefinições e mantenha só os passos que usa, pela sua ordem.",
+    "Defina a confiança, a orla da máscara e o número de objetos. Tudo corre no seu Mac."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Edite só o que selecionar.",
+    "Todas as ferramentas flutuam sobre a foto.",
+    "Desenhe máscaras à sua maneira.",
+    "Dê-lhe um estilo.",
+    "Recorte, endireite e enquadre.",
+    "Guarde em Fotografias e reverta.",
+    "Um editor à sua medida."
+   ],
+   "subs": [
+    "Máscaras para fotos RAW no iPad.",
+    "Arraste as paletas para onde quiser, na vertical ou na horizontal.",
+    "Radial, linear, pincel ou retângulo. Adicione, subtraia ou esbata.",
+    "Estilos película, preto e branco, vintage, noir, grunge e retro.",
+    "Oito molduras, de uma linha fina a uma orla de película.",
+    "As edições são sempre reversíveis e nada sai do seu iPad.",
+    "Guarde predefinições e mantenha só os passos que usa, pela sua ordem."
+   ]
+  }
+ },
+ {
+  "locale": "pa-IN",
+  "mac": {
+   "titles": [
+    "ਜੋ ਚੁਣੋ, ਬਸ ਉਹੀ ਐਡਿਟ ਕਰੋ।",
+    "ਸਬਜੈਕਟ ਐਪ ਆਪੇ ਲੱਭ ਲਵੇਗੀ।",
+    "ਕ੍ਰੌਪ ਕਰੋ, ਸਿੱਧਾ ਕਰੋ, ਫ੍ਰੇਮ ਲਾਓ।",
+    "Photos 'ਚ ਸੇਵ ਕਰੋ, ਕਦੇ ਵੀ ਵਾਪਸ ਲਓ।",
+    "ਐਡੀਟਰ ਨੂੰ ਆਪਣਾ ਬਣਾਓ।",
+    "ਪਛਾਣ ਨੂੰ ਆਪਣੇ ਹਿਸਾਬ ਨਾਲ ਸੈੱਟ ਕਰੋ।"
+   ],
+   "subs": [
+    "Mac 'ਤੇ RAW ਫ਼ੋਟੋਆਂ ਲਈ ਮਾਸਕ।",
+    "Mac 'ਤੇ ਹੀ ਹੁੰਦੀ ਪਛਾਣ ਕਾਰਾਂ, ਲੋਕਾਂ ਤੇ ਜਾਨਵਰਾਂ ਨੂੰ ਆਪੇ ਮਾਸਕ ਕਰਦੀ ਹੈ।",
+    "ਪਤਲੀ ਲਕੀਰ ਤੋਂ ਫ਼ਿਲਮ ਐਜ ਤੱਕ, ਅੱਠ ਬਾਰਡਰ।",
+    "ਹਰ ਐਡਿਟ ਵਾਪਸ ਲਿਆ ਜਾ ਸਕਦਾ ਹੈ, ਤੇ ਕੁਝ ਵੀ Mac ਤੋਂ ਬਾਹਰ ਨਹੀਂ ਜਾਂਦਾ।",
+    "ਪ੍ਰੀਸੈੱਟ ਸੇਵ ਕਰੋ, ਤੇ ਸਿਰਫ਼ ਵਰਤੇ ਜਾਂਦੇ ਕਦਮ ਆਪਣੀ ਤਰਤੀਬ ਵਿੱਚ ਰੱਖੋ।",
+    "ਕਾਨਫ਼ੀਡੈਂਸ, ਮਾਸਕ ਐਜ ਤੇ ਆਬਜੈਕਟਾਂ ਦੀ ਗਿਣਤੀ ਸੈੱਟ ਕਰੋ। ਸਭ ਕੁਝ ਤੁਹਾਡੇ Mac 'ਤੇ ਹੀ ਚੱਲਦਾ ਹੈ।"
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "ਜੋ ਚੁਣੋ, ਬਸ ਉਹੀ ਐਡਿਟ ਕਰੋ।",
+    "ਹਰ ਟੂਲ ਫ਼ੋਟੋ ਉੱਤੇ ਤੈਰਦਾ ਹੈ।",
+    "ਮਾਸਕ ਜਿਵੇਂ ਚਾਹੋ, ਉਵੇਂ ਬਣਾਓ।",
+    "ਫ਼ੋਟੋ ਨੂੰ ਨਵਾਂ ਲੁੱਕ ਦਿਓ।",
+    "ਕ੍ਰੌਪ ਕਰੋ, ਸਿੱਧਾ ਕਰੋ, ਫ੍ਰੇਮ ਲਾਓ।",
+    "Photos 'ਚ ਸੇਵ ਕਰੋ, ਕਦੇ ਵੀ ਵਾਪਸ ਲਓ।",
+    "ਐਡੀਟਰ ਨੂੰ ਆਪਣਾ ਬਣਾਓ।"
+   ],
+   "subs": [
+    "iPad 'ਤੇ RAW ਫ਼ੋਟੋਆਂ ਲਈ ਮਾਸਕ।",
+    "ਪੈਲੇਟ ਜਿੱਥੇ ਮਰਜ਼ੀ ਖਿੱਚੋ, ਕਿਸੇ ਵੀ ਓਰੀਐਂਟੇਸ਼ਨ ਵਿੱਚ।",
+    "ਰੇਡੀਅਲ, ਲੀਨੀਅਰ, ਬੁਰਸ਼ ਜਾਂ ਆਇਤ। ਫਿਰ ਜੋੜੋ, ਘਟਾਓ ਜਾਂ ਕਿਨਾਰੇ ਨਰਮ ਕਰੋ।",
+    "ਫ਼ਿਲਮ, ਬਲੈਕ ਐਂਡ ਵ੍ਹਾਈਟ, ਵਿੰਟੇਜ, ਨੁਆਰ, ਗ੍ਰੰਜ ਤੇ ਰੈਟਰੋ ਸਟਾਈਲ।",
+    "ਪਤਲੀ ਲਕੀਰ ਤੋਂ ਫ਼ਿਲਮ ਐਜ ਤੱਕ, ਅੱਠ ਬਾਰਡਰ।",
+    "ਹਰ ਐਡਿਟ ਵਾਪਸ ਲਿਆ ਜਾ ਸਕਦਾ ਹੈ, ਤੇ ਕੁਝ ਵੀ iPad ਤੋਂ ਬਾਹਰ ਨਹੀਂ ਜਾਂਦਾ।",
+    "ਪ੍ਰੀਸੈੱਟ ਸੇਵ ਕਰੋ, ਤੇ ਸਿਰਫ਼ ਵਰਤੇ ਜਾਂਦੇ ਕਦਮ ਆਪਣੀ ਤਰਤੀਬ ਵਿੱਚ ਰੱਖੋ।"
+   ]
+  }
+ },
+ {
+  "locale": "ro",
+  "mac": {
+   "titles": [
+    "Editezi doar ce selectezi.",
+    "Subiectul, găsit automat.",
+    "Decupezi, îndrepți, încadrezi.",
+    "Salvezi în Poze. Anulezi oricând.",
+    "Editorul, pe gustul tău.",
+    "Reglezi ce detectează."
+   ],
+   "subs": [
+    "Măști pentru fotografii RAW pe Mac.",
+    "Măști automate pentru mașini, oameni și animale, detectate pe Mac.",
+    "Opt chenare, de la o linie fină la marginea de film.",
+    "Modificările rămân reversibile și nimic nu părăsește Mac-ul.",
+    "Salvezi presetări și păstrezi doar pașii pe care îi folosești, în ordinea ta.",
+    "Setezi încrederea, marginea măștii și numărul de obiecte. Totul rulează pe Mac."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Editezi doar ce selectezi.",
+    "Fiecare unealtă plutește peste poză.",
+    "Desenează masca așa cum vrei.",
+    "Dă-i un stil.",
+    "Decupezi, îndrepți, încadrezi.",
+    "Salvezi în Poze. Anulezi oricând.",
+    "Editorul, pe gustul tău."
+   ],
+   "subs": [
+    "Măști pentru fotografii RAW pe iPad.",
+    "Muți paletele oriunde, pe verticală sau pe orizontală.",
+    "Radială, liniară, pensulă sau dreptunghi. Adaugi, scazi, estompezi.",
+    "Stiluri film, alb-negru, vintage, noir, grunge și retro.",
+    "Opt chenare, de la o linie fină la marginea de film.",
+    "Modificările rămân reversibile și nimic nu părăsește iPad-ul.",
+    "Salvezi presetări și păstrezi doar pașii pe care îi folosești, în ordinea ta."
+   ]
+  }
+ },
+ {
+  "locale": "ru",
+  "mac": {
+   "titles": [
+    "Меняйте только выделенное.",
+    "Приложение само найдёт объект.",
+    "Кадрируйте, выравнивайте, обрамляйте.",
+    "Сохраните в «Фото». Всё обратимо.",
+    "Настройте редактор под себя.",
+    "Настройте распознавание."
+   ],
+   "subs": [
+    "Маски для RAW-снимков на Mac.",
+    "Распознавание прямо на Mac само выделит машины, людей и животных.",
+    "Восемь рамок: от тонкой линии до края плёнки.",
+    "Правки всегда можно отменить, и всё остаётся на вашем Mac.",
+    "Сохраняйте пресеты и оставьте только нужные шаги в своём порядке.",
+    "Задайте уверенность, край маски и число объектов. Всё работает на вашем Mac."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Меняйте только выделенное.",
+    "Все инструменты парят над фото.",
+    "Рисуйте маску как угодно.",
+    "Придайте снимку стиль.",
+    "Кадрируйте, выравнивайте, обрамляйте.",
+    "Сохраните в «Фото». Всё обратимо.",
+    "Настройте редактор под себя."
+   ],
+   "subs": [
+    "Маски для RAW-снимков на iPad.",
+    "Перетаскивайте панели куда угодно, в любой ориентации.",
+    "Круг, градиент, кисть или прямоугольник. Дорисуйте, сотрите, растушуйте.",
+    "Стили: плёнка, чёрно-белый, винтаж, нуар, гранж и ретро.",
+    "Восемь рамок: от тонкой линии до края плёнки.",
+    "Правки всегда можно отменить, и всё остаётся на вашем iPad.",
+    "Сохраняйте пресеты и оставьте только нужные шаги в своём порядке."
+   ]
+  }
+ },
+ {
+  "locale": "sk",
+  "mac": {
+   "titles": [
+    "Upravte len to, čo označíte.",
+    "Objekt nájde automaticky.",
+    "Orežte, vyrovnajte, orámujte.",
+    "Uložte do Fotiek. Vždy vratne.",
+    "Prispôsobte si editor.",
+    "Nastavte, čo rozpozná."
+   ],
+   "subs": [
+    "Masky pre RAW fotografie na Macu.",
+    "Detekcia priamo na Macu za vás vytvorí masky áut, ľudí aj zvierat.",
+    "Osem rámčekov, od tenkej linky po okraj filmu.",
+    "Úpravy sa dajú kedykoľvek vrátiť a nič neopustí váš Mac.",
+    "Uložte si predvoľby a nechajte len kroky, ktoré používate, vo svojom poradí.",
+    "Nastavte spoľahlivosť, okraj masky a počet objektov. Všetko beží na vašom Macu."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Upravte len to, čo označíte.",
+    "Každý nástroj pláva nad fotkou.",
+    "Nakreslite masku podľa seba.",
+    "Dajte fotke štýl.",
+    "Orežte, vyrovnajte, orámujte.",
+    "Uložte do Fotiek. Vždy vratne.",
+    "Prispôsobte si editor."
+   ],
+   "subs": [
+    "Masky pre RAW fotografie na iPade.",
+    "Palety presuňte kamkoľvek, na výšku aj na šírku.",
+    "Radiálna, lineárna, obdĺžniková či štetcom. Pridajte, uberte, zjemnite.",
+    "Filmový, čiernobiely, vintage, noir, grunge a retro štýl.",
+    "Osem rámčekov, od tenkej linky po okraj filmu.",
+    "Úpravy sa dajú kedykoľvek vrátiť a nič neopustí váš iPad.",
+    "Uložte si predvoľby a nechajte len kroky, ktoré používate, vo svojom poradí."
+   ]
+  }
+ },
+ {
+  "locale": "sl-SI",
+  "mac": {
+   "titles": [
+    "Uredite samo izbrano.",
+    "Naj sama najde motiv.",
+    "Obrežite, poravnajte, uokvirite.",
+    "Shranite v Fotografije.",
+    "Urejevalnik po vaši meri.",
+    "Nastavite zaznavanje."
+   ],
+   "subs": [
+    "Maske za fotografije RAW na Macu.",
+    "Zaznavanje v napravi za vas maskira ljudi, avtomobile in živali.",
+    "Osem okvirjev, od tanke črte do roba filma.",
+    "Spremembe lahko kadar koli povrnete. Nič ne zapusti vašega Maca.",
+    "Shranite prednastavitve in obdržite le korake, ki jih uporabljate, v svojem vrstnem redu.",
+    "Nastavite zanesljivost, rob maske in število predmetov. Vse teče na vašem Macu."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Uredite samo izbrano.",
+    "Vsako orodje lebdi nad fotografijo.",
+    "Narišite masko po svoje.",
+    "Dajte ji slog.",
+    "Obrežite, poravnajte, uokvirite.",
+    "Shranite v Fotografije.",
+    "Urejevalnik po vaši meri."
+   ],
+   "subs": [
+    "Maske za fotografije RAW na iPadu.",
+    "Palete povlecite kamorkoli, pokončno ali ležeče.",
+    "Radialna, linearna, s čopičem, pravokotna. Dodajte, odvzemite, zmehčajte.",
+    "Filmski, črno-beli, vintage, noir, grunge in retro slog.",
+    "Osem okvirjev, od tanke črte do roba filma.",
+    "Spremembe lahko kadar koli povrnete. Nič ne zapusti vašega iPada.",
+    "Shranite prednastavitve in obdržite le korake, ki jih uporabljate, v svojem vrstnem redu."
+   ]
+  }
+ },
+ {
+  "locale": "es-MX",
+  "mac": {
+   "titles": [
+    "Edita solo lo que elijas.",
+    "Selección automática del sujeto.",
+    "Recorta, endereza y enmarca.",
+    "Guarda en Fotos. Todo reversible.",
+    "Haz tuyo el editor.",
+    "Ajusta lo que detecta."
+   ],
+   "subs": [
+    "Máscaras para tus fotos RAW en tu Mac.",
+    "Reconoce autos, personas y animales en tu Mac y crea la máscara.",
+    "Ocho bordes, de una línea fina a un borde de película.",
+    "Recupera el original cuando quieras. Nada sale de tu Mac.",
+    "Guarda presets y deja solo los pasos que usas, en tu orden.",
+    "Define confianza, borde de máscara y número de objetos. Todo corre en tu Mac."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Edita solo lo que elijas.",
+    "Cada herramienta flota sobre tu foto.",
+    "Dibuja máscaras a tu manera.",
+    "Dale estilo a tu foto.",
+    "Recorta, endereza y enmarca.",
+    "Guarda en Fotos. Todo reversible.",
+    "Haz tuyo el editor."
+   ],
+   "subs": [
+    "Máscaras para tus fotos RAW en tu iPad.",
+    "Arrastra las paletas a donde quieras, en vertical u horizontal.",
+    "Radial, lineal, pincel o rectángulo. Luego agrega, resta o difumina.",
+    "Estilos película, blanco y negro, vintage, noir, grunge y retro.",
+    "Ocho bordes, de una línea fina a un borde de película.",
+    "Recupera el original cuando quieras. Nada sale de tu iPad.",
+    "Guarda presets y deja solo los pasos que usas, en tu orden."
+   ]
+  }
+ },
+ {
+  "locale": "es-ES",
+  "mac": {
+   "titles": [
+    "Edita solo lo que selecciones.",
+    "Deja que detecte el sujeto.",
+    "Recorta, endereza y enmarca.",
+    "Guarda en Fotos. Todo reversible.",
+    "Haz tuyo el editor.",
+    "Ajusta lo que detecta."
+   ],
+   "subs": [
+    "Máscaras para fotos RAW en el Mac.",
+    "El Mac detecta coches, personas y animales y crea la máscara.",
+    "Ocho bordes, de una línea fina a un borde de película.",
+    "Recupera el original cuando quieras. Nada sale de tu Mac.",
+    "Guarda preajustes y deja solo los pasos que usas, en tu orden.",
+    "Define la confianza, el borde de máscara y el número de objetos. Todo funciona en tu Mac."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Edita solo lo que selecciones.",
+    "Cada herramienta flota sobre tu foto.",
+    "Dibuja máscaras a tu manera.",
+    "Dale estilo a tu foto.",
+    "Recorta, endereza y enmarca.",
+    "Guarda en Fotos. Todo reversible.",
+    "Haz tuyo el editor."
+   ],
+   "subs": [
+    "Máscaras para fotos RAW en el iPad.",
+    "Arrastra las paletas donde quieras, en vertical u horizontal.",
+    "Radial, lineal, pincel o rectángulo. Luego añade, resta o difumina.",
+    "Estilos película, blanco y negro, vintage, noir, grunge y retro.",
+    "Ocho bordes, de una línea fina a un borde de película.",
+    "Recupera el original cuando quieras. Nada sale de tu iPad.",
+    "Guarda preajustes y deja solo los pasos que usas, en tu orden."
+   ]
+  }
+ },
+ {
+  "locale": "sv",
+  "mac": {
+   "titles": [
+    "Redigera bara det du väljer.",
+    "Låt appen hitta motivet.",
+    "Beskär, räta upp och rama in.",
+    "Spara i Bilder. Ångra när du vill.",
+    "Gör redigeraren till din egen.",
+    "Justera vad den hittar."
+   ],
+   "subs": [
+    "Masker för RAW-foton på Mac.",
+    "Automatiska masker för bilar, människor och djur, direkt på enheten.",
+    "Åtta ramar, från en tunn linje till en filmkant.",
+    "Redigeringarna går alltid att ångra och inget lämnar din Mac.",
+    "Spara förinställningar och behåll bara stegen du använder, i din ordning.",
+    "Ställ in säkerhet, maskkant och antal objekt. Allt körs på din Mac."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Redigera bara det du väljer.",
+    "Alla verktyg svävar över bilden.",
+    "Rita masker precis som du vill.",
+    "Ge bilden en egen stil.",
+    "Beskär, räta upp och rama in.",
+    "Spara i Bilder. Ångra när du vill.",
+    "Gör redigeraren till din egen."
+   ],
+   "subs": [
+    "Masker för RAW-foton på iPad.",
+    "Dra paletterna vart du vill, stående eller liggande.",
+    "Radiell, linjär, pensel eller rektangel. Lägg till, dra ifrån, fjädra.",
+    "Stilar som film, svartvitt, vintage, noir, grunge och retro.",
+    "Åtta ramar, från en tunn linje till en filmkant.",
+    "Redigeringarna går alltid att ångra och inget lämnar din iPad.",
+    "Spara förinställningar och behåll bara stegen du använder, i din ordning."
+   ]
+  }
+ },
+ {
+  "locale": "ta-IN",
+  "mac": {
+   "titles": [
+    "தேர்வை மட்டும் திருத்துங்கள்.",
+    "முக்கியப் பொருளை அதுவே கண்டறியும்.",
+    "க்ராப் செய்யுங்கள், நேராக்குங்கள், ஃப்ரேம் இடுங்கள்.",
+    "படங்களில் சேமிக்கலாம், மீட்கலாம்.",
+    "எடிட்டரை உங்களுடையதாக்குங்கள்.",
+    "கண்டறிதலை நீங்களே அமையுங்கள்."
+   ],
+   "subs": [
+    "Mac-இல் RAW புகைப்படங்களுக்கான மாஸ்க்குகள்.",
+    "மனிதர், கார், விலங்குகளைச் சாதனத்திலேயே கண்டறிந்து தானாக மாஸ்க் செய்யும்.",
+    "மெல்லிய கோடு முதல் ஃபிலிம் விளிம்பு வரை, எட்டு பார்டர்கள்.",
+    "திருத்தங்களை எப்போதும் மாற்றலாம். எதுவும் Mac-ஐ விட்டு வெளியேறாது.",
+    "ப்ரீசெட்களைச் சேமித்து, பயன்படுத்தும் படிகளை மட்டும் உங்கள் வரிசையில் வைத்திருங்கள்.",
+    "நம்பக அளவு, மாஸ்க் ஓரம், பொருள் எண்ணிக்கை அமையுங்கள். அனைத்தும் உங்கள் Mac-இலேயே இயங்கும்."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "தேர்வை மட்டும் திருத்துங்கள்.",
+    "ஒவ்வொரு கருவியும் படத்தின் மேல் மிதக்கும்.",
+    "விரும்பியபடி மாஸ்க் வரையுங்கள்.",
+    "படத்துக்குப் புதிய தோற்றம் தாருங்கள்.",
+    "க்ராப் செய்யுங்கள், நேராக்குங்கள், ஃப்ரேம் இடுங்கள்.",
+    "படங்களில் சேமிக்கலாம், மீட்கலாம்.",
+    "எடிட்டரை உங்களுடையதாக்குங்கள்."
+   ],
+   "subs": [
+    "iPad-இல் RAW புகைப்படங்களுக்கான மாஸ்க்குகள்.",
+    "பேலட்களை எங்கு வேண்டுமானாலும் இழுங்கள், எந்தத் திசையிலும்.",
+    "ரேடியல், லீனியர், பிரஷ், செவ்வகம். சேர்க்க, கழிக்க, ஓரம் மென்மையாக்க.",
+    "ஃபிலிம், கருப்பு-வெள்ளை, விண்டேஜ், நுவார், கிரஞ்ச், ரெட்ரோ ஸ்டைல்கள்.",
+    "மெல்லிய கோடு முதல் ஃபிலிம் விளிம்பு வரை, எட்டு பார்டர்கள்.",
+    "திருத்தங்களை எப்போதும் மாற்றலாம். எதுவும் iPad-ஐ விட்டு வெளியேறாது.",
+    "ப்ரீசெட்களைச் சேமித்து, பயன்படுத்தும் படிகளை மட்டும் உங்கள் வரிசையில் வைத்திருங்கள்."
+   ]
+  }
+ },
+ {
+  "locale": "te-IN",
+  "mac": {
+   "titles": [
+    "మీరు ఎంచుకున్నదే ఎడిట్ చేయండి.",
+    "సబ్జెక్ట్‌ను యాపే కనుగొంటుంది.",
+    "క్రాప్, స్ట్రెయిటెన్, ఫ్రేమ్ చేయండి.",
+    "ఫోటోలలో సేవ్. ఎప్పుడైనా రివర్ట్.",
+    "ఎడిటర్‌ను మీకు నచ్చినట్లు మార్చుకోండి.",
+    "డిటెక్షన్‌ను మీరే ట్యూన్ చేయండి."
+   ],
+   "subs": [
+    "Macలో RAW ఫోటోల కోసం మాస్క్‌లు.",
+    "ఆన్-డివైస్ డిటెక్షన్ కార్లు, మనుషులు, జంతువులను మీ కోసం మాస్క్ చేస్తుంది.",
+    "సన్నని గీత నుంచి ఫిల్మ్ అంచు వరకు, ఎనిమిది బోర్డర్‌లు.",
+    "ఎడిట్‌లను ఎప్పుడైనా రివర్ట్ చేయవచ్చు, ఏదీ మీ Mac నుంచి బయటకు వెళ్లదు.",
+    "ప్రీసెట్‌లను సేవ్ చేయండి, వాడే స్టెప్‌లనే మీ క్రమంలో ఉంచుకోండి.",
+    "కాన్ఫిడెన్స్, మాస్క్ అంచు, ఆబ్జెక్ట్‌ల సంఖ్యను సెట్ చేయండి. అంతా మీ Macలోనే రన్ అవుతుంది."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "మీరు ఎంచుకున్నదే ఎడిట్ చేయండి.",
+    "ప్రతి టూల్ ఫోటోపై తేలుతుంది.",
+    "మీకు నచ్చినట్లు మాస్క్ గీయండి.",
+    "ఫోటోకు కొత్త లుక్ ఇవ్వండి.",
+    "క్రాప్, స్ట్రెయిటెన్, ఫ్రేమ్ చేయండి.",
+    "ఫోటోలలో సేవ్. ఎప్పుడైనా రివర్ట్.",
+    "ఎడిటర్‌ను మీకు నచ్చినట్లు మార్చుకోండి."
+   ],
+   "subs": [
+    "iPadలో RAW ఫోటోల కోసం మాస్క్‌లు.",
+    "ప్యాలెట్‌లను ఎక్కడికైనా లాగండి, ఏ ఓరియంటేషన్‌లోనైనా.",
+    "రేడియల్, లీనియర్, బ్రష్ లేదా రెక్టాంగిల్. ఆపై యాడ్, సబ్‌ట్రాక్ట్ లేదా ఫెదర్ చేయండి.",
+    "ఫిల్మ్, బ్లాక్ అండ్ వైట్, వింటేజ్, న్వార్, గ్రంజ్, రెట్రో స్టైల్స్.",
+    "సన్నని గీత నుంచి ఫిల్మ్ అంచు వరకు, ఎనిమిది బోర్డర్‌లు.",
+    "ఎడిట్‌లను ఎప్పుడైనా రివర్ట్ చేయవచ్చు, ఏదీ మీ iPad నుంచి బయటకు వెళ్లదు.",
+    "ప్రీసెట్‌లను సేవ్ చేయండి, వాడే స్టెప్‌లనే మీ క్రమంలో ఉంచుకోండి."
+   ]
+  }
+ },
+ {
+  "locale": "th",
+  "mac": {
+   "titles": [
+    "แก้เฉพาะส่วนที่คุณเลือก",
+    "ปล่อยให้แอปหาตัวแบบเอง",
+    "ครอป ปรับ⁠ให้⁠ตรง และใส่กรอบ",
+    "บันทึกลงรูปภาพ ย้อนกลับได้เสมอ",
+    "ปรับตัวแก้ไขให้เป็นแบบของคุณ",
+    "ปรับการตรวจจับได้เอง"
+   ],
+   "subs": [
+    "มาสก์สำหรับภาพ RAW บน Mac",
+    "ระบบตรวจจับบนเครื่องสร้างมาสก์รถยนต์ คน และสัตว์ให้คุณ",
+    "กรอบแปดแบบ ตั้งแต่เส้นบางไปจนถึงขอบฟิล์ม",
+    "การแก้ไขทั้งหมดย้อนกลับได้ และไม่มีสิ่งใดออกจาก Mac ของคุณ",
+    "บันทึกพรีเซ็ต และเก็บไว้เฉพาะขั้นตอนที่ใช้ เรียงตามลำดับที่คุณต้องการ",
+    "ตั้งค่าความมั่นใจ ขอบมาสก์ และจำนวนวัตถุ ทุกอย่างทำงานบน Mac ของคุณ"
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "แก้เฉพาะส่วนที่คุณเลือก",
+    "ทุกเครื่องมือลอยอยู่เหนือภาพ",
+    "วาดมาสก์ได้ตามใจ",
+    "เติมลุคให้ภาพ",
+    "ครอป ปรับ⁠ให้⁠ตรง และใส่กรอบ",
+    "บันทึกลงรูปภาพ ย้อนกลับได้เสมอ",
+    "ปรับตัวแก้ไขให้เป็นแบบของคุณ"
+   ],
+   "subs": [
+    "มาสก์สำหรับภาพ RAW บน iPad",
+    "ลากพาเลตต์ไปไว้ตรงไหนก็ได้ ทั้งแนวตั้งและแนวนอน",
+    "แบบรัศมี เชิงเส้น แปรง หรือสี่เหลี่ยม แล้วเพิ่ม ลบพื้นที่มาสก์ หรือเกลี่ยขอบให้นุ่ม",
+    "สไตล์ฟิล์ม ขาวดำ วินเทจ นัวร์ กรันจ์ และเรโทร",
+    "กรอบแปดแบบ ตั้งแต่เส้นบางไปจนถึงขอบฟิล์ม",
+    "การแก้ไขทั้งหมดย้อนกลับได้ และไม่มีสิ่งใดออกจาก iPad ของคุณ",
+    "บันทึกพรีเซ็ต และเก็บไว้เฉพาะขั้นตอนที่ใช้ เรียงตามลำดับที่คุณต้องการ"
+   ]
+  }
+ },
+ {
+  "locale": "tr",
+  "mac": {
+   "titles": [
+    "Sadece seçtiğini düzenle.",
+    "Bırak, özneyi o bulsun.",
+    "Kırp, düzleştir, çerçevele.",
+    "Fotoğraflar'a kaydet, geri al.",
+    "Düzenleyiciyi kendine göre kur.",
+    "Algılamayı ince ayarla."
+   ],
+   "subs": [
+    "Mac'te RAW fotoğraflar için maskeler.",
+    "Araba, insan ve hayvanlar cihaz içinde algılanıp otomatik maskelenir.",
+    "İnce çizgiden film kenarına sekiz çerçeve.",
+    "Düzenlemeler her an geri alınabilir, hiçbir şey Mac'inden çıkmaz.",
+    "Hazır ayarları kaydet, yalnızca kullandığın adımları kendi sıranla tut.",
+    "Güven eşiğini, maske kenarını ve nesne sayısını ayarla. Hepsi Mac'inde çalışır."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Sadece seçtiğini düzenle.",
+    "Her araç fotoğrafın üzerinde süzülür.",
+    "Maskeni dilediğin gibi çiz.",
+    "Fotoğrafına bir hava kat.",
+    "Kırp, düzleştir, çerçevele.",
+    "Fotoğraflar'a kaydet, geri al.",
+    "Düzenleyiciyi kendine göre kur."
+   ],
+   "subs": [
+    "iPad'de RAW fotoğraflar için maskeler.",
+    "Paletleri dikey ya da yatay, istediğin yere sürükle.",
+    "Radyal, doğrusal, fırça ya da dikdörtgen. Sonra ekle, çıkar ya da yumuşat.",
+    "Film, siyah beyaz, vintage, noir, grunge ve retro stiller.",
+    "İnce çizgiden film kenarına sekiz çerçeve.",
+    "Düzenlemeler her an geri alınabilir, hiçbir şey iPad'inden çıkmaz.",
+    "Hazır ayarları kaydet, yalnızca kullandığın adımları kendi sıranla tut."
+   ]
+  }
+ },
+ {
+  "locale": "uk",
+  "mac": {
+   "titles": [
+    "Редагуйте лише виділене.",
+    "Застосунок сам знайде об’єкт.",
+    "Кадруйте, вирівнюйте, обрамлюйте.",
+    "Зберігайте у Фото. Усе оборотно.",
+    "Налаштуйте редактор під себе.",
+    "Налаштуйте розпізнавання."
+   ],
+   "subs": [
+    "Маски для RAW-фото на Mac.",
+    "Розпізнавання на Mac автоматично маскує авто, людей і тварин.",
+    "Вісім рамок: від тонкої лінії до краю плівки.",
+    "Оригінал можна відновити будь‑коли, і ніщо не покидає ваш Mac.",
+    "Зберігайте пресети й залиште лише потрібні кроки у своєму порядку.",
+    "Задайте впевненість, край маски й кількість об’єктів. Усе працює на вашому Mac."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Редагуйте лише виділене.",
+    "Усі інструменти ширяють над фото.",
+    "Малюйте маску як завгодно.",
+    "Додайте фото стилю.",
+    "Кадруйте, вирівнюйте, обрамлюйте.",
+    "Зберігайте у Фото. Усе оборотно.",
+    "Налаштуйте редактор під себе."
+   ],
+   "subs": [
+    "Маски для RAW-фото на iPad.",
+    "Перетягуйте панелі куди завгодно, у будь-якій орієнтації.",
+    "Радіальна, лінійна, пензлем, прямокутна. Додайте, відніміть, розтушуйте.",
+    "Стилі: плівка, чорно-білий, вінтаж, нуар, гранж і ретро.",
+    "Вісім рамок: від тонкої лінії до краю плівки.",
+    "Оригінал можна відновити будь‑коли, і ніщо не покидає ваш iPad.",
+    "Зберігайте пресети й залиште лише потрібні кроки у своєму порядку."
+   ]
+  }
+ },
+ {
+  "locale": "ur-PK",
+  "mac": {
+   "titles": [
+    "صرف منتخب حصہ ایڈٹ کریں۔",
+    "سبجیکٹ کی خودکار پہچان۔",
+    "کراپ کریں، سیدھا کریں، فریم لگائیں۔",
+    "Photos میں محفوظ، جب چاہیں واپس۔",
+    "ایڈیٹر کو اپنا بنائیں۔",
+    "پہچان کو اپنے حساب سے سیٹ کریں۔"
+   ],
+   "subs": [
+    "Mac پر RAW تصاویر کے لیے ماسک۔",
+    "آن ڈیوائس پہچان آپ کے لیے گاڑیوں، لوگوں اور جانوروں کو ماسک کرتی ہے۔",
+    "باریک لکیر سے فلم ایج تک، آٹھ بارڈر۔",
+    "ترامیم ہمیشہ قابلِ واپسی، اور کچھ بھی Mac سے باہر نہیں جاتا۔",
+    "پری سیٹ محفوظ کریں، اور صرف اپنے کام کے مراحل اپنی ترتیب میں رکھیں۔",
+    "کانفیڈنس، ماسک ایج اور آبجیکٹس کی تعداد سیٹ کریں۔ سب کچھ آپ کے Mac پر ہی چلتا ہے۔"
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "صرف منتخب حصہ ایڈٹ کریں۔",
+    "ہر ٹول تصویر کے اوپر تیرتا ہے۔",
+    "ماسک جیسے چاہیں بنائیں۔",
+    "تصویر کو نیا انداز دیں۔",
+    "کراپ کریں، سیدھا کریں، فریم لگائیں۔",
+    "Photos میں محفوظ، جب چاہیں واپس۔",
+    "ایڈیٹر کو اپنا بنائیں۔"
+   ],
+   "subs": [
+    "iPad پر RAW تصاویر کے لیے ماسک۔",
+    "پیلیٹس کو جہاں چاہیں کھینچیں، کسی بھی رُخ میں۔",
+    "ریڈیل، لینیئر، برش یا مستطیل۔ پھر شامل کریں، گھٹائیں یا فیدر کریں۔",
+    "فلم، بلیک اینڈ وائٹ، ونٹیج، نوآر، گرنج اور ریٹرو اسٹائل۔",
+    "باریک لکیر سے فلم ایج تک، آٹھ بارڈر۔",
+    "ترامیم ہمیشہ قابلِ واپسی، اور کچھ بھی iPad سے باہر نہیں جاتا۔",
+    "پری سیٹ محفوظ کریں، اور صرف اپنے کام کے مراحل اپنی ترتیب میں رکھیں۔"
+   ]
+  }
+ },
+ {
+  "locale": "vi",
+  "mac": {
+   "titles": [
+    "Chỉ chỉnh vùng bạn chọn.",
+    "Để máy tự tìm chủ thể.",
+    "Cắt, căn thẳng và đóng khung.",
+    "Lưu vào Ảnh. Hoàn tác mọi lúc.",
+    "Tùy biến trình chỉnh sửa theo ý bạn.",
+    "Tinh chỉnh khả năng nhận diện."
+   ],
+   "subs": [
+    "Mặt nạ cho ảnh RAW ngay trên Mac.",
+    "Nhận diện ngay trên máy tự tạo mặt nạ cho xe, người và động vật.",
+    "Tám kiểu viền, từ nét mảnh đến mép phim.",
+    "Luôn khôi phục được ảnh gốc, không gì rời khỏi Mac của bạn.",
+    "Lưu preset và chỉ giữ các bước bạn dùng, theo thứ tự của bạn.",
+    "Đặt độ tin cậy, viền mặt nạ và số đối tượng. Mọi thứ chạy trên Mac của bạn."
+   ]
+  },
+  "ipad": {
+   "titles": [
+    "Chỉ chỉnh vùng bạn chọn.",
+    "Mọi công cụ nổi trên ảnh.",
+    "Vẽ mặt nạ theo ý bạn.",
+    "Khoác cho ảnh một phong cách.",
+    "Cắt, căn thẳng và đóng khung.",
+    "Lưu vào Ảnh. Hoàn tác mọi lúc.",
+    "Tùy biến trình chỉnh sửa theo ý bạn."
+   ],
+   "subs": [
+    "Mặt nạ cho ảnh RAW ngay trên iPad.",
+    "Kéo bảng công cụ đi bất cứ đâu, dọc hay ngang đều được.",
+    "Tỏa tròn, tuyến tính, cọ hay chữ nhật. Rồi thêm, bớt, làm mềm viền.",
+    "Phong cách phim, đen trắng, cổ điển, noir, grunge và retro.",
+    "Tám kiểu viền, từ nét mảnh đến mép phim.",
+    "Luôn khôi phục được ảnh gốc, không gì rời khỏi iPad của bạn.",
+    "Lưu preset và chỉ giữ các bước bạn dùng, theo thứ tự của bạn."
+   ]
+  }
+ }
+]

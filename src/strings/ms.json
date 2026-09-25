@@ -10,11 +10,41 @@
     "translation_notice": "Halaman ini ialah terjemahan daripada <a href=\"{english_url}\">versi bahasa Inggeris</a>. Sekiranya terdapat perbezaan antara kedua-dua versi, versi bahasa Inggeris hendaklah diguna pakai."
   },
   "home": {
-    "description": "RawMask Studio ialah editor foto iPhone untuk foto RAW, dengan topeng automatik dan manual. Semuanya berjalan pada iPhone anda.",
-    "eyebrow": "Editor foto untuk iPhone",
+    "description": "RawMask Studio ialah editor foto RAW dengan topeng automatik dan manual untuk iPhone, iPad dan Mac. Semuanya berjalan pada peranti anda.",
+    "eyebrow": "Editor foto untuk iPhone, iPad dan Mac",
     "btn_support": "Dapatkan sokongan",
     "btn_privacy": "Dasar privasi",
     "screenshots_heading": "Tangkapan skrin",
+    "whats_new": {
+      "heading": "Baharu dalam versi 1.2.0",
+      "intro": "RawMask Studio kini berjalan pada iPad dan Mac selain iPhone. Satu apl percuma untuk ketiga-tiganya, dan setiap suntingan masih dibuat pada peranti anda.",
+      "items": [
+        {
+          "h3": "Kini pada <span class=\"name\">iPad</span>",
+          "p": "Foto memenuhi skrin dan alatan terapung di atasnya sebagai palet yang boleh anda seret ke mana-mana, dalam potret dan landskap."
+        },
+        {
+          "h3": "Kini pada <span class=\"name\">Mac</span>",
+          "p": "Langkah-langkah berada dalam bar alat, dan panel di sebelah foto memuatkan topeng dan peluncur. Zum masuk untuk menyemak perincian halus, dan eksport ke fail JPEG, HEIF atau TIFF."
+        },
+        {
+          "h3": "Langkah baharu Ton (Tone)",
+          "p": "Lengkung ton untuk kawasan paling cerah, cerah, gelap dan paling gelap, serta kontras setempat yang tajam pada serlahan, ton tengah dan bayang."
+        },
+        {
+          "h3": "Langkah baharu Gaya (Style)",
+          "p": "HDR, Drama, Glow, Bloom, Halation dan Aberration, serta rupa Film, B&amp;W, Vintage, Noir, Grunge dan Retro."
+        },
+        {
+          "h3": "Warna HSL",
+          "p": "Rona, kroma dan kecerahan untuk lapan julat warna, terus dalam langkah Warna (Color)."
+        },
+        {
+          "h3": "Lebih banyak pilihan bingkai dan kesan",
+          "p": "Perspektif, isian tepi dan lapan bingkai hiasan dalam Bingkai (Frame), serta saiz, bentuk dan kelembutan vignet dalam Kesan (Effects)."
+        }
+      ]
+    },
     "features_heading": "Apa yang boleh anda lakukan",
     "store_headings": [
       "Topeng untuk suntingan terpilih",
@@ -24,24 +54,39 @@
       "Simpan tanpa kehilangan foto asal",
       "Privasi diutamakan"
     ],
-    "requirements": "<strong>Keperluan:</strong> iPhone dengan iOS 17 atau lebih baharu.",
+    "requirements": "<strong>Keperluan:</strong> iPhone dengan iOS 17 atau lebih baharu, iPad dengan iPadOS 17 atau lebih baharu, atau Mac dengan cip Apple dan macOS 14 atau lebih baharu.",
     "help": "Ada soalan atau masalah? Lawati <a href=\"{support_url}\">halaman sokongan</a>. Butiran tentang cara apl mengendalikan foto anda terdapat dalam <a href=\"{privacy_url}\">dasar privasi</a>."
   },
   "support": {
     "title": "Sokongan - RawMask Studio",
-    "description": "Bantuan dan maklumat hubungan untuk RawMask Studio bagi iPhone: membuka foto, akses kepada Foto, topeng, menyimpan dan mengeksport.",
+    "description": "Bantuan dan maklumat hubungan untuk RawMask Studio pada iPhone, iPad dan Mac: membuka foto, akses kepada Foto, topeng, menyimpan dan mengeksport.",
     "h1": "Sokongan",
-    "meta": "Bantuan untuk RawMask Studio bagi iPhone.",
+    "meta": "Bantuan untuk RawMask Studio pada iPhone, iPad dan Mac.",
     "ui_labels_note": "Nama butang dan menu di bawah adalah dalam bahasa Inggeris, tepat seperti yang dipaparkan dalam apl.",
     "contact": "<strong>Hubungi:</strong> hantar e-mel ke <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>",
-    "contact_note": "Sila nyatakan model iPhone anda, versi iOS, serta penerangan ringkas tentang apa yang berlaku dan apa yang anda jangkakan. Anda tidak perlu menghantar foto; penerangan tentang foto tersebut (contohnya, kamera atau format fail) biasanya sudah memadai.",
+    "contact_note": "Sila nyatakan peranti anda (iPhone, iPad atau Mac) dan versi iOS, iPadOS atau macOS, serta penerangan ringkas tentang apa yang berlaku dan apa yang anda jangkakan. Anda tidak perlu menghantar foto; penerangan tentang foto tersebut (contohnya, kamera atau format fail) biasanya sudah memadai.",
     "faq_heading": "Soalan lazim",
     "faq": [
       {
         "q": "Bagaimanakah saya membuka foto?",
         "blocks": [
           {
-            "p": "Ketik butang foto di bahagian kiri atas editor dan pilih <span class=\"ui\" lang=\"en\">Open photo</span>. Pemilih Foto akan dibuka untuk anda memilih satu foto. RawMask Studio menyunting satu foto pada satu masa. Live Photos tidak dipaparkan dalam pemilih buat masa ini."
+            "p": "Pada iPhone, ketik butang foto di bahagian kiri atas editor dan pilih <span class=\"ui\" lang=\"en\">Open photo</span>. Pada iPad, ketik <span class=\"ui\" lang=\"en\">Open photo</span> dalam palet di bahagian kiri atas. Pada Mac, klik <span class=\"ui\" lang=\"en\">Open photo</span> dalam bar alat. Pemilih Foto akan dibuka untuk anda memilih satu foto. RawMask Studio menyunting satu foto pada satu masa. Live Photos tidak dipaparkan dalam pemilih buat masa ini."
+          }
+        ]
+      },
+      {
+        "q": "Di manakah butang pada <span class=\"name\">iPad</span> dan <span class=\"name\">Mac</span>?",
+        "blocks": [
+          {
+            "p": "Langkah dan alatan adalah sama pada setiap peranti; hanya kedudukannya yang berbeza:"
+          },
+          {
+            "ul": [
+              "<strong>iPhone:</strong> butang foto di bahagian kiri atas memuatkan <span class=\"ui\" lang=\"en\">Open photo</span>, <span class=\"ui\" lang=\"en\">Edit target</span> dan <span class=\"ui\" lang=\"en\">Add mask</span>, manakala <span class=\"ui\" lang=\"en\">More options</span> ialah butang ... di bahagian kanan atas.",
+              "<strong>iPad:</strong> palet di bahagian kiri atas memuatkan <span class=\"ui\" lang=\"en\">Open photo</span>, <span class=\"ui\" lang=\"en\">Edit target</span> dan <span class=\"ui\" lang=\"en\">Add mask</span>, manakala <span class=\"ui\" lang=\"en\">More options</span> (butang ...) dan <span class=\"ui\" lang=\"en\">Save</span> berada di bahagian kanan atas. Anda boleh menyeret palet ke mana-mana.",
+              "<strong>Mac:</strong> <span class=\"ui\" lang=\"en\">Open photo</span> dan langkah-langkah berada dalam bar alat, <span class=\"ui\" lang=\"en\">Edit target</span> dan <span class=\"ui\" lang=\"en\">Add mask</span> berada dalam panel di sebelah foto, manakala <span class=\"ui\" lang=\"en\">Editor options</span> (butang peluncur) dan <span class=\"ui\" lang=\"en\">Export</span> berada di bahagian kanan atas."
+            ]
           }
         ]
       },
@@ -57,7 +102,7 @@
         "q": "Mengapakah apl meminta akses kepada Foto?",
         "blocks": [
           {
-            "p": "RawMask Studio membuka foto daripada pustaka Foto Apple anda dan menyimpan suntingan kembali ke pustaka tersebut, jadi iOS meminta kebenaran anda. Anda boleh membenarkan akses penuh, atau akses terhad kepada foto yang anda pilih sahaja. Walau apa pun pilihan anda, apl hanya membuka foto yang anda pilih. Lihat <a href=\"{privacy_url}\">dasar privasi</a> untuk butiran lanjut."
+            "p": "RawMask Studio membuka foto daripada pustaka Foto Apple anda dan menyimpan suntingan kembali ke pustaka tersebut, jadi iOS, iPadOS atau macOS meminta kebenaran anda. Pada iPhone dan iPad, anda boleh membenarkan akses penuh, atau akses terhad kepada foto yang anda pilih sahaja; pada Mac, akses meliputi seluruh pustaka. Walau apa pun pilihan anda, apl hanya membuka foto yang anda pilih. Lihat <a href=\"{privacy_url}\">dasar privasi</a> untuk butiran lanjut."
           }
         ]
       },
@@ -65,7 +110,7 @@
         "q": "Saya memilih akses terhad dan tidak dapat mencari sesuatu foto",
         "blocks": [
           {
-            "p": "Dengan akses terhad, apl hanya boleh membuka foto yang telah anda benarkan. Untuk membenarkan lebih banyak foto:"
+            "p": "Akses terhad tersedia pada iPhone dan iPad. Dengan akses terhad, apl hanya boleh membuka foto yang telah anda benarkan. Untuk membenarkan lebih banyak foto:"
           },
           {
             "ul": [
@@ -79,7 +124,7 @@
         "q": "Apl menyatakan bahawa akses kepada Foto dimatikan",
         "blocks": [
           {
-            "p": "Buka <span class=\"path\">Seting &gt; Privasi &amp; Keselamatan &gt; Foto &gt; RawMask Studio</span>, pilih Akses Terhad atau Akses Penuh, kemudian kembali ke apl dan buka foto sekali lagi."
+            "p": "Pada iPhone atau iPad, buka <span class=\"path\">Seting &gt; Privasi &amp; Keselamatan &gt; Foto &gt; RawMask Studio</span> dan pilih Akses Terhad atau Akses Penuh. Pada Mac, buka <span class=\"path\">Seting Sistem &gt; Privasi &amp; Keselamatan &gt; Foto</span> dan benarkan RawMask Studio. Kemudian kembali ke apl dan buka foto sekali lagi."
           }
         ]
       },
@@ -87,7 +132,7 @@
         "q": "Bagaimanakah topeng berfungsi?",
         "blocks": [
           {
-            "p": "Pelarasan digunakan sama ada pada seluruh foto atau pada topeng. Buka menu butang foto di bahagian kiri atas: gunakan <span class=\"ui\" lang=\"en\">Edit target</span> untuk memilih apa yang sedang anda sunting, dan <span class=\"ui\" lang=\"en\">Add mask</span> untuk menambah topeng <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span> atau <span class=\"ui\" lang=\"en\">Rectangle</span>. Anda boleh mengalihkan dan mengubah saiz topeng, melukis untuk menambah atau membuang bahagian topeng, dan melembutkan tepinya dengan <span class=\"ui\" lang=\"en\">Feather</span>."
+            "p": "Pelarasan digunakan sama ada pada seluruh foto atau pada topeng. Gunakan <span class=\"ui\" lang=\"en\">Edit target</span> untuk memilih apa yang sedang anda sunting, dan <span class=\"ui\" lang=\"en\">Add mask</span> untuk menambah topeng <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span> atau <span class=\"ui\" lang=\"en\">Rectangle</span> (lihat kedudukannya pada setiap peranti di atas). Anda boleh mengalihkan dan mengubah saiz topeng, melukis untuk menambah atau membuang bahagian topeng, dan melembutkan tepinya dengan <span class=\"ui\" lang=\"en\">Feather</span>."
           }
         ]
       },
@@ -95,7 +140,7 @@
         "q": "Apakah topeng objek automatik?",
         "blocks": [
           {
-            "p": "RawMask Studio dilengkapi dengan model segmentasi imej yang mengesan objek dalam foto anda, seperti orang, haiwan dan benda harian, lalu menawarkan setiap satu sebagai topeng yang boleh anda sunting secara berasingan. Model ini berjalan sepenuhnya pada iPhone anda. Jika model tidak mengesan objek yang anda mahukan, gunakan topeng manual sebagai gantinya, atau laraskan <span class=\"ui\" lang=\"en\">Detection confidence</span> dan <span class=\"ui\" lang=\"en\">Mask threshold</span> di bawah <span class=\"ui\" lang=\"en\">More options</span> &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>."
+            "p": "RawMask Studio dilengkapi dengan model segmentasi imej yang mengesan objek dalam foto anda, seperti orang, haiwan dan benda harian, lalu menawarkan setiap satu sebagai topeng yang boleh anda sunting secara berasingan. Model ini berjalan sepenuhnya pada peranti anda. Jika model tidak mengesan objek yang anda mahukan, gunakan topeng manual sebagai gantinya, atau laraskan <span class=\"ui\" lang=\"en\">Detection confidence</span> dan <span class=\"ui\" lang=\"en\">Mask threshold</span> di bawah <span class=\"ui\" lang=\"en\">More options</span> (<span class=\"ui\" lang=\"en\">Editor options</span> pada Mac) &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>."
           }
         ]
       },
@@ -103,7 +148,7 @@
         "q": "Adakah saya memerlukan sambungan internet?",
         "blocks": [
           {
-            "p": "Tidak. Penyuntingan dan topeng automatik berfungsi di luar talian. Satu-satunya pengecualian ialah foto yang disimpan dalam Foto iCloud yang versi asalnya tiada pada iPhone anda: apl Foto perlu memuat turun versi asal dari iCloud sebelum foto itu boleh disunting."
+            "p": "Tidak. Penyuntingan dan topeng automatik berfungsi di luar talian. Satu-satunya pengecualian ialah foto yang disimpan dalam Foto iCloud yang versi asalnya tiada pada peranti anda: apl Foto perlu memuat turun versi asal dari iCloud sebelum foto itu boleh disunting."
           }
         ]
       },
@@ -111,13 +156,13 @@
         "q": "Bagaimanakah saya menyimpan atau mengeksport suntingan saya?",
         "blocks": [
           {
-            "p": "Ketik <span class=\"ui\" lang=\"en\">More options</span> (butang ...) dan pergi ke <span class=\"ui\" lang=\"en\">Save and export</span>:"
+            "p": "Pada iPhone, ketik <span class=\"ui\" lang=\"en\">More options</span> (butang ...) dan pergi ke <span class=\"ui\" lang=\"en\">Save and export</span>. Pada iPad, gunakan menu <span class=\"ui\" lang=\"en\">Save</span> di bahagian kanan atas; dua pilihan pertamanya dinamakan <span class=\"ui\" lang=\"en\">Save to Photos</span> dan <span class=\"ui\" lang=\"en\">Save a Copy</span>. Pada Mac, klik <span class=\"ui\" lang=\"en\">Export</span> dalam bar alat. Pilihannya ialah:"
           },
           {
             "ul": [
               "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> mengemas kini foto dalam pustaka anda. Apl Foto menyimpan versi asal, jadi anda boleh kembali kepada versi asal itu kemudian menggunakan pilihan Kembalikan dalam apl Foto.",
               "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> menambah imej yang disunting sebagai foto baharu tanpa mengubah foto asal.",
-              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> mencipta fail JPEG, HEIF atau TIFF dalam saiz dan kualiti yang anda pilih, lalu membuka helaian Kongsi supaya anda boleh menyimpannya ke Fail atau menghantarnya ke apl lain."
+              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> mencipta fail JPEG, HEIF atau TIFF dalam saiz dan kualiti yang anda pilih. Pada iPhone dan iPad, helaian Kongsi dibuka supaya anda boleh menyimpannya ke Fail atau menghantarnya ke apl lain; pada Mac, anda memilih tempat fail itu disimpan."
             ]
           }
         ]
@@ -126,7 +171,7 @@
         "q": "Di manakah pratetap saya disimpan?",
         "blocks": [
           {
-            "p": "Pada iPhone anda, dalam storan apl itu sendiri. Pratetap tidak dimuat naik ke mana-mana. Anda boleh memadamkan pratetap dalam apl, dan memadamkan apl akan membuang pratetap tersebut."
+            "p": "Pada peranti anda, dalam storan apl itu sendiri. Pratetap tidak dimuat naik ke mana-mana. Anda boleh memadamkan pratetap dalam apl, dan memadamkan apl akan membuang pratetap tersebut."
           }
         ]
       },
@@ -134,7 +179,7 @@
         "q": "Peranti manakah yang disokong?",
         "blocks": [
           {
-            "p": "iPhone dengan iOS 17 atau lebih baharu."
+            "p": "iPhone dengan iOS 17 atau lebih baharu, iPad dengan iPadOS 17 atau lebih baharu, dan komputer Mac dengan cip Apple dan macOS 14 atau lebih baharu. Satu apl percuma untuk ketiga-tiganya."
           }
         ]
       },
@@ -152,10 +197,10 @@
   },
   "privacy": {
     "title": "Dasar Privasi - RawMask Studio",
-    "description": "Dasar privasi untuk RawMask Studio bagi iPhone. Apl ini tidak mengumpul sebarang data; foto disunting pada iPhone anda.",
+    "description": "Dasar privasi untuk RawMask Studio bagi iPhone, iPad dan Mac. Apl ini tidak mengumpul sebarang data; foto disunting pada peranti anda.",
     "h1": "Dasar Privasi",
-    "meta": "RawMask Studio untuk iPhone. Tarikh berkuat kuasa: 23 September 2026.",
-    "summary": "<strong>Secara ringkas:</strong> RawMask Studio tidak mengumpul sebarang data. Tiada akaun, tiada analitis, tiada pengiklanan dan tiada penjejakan. Foto anda disunting pada iPhone anda, dan apl tidak pernah menghantar foto anda, suntingan anda atau sebarang maklumat lain kepada kami atau kepada sesiapa pun.",
+    "meta": "RawMask Studio untuk iPhone, iPad dan Mac. Tarikh berkuat kuasa: 26 September 2026.",
+    "summary": "<strong>Secara ringkas:</strong> RawMask Studio tidak mengumpul sebarang data. Tiada akaun, tiada analitis, tiada pengiklanan dan tiada penjejakan. Foto anda disunting pada iPhone, iPad atau Mac anda, dan apl tidak pernah menghantar foto anda, suntingan anda atau sebarang maklumat lain kepada kami atau kepada sesiapa pun.",
     "sections": [
       {
         "id": "who-we-are",
@@ -177,13 +222,13 @@
       },
       {
         "id": "on-device-processing",
-        "h2": "Pemprosesan berlaku pada iPhone anda",
+        "h2": "Pemprosesan berlaku pada peranti anda",
         "blocks": [
           {
             "p": "Semua pemprosesan foto berlaku pada peranti anda. Ini termasuk membaca fail RAW, menggunakan pelarasan cahaya, warna, perincian, fokus dan kesan, menjana pratonton serta mencipta topeng."
           },
           {
-            "p": "Topeng objek automatik dicipta oleh model segmentasi imej (RF-DETR) yang disertakan di dalam apl dan berjalan pada iPhone anda menggunakan Core ML daripada Apple. Model ini tidak dimuat turun dari internet, dan foto anda tidak dihantar ke mana-mana untuk dianalisis."
+            "p": "Topeng objek automatik dicipta oleh model segmentasi imej (RF-DETR) yang disertakan di dalam apl dan berjalan pada iPhone, iPad atau Mac anda menggunakan Core ML daripada Apple. Model ini tidak dimuat turun dari internet, dan foto anda tidak dihantar ke mana-mana untuk dianalisis."
           }
         ]
       },
@@ -192,7 +237,7 @@
         "h2": "Akses kepada pustaka Foto anda",
         "blocks": [
           {
-            "p": "RawMask Studio menggunakan Foto Apple untuk membuka dan menyimpan gambar. iOS meminta kebenaran anda sebelum apl boleh mengakses pustaka anda. Anda boleh membenarkan akses kepada seluruh pustaka anda atau hanya kepada foto yang anda pilih, dan anda boleh menukar pilihan ini pada bila-bila masa dalam <span class=\"path\">Seting &gt; Privasi &amp; Keselamatan &gt; Foto &gt; RawMask Studio</span>."
+            "p": "RawMask Studio menggunakan Foto Apple untuk membuka dan menyimpan gambar. iOS, iPadOS dan macOS meminta kebenaran anda sebelum apl boleh mengakses pustaka anda. Pada iPhone dan iPad, anda boleh membenarkan akses kepada seluruh pustaka anda atau hanya kepada foto yang anda pilih; pada Mac, akses meliputi seluruh pustaka. Anda boleh menukar pilihan ini pada bila-bila masa dalam <span class=\"path\">Seting &gt; Privasi &amp; Keselamatan &gt; Foto &gt; RawMask Studio</span> pada iPhone dan iPad, atau dalam <span class=\"path\">Seting Sistem &gt; Privasi &amp; Keselamatan &gt; Foto</span> pada Mac."
           },
           {
             "h3": "Apa yang dibaca oleh apl"
@@ -216,7 +261,7 @@
             "h3": "Foto iCloud"
           },
           {
-            "p": "Jika anda menggunakan Foto iCloud dan versi asal resolusi penuh bagi foto yang anda pilih tidak disimpan pada iPhone anda, rangka kerja Foto Apple mungkin memuat turunnya dari iCloud supaya foto itu boleh disunting. Foto yang anda simpan juga mungkin diselaraskan oleh Foto iCloud mengikut tetapan Apple anda. Pemindahan ini berlaku antara peranti anda dengan akaun iCloud anda sendiri, dikendalikan oleh Apple dan tertakluk kepada dasar privasi Apple. Tiada apa-apa yang dihantar kepada kami."
+            "p": "Jika anda menggunakan Foto iCloud dan versi asal resolusi penuh bagi foto yang anda pilih tidak disimpan pada peranti anda, rangka kerja Foto Apple mungkin memuat turunnya dari iCloud supaya foto itu boleh disunting. Foto yang anda simpan juga mungkin diselaraskan oleh Foto iCloud mengikut tetapan Apple anda. Pemindahan ini berlaku antara peranti anda dengan akaun iCloud anda sendiri, dikendalikan oleh Apple dan tertakluk kepada dasar privasi Apple. Tiada apa-apa yang dihantar kepada kami."
           }
         ]
       },
@@ -225,7 +270,10 @@
         "h2": "Mengeksport dan berkongsi",
         "blocks": [
           {
-            "p": "Apabila anda mengetik <span class=\"ui\" lang=\"en\">Export photo</span>, apl mencipta fail imej yang anda minta dan membuka helaian Kongsi iOS. Fail itu hanya dihantar ke tempat yang anda pilih, seperti apl Fail, Mesej atau apl lain, dan destinasi tersebut mengendalikannya mengikut amalan privasinya sendiri. Fail sementara yang dicipta oleh apl untuk eksport disimpan dalam storan peribadi apl pada iPhone anda dan dipadamkan secara automatik apabila tidak lagi diperlukan."
+            "p": "Apabila anda memilih <span class=\"ui\" lang=\"en\">Export photo</span> pada iPhone atau iPad, apl mencipta fail imej yang anda minta dan membuka helaian Kongsi. Fail itu hanya dihantar ke tempat yang anda pilih, seperti apl Fail, Mesej atau apl lain, dan destinasi tersebut mengendalikannya mengikut amalan privasinya sendiri. Fail sementara yang dicipta oleh apl untuk eksport disimpan dalam storan peribadi apl dan dipadamkan secara automatik apabila tidak lagi diperlukan."
+          },
+          {
+            "p": "Pada Mac, <span class=\"ui\" lang=\"en\">Export photo</span> membuka panel Simpan, dan fail ditulis hanya ke lokasi yang anda pilih."
           }
         ]
       },
@@ -234,7 +282,7 @@
         "h2": "Maklumat yang disimpan pada peranti anda",
         "blocks": [
           {
-            "p": "Supaya apl kekal berfungsi seperti yang anda tinggalkan, apl menyimpan sedikit maklumat dalam storannya sendiri pada iPhone anda:"
+            "p": "Supaya apl kekal berfungsi seperti yang anda tinggalkan, apl menyimpan sedikit maklumat dalam storannya sendiri pada peranti anda:"
           },
           {
             "ul": [
@@ -244,7 +292,7 @@
             ]
           },
           {
-            "p": "Maklumat ini kekal pada peranti anda dan tidak dihantar kepada kami. Anda boleh memadamkan pratetap dalam apl pada bila-bila masa, dan memadamkan apl akan membuang semua maklumat ini. Seperti data apl yang lain, maklumat ini mungkin disertakan dalam sandaran iPhone yang anda buat, mengikut tetapan iOS anda."
+            "p": "Maklumat ini kekal pada peranti anda dan tidak dihantar kepada kami. Anda boleh memadamkan pratetap dalam apl pada bila-bila masa, dan memadamkan apl akan membuang semua maklumat ini. Seperti data apl yang lain, maklumat ini mungkin disertakan dalam sandaran iPhone, iPad atau Mac yang anda buat, mengikut tetapan anda."
           }
         ]
       },
@@ -256,7 +304,7 @@
             "p": "RawMask Studio tidak mengandungi sebarang perisian analitis, pengiklanan, pelaporan ranap atau penjejakan pihak ketiga. Apl ini tidak menggunakan pengecam pengiklanan dan tidak menjejak anda merentas apl atau tapak web yang dimiliki oleh syarikat lain."
           },
           {
-            "p": "Jika anda telah memilih dalam iOS untuk berkongsi analitis dengan pembangun apl (<span class=\"path\">Seting &gt; Privasi &amp; Keselamatan &gt; Analitis &amp; Penambahbaikan</span>), Apple mungkin memberikan kami laporan ranap dan statistik penggunaan agregat dalam bentuk yang tidak mengenal pasti anda. Perkara ini dikawal oleh Apple dan oleh tetapan anda, bukan oleh apl."
+            "p": "Jika anda telah memilih untuk berkongsi analitis dengan pembangun apl (<span class=\"path\">Seting &gt; Privasi &amp; Keselamatan &gt; Analitis &amp; Penambahbaikan</span> pada iPhone dan iPad, atau <span class=\"path\">Seting Sistem &gt; Privasi &amp; Keselamatan &gt; Analitis &amp; Penambahbaikan</span> pada Mac), Apple mungkin memberikan kami laporan ranap dan statistik penggunaan agregat dalam bentuk yang tidak mengenal pasti anda. Perkara ini dikawal oleh Apple dan oleh tetapan anda, bukan oleh apl."
           }
         ]
       },
@@ -283,7 +331,7 @@
         "h2": "Pilihan anda",
         "blocks": [
           {
-            "p": "Oleh sebab kami tidak mengumpul atau menyimpan sebarang data tentang anda, tiada data peribadi di pihak kami untuk diakses, dibetulkan, dieksport atau dipadamkan. Kawalan kekal di tangan anda pada peranti anda: anda boleh menukar atau menarik balik akses kepada Foto dalam Seting iOS, memadamkan pratetap dalam apl, membuang suntingan atau salinan dalam apl Foto, dan memadamkan apl untuk membuang data setempatnya."
+            "p": "Oleh sebab kami tidak mengumpul atau menyimpan sebarang data tentang anda, tiada data peribadi di pihak kami untuk diakses, dibetulkan, dieksport atau dipadamkan. Kawalan kekal di tangan anda pada peranti anda: anda boleh menukar atau menarik balik akses kepada Foto dalam Seting (Seting Sistem pada Mac), memadamkan pratetap dalam apl, membuang suntingan atau salinan dalam apl Foto, dan memadamkan apl untuk membuang data setempatnya."
           }
         ]
       },

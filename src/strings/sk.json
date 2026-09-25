@@ -10,11 +10,41 @@
     "translation_notice": "Táto stránka je prekladom <a href=\"{english_url}\">anglickej verzie</a>. Ak sa tieto dve verzie líšia, prednosť má anglická verzia."
   },
   "home": {
-    "description": "RawMask Studio je fotoeditor pre iPhone na úpravu RAW fotiek s automatickými a ručnými maskami. Všetko prebieha vo vašom iPhone.",
-    "eyebrow": "Fotoeditor pre iPhone",
+    "description": "RawMask Studio je fotoeditor na úpravu RAW fotiek s automatickými a ručnými maskami pre iPhone, iPad a Mac. Všetko prebieha vo vašom zariadení.",
+    "eyebrow": "Fotoeditor pre iPhone, iPad a Mac",
     "btn_support": "Získať podporu",
     "btn_privacy": "Zásady ochrany osobných údajov",
     "screenshots_heading": "Snímky obrazovky",
+    "whats_new": {
+      "heading": "Novinky vo verzii 1.2.0",
+      "intro": "RawMask Studio teraz okrem iPhonu funguje aj na iPade a Macu. Je to jedna bezplatná aplikácia pre všetky tri zariadenia a všetky úpravy stále prebiehajú vo vašom zariadení.",
+      "items": [
+        {
+          "h3": "Teraz aj pre <span class=\"name\">iPad</span>",
+          "p": "Fotka vyplní obrazovku a nástroje sa nad ňou vznášajú ako palety, ktoré môžete presunúť kamkoľvek, na výšku aj na šírku."
+        },
+        {
+          "h3": "Teraz aj pre <span class=\"name\">Mac</span>",
+          "p": "Kroky sú na paneli nástrojov a inšpektor vedľa fotky obsahuje masky a posuvníky. Záber si môžete priblížiť, skontrolovať drobné detaily a exportovať ho do súboru JPEG, HEIF alebo TIFF."
+        },
+        {
+          "h3": "Nový krok Tón",
+          "p": "Tónová krivka pre najsvetlejšie, svetlé, tmavé a najtmavšie tóny a lokálny kontrast vo svetlách, stredných tónoch a tieňoch."
+        },
+        {
+          "h3": "Nový krok Štýl",
+          "p": "HDR, dráma, žiara, bloom, halácia a chromatická aberácia, navyše vzhľady Film, Č/B, Vintage, Noir, Grunge a Retro."
+        },
+        {
+          "h3": "Farby HSL",
+          "p": "Odtieň, chróma a svetlosť pre osem farebných rozsahov, priamo v kroku Farba."
+        },
+        {
+          "h3": "Viac možností kompozície a efektov",
+          "p": "Perspektíva, vyplnenie okrajov a osem rámikov v kroku Kompozícia a veľkosť, tvar a mäkkosť vinety v kroku Efekty."
+        }
+      ]
+    },
     "features_heading": "Čo s aplikáciou dokážete",
     "store_headings": [
       "Masky na selektívne úpravy",
@@ -24,24 +54,39 @@
       "Uloženie bez straty originálu",
       "Súkromie od základu"
     ],
-    "requirements": "<strong>Požiadavky:</strong> iPhone so systémom iOS 17 alebo novším.",
+    "requirements": "<strong>Požiadavky:</strong> iPhone so systémom iOS 17 alebo novším, iPad so systémom iPadOS 17 alebo novším alebo Mac s čipom Apple a systémom macOS 14 alebo novším.",
     "help": "Máte otázky alebo problémy? Navštívte <a href=\"{support_url}\">stránku podpory</a>. Podrobnosti o tom, ako aplikácia zaobchádza s vašimi fotkami, nájdete v <a href=\"{privacy_url}\">zásadách ochrany osobných údajov</a>."
   },
   "support": {
     "title": "Podpora - RawMask Studio",
-    "description": "Pomoc a kontakt k aplikácii RawMask Studio pre iPhone: otváranie fotiek, prístup k Fotkám, masky, ukladanie a export.",
+    "description": "Pomoc a kontakt k aplikácii RawMask Studio pre iPhone, iPad a Mac: otváranie fotiek, prístup k Fotkám, masky, ukladanie a export.",
     "h1": "Podpora",
-    "meta": "Pomoc k aplikácii RawMask Studio pre iPhone.",
+    "meta": "Pomoc k aplikácii RawMask Studio pre iPhone, iPad a Mac.",
     "ui_labels_note": "Názvy tlačidiel a ponúk nižšie sú uvedené po anglicky, presne tak, ako sa zobrazujú v aplikácii.",
     "contact": "<strong>Kontakt:</strong> e-mail <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>",
-    "contact_note": "Uveďte, prosím, model svojho iPhonu, verziu iOS a krátky popis toho, čo sa stalo a čo ste očakávali. Fotky nie je potrebné posielať, zvyčajne stačí fotku opísať (napríklad uviesť fotoaparát alebo formát súboru).",
+    "contact_note": "Uveďte, prosím, svoje zariadenie (iPhone, iPad alebo Mac), verziu jeho systému iOS, iPadOS alebo macOS a krátky popis toho, čo sa stalo a čo ste očakávali. Fotky nie je potrebné posielať, zvyčajne stačí fotku opísať (napríklad uviesť fotoaparát alebo formát súboru).",
     "faq_heading": "Časté otázky",
     "faq": [
       {
         "q": "Ako otvorím fotku?",
         "blocks": [
           {
-            "p": "Klepnite na tlačidlo fotky v ľavom hornom rohu editora a vyberte <span class=\"ui\" lang=\"en\">Open photo</span>. Otvorí sa okno výberu fotiek, v ktorom vyberiete jednu fotku. RawMask Studio upravuje fotky po jednej. Fotky Live Photo sa v okne výberu momentálne nezobrazujú."
+            "p": "Na iPhone klepnite na tlačidlo fotky v ľavom hornom rohu editora a vyberte <span class=\"ui\" lang=\"en\">Open photo</span>. Na iPade klepnite na <span class=\"ui\" lang=\"en\">Open photo</span> v palete v ľavom hornom rohu. Na Macu kliknite na <span class=\"ui\" lang=\"en\">Open photo</span> na paneli nástrojov. Otvorí sa okno výberu fotiek, v ktorom vyberiete jednu fotku. RawMask Studio upravuje fotky po jednej. Fotky Live Photo sa v okne výberu momentálne nezobrazujú."
+          }
+        ]
+      },
+      {
+        "q": "Kde sú tlačidlá na <span class=\"name\">iPade</span> a <span class=\"name\">Macu</span>?",
+        "blocks": [
+          {
+            "p": "Kroky a nástroje sú na všetkých zariadeniach rovnaké, líši sa len ich umiestnenie:"
+          },
+          {
+            "ul": [
+              "<strong>iPhone:</strong> tlačidlo fotky v ľavom hornom rohu obsahuje <span class=\"ui\" lang=\"en\">Open photo</span>, <span class=\"ui\" lang=\"en\">Edit target</span> a <span class=\"ui\" lang=\"en\">Add mask</span>; <span class=\"ui\" lang=\"en\">More options</span> je tlačidlo ... v pravom hornom rohu.",
+              "<strong>iPad:</strong> paleta v ľavom hornom rohu obsahuje <span class=\"ui\" lang=\"en\">Open photo</span>, <span class=\"ui\" lang=\"en\">Edit target</span> a <span class=\"ui\" lang=\"en\">Add mask</span>; <span class=\"ui\" lang=\"en\">More options</span> (tlačidlo ...) a <span class=\"ui\" lang=\"en\">Save</span> sú v pravom hornom rohu. Palety môžete presunúť kamkoľvek.",
+              "<strong>Mac:</strong> <span class=\"ui\" lang=\"en\">Open photo</span> a kroky sú na paneli nástrojov, <span class=\"ui\" lang=\"en\">Edit target</span> a <span class=\"ui\" lang=\"en\">Add mask</span> sú v inšpektore vedľa fotky a <span class=\"ui\" lang=\"en\">Editor options</span> (tlačidlo s posuvníkmi) a <span class=\"ui\" lang=\"en\">Export</span> sú v pravom hornom rohu."
+            ]
           }
         ]
       },
@@ -57,7 +102,7 @@
         "q": "Prečo aplikácia žiada o prístup k Fotkám?",
         "blocks": [
           {
-            "p": "RawMask Studio otvára fotky z vašej knižnice v aplikácii Fotky od spoločnosti Apple a ukladá do nej úpravy, preto vás iOS požiada o povolenie. Môžete povoliť úplný prístup alebo obmedzený prístup len k fotkám, ktoré vyberiete. V oboch prípadoch aplikácia otvorí iba fotku, ktorú zvolíte. Podrobnosti nájdete v <a href=\"{privacy_url}\">zásadách ochrany osobných údajov</a>."
+            "p": "RawMask Studio otvára fotky z vašej knižnice v aplikácii Fotky od spoločnosti Apple a ukladá do nej úpravy, preto vás iOS, iPadOS alebo macOS požiada o povolenie. Na iPhone a iPade môžete povoliť úplný prístup alebo obmedzený prístup len k fotkám, ktoré vyberiete; na Macu sa prístup vzťahuje na celú knižnicu. V každom prípade aplikácia otvorí iba fotku, ktorú zvolíte. Podrobnosti nájdete v <a href=\"{privacy_url}\">zásadách ochrany osobných údajov</a>."
           }
         ]
       },
@@ -65,7 +110,7 @@
         "q": "Mám nastavený obmedzený prístup a nemôžem nájsť fotku",
         "blocks": [
           {
-            "p": "Pri obmedzenom prístupe môže aplikácia otvoriť iba fotky, ktoré ste povolili. Ak chcete povoliť ďalšie fotky:"
+            "p": "Obmedzený prístup je k dispozícii na iPhone a iPade. Pri ňom môže aplikácia otvoriť iba fotky, ktoré ste povolili. Ak chcete povoliť ďalšie fotky:"
           },
           {
             "ul": [
@@ -79,7 +124,7 @@
         "q": "Aplikácia hlási, že prístup k Fotkám je vypnutý",
         "blocks": [
           {
-            "p": "Otvorte <span class=\"path\">Nastavenia &gt; Súkromie a bezpečnosť &gt; Fotky &gt; RawMask Studio</span>, zvoľte Obmedzený prístup alebo Úplný prístup, potom sa vráťte do aplikácie a fotku otvorte znova."
+            "p": "Na iPhone alebo iPade otvorte <span class=\"path\">Nastavenia &gt; Súkromie a bezpečnosť &gt; Fotky &gt; RawMask Studio</span> a zvoľte Obmedzený prístup alebo Úplný prístup. Na Macu otvorte <span class=\"path\">Systémové nastavenia &gt; Súkromie a bezpečnosť &gt; Fotky</span> a povoľte RawMask Studio. Potom sa vráťte do aplikácie a fotku otvorte znova."
           }
         ]
       },
@@ -87,7 +132,7 @@
         "q": "Ako fungujú masky?",
         "blocks": [
           {
-            "p": "Úpravy sa použijú buď na celú fotku, alebo na masku. Otvorte ponuku tlačidla fotky v ľavom hornom rohu: pomocou <span class=\"ui\" lang=\"en\">Edit target</span> zvolíte, čo upravujete, a pomocou <span class=\"ui\" lang=\"en\">Add mask</span> pridáte masku typu <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span> alebo <span class=\"ui\" lang=\"en\">Rectangle</span>. Masku môžete presúvať a meniť jej veľkosť, maľovaním k nej pridávať alebo z nej uberať a pomocou <span class=\"ui\" lang=\"en\">Feather</span> zjemniť jej okraj."
+            "p": "Úpravy sa použijú buď na celú fotku, alebo na masku. Pomocou <span class=\"ui\" lang=\"en\">Edit target</span> zvolíte, čo upravujete, a pomocou <span class=\"ui\" lang=\"en\">Add mask</span> pridáte masku typu <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span> alebo <span class=\"ui\" lang=\"en\">Rectangle</span> (kde ich nájdete na jednotlivých zariadeniach, je opísané vyššie). Masku môžete presúvať a meniť jej veľkosť, maľovaním k nej pridávať alebo z nej uberať a pomocou <span class=\"ui\" lang=\"en\">Feather</span> zjemniť jej okraj."
           }
         ]
       },
@@ -95,7 +140,7 @@
         "q": "Čo sú automatické masky objektov?",
         "blocks": [
           {
-            "p": "RawMask Studio obsahuje model na segmentáciu obrazu, ktorý na fotke nájde objekty, napríklad ľudí, zvieratá a bežné predmety, a každý z nich ponúkne ako masku, ktorú môžete upravovať samostatne. Model beží výhradne vo vašom iPhone. Ak nezachytí objekt, ktorý chcete, použite namiesto toho ručnú masku alebo upravte hodnoty <span class=\"ui\" lang=\"en\">Detection confidence</span> a <span class=\"ui\" lang=\"en\">Mask threshold</span> v časti <span class=\"ui\" lang=\"en\">More options</span> &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>."
+            "p": "RawMask Studio obsahuje model na segmentáciu obrazu, ktorý na fotke nájde objekty, napríklad ľudí, zvieratá a bežné predmety, a každý z nich ponúkne ako masku, ktorú môžete upravovať samostatne. Model beží výhradne vo vašom zariadení. Ak nezachytí objekt, ktorý chcete, použite namiesto toho ručnú masku alebo upravte hodnoty <span class=\"ui\" lang=\"en\">Detection confidence</span> a <span class=\"ui\" lang=\"en\">Mask threshold</span> v časti <span class=\"ui\" lang=\"en\">More options</span> (na Macu <span class=\"ui\" lang=\"en\">Editor options</span>) &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>."
           }
         ]
       },
@@ -103,7 +148,7 @@
         "q": "Potrebujem pripojenie na internet?",
         "blocks": [
           {
-            "p": "Nie. Úpravy aj automatické masky fungujú offline. Jedinou výnimkou je fotka uložená vo Fotkách v iCloude, ktorej originál nie je vo vašom iPhone: aplikácia Fotky musí originál najprv stiahnuť z iCloudu, až potom ju možno upraviť."
+            "p": "Nie. Úpravy aj automatické masky fungujú offline. Jedinou výnimkou je fotka uložená vo Fotkách v iCloude, ktorej originál nie je vo vašom zariadení: aplikácia Fotky musí originál najprv stiahnuť z iCloudu, až potom ju možno upraviť."
           }
         ]
       },
@@ -111,13 +156,13 @@
         "q": "Ako uložím alebo vyexportujem úpravu?",
         "blocks": [
           {
-            "p": "Klepnite na <span class=\"ui\" lang=\"en\">More options</span> (tlačidlo ...) a prejdite do časti <span class=\"ui\" lang=\"en\">Save and export</span>:"
+            "p": "Na iPhone klepnite na <span class=\"ui\" lang=\"en\">More options</span> (tlačidlo ...) a prejdite do časti <span class=\"ui\" lang=\"en\">Save and export</span>. Na iPade použite ponuku <span class=\"ui\" lang=\"en\">Save</span> v pravom hornom rohu, v ktorej sa prvé dve voľby volajú <span class=\"ui\" lang=\"en\">Save to Photos</span> a <span class=\"ui\" lang=\"en\">Save a Copy</span>. Na Macu kliknite na <span class=\"ui\" lang=\"en\">Export</span> na paneli nástrojov. K dispozícii sú tieto voľby:"
           },
           {
             "ul": [
               "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> aktualizuje fotku vo vašej knižnici. Fotky si ponechajú originál, takže sa k nemu neskôr môžete vrátiť voľbou Vrátiť v aplikácii Fotky.",
               "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> pridá upravený obrázok ako novú fotku a originál ponechá bez zmeny.",
-              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> vytvorí súbor JPEG, HEIF alebo TIFF vo vami zvolenej veľkosti a kvalite a otvorí ponuku Zdieľať, takže ho môžete uložiť do aplikácie Súbory alebo poslať do inej aplikácie."
+              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> vytvorí súbor JPEG, HEIF alebo TIFF vo vami zvolenej veľkosti a kvalite. Na iPhone a iPade otvorí ponuku Zdieľať, takže ho môžete uložiť do aplikácie Súbory alebo poslať do inej aplikácie; na Macu si zvolíte, kam sa súbor uloží."
             ]
           }
         ]
@@ -126,7 +171,7 @@
         "q": "Kde sú uložené moje predvoľby?",
         "blocks": [
           {
-            "p": "Vo vašom iPhone, vo vlastnom úložisku aplikácie. Nikam sa nenahrávajú. Predvoľby môžete vymazať v aplikácii a vymazaním aplikácie sa odstránia."
+            "p": "Vo vašom zariadení, vo vlastnom úložisku aplikácie. Nikam sa nenahrávajú. Predvoľby môžete vymazať v aplikácii a vymazaním aplikácie sa odstránia."
           }
         ]
       },
@@ -134,7 +179,7 @@
         "q": "Ktoré zariadenia sú podporované?",
         "blocks": [
           {
-            "p": "iPhone so systémom iOS 17 alebo novším."
+            "p": "iPhone so systémom iOS 17 alebo novším, iPad so systémom iPadOS 17 alebo novším a počítače Mac s čipom Apple a systémom macOS 14 alebo novším. Je to jedna bezplatná aplikácia pre všetky tri zariadenia."
           }
         ]
       },
@@ -152,10 +197,10 @@
   },
   "privacy": {
     "title": "Zásady ochrany osobných údajov - RawMask Studio",
-    "description": "Zásady ochrany osobných údajov aplikácie RawMask Studio pre iPhone. Aplikácia nezhromažďuje žiadne údaje, fotky sa upravujú vo vašom iPhone.",
+    "description": "Zásady ochrany osobných údajov aplikácie RawMask Studio pre iPhone, iPad a Mac. Aplikácia nezhromažďuje žiadne údaje, fotky sa upravujú vo vašom zariadení.",
     "h1": "Zásady ochrany osobných údajov",
-    "meta": "RawMask Studio pre iPhone. Dátum účinnosti: 23. septembra 2026.",
-    "summary": "<strong>Stručne:</strong> RawMask Studio nezhromažďuje žiadne údaje. Žiadny účet, žiadna analytika, žiadne reklamy a žiadne sledovanie. Vaše fotky sa upravujú vo vašom iPhone a aplikácia nikdy neposiela vaše fotky, vaše úpravy ani žiadne iné informácie nám ani nikomu inému.",
+    "meta": "RawMask Studio pre iPhone, iPad a Mac. Dátum účinnosti: 26. septembra 2026.",
+    "summary": "<strong>Stručne:</strong> RawMask Studio nezhromažďuje žiadne údaje. Žiadny účet, žiadna analytika, žiadne reklamy a žiadne sledovanie. Vaše fotky sa upravujú vo vašom iPhone, iPade alebo Macu a aplikácia nikdy neposiela vaše fotky, vaše úpravy ani žiadne iné informácie nám ani nikomu inému.",
     "sections": [
       {
         "id": "who-we-are",
@@ -177,13 +222,13 @@
       },
       {
         "id": "on-device-processing",
-        "h2": "Spracovanie prebieha vo vašom iPhone",
+        "h2": "Spracovanie prebieha vo vašom zariadení",
         "blocks": [
           {
             "p": "Všetko spracovanie fotiek prebieha vo vašom zariadení. Patrí sem načítavanie súborov RAW, použitie úprav svetla, farieb, detailov, zaostrenia a efektov, vykresľovanie náhľadov a vytváranie masiek."
           },
           {
-            "p": "Automatické masky objektov vytvára model na segmentáciu obrazu (RF-DETR), ktorý je súčasťou aplikácie a beží vo vašom iPhone pomocou technológie Core ML od spoločnosti Apple. Model sa nesťahuje z internetu a vaše fotky sa na analýzu nikam neposielajú."
+            "p": "Automatické masky objektov vytvára model na segmentáciu obrazu (RF-DETR), ktorý je súčasťou aplikácie a beží vo vašom iPhone, iPade alebo Macu pomocou technológie Core ML od spoločnosti Apple. Model sa nesťahuje z internetu a vaše fotky sa na analýzu nikam neposielajú."
           }
         ]
       },
@@ -192,7 +237,7 @@
         "h2": "Prístup k vašej knižnici fotiek",
         "blocks": [
           {
-            "p": "RawMask Studio používa na otváranie a ukladanie obrázkov aplikáciu Fotky od spoločnosti Apple. Skôr než aplikácia získa prístup k vašej knižnici, iOS vás požiada o povolenie. Môžete povoliť prístup k celej knižnici alebo len k fotkám, ktoré vyberiete, a toto nastavenie môžete kedykoľvek zmeniť v časti <span class=\"path\">Nastavenia &gt; Súkromie a bezpečnosť &gt; Fotky &gt; RawMask Studio</span>."
+            "p": "RawMask Studio používa na otváranie a ukladanie obrázkov aplikáciu Fotky od spoločnosti Apple. Skôr než aplikácia získa prístup k vašej knižnici, iOS, iPadOS alebo macOS vás požiada o povolenie. Na iPhone a iPade môžete povoliť prístup k celej knižnici alebo len k fotkám, ktoré vyberiete; na Macu sa prístup vzťahuje na celú knižnicu. Toto nastavenie môžete kedykoľvek zmeniť na iPhone a iPade v časti <span class=\"path\">Nastavenia &gt; Súkromie a bezpečnosť &gt; Fotky &gt; RawMask Studio</span> alebo na Macu v časti <span class=\"path\">Systémové nastavenia &gt; Súkromie a bezpečnosť &gt; Fotky</span>."
           },
           {
             "h3": "Čo aplikácia načítava"
@@ -216,7 +261,7 @@
             "h3": "Fotky v iCloude"
           },
           {
-            "p": "Ak používate Fotky v iCloude a originál zvolenej fotky v plnom rozlíšení nie je uložený vo vašom iPhone, systémový framework Fotky od spoločnosti Apple ho môže stiahnuť z iCloudu, aby sa dal upraviť. Fotky, ktoré uložíte, môže tiež synchronizovať služba Fotky v iCloude podľa vašich nastavení Apple. Tieto prenosy prebiehajú medzi vaším zariadením a vaším vlastným účtom iCloud, zabezpečuje ich spoločnosť Apple a vzťahujú sa na ne zásady ochrany osobných údajov spoločnosti Apple. Nám sa nič neposiela."
+            "p": "Ak používate Fotky v iCloude a originál zvolenej fotky v plnom rozlíšení nie je uložený vo vašom zariadení, systémový framework Fotky od spoločnosti Apple ho môže stiahnuť z iCloudu, aby sa dal upraviť. Fotky, ktoré uložíte, môže tiež synchronizovať služba Fotky v iCloude podľa vašich nastavení Apple. Tieto prenosy prebiehajú medzi vaším zariadením a vaším vlastným účtom iCloud, zabezpečuje ich spoločnosť Apple a vzťahujú sa na ne zásady ochrany osobných údajov spoločnosti Apple. Nám sa nič neposiela."
           }
         ]
       },
@@ -225,7 +270,10 @@
         "h2": "Export a zdieľanie",
         "blocks": [
           {
-            "p": "Keď klepnete na <span class=\"ui\" lang=\"en\">Export photo</span>, aplikácia vytvorí požadovaný obrazový súbor a otvorí ponuku Zdieľať v systéme iOS. Súbor sa dostane iba tam, kam sa ho rozhodnete poslať, napríklad do aplikácie Súbory, do Správ alebo do inej aplikácie, a ďalej s ním zaobchádza príslušná aplikácia alebo služba podľa svojich vlastných postupov ochrany súkromia. Dočasný súbor, ktorý aplikácia vytvorí na účely exportu, sa uchováva v súkromnom úložisku aplikácie vo vašom iPhone a automaticky sa vymaže, keď už nie je potrebný."
+            "p": "Keď na iPhone alebo iPade zvolíte <span class=\"ui\" lang=\"en\">Export photo</span>, aplikácia vytvorí požadovaný obrazový súbor a otvorí ponuku Zdieľať. Súbor sa dostane iba tam, kam sa ho rozhodnete poslať, napríklad do aplikácie Súbory, do Správ alebo do inej aplikácie, a ďalej s ním zaobchádza príslušná aplikácia alebo služba podľa svojich vlastných postupov ochrany súkromia. Dočasný súbor, ktorý aplikácia vytvorí na účely exportu, sa uchováva v súkromnom úložisku aplikácie a automaticky sa vymaže, keď už nie je potrebný."
+          },
+          {
+            "p": "Na Macu voľba <span class=\"ui\" lang=\"en\">Export photo</span> otvorí okno na uloženie súboru a súbor sa zapíše iba na miesto, ktoré zvolíte."
           }
         ]
       },
@@ -234,7 +282,7 @@
         "h2": "Informácie uložené vo vašom zariadení",
         "blocks": [
           {
-            "p": "Aby aplikácia fungovala tak, ako ste ju nechali, uchováva malé množstvo informácií vo svojom vlastnom úložisku vo vašom iPhone:"
+            "p": "Aby aplikácia fungovala tak, ako ste ju nechali, uchováva malé množstvo informácií vo svojom vlastnom úložisku vo vašom zariadení:"
           },
           {
             "ul": [
@@ -244,7 +292,7 @@
             ]
           },
           {
-            "p": "Tieto informácie zostávajú vo vašom zariadení a neposielajú sa nám. Predvoľbu môžete v aplikácii kedykoľvek vymazať a vymazaním aplikácie sa všetky tieto informácie odstránia. Rovnako ako ostatné údaje aplikácií môžu byť tieto informácie zahrnuté v zálohách vášho iPhonu, ktoré vytvárate, podľa vašich nastavení iOS."
+            "p": "Tieto informácie zostávajú vo vašom zariadení a neposielajú sa nám. Predvoľbu môžete v aplikácii kedykoľvek vymazať a vymazaním aplikácie sa všetky tieto informácie odstránia. Rovnako ako ostatné údaje aplikácií môžu byť tieto informácie zahrnuté v zálohách vášho iPhonu, iPadu alebo Macu, ktoré vytvárate, podľa vašich nastavení."
           }
         ]
       },
@@ -256,7 +304,7 @@
             "p": "RawMask Studio neobsahuje žiadny softvér tretích strán na analytiku, reklamu, hlásenie zlyhaní ani sledovanie. Nepoužíva reklamný identifikátor a nesleduje vás naprieč aplikáciami ani webovými stránkami, ktoré vlastnia iné spoločnosti."
           },
           {
-            "p": "Ak ste sa v iOS rozhodli zdieľať analytické údaje s vývojármi aplikácií (<span class=\"path\">Nastavenia &gt; Súkromie a bezpečnosť &gt; Analytika a vylepšovanie</span>), spoločnosť Apple nám môže poskytovať hlásenia o zlyhaniach a súhrnné štatistiky používania vo forme, ktorá vás neidentifikuje. Toto riadi spoločnosť Apple a vaše nastavenia, nie aplikácia."
+            "p": "Ak ste sa rozhodli zdieľať analytické údaje s vývojármi aplikácií (<span class=\"path\">Nastavenia &gt; Súkromie a bezpečnosť &gt; Analytika a vylepšovanie</span> na iPhone a iPade alebo <span class=\"path\">Systémové nastavenia &gt; Súkromie a bezpečnosť &gt; Analytika a vylepšovanie</span> na Macu), spoločnosť Apple nám môže poskytovať hlásenia o zlyhaniach a súhrnné štatistiky používania vo forme, ktorá vás neidentifikuje. Toto riadi spoločnosť Apple a vaše nastavenia, nie aplikácia."
           }
         ]
       },
@@ -283,7 +331,7 @@
         "h2": "Vaše možnosti",
         "blocks": [
           {
-            "p": "Keďže o vás nezhromažďujeme ani neuchovávame žiadne údaje, na našej strane nie sú žiadne osobné údaje, ku ktorým by bolo možné získať prístup alebo ktoré by bolo možné opraviť, exportovať či vymazať. Všetko máte pod kontrolou vo svojom zariadení: prístup k Fotkám môžete zmeniť alebo odvolať v Nastaveniach systému iOS, predvoľby vymazať v aplikácii, úpravy alebo kópie odstrániť v aplikácii Fotky a vymazaním aplikácie odstrániť jej lokálne údaje."
+            "p": "Keďže o vás nezhromažďujeme ani neuchovávame žiadne údaje, na našej strane nie sú žiadne osobné údaje, ku ktorým by bolo možné získať prístup alebo ktoré by bolo možné opraviť, exportovať či vymazať. Všetko máte pod kontrolou vo svojom zariadení: prístup k Fotkám môžete zmeniť alebo odvolať v Nastaveniach (na Macu v Systémových nastaveniach), predvoľby vymazať v aplikácii, úpravy alebo kópie odstrániť v aplikácii Fotky a vymazaním aplikácie odstrániť jej lokálne údaje."
           }
         ]
       },

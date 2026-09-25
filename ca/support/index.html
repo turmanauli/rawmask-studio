@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#081b16">
-<meta name="description" content="Ajuda i contacte de RawMask Studio per a iPhone: obrir fotos, accés a Fotos, màscares, desar i exportar.">
+<meta name="description" content="Ajuda i contacte de RawMask Studio per a iPhone, iPad i Mac: obrir fotos, accés a Fotos, màscares, desar i exportar.">
 <meta name="apple-itunes-app" content="app-id=6814994539">
 <title>Assistència - RawMask Studio</title>
 <link rel="canonical" href="https://turmanauli.github.io/rawmask-studio/ca/support/">
@@ -64,7 +64,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RawMask Studio">
 <meta property="og:title" content="Assistència - RawMask Studio">
-<meta property="og:description" content="Ajuda i contacte de RawMask Studio per a iPhone: obrir fotos, accés a Fotos, màscares, desar i exportar.">
+<meta property="og:description" content="Ajuda i contacte de RawMask Studio per a iPhone, iPad i Mac: obrir fotos, accés a Fotos, màscares, desar i exportar.">
 <meta property="og:url" content="https://turmanauli.github.io/rawmask-studio/ca/support/">
 <meta property="og:locale" content="ca_ES">
 <meta name="twitter:card" content="summary">
@@ -300,6 +300,9 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   .document .faq section { padding-block: 24px; }
 }
 
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.name { text-transform: none; }
+
 /* End site design */
 </style>
 </head>
@@ -376,12 +379,12 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
 <main class="wrap document">
   <h1>Assistència</h1>
-  <p class="meta">Ajuda de RawMask Studio per a iPhone.</p>
+  <p class="meta">Ajuda de RawMask Studio per a iPhone, iPad i Mac.</p>
   <p class="note">Aquesta pàgina és una traducció de la <a href="../../support/">versió en anglès</a>. En cas de discrepància entre les dues versions, preval la versió en anglès.</p>
 
   <div class="callout" id="contact">
     <p><strong>Contacte:</strong> escriu a <a href="mailto:turmanauli.beso@gmail.com">turmanauli.beso@gmail.com</a></p>
-    <p>Si us plau, indica el model del teu iPhone, la versió de l'iOS i una breu descripció del que ha passat i del que esperaves que passés. No cal que enviïs fotos; normalment n'hi ha prou de descriure la foto (per exemple, la càmera o el format de fitxer).</p>
+    <p>Si us plau, indica el teu dispositiu (iPhone, iPad o Mac) i la seva versió de l'iOS, l'iPadOS o el macOS, i una breu descripció del que ha passat i del que esperaves que passés. No cal que enviïs fotos; normalment n'hi ha prou de descriure la foto (per exemple, la càmera o el format de fitxer).</p>
     <p class="muted">De moment, la interfície de l&#x27;aplicació està en anglès. Els noms dels botons i dels menús que trobaràs a continuació estan en anglès, exactament com apareixen a l'app.</p>
   </div>
 
@@ -389,7 +392,17 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   <div class="faq">
     <section>
       <h3>Com obro una foto?</h3>
-      <p>Toca el botó de foto, a la part superior esquerra de l'editor, i tria <span class="ui" lang="en">Open photo</span>. S'obre el selector de Fotos i hi tries una foto. RawMask Studio edita una sola foto cada vegada. De moment, les Live Photos no es mostren al selector.</p>
+      <p>A l'iPhone, toca el botó de foto, a la part superior esquerra de l'editor, i tria <span class="ui" lang="en">Open photo</span>. A l'iPad, toca <span class="ui" lang="en">Open photo</span> a la paleta de la part superior esquerra. Al Mac, fes clic a <span class="ui" lang="en">Open photo</span> a la barra d'eines. S'obre el selector de Fotos i hi tries una foto. RawMask Studio edita una sola foto cada vegada. De moment, les Live Photos no es mostren al selector.</p>
+    </section>
+
+    <section>
+      <h3>On són els botons a l'<span class="name">iPad</span> i al <span class="name">Mac</span>?</h3>
+      <p>Els passos i les eines són els mateixos a tots els dispositius; només canvia on són:</p>
+      <ul>
+        <li><strong>iPhone:</strong> el botó de foto de la part superior esquerra conté <span class="ui" lang="en">Open photo</span>, <span class="ui" lang="en">Edit target</span> i <span class="ui" lang="en">Add mask</span>, i <span class="ui" lang="en">More options</span> és el botó ... de la part superior dreta.</li>
+        <li><strong>iPad:</strong> la paleta de la part superior esquerra conté <span class="ui" lang="en">Open photo</span>, <span class="ui" lang="en">Edit target</span> i <span class="ui" lang="en">Add mask</span>, i <span class="ui" lang="en">More options</span> (el botó ...) i <span class="ui" lang="en">Save</span> són a la part superior dreta. Pots arrossegar les paletes on vulguis.</li>
+        <li><strong>Mac:</strong> <span class="ui" lang="en">Open photo</span> i els passos són a la barra d'eines, <span class="ui" lang="en">Edit target</span> i <span class="ui" lang="en">Add mask</span> són a l'inspector, al costat de la foto, i <span class="ui" lang="en">Editor options</span> (el botó amb controls lliscants) i <span class="ui" lang="en">Export</span> són a la part superior dreta.</li>
+      </ul>
     </section>
 
     <section>
@@ -399,12 +412,12 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
     <section>
       <h3>Per què l'app demana accés a Fotos?</h3>
-      <p>RawMask Studio obre fotos de la teva fototeca de l'app Fotos i hi desa les edicions, per això l'iOS et demana permís. Pots permetre l'accés complet o un accés limitat només a les fotos que seleccionis. En tots dos casos, l'app només obre la foto que triïs. Consulta la <a href="../privacy/">política de privadesa</a> per a més detalls.</p>
+      <p>RawMask Studio obre fotos de la teva fototeca de l'app Fotos i hi desa les edicions, per això l'iOS, l'iPadOS o el macOS et demana permís. A l'iPhone i a l'iPad pots permetre l'accés complet o un accés limitat només a les fotos que seleccionis; al Mac, l'accés inclou tota la fototeca. En qualsevol cas, l'app només obre la foto que triïs. Consulta la <a href="../privacy/">política de privadesa</a> per a més detalls.</p>
     </section>
 
     <section>
       <h3>He triat l'accés limitat i no trobo una foto</h3>
-      <p>Amb l'accés limitat, l'app només pot obrir les fotos que hagis permès. Per permetre'n més:</p>
+      <p>L'accés limitat està disponible a l'iPhone i a l'iPad. Amb aquest accés, l'app només pot obrir les fotos que hagis permès. Per permetre'n més:</p>
       <ul>
         <li>A l'app, toca <span class="ui" lang="en">More options</span> (el botó ...) i, a <span class="ui" lang="en">Photos access</span>, toca <span class="ui" lang="en">Manage allowed photos</span>, o bé</li>
         <li>obre <span class="path">Configuració &gt; Privadesa i seguretat &gt; Fotos &gt; RawMask Studio</span> i canvia la selecció o tria Accés complet.</li>
@@ -413,42 +426,42 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
     <section>
       <h3>L'app diu que l'accés a Fotos està desactivat</h3>
-      <p>Obre <span class="path">Configuració &gt; Privadesa i seguretat &gt; Fotos &gt; RawMask Studio</span>, tria Accés limitat o Accés complet i, després, torna a l'app i obre de nou una foto.</p>
+      <p>A l'iPhone o a l'iPad, obre <span class="path">Configuració &gt; Privadesa i seguretat &gt; Fotos &gt; RawMask Studio</span> i tria Accés limitat o Accés complet. Al Mac, obre <span class="path">Configuració del Sistema &gt; Privadesa i seguretat &gt; Fotos</span> i permet l'accés a RawMask Studio. Després, torna a l'app i obre de nou una foto.</p>
     </section>
 
     <section>
       <h3>Com funcionen les màscares?</h3>
-      <p>Els ajustos s'apliquen o bé a tota la foto o bé a una màscara. Obre el menú del botó de foto, a la part superior esquerra: fes servir <span class="ui" lang="en">Edit target</span> per triar què edites i <span class="ui" lang="en">Add mask</span> per afegir una màscara <span class="ui" lang="en">Radial</span>, <span class="ui" lang="en">Linear</span>, <span class="ui" lang="en">Brush</span> o <span class="ui" lang="en">Rectangle</span>. Pots moure una màscara i canviar-ne la mida, pintar per afegir-hi o treure'n zones i suavitzar-ne la vora amb <span class="ui" lang="en">Feather</span>.</p>
+      <p>Els ajustos s'apliquen o bé a tota la foto o bé a una màscara. Fes servir <span class="ui" lang="en">Edit target</span> per triar què edites i <span class="ui" lang="en">Add mask</span> per afegir una màscara <span class="ui" lang="en">Radial</span>, <span class="ui" lang="en">Linear</span>, <span class="ui" lang="en">Brush</span> o <span class="ui" lang="en">Rectangle</span> (més amunt trobaràs on són a cada dispositiu). Pots moure una màscara i canviar-ne la mida, pintar per afegir-hi o treure'n zones i suavitzar-ne la vora amb <span class="ui" lang="en">Feather</span>.</p>
     </section>
 
     <section>
       <h3>Què són les màscares automàtiques d'objectes?</h3>
-      <p>RawMask Studio inclou un model de segmentació d'imatges que troba objectes a la foto, com ara persones, animals i coses quotidianes, i t'ofereix cadascun com a màscara que pots editar per separat. El model funciona íntegrament al teu iPhone. Si no detecta l'objecte que vols, fes servir una màscara manual o ajusta <span class="ui" lang="en">Detection confidence</span> i <span class="ui" lang="en">Mask threshold</span> a <span class="ui" lang="en">More options</span> &gt; <span class="ui" lang="en">Advanced</span> &gt; <span class="ui" lang="en">Object detection</span>.</p>
+      <p>RawMask Studio inclou un model de segmentació d'imatges que troba objectes a la foto, com ara persones, animals i coses quotidianes, i t'ofereix cadascun com a màscara que pots editar per separat. El model funciona íntegrament al teu dispositiu. Si no detecta l'objecte que vols, fes servir una màscara manual o ajusta <span class="ui" lang="en">Detection confidence</span> i <span class="ui" lang="en">Mask threshold</span> a <span class="ui" lang="en">More options</span> (<span class="ui" lang="en">Editor options</span> al Mac) &gt; <span class="ui" lang="en">Advanced</span> &gt; <span class="ui" lang="en">Object detection</span>.</p>
     </section>
 
     <section>
       <h3>Necessito connexió a internet?</h3>
-      <p>No. L'edició i les màscares automàtiques funcionen sense connexió. L'única excepció és una foto desada a Fotos d'iCloud l'original de la qual no és al teu iPhone: Fotos ha de descarregar l'original d'iCloud abans que es pugui editar.</p>
+      <p>No. L'edició i les màscares automàtiques funcionen sense connexió. L'única excepció és una foto desada a Fotos d'iCloud l'original de la qual no és al teu dispositiu: Fotos ha de descarregar l'original d'iCloud abans que es pugui editar.</p>
     </section>
 
     <section>
       <h3>Com deso o exporto l'edició?</h3>
-      <p>Toca <span class="ui" lang="en">More options</span> (el botó ...) i ves a <span class="ui" lang="en">Save and export</span>:</p>
+      <p>A l'iPhone, toca <span class="ui" lang="en">More options</span> (el botó ...) i ves a <span class="ui" lang="en">Save and export</span>. A l'iPad, fes servir el menú <span class="ui" lang="en">Save</span> de la part superior dreta, on les dues primeres opcions es diuen <span class="ui" lang="en">Save to Photos</span> i <span class="ui" lang="en">Save a Copy</span>. Al Mac, fes clic a <span class="ui" lang="en">Export</span> a la barra d'eines. Les opcions són:</p>
       <ul>
         <li><strong><span class="ui" lang="en">Save edit to Photos</span></strong> actualitza la foto a la teva fototeca. Fotos conserva l'original, de manera que més endavant hi pots tornar revertint l'edició a l'app Fotos.</li>
         <li><strong><span class="ui" lang="en">Save a copy to Photos</span></strong> afegeix la imatge editada com a foto nova i deixa l'original sense canvis.</li>
-        <li><strong><span class="ui" lang="en">Export photo</span></strong> crea un fitxer JPEG, HEIF o TIFF amb la mida i la qualitat que triïs i obre el full de compartir, perquè el puguis desar a Arxius o enviar-lo a una altra app.</li>
+        <li><strong><span class="ui" lang="en">Export photo</span></strong> crea un fitxer JPEG, HEIF o TIFF amb la mida i la qualitat que triïs. A l'iPhone i a l'iPad obre el full de compartir, perquè el puguis desar a Arxius o enviar-lo a una altra app; al Mac, tries on vols desar el fitxer.</li>
       </ul>
     </section>
 
     <section>
       <h3>On es desen els meus valors predefinits?</h3>
-      <p>Al teu iPhone, a l'emmagatzematge propi de l'app. No es pugen enlloc. Pots eliminar valors predefinits a l'app, i si elimines l'app, també s'eliminen.</p>
+      <p>Al teu dispositiu, a l'emmagatzematge propi de l'app. No es pugen enlloc. Pots eliminar valors predefinits a l'app, i si elimines l'app, també s'eliminen.</p>
     </section>
 
     <section>
       <h3>Quins dispositius són compatibles?</h3>
-      <p>iPhone amb l'iOS 17 o posterior.</p>
+      <p>iPhone amb l'iOS 17 o posterior, iPad amb l'iPadOS 17 o posterior i ordinadors Mac amb xip d'Apple i el macOS 14 o posterior. És una sola app gratuïta per als tres.</p>
     </section>
 
     <section>

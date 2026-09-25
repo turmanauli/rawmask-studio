@@ -10,11 +10,41 @@
     "translation_notice": "Bu sayfa, <a href=\"{english_url}\">İngilizce sürümün</a> çevirisidir. İki sürüm arasında farklılık olması durumunda İngilizce sürüm esas alınır."
   },
   "home": {
-    "description": "RawMask Studio, otomatik ve elle çizilen maskeler sunan, RAW fotoğraflar için bir iPhone fotoğraf düzenleyicisidir. Her şey iPhone'unda çalışır.",
-    "eyebrow": "iPhone için fotoğraf düzenleyici",
+    "description": "RawMask Studio, otomatik ve elle çizilen maskeler sunan, iPhone, iPad ve Mac için bir RAW fotoğraf düzenleyicisidir. Her şey cihazında çalışır.",
+    "eyebrow": "iPhone, iPad ve Mac için fotoğraf düzenleyici",
     "btn_support": "Destek al",
     "btn_privacy": "Gizlilik politikası",
     "screenshots_heading": "Ekran görüntüleri",
+    "whats_new": {
+      "heading": "1.2.0 sürümündeki yenilikler",
+      "intro": "RawMask Studio artık iPhone'un yanı sıra iPad'de ve Mac'te de çalışıyor. Üçü için de tek bir ücretsiz uygulama olarak sunuluyor ve tüm düzenlemeler yine cihazında yapılıyor.",
+      "items": [
+        {
+          "h3": "Artık <span class=\"name\">iPad</span>'de",
+          "p": "Fotoğraf ekranı kaplar, araçlar ise istediğin yere sürükleyebileceğin paletler olarak üzerinde süzülür; hem dikey hem yatay yönde."
+        },
+        {
+          "h3": "Artık <span class=\"name\">Mac</span>'te",
+          "p": "Adımlar araç çubuğunda yer alır, fotoğrafın yanındaki denetçide ise maskeler ve sürgüler bulunur. İnce ayrıntıları kontrol etmek için yakınlaştır ve JPEG, HEIF ya da TIFF olarak bir dosyaya dışa aktar."
+        },
+        {
+          "h3": "Yeni Ton adımı",
+          "p": "En açık, açık, koyu ve en koyu tonlar için ton eğrisi, ayrıca açık tonlarda, ara tonlarda ve gölgelerde net bir yerel kontrast."
+        },
+        {
+          "h3": "Yeni Stil adımı",
+          "p": "HDR, dram, parıltı, bloom, halasyon ve kromatik sapma, ayrıca Film, S/B, Vintage, Noir, Grunge ve Retro görünümleri."
+        },
+        {
+          "h3": "HSL renk ayarları",
+          "p": "Sekiz renk aralığı için ton, kroma ve açıklık, doğrudan Renk adımında."
+        },
+        {
+          "h3": "Daha fazla kadraj ve efekt seçeneği",
+          "p": "Kadraj'da perspektif, kenar dolgusu ve sekiz çerçeve, Efektler'de ise vinyet boyutu, şekli ve yumuşaklığı."
+        }
+      ]
+    },
     "features_heading": "Neler yapabilirsin",
     "store_headings": [
       "Seçici düzenleme için maskeler",
@@ -24,24 +54,39 @@
       "Orijinali kaybetmeden kaydet",
       "Gizlilik ön planda"
     ],
-    "requirements": "<strong>Gereksinimler:</strong> iOS 17 veya daha yenisi yüklü iPhone.",
+    "requirements": "<strong>Gereksinimler:</strong> iOS 17 veya daha yenisi yüklü iPhone, iPadOS 17 veya daha yenisi yüklü iPad ya da Apple çipli ve macOS 14 veya daha yenisi yüklü bir Mac.",
     "help": "Soruların ya da sorunların mı var? <a href=\"{support_url}\">Destek sayfasını</a> ziyaret et. Uygulamanın fotoğraflarını nasıl işlediğine dair ayrıntılar <a href=\"{privacy_url}\">gizlilik politikasında</a> yer alıyor."
   },
   "support": {
     "title": "Destek - RawMask Studio",
-    "description": "iPhone için RawMask Studio'ya yönelik yardım ve iletişim: fotoğraf açma, Fotoğraflar'a erişim, maskeler, kaydetme ve dışa aktarma.",
+    "description": "iPhone, iPad ve Mac'te RawMask Studio'ya yönelik yardım ve iletişim: fotoğraf açma, Fotoğraflar'a erişim, maskeler, kaydetme ve dışa aktarma.",
     "h1": "Destek",
-    "meta": "iPhone için RawMask Studio'ya yönelik yardım.",
+    "meta": "iPhone, iPad ve Mac'te RawMask Studio'ya yönelik yardım.",
     "ui_labels_note": "Aşağıdaki düğme ve menü adları da tam olarak uygulamada göründükleri gibi İngilizce verilmiştir.",
     "contact": "<strong>İletişim:</strong> <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a> adresine e-posta gönder",
-    "contact_note": "Lütfen e-postana iPhone modelini, iOS sürümünü ve ne olduğunu, ne beklediğini anlatan kısa bir açıklamayı ekle. Fotoğraf göndermene gerek yok; fotoğrafı tarif etmen (örneğin fotoğraf makinesini ya da dosya biçimini belirtmen) genellikle yeterlidir.",
+    "contact_note": "Lütfen e-postana cihazını (iPhone, iPad veya Mac) ve iOS, iPadOS ya da macOS sürümünü, ayrıca ne olduğunu, ne beklediğini anlatan kısa bir açıklamayı ekle. Fotoğraf göndermene gerek yok; fotoğrafı tarif etmen (örneğin fotoğraf makinesini ya da dosya biçimini belirtmen) genellikle yeterlidir.",
     "faq_heading": "Sıkça sorulan sorular",
     "faq": [
       {
         "q": "Bir fotoğrafı nasıl açarım?",
         "blocks": [
           {
-            "p": "Düzenleyicinin sol üst köşesindeki fotoğraf düğmesine dokun ve <span class=\"ui\" lang=\"en\">Open photo</span> seçeneğini seç. Fotoğraf seçici açılır ve buradan bir fotoğraf seçersin. RawMask Studio her seferinde tek bir fotoğrafı düzenler. Live Photo'lar şu anda seçicide gösterilmez."
+            "p": "iPhone'da, düzenleyicinin sol üst köşesindeki fotoğraf düğmesine dokun ve <span class=\"ui\" lang=\"en\">Open photo</span> seçeneğini seç. iPad'de, sol üst köşedeki palette <span class=\"ui\" lang=\"en\">Open photo</span> öğesine dokun. Mac'te, araç çubuğundaki <span class=\"ui\" lang=\"en\">Open photo</span> öğesine tıkla. Fotoğraf seçici açılır ve buradan bir fotoğraf seçersin. RawMask Studio her seferinde tek bir fotoğrafı düzenler. Live Photo'lar şu anda seçicide gösterilmez."
+          }
+        ]
+      },
+      {
+        "q": "<span class=\"name\">iPad</span>'de ve <span class=\"name\">Mac</span>'te düğmeler nerede?",
+        "blocks": [
+          {
+            "p": "Adımlar ve araçlar her cihazda aynıdır; yalnızca yerleri farklıdır:"
+          },
+          {
+            "ul": [
+              "<strong>iPhone:</strong> sol üstteki fotoğraf düğmesinde <span class=\"ui\" lang=\"en\">Open photo</span>, <span class=\"ui\" lang=\"en\">Edit target</span> ve <span class=\"ui\" lang=\"en\">Add mask</span> bulunur; <span class=\"ui\" lang=\"en\">More options</span> ise sağ üstteki ... düğmesidir.",
+              "<strong>iPad:</strong> sol üstteki palette <span class=\"ui\" lang=\"en\">Open photo</span>, <span class=\"ui\" lang=\"en\">Edit target</span> ve <span class=\"ui\" lang=\"en\">Add mask</span> bulunur; <span class=\"ui\" lang=\"en\">More options</span> (... düğmesi) ve <span class=\"ui\" lang=\"en\">Save</span> ise sağ üsttedir. Paletleri istediğin yere sürükleyebilirsin.",
+              "<strong>Mac:</strong> <span class=\"ui\" lang=\"en\">Open photo</span> ve adımlar araç çubuğunda, <span class=\"ui\" lang=\"en\">Edit target</span> ve <span class=\"ui\" lang=\"en\">Add mask</span> fotoğrafın yanındaki denetçide, <span class=\"ui\" lang=\"en\">Editor options</span> (sürgüler düğmesi) ve <span class=\"ui\" lang=\"en\">Export</span> ise sağ üsttedir."
+            ]
           }
         ]
       },
@@ -57,7 +102,7 @@
         "q": "Uygulama neden Fotoğraflar'a erişim izni istiyor?",
         "blocks": [
           {
-            "p": "RawMask Studio fotoğrafları Apple Fotoğraflar arşivinden açar ve düzenlemeleri yine bu arşive kaydeder; bu nedenle iOS senden izin ister. Tam erişime ya da yalnızca seçtiğin fotoğraflarla sınırlı erişime izin verebilirsin. Her iki durumda da uygulama yalnızca seçtiğin fotoğrafı açar. Ayrıntılar için <a href=\"{privacy_url}\">gizlilik politikasına</a> göz at."
+            "p": "RawMask Studio fotoğrafları Apple Fotoğraflar arşivinden açar ve düzenlemeleri yine bu arşive kaydeder; bu nedenle iOS, iPadOS veya macOS senden izin ister. iPhone'da ve iPad'de tam erişime ya da yalnızca seçtiğin fotoğraflarla sınırlı erişime izin verebilirsin; Mac'te ise erişim arşivin tamamını kapsar. Her iki durumda da uygulama yalnızca seçtiğin fotoğrafı açar. Ayrıntılar için <a href=\"{privacy_url}\">gizlilik politikasına</a> göz at."
           }
         ]
       },
@@ -65,7 +110,7 @@
         "q": "Sınırlı erişimi seçtim ve bir fotoğrafı bulamıyorum",
         "blocks": [
           {
-            "p": "Sınırlı erişimde uygulama yalnızca izin verdiğin fotoğrafları açabilir. Daha fazla fotoğrafa izin vermek için:"
+            "p": "Sınırlı erişim iPhone'da ve iPad'de kullanılabilir. Sınırlı erişimde uygulama yalnızca izin verdiğin fotoğrafları açabilir. Daha fazla fotoğrafa izin vermek için:"
           },
           {
             "ul": [
@@ -79,7 +124,7 @@
         "q": "Uygulama, Fotoğraflar'a erişimin kapalı olduğunu söylüyor",
         "blocks": [
           {
-            "p": "<span class=\"path\">Ayarlar &gt; Gizlilik ve Güvenlik &gt; Fotoğraflar &gt; RawMask Studio</span> bölümüne git, Sınırlı Erişim'i ya da Tam Erişim'i seç, ardından uygulamaya dönüp tekrar bir fotoğraf aç."
+            "p": "iPhone'da veya iPad'de <span class=\"path\">Ayarlar &gt; Gizlilik ve Güvenlik &gt; Fotoğraflar &gt; RawMask Studio</span> bölümüne git ve Sınırlı Erişim'i ya da Tam Erişim'i seç. Mac'te <span class=\"path\">Sistem Ayarları &gt; Gizlilik ve Güvenlik &gt; Fotoğraflar</span> bölümüne git ve RawMask Studio'ya izin ver. Ardından uygulamaya dönüp tekrar bir fotoğraf aç."
           }
         ]
       },
@@ -87,7 +132,7 @@
         "q": "Maskeler nasıl çalışır?",
         "blocks": [
           {
-            "p": "Yaptığın ayarlar ya fotoğrafın tamamına ya da bir maskeye uygulanır. Sol üstteki fotoğraf düğmesinin menüsünü aç: Neyi düzenlediğini seçmek için <span class=\"ui\" lang=\"en\">Edit target</span> seçeneğini, <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span> ya da <span class=\"ui\" lang=\"en\">Rectangle</span> maskesi eklemek için de <span class=\"ui\" lang=\"en\">Add mask</span> seçeneğini kullan. Bir maskeyi taşıyabilir ve yeniden boyutlandırabilir, boyayarak maskeye ekleme ya da maskeden çıkarma yapabilir ve <span class=\"ui\" lang=\"en\">Feather</span> ile kenarını yumuşatabilirsin."
+            "p": "Yaptığın ayarlar ya fotoğrafın tamamına ya da bir maskeye uygulanır. Neyi düzenlediğini seçmek için <span class=\"ui\" lang=\"en\">Edit target</span> seçeneğini, <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span> ya da <span class=\"ui\" lang=\"en\">Rectangle</span> maskesi eklemek için de <span class=\"ui\" lang=\"en\">Add mask</span> seçeneğini kullan (her cihazda nerede olduklarını yukarıda görebilirsin). Bir maskeyi taşıyabilir ve yeniden boyutlandırabilir, boyayarak maskeye ekleme ya da maskeden çıkarma yapabilir ve <span class=\"ui\" lang=\"en\">Feather</span> ile kenarını yumuşatabilirsin."
           }
         ]
       },
@@ -95,7 +140,7 @@
         "q": "Otomatik nesne maskeleri nedir?",
         "blocks": [
           {
-            "p": "RawMask Studio, fotoğrafındaki insanlar, hayvanlar ve gündelik eşyalar gibi nesneleri bulan ve her birini tek başına düzenleyebileceğin bir maske olarak sunan bir görüntü segmentasyon modeli içerir. Model tamamen iPhone'unda çalışır. İstediğin nesneyi algılamazsa bunun yerine elle çizilen bir maske kullan ya da <span class=\"ui\" lang=\"en\">More options</span> &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span> altındaki <span class=\"ui\" lang=\"en\">Detection confidence</span> ve <span class=\"ui\" lang=\"en\">Mask threshold</span> değerlerini ayarla."
+            "p": "RawMask Studio, fotoğrafındaki insanlar, hayvanlar ve gündelik eşyalar gibi nesneleri bulan ve her birini tek başına düzenleyebileceğin bir maske olarak sunan bir görüntü segmentasyon modeli içerir. Model tamamen cihazında çalışır. İstediğin nesneyi algılamazsa bunun yerine elle çizilen bir maske kullan ya da <span class=\"ui\" lang=\"en\">More options</span> (Mac'te <span class=\"ui\" lang=\"en\">Editor options</span>) &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span> altındaki <span class=\"ui\" lang=\"en\">Detection confidence</span> ve <span class=\"ui\" lang=\"en\">Mask threshold</span> değerlerini ayarla."
           }
         ]
       },
@@ -103,7 +148,7 @@
         "q": "İnternet bağlantısına ihtiyacım var mı?",
         "blocks": [
           {
-            "p": "Hayır. Düzenleme ve otomatik maskeler çevrimdışı çalışır. Tek istisna, iCloud Fotoğrafları'nda saklanan ve orijinali iPhone'unda bulunmayan bir fotoğraftır: Bu fotoğrafın düzenlenebilmesi için Fotoğraflar'ın önce orijinali iCloud'dan indirmesi gerekir."
+            "p": "Hayır. Düzenleme ve otomatik maskeler çevrimdışı çalışır. Tek istisna, iCloud Fotoğrafları'nda saklanan ve orijinali cihazında bulunmayan bir fotoğraftır: Bu fotoğrafın düzenlenebilmesi için Fotoğraflar'ın önce orijinali iCloud'dan indirmesi gerekir."
           }
         ]
       },
@@ -111,13 +156,13 @@
         "q": "Düzenlememi nasıl kaydeder ya da dışa aktarırım?",
         "blocks": [
           {
-            "p": "<span class=\"ui\" lang=\"en\">More options</span> (... düğmesi) öğesine dokun ve <span class=\"ui\" lang=\"en\">Save and export</span> bölümüne git:"
+            "p": "iPhone'da <span class=\"ui\" lang=\"en\">More options</span> (... düğmesi) öğesine dokun ve <span class=\"ui\" lang=\"en\">Save and export</span> bölümüne git. iPad'de sağ üstteki <span class=\"ui\" lang=\"en\">Save</span> menüsünü kullan; buradaki ilk iki seçenek <span class=\"ui\" lang=\"en\">Save to Photos</span> ve <span class=\"ui\" lang=\"en\">Save a Copy</span> adını taşır. Mac'te araç çubuğundaki <span class=\"ui\" lang=\"en\">Export</span> öğesine tıkla. Seçenekler şunlardır:"
           },
           {
             "ul": [
               "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong>, arşivindeki fotoğrafı günceller. Fotoğraflar orijinali saklar; böylece daha sonra Fotoğraflar uygulamasındaki Geri Döndür seçeneğiyle orijinale dönebilirsin.",
               "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong>, düzenlenmiş görüntüyü yeni bir fotoğraf olarak ekler ve orijinali değiştirmeden bırakır.",
-              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong>, seçtiğin boyut ve kalitede bir JPEG, HEIF ya da TIFF dosyası oluşturur ve paylaşım menüsünü açar; böylece dosyayı Dosyalar'a kaydedebilir ya da başka bir uygulamaya gönderebilirsin."
+              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong>, seçtiğin boyut ve kalitede bir JPEG, HEIF ya da TIFF dosyası oluşturur. iPhone'da ve iPad'de paylaşım menüsünü açar; böylece dosyayı Dosyalar'a kaydedebilir ya da başka bir uygulamaya gönderebilirsin. Mac'te ise dosyanın nereye kaydedileceğini sen seçersin."
             ]
           }
         ]
@@ -126,7 +171,7 @@
         "q": "Hazır ayarlarım nerede saklanıyor?",
         "blocks": [
           {
-            "p": "iPhone'unda, uygulamanın kendi depolama alanında. Hiçbir yere yüklenmezler. Hazır ayarları uygulamada silebilirsin; uygulamayı silmek de onları kaldırır."
+            "p": "Cihazında, uygulamanın kendi depolama alanında. Hiçbir yere yüklenmezler. Hazır ayarları uygulamada silebilirsin; uygulamayı silmek de onları kaldırır."
           }
         ]
       },
@@ -134,7 +179,7 @@
         "q": "Hangi cihazlar destekleniyor?",
         "blocks": [
           {
-            "p": "iOS 17 veya daha yenisi yüklü iPhone."
+            "p": "iOS 17 veya daha yenisi yüklü iPhone, iPadOS 17 veya daha yenisi yüklü iPad ve Apple çipli, macOS 14 veya daha yenisi yüklü Mac bilgisayarlar. Üçü için de tek bir ücretsiz uygulamadır."
           }
         ]
       },
@@ -152,10 +197,10 @@
   },
   "privacy": {
     "title": "Gizlilik Politikası - RawMask Studio",
-    "description": "iPhone için RawMask Studio'nun gizlilik politikası. Uygulama hiçbir veri toplamaz; fotoğraflar iPhone'unda düzenlenir.",
+    "description": "iPhone, iPad ve Mac için RawMask Studio'nun gizlilik politikası. Uygulama hiçbir veri toplamaz; fotoğraflar cihazında düzenlenir.",
     "h1": "Gizlilik Politikası",
-    "meta": "iPhone için RawMask Studio. Yürürlük tarihi: 23 Eylül 2026.",
-    "summary": "<strong>Kısaca:</strong> RawMask Studio hiçbir veri toplamaz. Hesap, analiz, reklam veya izleme yoktur. Fotoğrafların iPhone'unda düzenlenir ve uygulama fotoğraflarını, düzenlemelerini veya başka herhangi bir bilgiyi hiçbir zaman bize ya da başka birine göndermez.",
+    "meta": "iPhone, iPad ve Mac için RawMask Studio. Yürürlük tarihi: 26 Eylül 2026.",
+    "summary": "<strong>Kısaca:</strong> RawMask Studio hiçbir veri toplamaz. Hesap, analiz, reklam veya izleme yoktur. Fotoğrafların iPhone'unda, iPad'inde veya Mac'inde düzenlenir ve uygulama fotoğraflarını, düzenlemelerini veya başka herhangi bir bilgiyi hiçbir zaman bize ya da başka birine göndermez.",
     "sections": [
       {
         "id": "who-we-are",
@@ -177,13 +222,13 @@
       },
       {
         "id": "on-device-processing",
-        "h2": "İşlemler iPhone'unda gerçekleşir",
+        "h2": "İşlemler cihazında gerçekleşir",
         "blocks": [
           {
             "p": "Tüm fotoğraf işleme süreçleri cihazında gerçekleşir. Buna RAW dosyalarının okunması; ışık, renk, detay, odak ve efekt ayarlarının uygulanması; önizlemelerin hazırlanması ve maskelerin oluşturulması dahildir."
           },
           {
-            "p": "Otomatik nesne maskeleri, uygulamanın içinde yer alan ve Apple'ın Core ML çerçevesiyle iPhone'unda çalışan bir görüntü segmentasyon modeli (RF-DETR) tarafından oluşturulur. Model internetten indirilmez ve fotoğrafların analiz edilmek üzere hiçbir yere gönderilmez."
+            "p": "Otomatik nesne maskeleri, uygulamanın içinde yer alan ve Apple'ın Core ML çerçevesiyle iPhone'unda, iPad'inde veya Mac'inde çalışan bir görüntü segmentasyon modeli (RF-DETR) tarafından oluşturulur. Model internetten indirilmez ve fotoğrafların analiz edilmek üzere hiçbir yere gönderilmez."
           }
         ]
       },
@@ -192,7 +237,7 @@
         "h2": "Fotoğraflar arşivine erişim",
         "blocks": [
           {
-            "p": "RawMask Studio, resimleri açmak ve kaydetmek için Apple Fotoğraflar'ı kullanır. Uygulamanın arşivine erişebilmesi için iOS önce senden izin ister. Tüm arşivine ya da yalnızca seçtiğin fotoğraflara erişim izni verebilir ve bunu istediğin zaman <span class=\"path\">Ayarlar &gt; Gizlilik ve Güvenlik &gt; Fotoğraflar &gt; RawMask Studio</span> bölümünden değiştirebilirsin."
+            "p": "RawMask Studio, resimleri açmak ve kaydetmek için Apple Fotoğraflar'ı kullanır. Uygulamanın arşivine erişebilmesi için iOS, iPadOS ve macOS önce senden izin ister. iPhone'da ve iPad'de tüm arşivine ya da yalnızca seçtiğin fotoğraflara erişim izni verebilirsin; Mac'te ise erişim arşivin tamamını kapsar. Bunu istediğin zaman iPhone'da ve iPad'de <span class=\"path\">Ayarlar &gt; Gizlilik ve Güvenlik &gt; Fotoğraflar &gt; RawMask Studio</span> bölümünden, Mac'te ise <span class=\"path\">Sistem Ayarları &gt; Gizlilik ve Güvenlik &gt; Fotoğraflar</span> bölümünden değiştirebilirsin."
           },
           {
             "h3": "Uygulamanın okuduğu veriler"
@@ -216,7 +261,7 @@
             "h3": "iCloud Fotoğrafları"
           },
           {
-            "p": "iCloud Fotoğrafları'nı kullanıyorsan ve seçtiğin fotoğrafın tam çözünürlüklü orijinali iPhone'unda saklanmıyorsa, fotoğrafın düzenlenebilmesi için Apple'ın Fotoğraflar altyapısı orijinali iCloud'dan indirebilir. Kaydettiğin fotoğraflar da Apple ayarlarına bağlı olarak iCloud Fotoğrafları tarafından eşzamanlanabilir. Bu aktarımlar cihazın ile kendi iCloud hesabın arasında gerçekleşir, Apple tarafından yürütülür ve Apple'ın gizlilik politikası kapsamındadır. Bize hiçbir şey gönderilmez."
+            "p": "iCloud Fotoğrafları'nı kullanıyorsan ve seçtiğin fotoğrafın tam çözünürlüklü orijinali cihazında saklanmıyorsa, fotoğrafın düzenlenebilmesi için Apple'ın Fotoğraflar altyapısı orijinali iCloud'dan indirebilir. Kaydettiğin fotoğraflar da Apple ayarlarına bağlı olarak iCloud Fotoğrafları tarafından eşzamanlanabilir. Bu aktarımlar cihazın ile kendi iCloud hesabın arasında gerçekleşir, Apple tarafından yürütülür ve Apple'ın gizlilik politikası kapsamındadır. Bize hiçbir şey gönderilmez."
           }
         ]
       },
@@ -225,7 +270,10 @@
         "h2": "Dışa aktarma ve paylaşma",
         "blocks": [
           {
-            "p": "<span class=\"ui\" lang=\"en\">Export photo</span> öğesine dokunduğunda uygulama, istediğin görüntü dosyasını oluşturur ve iOS paylaşım menüsünü açar. Dosya yalnızca göndermeyi seçtiğin yere (örneğin Dosyalar, Mesajlar ya da başka bir uygulama) gider ve bu hedef, dosyayı kendi gizlilik uygulamalarına göre işler. Uygulamanın dışa aktarma için oluşturduğu geçici dosya, iPhone'unda uygulamaya özel depolama alanında tutulur ve artık gerekmediğinde otomatik olarak silinir."
+            "p": "iPhone'da veya iPad'de <span class=\"ui\" lang=\"en\">Export photo</span> öğesini seçtiğinde uygulama, istediğin görüntü dosyasını oluşturur ve paylaşım menüsünü açar. Dosya yalnızca göndermeyi seçtiğin yere (örneğin Dosyalar, Mesajlar ya da başka bir uygulama) gider ve bu hedef, dosyayı kendi gizlilik uygulamalarına göre işler. Uygulamanın dışa aktarma için oluşturduğu geçici dosya, uygulamaya özel depolama alanında tutulur ve artık gerekmediğinde otomatik olarak silinir."
+          },
+          {
+            "p": "Mac'te <span class=\"ui\" lang=\"en\">Export photo</span> bir kaydetme penceresi açar ve dosya yalnızca seçtiğin konuma yazılır."
           }
         ]
       },
@@ -234,7 +282,7 @@
         "h2": "Cihazında saklanan bilgiler",
         "blocks": [
           {
-            "p": "Uygulama, bıraktığın şekilde çalışmaya devam edebilmek için iPhone'unda kendi depolama alanında az miktarda bilgi tutar:"
+            "p": "Uygulama, bıraktığın şekilde çalışmaya devam edebilmek için cihazında kendi depolama alanında az miktarda bilgi tutar:"
           },
           {
             "ul": [
@@ -244,7 +292,7 @@
             ]
           },
           {
-            "p": "Bu bilgiler cihazında kalır ve bize gönderilmez. Bir hazır ayarı istediğin zaman uygulamada silebilirsin; uygulamayı silmek bu bilgilerin tamamını kaldırır. Diğer uygulama verileri gibi bu bilgiler de iOS ayarlarına bağlı olarak, oluşturduğun iPhone yedeklemelerine dahil edilebilir."
+            "p": "Bu bilgiler cihazında kalır ve bize gönderilmez. Bir hazır ayarı istediğin zaman uygulamada silebilirsin; uygulamayı silmek bu bilgilerin tamamını kaldırır. Diğer uygulama verileri gibi bu bilgiler de ayarlarına bağlı olarak, iPhone'un, iPad'in veya Mac'in için oluşturduğun yedeklemelere dahil edilebilir."
           }
         ]
       },
@@ -256,7 +304,7 @@
             "p": "RawMask Studio üçüncü taraf analiz, reklam, çökme raporlama veya izleme yazılımı içermez. Reklam tanımlayıcısını kullanmaz ve seni başka şirketlere ait uygulamalar veya web siteleri genelinde izlemez."
           },
           {
-            "p": "iOS'te analiz verilerini uygulama geliştiricileriyle paylaşmayı seçtiysen (<span class=\"path\">Ayarlar &gt; Gizlilik ve Güvenlik &gt; Analiz ve Geliştirmeler</span>), Apple bize çökme raporlarını ve toplu kullanım istatistiklerini seni tanımlamayan bir biçimde sağlayabilir. Bu, uygulama tarafından değil, Apple ve senin ayarların tarafından denetlenir."
+            "p": "Analiz verilerini uygulama geliştiricileriyle paylaşmayı seçtiysen (iPhone'da ve iPad'de <span class=\"path\">Ayarlar &gt; Gizlilik ve Güvenlik &gt; Analiz ve Geliştirmeler</span>, Mac'te <span class=\"path\">Sistem Ayarları &gt; Gizlilik ve Güvenlik &gt; Analiz ve Geliştirmeler</span>), Apple bize çökme raporlarını ve toplu kullanım istatistiklerini seni tanımlamayan bir biçimde sağlayabilir. Bu, uygulama tarafından değil, Apple ve senin ayarların tarafından denetlenir."
           }
         ]
       },
@@ -283,7 +331,7 @@
         "h2": "Seçeneklerin",
         "blocks": [
           {
-            "p": "Senin hakkında herhangi bir veri toplamadığımız veya saklamadığımız için bizim tarafımızda erişilecek, düzeltilecek, dışa aktarılacak veya silinecek kişisel veri yoktur. Cihazında kontrol sende kalır: iOS'teki Ayarlar'dan Fotoğraflar'a erişimi değiştirebilir veya iptal edebilir, uygulamada hazır ayarları silebilir, Fotoğraflar uygulamasında düzenlemeleri veya kopyaları kaldırabilir ve uygulamanın yerel verilerini kaldırmak için uygulamayı silebilirsin."
+            "p": "Senin hakkında herhangi bir veri toplamadığımız veya saklamadığımız için bizim tarafımızda erişilecek, düzeltilecek, dışa aktarılacak veya silinecek kişisel veri yoktur. Cihazında kontrol sende kalır: Ayarlar'dan (Mac'te Sistem Ayarları'ndan) Fotoğraflar'a erişimi değiştirebilir veya iptal edebilir, uygulamada hazır ayarları silebilir, Fotoğraflar uygulamasında düzenlemeleri veya kopyaları kaldırabilir ve uygulamanın yerel verilerini kaldırmak için uygulamayı silebilirsin."
           }
         ]
       },

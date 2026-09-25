@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#081b16">
-<meta name="description" content="Informativa sulla privacy di RawMask Studio per iPhone. L&#x27;app non raccoglie alcun dato; le foto vengono modificate sul tuo iPhone.">
+<meta name="description" content="Informativa sulla privacy di RawMask Studio per iPhone, iPad e Mac. L&#x27;app non raccoglie alcun dato; le foto vengono modificate sul tuo dispositivo.">
 <meta name="apple-itunes-app" content="app-id=6814994539">
 <title>Informativa sulla privacy - RawMask Studio</title>
 <link rel="canonical" href="https://turmanauli.github.io/rawmask-studio/it/privacy/">
@@ -64,7 +64,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RawMask Studio">
 <meta property="og:title" content="Informativa sulla privacy - RawMask Studio">
-<meta property="og:description" content="Informativa sulla privacy di RawMask Studio per iPhone. L&#x27;app non raccoglie alcun dato; le foto vengono modificate sul tuo iPhone.">
+<meta property="og:description" content="Informativa sulla privacy di RawMask Studio per iPhone, iPad e Mac. L&#x27;app non raccoglie alcun dato; le foto vengono modificate sul tuo dispositivo.">
 <meta property="og:url" content="https://turmanauli.github.io/rawmask-studio/it/privacy/">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary">
@@ -297,6 +297,9 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   .document .faq section { padding-block: 24px; }
 }
 
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.name { text-transform: none; }
+
 /* End site design */
 </style>
 </head>
@@ -373,11 +376,11 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
 <main class="wrap document">
   <h1>Informativa sulla privacy</h1>
-  <p class="meta">RawMask Studio per iPhone. Data di entrata in vigore: 23 settembre 2026.</p>
+  <p class="meta">RawMask Studio per iPhone, iPad e Mac. Data di entrata in vigore: 26 settembre 2026.</p>
   <p class="note">Questa pagina è una traduzione della <a href="../../privacy/">versione in inglese</a>. In caso di differenze tra le due versioni, prevale la versione in inglese.</p>
 
   <div class="callout">
-    <p><strong>In breve:</strong> RawMask Studio non raccoglie alcun dato. Non ci sono account, strumenti di analisi, pubblicità né tracciamento. Le tue foto vengono modificate sul tuo iPhone e l'app non invia mai a noi né ad altri le tue foto, le tue modifiche o altre informazioni.</p>
+    <p><strong>In breve:</strong> RawMask Studio non raccoglie alcun dato. Non ci sono account, strumenti di analisi, pubblicità né tracciamento. Le tue foto vengono modificate sul tuo iPhone, iPad o Mac e l'app non invia mai a noi né ad altri le tue foto, le tue modifiche o altre informazioni.</p>
   </div>
 
   <h2 id="who-we-are">Chi siamo</h2>
@@ -386,12 +389,12 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   <h2 id="information-we-collect">Informazioni che raccogliamo</h2>
   <p>Nessuna. RawMask Studio non raccoglie, trasmette, vende né condivide informazioni personali. L'app non invia a noi né a terze parti le tue foto, modifiche, maschere, preset, impostazioni, identificatori del dispositivo, dati di utilizzo o dati diagnostici, e non gestiamo alcun server che riceva dati dall'app. Non sono previsti né login né account.</p>
 
-  <h2 id="on-device-processing">L'elaborazione avviene sul tuo iPhone</h2>
+  <h2 id="on-device-processing">L'elaborazione avviene sul tuo dispositivo</h2>
   <p>Tutta l'elaborazione delle foto avviene sul tuo dispositivo. Ciò include la lettura dei file RAW, l'applicazione delle regolazioni di luce, colore, dettagli, messa a fuoco ed effetti, il rendering delle anteprime e la creazione delle maschere.</p>
-  <p>Le maschere automatiche degli oggetti vengono create da un modello di segmentazione delle immagini (RF-DETR) incluso nell'app, che viene eseguito sul tuo iPhone tramite Core ML di Apple. Il modello non viene scaricato da Internet e le tue foto non vengono inviate da nessuna parte per essere analizzate.</p>
+  <p>Le maschere automatiche degli oggetti vengono create da un modello di segmentazione delle immagini (RF-DETR) incluso nell'app, che viene eseguito sul tuo iPhone, iPad o Mac tramite Core ML di Apple. Il modello non viene scaricato da Internet e le tue foto non vengono inviate da nessuna parte per essere analizzate.</p>
 
   <h2 id="photos-access">Accesso alla libreria di Foto</h2>
-  <p>RawMask Studio utilizza Foto di Apple per aprire e salvare le immagini. iOS ti chiede l'autorizzazione prima che l'app possa accedere alla tua libreria. Puoi consentire l'accesso all'intera libreria o solo alle foto che selezioni, e puoi modificare questa scelta in qualsiasi momento in <span class="path">Impostazioni &gt; Privacy e sicurezza &gt; Foto &gt; RawMask Studio</span>.</p>
+  <p>RawMask Studio utilizza Foto di Apple per aprire e salvare le immagini. iOS, iPadOS e macOS ti chiedono l'autorizzazione prima che l'app possa accedere alla tua libreria. Su iPhone e iPad puoi consentire l'accesso all'intera libreria o solo alle foto che selezioni; su Mac, l'accesso riguarda l'intera libreria. Puoi modificare questa scelta in qualsiasi momento in <span class="path">Impostazioni &gt; Privacy e sicurezza &gt; Foto &gt; RawMask Studio</span> su iPhone e iPad, oppure in <span class="path">Impostazioni di Sistema &gt; Privacy e sicurezza &gt; Foto</span> su Mac.</p>
   <h3>Cosa legge l'app</h3>
   <p>Solo la foto che scegli nel selettore di foto, una foto alla volta. Per modificarla, l'app legge i dati dell'immagine di quella foto e le informazioni necessarie per la modifica, come le dimensioni, la data di scatto, il formato del file ed eventuali modifiche precedenti di RawMask Studio salvate con la foto. L'app non sfoglia, non scansiona e non indicizza il resto della tua libreria.</p>
   <h3>Cosa salva l'app</h3>
@@ -401,23 +404,24 @@ html.no-tracking .document h3 { letter-spacing: normal; }
     <li><strong><span class="ui" lang="en">Save a copy to Photos</span></strong> aggiunge l'immagine modificata come nuova foto. L'originale non viene modificato.</li>
   </ul>
   <h3>Foto di iCloud</h3>
-  <p>Se usi Foto di iCloud e l'originale a piena risoluzione della foto che scegli non è archiviato sul tuo iPhone, il framework Foto di Apple potrebbe scaricarlo da iCloud per consentirne la modifica. Anche le foto che salvi potrebbero essere sincronizzate da Foto di iCloud in base alle tue impostazioni Apple. Questi trasferimenti avvengono tra il tuo dispositivo e il tuo account iCloud, sono gestiti da Apple e sono soggetti all'informativa sulla privacy di Apple. Nulla viene inviato a noi.</p>
+  <p>Se usi Foto di iCloud e l'originale a piena risoluzione della foto che scegli non è archiviato sul tuo dispositivo, il framework Foto di Apple potrebbe scaricarlo da iCloud per consentirne la modifica. Anche le foto che salvi potrebbero essere sincronizzate da Foto di iCloud in base alle tue impostazioni Apple. Questi trasferimenti avvengono tra il tuo dispositivo e il tuo account iCloud, sono gestiti da Apple e sono soggetti all'informativa sulla privacy di Apple. Nulla viene inviato a noi.</p>
 
   <h2 id="export">Esportazione e condivisione</h2>
-  <p>Quando tocchi <span class="ui" lang="en">Export photo</span>, l'app crea il file immagine che hai richiesto e apre il menu di condivisione di iOS. Il file va solo dove scegli di inviarlo, ad esempio in File, Messaggi o un'altra app, e tale destinazione lo gestisce secondo le proprie pratiche in materia di privacy. Il file temporaneo creato dall'app per l'esportazione viene conservato nello spazio di archiviazione privato dell'app sul tuo iPhone e viene eliminato automaticamente quando non è più necessario.</p>
+  <p>Quando scegli <span class="ui" lang="en">Export photo</span> su iPhone o iPad, l'app crea il file immagine che hai richiesto e apre il menu di condivisione. Il file va solo dove scegli di inviarlo, ad esempio in File, Messaggi o un'altra app, e tale destinazione lo gestisce secondo le proprie pratiche in materia di privacy. Il file temporaneo creato dall'app per l'esportazione viene conservato nello spazio di archiviazione privato dell'app e viene eliminato automaticamente quando non è più necessario.</p>
+  <p>Su Mac, <span class="ui" lang="en">Export photo</span> apre una finestra di salvataggio e il file viene scritto solo nella posizione che scegli.</p>
 
   <h2 id="on-device-storage">Informazioni archiviate sul tuo dispositivo</h2>
-  <p>Per farti ritrovare tutto come l'hai lasciato, l'app conserva una piccola quantità di informazioni nel proprio spazio di archiviazione sul tuo iPhone:</p>
+  <p>Per farti ritrovare tutto come l'hai lasciato, l'app conserva una piccola quantità di informazioni nel proprio spazio di archiviazione sul tuo dispositivo:</p>
   <ul>
     <li>i preset che salvi (i loro nomi e i valori delle regolazioni),</li>
     <li>le preferenze dell'editor, ad esempio quali sezioni di modifica vengono mostrate, il loro ordine e lo stile del confronto tra prima e dopo, e</li>
     <li>le impostazioni delle maschere automatiche.</li>
   </ul>
-  <p>Queste informazioni restano sul tuo dispositivo e non vengono inviate a noi. Puoi eliminare un preset nell'app in qualsiasi momento, ed eliminando l'app vengono rimosse tutte queste informazioni. Come gli altri dati delle app, possono essere incluse nei backup che fai del tuo iPhone, in base alle tue impostazioni di iOS.</p>
+  <p>Queste informazioni restano sul tuo dispositivo e non vengono inviate a noi. Puoi eliminare un preset nell'app in qualsiasi momento, ed eliminando l'app vengono rimosse tutte queste informazioni. Come gli altri dati delle app, possono essere incluse nei backup che fai del tuo iPhone, iPad o Mac, in base alle tue impostazioni.</p>
 
   <h2 id="no-third-parties">Niente servizi di terze parti, analisi, pubblicità o tracciamento</h2>
   <p>RawMask Studio non contiene software di terze parti per analisi, pubblicità, segnalazione degli arresti anomali o tracciamento. Non utilizza l'identificatore pubblicitario e non traccia le tue attività nelle app e nei siti web di proprietà di altre aziende.</p>
-  <p>Se in iOS hai scelto di condividere i dati di analisi con gli sviluppatori di app (<span class="path">Impostazioni &gt; Privacy e sicurezza &gt; Analisi e miglioramenti</span>), Apple potrebbe fornirci report sugli arresti anomali e statistiche di utilizzo aggregate in una forma che non ti identifica. Questo aspetto è controllato da Apple e dalle tue impostazioni, non dall'app.</p>
+  <p>Se hai scelto di condividere i dati di analisi con gli sviluppatori di app (<span class="path">Impostazioni &gt; Privacy e sicurezza &gt; Analisi e miglioramenti</span> su iPhone e iPad, oppure <span class="path">Impostazioni di Sistema &gt; Privacy e sicurezza &gt; Analisi e miglioramenti</span> su Mac), Apple potrebbe fornirci report sugli arresti anomali e statistiche di utilizzo aggregate in una forma che non ti identifica. Questo aspetto è controllato da Apple e dalle tue impostazioni, non dall'app.</p>
 
   <h2 id="purchases">Acquisti</h2>
   <p>RawMask Studio è attualmente gratuita. Se in futuro verranno aggiunti acquisti in-app o funzionalità a pagamento, i pagamenti saranno elaborati da Apple tramite l'App Store secondo i termini e l'informativa sulla privacy di Apple, e noi non riceveremo i tuoi dati di pagamento. Aggiorneremo questa informativa prima che qualsiasi modifica di questo tipo entri in vigore.</p>
@@ -426,7 +430,7 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   <p>RawMask Studio è un'app di fotoritocco di uso generale e non è rivolta specificamente ai minori. Poiché l'app non raccoglie informazioni personali da nessuno, non ne raccoglie nemmeno dai minori.</p>
 
   <h2 id="your-choices">Le tue scelte</h2>
-  <p>Poiché non raccogliamo né conserviamo alcun dato che ti riguardi, da parte nostra non ci sono dati personali a cui accedere o da correggere, esportare o eliminare. Il controllo resta nelle tue mani, sul tuo dispositivo: puoi modificare o revocare l'accesso a Foto nelle Impostazioni di iOS, eliminare i preset nell'app, rimuovere modifiche o copie nell'app Foto ed eliminare l'app per rimuoverne i dati locali.</p>
+  <p>Poiché non raccogliamo né conserviamo alcun dato che ti riguardi, da parte nostra non ci sono dati personali a cui accedere o da correggere, esportare o eliminare. Il controllo resta nelle tue mani, sul tuo dispositivo: puoi modificare o revocare l'accesso a Foto in Impostazioni (Impostazioni di Sistema su Mac), eliminare i preset nell'app, rimuovere modifiche o copie nell'app Foto ed eliminare l'app per rimuoverne i dati locali.</p>
 
   <h2 id="changes">Modifiche alla presente informativa</h2>
   <p>Se il modo in cui l'app gestisce le informazioni dovesse cambiare, ad esempio se una funzionalità futura richiedesse l'invio di dati al di fuori del tuo dispositivo, aggiorneremo questa informativa e i dettagli sulla privacy dell'app nell'App Store prima del rilascio di quella versione, e modificheremo la data di entrata in vigore indicata all'inizio di questa pagina.</p>

@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#081b16">
-<meta name="description" content="RawMask Studio is een foto-editor voor RAW-foto&#x27;s op de iPhone, met automatische en handmatige maskers. Alles draait op je iPhone.">
+<meta name="description" content="RawMask Studio is een foto-editor voor RAW-foto&#x27;s op iPhone, iPad en Mac, met automatische en handmatige maskers. Alles draait op je apparaat.">
 <meta name="apple-itunes-app" content="app-id=6814994539">
 <title>RawMask Studio - Foto bewerken: RAW en maskers</title>
 <link rel="canonical" href="https://turmanauli.github.io/rawmask-studio/nl/">
@@ -64,7 +64,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RawMask Studio">
 <meta property="og:title" content="RawMask Studio - Foto bewerken: RAW en maskers">
-<meta property="og:description" content="RawMask Studio is een foto-editor voor RAW-foto&#x27;s op de iPhone, met automatische en handmatige maskers. Alles draait op je iPhone.">
+<meta property="og:description" content="RawMask Studio is een foto-editor voor RAW-foto&#x27;s op iPhone, iPad en Mac, met automatische en handmatige maskers. Alles draait op je apparaat.">
 <meta property="og:url" content="https://turmanauli.github.io/rawmask-studio/nl/">
 <meta property="og:locale" content="nl_NL">
 <meta name="twitter:card" content="summary">
@@ -290,16 +290,18 @@ h1 {
   overflow-wrap: anywhere;
 }
 .capabilities > p { margin: 0; max-width: 690px; color: var(--muted); font-size: 17px; line-height: 1.75; }
+/* Masonry-style columns: each card goes under the previous one, so short cards fill the gaps. */
 .features.sections {
   grid-column: 1 / -1;
-  columns: auto;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 44px 40px;
+  display: block;
+  columns: 3;
+  column-gap: 40px;
   margin-top: 62px;
+  margin-bottom: -44px;
 }
 .features.sections > li {
-  margin: 0;
+  margin: 0 0 44px;
+  break-inside: avoid;
   padding: 24px 0 0;
   border: 0;
   border-top: 2px solid var(--border);
@@ -363,7 +365,8 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 .callout .muted { font-size: 15px; line-height: 1.8; }
 
 @media (max-width: 1100px) {
-  .features.sections { gap: 36px 28px; }
+  .features.sections { column-gap: 28px; margin-bottom: -36px; }
+  .features.sections > li { margin-bottom: 36px; }
   .closing { gap: 40px; }
 }
 
@@ -379,7 +382,8 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
   .capabilities { display: block; padding-top: 35px; }
   .capabilities > h2 { margin-bottom: 24px; font-size: 36px; }
   .capabilities > p { font-size: 16px; }
-  .features.sections { grid-template-columns: 1fr 1fr; margin-top: 36px; gap: 34px 24px; }
+  .features.sections { columns: 2; column-gap: 24px; margin-top: 36px; margin-bottom: -34px; }
+  .features.sections > li { margin-bottom: 34px; }
   .closing { margin-top: 44px; padding: 28px; grid-template-columns: 1fr; gap: 28px; }
   .outro { font-size: 30px; max-width: 25ch; }
 }
@@ -411,11 +415,83 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 
 @media (max-width: 480px) {
   .capabilities > h2 { font-size: 33px; }
-  .features.sections { grid-template-columns: 1fr; }
+  .features.sections { columns: 1; }
   .features h3 { font-size: 21px; }
   .features.sections ul { font-size: 16px; }
   .closing { padding: 28px 22px; }
   .outro { font-size: 28px; }
+}
+
+/* iPhone, iPad and Mac screenshot switch: radio buttons and labels, no script */
+.device-tabs {
+  display: flex;
+  gap: 4px;
+  width: fit-content;
+  margin: -6px auto 34px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.device-tabs label { position: relative; padding: 7px 18px; border-radius: 999px; color: var(--muted); font-size: 14px; font-weight: 500; cursor: pointer; }
+.device-tabs label:hover { color: var(--text); }
+/* The radio covers its label: clicks land on it and focusing it never scrolls. */
+.device-tabs input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.device-tabs label:has(input:checked) { color: var(--accent-ink); background: var(--accent); }
+.device-tabs label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 3px; }
+.device-panel { display: none; }
+.showcase:has(#device-ipad:checked) .device-iphone, .showcase:has(#device-mac:checked) .device-iphone { display: none; }
+.showcase:has(#device-ipad:checked) .device-ipad, .showcase:has(#device-mac:checked) .device-mac { display: block; }
+.device-panel:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 6px; }
+.device-panel ul { list-style: none; display: flex; align-items: flex-start; gap: 20px; margin: 0 0 20px; padding: 0; }
+.device-panel li { flex: var(--ar) 1 0%; min-width: 0; }
+.device-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, .16);
+}
+.device-mac img { border-radius: 10px; }
+/* The same reflection as the iPhone shots; rows leave room for it. */
+@supports (-webkit-box-reflect: below) {
+  .device-panel img { -webkit-box-reflect: below 6px linear-gradient(to bottom, transparent 86%, rgba(0, 0, 0, .18)); }
+  .device-panel ul { margin-bottom: 56px; }
+}
+
+/* New in this version: the capabilities layout with a short paragraph per item */
+.whats-new { margin-bottom: 80px; }
+.whats-new .features.sections p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.features h3 .name { text-transform: none; }
+
+@media (max-width: 900px) {
+  .device-panel ul { gap: 12px; margin-bottom: 12px; }
+  .whats-new { margin-bottom: 58px; }
+}
+
+@media (max-width: 660px) {
+  .device-tabs { margin-bottom: 24px; }
+  .showcase:has(#device-ipad:checked) .device-ipad, .showcase:has(#device-mac:checked) .device-mac { display: flex; }
+  .device-panel {
+    gap: 14px;
+    margin-inline: -22px;
+    padding: 0 22px 21px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 22px;
+    scrollbar-color: var(--border) var(--bg);
+  }
+  .device-panel ul { display: contents; }
+  .device-panel li { flex: none; scroll-snap-align: start; }
+  .device-ipad img { width: auto; height: 260px; }
+  .device-mac img { width: 300px; }
+  .device-panel img { box-shadow: none; }
+  .whats-new { margin-bottom: 43px; }
+}
+@supports (-webkit-box-reflect: below) {
+  @media (max-width: 900px) { .device-panel ul { margin-bottom: 44px; } }
+  @media (max-width: 660px) { .device-panel { padding-bottom: 60px; overflow-y: hidden; } }
 }
 
 /* End site design */
@@ -494,9 +570,9 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 
 <main class="wrap">
 <section class="hero">
-  <p class="eyebrow">Foto-editor voor iPhone</p>
+  <p class="eyebrow">Foto-editor voor iPhone, iPad en Mac</p>
   <h1>RawMask Studio</h1>
-  <p class="lead">Kies een onderwerp of teken zelf een masker en pas licht, kleur, detail en vervaging alleen daar aan. Voor RAW, ProRAW, JPEG en HEIC. Alles wordt op je iPhone bewerkt.</p>
+  <p class="lead">Kies een onderwerp of teken zelf een masker en pas licht, kleur, detail en vervaging alleen daar aan. Voor RAW, ProRAW, JPEG en HEIC, alles op je iPhone, iPad of Mac.</p>
   <div class="actions">
     <a class="badge" href="https://apps.apple.com/app/id6814994539"><img src="../assets/badges/nl-nl.svg" width="131.6" height="44" alt="Download in de App Store"></a>
     <a class="button secondary" href="support/">Hulp krijgen</a>
@@ -506,22 +582,82 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 </section>
 <section class="showcase">
   <h2 id="screenshots">Schermafbeeldingen</h2>
-  <ul class="shots" tabindex="0" aria-labelledby="screenshots">
+  <div class="device-tabs" role="radiogroup" aria-labelledby="screenshots">
+    <label id="tab-iphone"><input type="radio" name="device" id="device-iphone" checked>iPhone</label>
+    <label id="tab-ipad"><input type="radio" name="device" id="device-ipad">iPad</label>
+    <label id="tab-mac"><input type="radio" name="device" id="device-mac">Mac</label>
+  </div>
+  <ul class="shots device-iphone" tabindex="0" aria-labelledby="screenshots tab-iphone">
     <li><img src="../assets/screenshots/nl/01-select-300.webp" srcset="../assets/screenshots/nl/01-select-300.webp 300w, ../assets/screenshots/nl/01-select-600.webp 600w" sizes="200px" width="300" height="649" alt="Bewerk alleen je selectie. Maskers voor RAW-foto&#x27;s op je iPhone." decoding="async"></li>
     <li><img src="../assets/screenshots/nl/02-detect-300.webp" srcset="../assets/screenshots/nl/02-detect-300.webp 300w, ../assets/screenshots/nl/02-detect-600.webp 600w" sizes="200px" width="300" height="649" alt="Je onderwerp, vanzelf gevonden. Herkenning op je iPhone maskeert auto&#x27;s, mensen en dieren voor je." decoding="async"></li>
     <li><img src="../assets/screenshots/nl/03-masks-300.webp" srcset="../assets/screenshots/nl/03-masks-300.webp 300w, ../assets/screenshots/nl/03-masks-600.webp 600w" sizes="200px" width="300" height="649" alt="Teken je masker zoals je wilt. Radiaal, lineair, penseel of rechthoek. Toevoegen, aftrekken, doezelen." loading="lazy" decoding="async"></li>
     <li><img src="../assets/screenshots/nl/04-adjust-300.webp" srcset="../assets/screenshots/nl/04-adjust-300.webp 300w, ../assets/screenshots/nl/04-adjust-600.webp 600w" sizes="200px" width="300" height="649" alt="Licht en kleur, per masker. Elk masker krijgt zijn eigen belichting, kleur, detail en focus." loading="lazy" decoding="async"></li>
     <li><img src="../assets/screenshots/nl/05-save-300.webp" srcset="../assets/screenshots/nl/05-save-300.webp 300w, ../assets/screenshots/nl/05-save-600.webp 600w" sizes="200px" width="300" height="649" alt="Naar Foto&#x27;s. Altijd omkeerbaar. Je origineel blijft bewaard en niets verlaat je iPhone." loading="lazy" decoding="async"></li>
   </ul>
+  <div class="device-panel device-ipad" role="group" tabindex="0" aria-labelledby="screenshots tab-ipad">
+    <ul>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/nl/ipad/01-select-300.webp" srcset="../assets/screenshots/nl/ipad/01-select-300.webp 300w, ../assets/screenshots/nl/ipad/01-select-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="Bewerk alleen je selectie. Maskers voor RAW-foto&#x27;s op je iPad." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/nl/ipad/02-palettes-480.webp" srcset="../assets/screenshots/nl/ipad/02-palettes-480.webp 480w, ../assets/screenshots/nl/ipad/02-palettes-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="Elk hulpmiddel zweeft boven je foto. Sleep de paletten waarheen je wilt, staand of liggend." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/nl/ipad/03-masks-480.webp" srcset="../assets/screenshots/nl/ipad/03-masks-480.webp 480w, ../assets/screenshots/nl/ipad/03-masks-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="Teken je masker zoals je wilt. Radiaal, lineair, penseel of rechthoek. Toevoegen, aftrekken, doezelen." loading="lazy" decoding="async"></li>
+    </ul>
+    <ul>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/nl/ipad/04-style-480.webp" srcset="../assets/screenshots/nl/ipad/04-style-480.webp 480w, ../assets/screenshots/nl/ipad/04-style-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="Geef je foto een look. Film-, zwart-wit-, vintage-, noir-, grunge- en retrostijlen." loading="lazy" decoding="async"></li>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/nl/ipad/05-frame-300.webp" srcset="../assets/screenshots/nl/ipad/05-frame-300.webp 300w, ../assets/screenshots/nl/ipad/05-frame-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="Bijsnijden, rechtzetten, omlijsten. Acht randen, van een dunne lijn tot een filmrand." loading="lazy" decoding="async"></li>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/nl/ipad/06-save-300.webp" srcset="../assets/screenshots/nl/ipad/06-save-300.webp 300w, ../assets/screenshots/nl/ipad/06-save-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="Naar Foto&#x27;s. Altijd omkeerbaar. Je origineel blijft bewaard en niets verlaat je iPad." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/nl/ipad/07-options-480.webp" srcset="../assets/screenshots/nl/ipad/07-options-480.webp 480w, ../assets/screenshots/nl/ipad/07-options-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="Maak de editor van jou. Bewaar presets en houd alleen de stappen die je gebruikt, in jouw volgorde." loading="lazy" decoding="async"></li>
+    </ul>
+  </div>
+  <div class="device-panel device-mac" role="group" tabindex="0" aria-labelledby="screenshots tab-mac">
+    <ul>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/nl/mac/01-select-480.webp" srcset="../assets/screenshots/nl/mac/01-select-480.webp 480w, ../assets/screenshots/nl/mac/01-select-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Bewerk alleen je selectie. Maskers voor RAW-foto&#x27;s op je Mac." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/nl/mac/02-detect-480.webp" srcset="../assets/screenshots/nl/mac/02-detect-480.webp 480w, ../assets/screenshots/nl/mac/02-detect-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Je onderwerp, vanzelf gevonden. Herkenning op je Mac maskeert auto&#x27;s, mensen en dieren voor je." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/nl/mac/03-frame-480.webp" srcset="../assets/screenshots/nl/mac/03-frame-480.webp 480w, ../assets/screenshots/nl/mac/03-frame-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Bijsnijden, rechtzetten, omlijsten. Acht randen, van een dunne lijn tot een filmrand." loading="lazy" decoding="async"></li>
+    </ul>
+    <ul>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/nl/mac/04-save-480.webp" srcset="../assets/screenshots/nl/mac/04-save-480.webp 480w, ../assets/screenshots/nl/mac/04-save-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Naar Foto&#x27;s. Altijd omkeerbaar. Je origineel blijft bewaard en niets verlaat je Mac." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/nl/mac/05-steps-480.webp" srcset="../assets/screenshots/nl/mac/05-steps-480.webp 480w, ../assets/screenshots/nl/mac/05-steps-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Maak de editor van jou. Bewaar presets en houd alleen de stappen die je gebruikt, in jouw volgorde." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/nl/mac/06-detection-480.webp" srcset="../assets/screenshots/nl/mac/06-detection-480.webp 480w, ../assets/screenshots/nl/mac/06-detection-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Stel de herkenning af. Kies betrouwbaarheid, maskerrand en aantal objecten. Alles draait op je Mac." loading="lazy" decoding="async"></li>
+    </ul>
+  </div>
+</section>
+<section class="capabilities whats-new">
+  <h2 id="whats-new">Nieuw in versie 1.2.0</h2>
+  <p>RawMask Studio werkt nu niet alleen op de iPhone, maar ook op de iPad en de Mac. Het is één gratis app voor alle drie, en elke bewerking gebeurt nog steeds op je apparaat.</p>
+  <ul class="features sections">
+    <li>
+      <h3>Nu op de <span class="name">iPad</span></h3>
+      <p>De foto vult het scherm en de tools zweven erboven als paletten die je overal naartoe kunt slepen, staand en liggend.</p>
+    </li>
+    <li>
+      <h3>Nu op de <span class="name">Mac</span></h3>
+      <p>De stappen staan in de knoppenbalk en het paneel naast de foto bevat de maskers en schuifregelaars. Zoom in om fijne details te controleren, en exporteer naar een bestand als JPEG, HEIF of TIFF.</p>
+    </li>
+    <li>
+      <h3>Nieuwe stap: Toon</h3>
+      <p>Een tooncurve voor hoge lichten, lichte tinten, donkere tinten en diepe schaduwen, plus strak lokaal contrast in hoge lichten, middentonen en schaduwen.</p>
+    </li>
+    <li>
+      <h3>Nieuwe stap: Stijl</h3>
+      <p>HDR, drama, gloed, bloom, halation en chromatische aberratie, plus de looks Film, Z/W, Vintage, Noir, Grunge en Retro.</p>
+    </li>
+    <li>
+      <h3>HSL-kleur</h3>
+      <p>Tint, chroma en helderheid voor acht kleurbereiken, direct in de stap Kleur.</p>
+    </li>
+    <li>
+      <h3>Meer kader- en effectopties</h3>
+      <p>Perspectief, randvulling en acht omlijstingen in Kader, en grootte, vorm en zachtheid van het vignet in Effecten.</p>
+    </li>
+  </ul>
 </section>
 <section class="capabilities">
   <h2>Wat je ermee kunt</h2>
-  <p>Bewerk alleen het deel van je foto dat jij kiest. RawMask Studio is een RAW-foto-editor die draait om maskers: kies een herkend onderwerp of teken zelf een masker, en pas daarna licht, kleur, detail en focus aan in precies dat gebied. De rest van de foto blijft onaangeroerd. Je opent er RAW- en ProRAW-bestanden mee, maar ook gewone JPEG- en HEIC-foto&#x27;s, en elke bewerking gebeurt op je iPhone zelf.</p>
+  <p>Bewerk de hele foto, of alleen het deel dat jij kiest. RawMask Studio is een RAW-foto-editor die draait om maskers: kies een herkend onderwerp of teken zelf een masker, en pas daarna licht, kleur, detail en focus aan in precies dat gebied. De rest van de foto blijft onaangeroerd. Je opent er RAW- en ProRAW-bestanden mee, maar ook gewone JPEG- en HEIC-foto&#x27;s, en elke bewerking gebeurt op je iPhone, iPad of Mac zelf.</p>
   <ul class="features sections">
     <li>
       <h3>Maskers voor selectief bewerken</h3>
       <ul>
-        <li>Automatische maskers: herkenning op je iPhone zelf vindt onderwerpen zoals mensen, auto&#x27;s en dieren en maakt er meteen bewerkbare maskers van</li>
+        <li>Automatische maskers: herkenning op je apparaat zelf vindt onderwerpen zoals mensen, auto&#x27;s en dieren en maakt er meteen bewerkbare maskers van</li>
         <li>Handmatige maskers: radiaal, lineair (verloop), penseel en rechthoek</li>
         <li>Verfijn elk masker met de penselen Toevoegen en Aftrekken</li>
         <li>Verzacht de maskerrand voor vloeiende, natuurlijke overgangen</li>
@@ -531,26 +667,28 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
     <li>
       <h3>RAW, ProRAW, JPEG en HEIC</h3>
       <ul>
-        <li>Kies foto&#x27;s rechtstreeks uit je bibliotheek in Foto&#x27;s met de standaard fotokiezer van iOS</li>
+        <li>Kies foto&#x27;s rechtstreeks uit je bibliotheek in Foto&#x27;s met de standaard fotokiezer van het systeem</li>
         <li>Bewerk RAW- en ProRAW-opnamen met dezelfde tools als gewone foto&#x27;s</li>
       </ul>
     </li>
     <li>
       <h3>Een heldere workflow, stap voor stap</h3>
       <ul>
-        <li>Kader: bijsnijden, rechtzetten, draaien, beeldverhoudingen en zoomen</li>
+        <li>Kader: bijsnijden, rechtzetten, draaien, beeldverhoudingen, zoomen en perspectief, plus randvulling en omlijstingen</li>
         <li>Licht: belichting, contrast, hoge lichten, schaduwen, wit en zwart</li>
-        <li>Kleur: temperatuur, tint, levendigheid en verzadiging</li>
+        <li>Toon: tooncurve voor hoge lichten, lichte tinten, donkere tinten en diepe schaduwen, plus strak lokaal contrast in hoge lichten, middentonen en schaduwen</li>
+        <li>Kleur: temperatuur, tint, levendigheid en verzadiging, plus HSL (tint, chroma en helderheid) voor acht kleurbereiken</li>
         <li>Detail: textuur, helderheid, nevel verwijderen, scherpte en ruisonderdrukking</li>
         <li>Focus: achtergrond vervagen met sterkte, bereik, zachte overgang en bokeh</li>
-        <li>Effecten: vignet, korrel en fade</li>
+        <li>Stijl: HDR, drama, gloed, bloom, halation en chromatische aberratie, plus de looks Film, Z/W, Vintage, Noir, Grunge en Retro</li>
+        <li>Effecten: vignet met grootte, vorm en zachtheid, korrel en fade</li>
         <li>Zet stappen in een andere volgorde of verberg ze in de editoropties, zodat alles werkt zoals jij werkt</li>
       </ul>
     </li>
     <li>
       <h3>Vergelijken en hergebruiken</h3>
       <ul>
-        <li>Houd ingedrukt om te vergelijken en zie op elk moment het verschil tussen voor en na</li>
+        <li>Houd ingedrukt om te vergelijken (op de Mac de \-toets) en zie op elk moment het verschil tussen voor en na</li>
         <li>Bewaar aanpassingen voor de hele foto als preset en pas ze toe op een andere foto</li>
       </ul>
     </li>
@@ -559,26 +697,26 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
       <ul>
         <li>Bewerking bewaren in Foto&#x27;s is niet-destructief: het origineel blijft intact en je kunt de bewerking in Foto&#x27;s altijd terugdraaien</li>
         <li>Bewaar een kopie om de bewerkte versie als nieuwe foto te houden</li>
-        <li>Exporteer als JPEG, HEIF of TIFF via het deelmenu</li>
+        <li>Exporteer als JPEG, HEIF of TIFF via het deelmenu op iPhone en iPad, of naar een bestand op de Mac</li>
       </ul>
     </li>
     <li>
       <h3>Privacy staat voorop</h3>
       <ul>
         <li>Geen account, geen inlog en geen advertenties</li>
-        <li>Bewerken en onderwerpherkenning gebeuren volledig op je iPhone, dus je foto&#x27;s worden nooit geüpload</li>
-        <li>Gratis, zonder in-app-aankopen</li>
+        <li>Bewerken en onderwerpherkenning gebeuren volledig op je apparaat, dus je foto&#x27;s worden nooit geüpload</li>
+        <li>Gratis op iPhone, iPad en Mac, zonder in-app-aankopen</li>
       </ul>
     </li>
   </ul>
 </section>
 <section class="closing">
   <div class="closing-copy">
-  <p class="outro">Open een foto, kies een masker en laat precies dat ene deel stralen.</p>
+  <p class="outro">Open een foto en bewerk hem helemaal, of kies één deel en laat dat stralen.</p>
   <p class="outro">De interface van de app is momenteel in het Engels.</p>
   </div>
   <div class="callout">
-    <p><strong>Vereisten:</strong> iPhone met iOS 17 of nieuwer.</p>
+    <p><strong>Vereisten:</strong> iPhone met iOS 17 of nieuwer, iPad met iPadOS 17 of nieuwer, of een Mac met Apple chip en macOS 14 of nieuwer.</p>
     <p class="muted">Vragen of problemen? Ga naar de <a href="support/">supportpagina</a>. Hoe de app met je foto's omgaat, lees je in het <a href="privacy/">privacybeleid</a>.</p>
   </div>
 </section>

@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#081b16">
-<meta name="description" content="Help and contact for RawMask Studio for iPhone: opening photos, Photos access, masks, saving, and exporting.">
+<meta name="description" content="Help and contact for RawMask Studio on iPhone, iPad and Mac: opening photos, Photos access, masks, saving, and exporting.">
 <meta name="apple-itunes-app" content="app-id=6814994539">
 <title>Support - RawMask Studio</title>
 <link rel="canonical" href="https://turmanauli.github.io/rawmask-studio/support/">
@@ -64,7 +64,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RawMask Studio">
 <meta property="og:title" content="Support - RawMask Studio">
-<meta property="og:description" content="Help and contact for RawMask Studio for iPhone: opening photos, Photos access, masks, saving, and exporting.">
+<meta property="og:description" content="Help and contact for RawMask Studio on iPhone, iPad and Mac: opening photos, Photos access, masks, saving, and exporting.">
 <meta property="og:url" content="https://turmanauli.github.io/rawmask-studio/support/">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary">
@@ -300,6 +300,9 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   .document .faq section { padding-block: 24px; }
 }
 
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.name { text-transform: none; }
+
 /* End site design */
 </style>
 </head>
@@ -376,18 +379,28 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
 <main class="wrap document">
   <h1>Support</h1>
-  <p class="meta">Help for RawMask Studio for iPhone.</p>
+  <p class="meta">Help for RawMask Studio on iPhone, iPad and Mac.</p>
 
   <div class="callout" id="contact">
     <p><strong>Contact:</strong> email <a href="mailto:turmanauli.beso@gmail.com">turmanauli.beso@gmail.com</a></p>
-    <p>Please include your iPhone model, iOS version, and a short description of what happened and what you expected. There is no need to send photos; describing the photo (for example, the camera or file format) is usually enough.</p>
+    <p>Please include your device (iPhone, iPad or Mac) and its iOS, iPadOS or macOS version, and a short description of what happened and what you expected. There is no need to send photos; describing the photo (for example, the camera or file format) is usually enough.</p>
   </div>
 
   <h2 id="faq">Frequently asked questions</h2>
   <div class="faq">
     <section>
       <h3>How do I open a photo?</h3>
-      <p>Tap the photo button at the top left of the editor and choose <span class="ui" lang="en">Open photo</span>. The Photos picker opens, and you choose one photo. RawMask Studio edits one photo at a time. Live Photos are not currently shown in the picker.</p>
+      <p>On iPhone, tap the photo button at the top left of the editor and choose <span class="ui" lang="en">Open photo</span>. On iPad, tap <span class="ui" lang="en">Open photo</span> in the palette at the top left. On a Mac, click <span class="ui" lang="en">Open photo</span> in the toolbar. The Photos picker opens, and you choose one photo. RawMask Studio edits one photo at a time. Live Photos are not currently shown in the picker.</p>
+    </section>
+
+    <section>
+      <h3>Where are the buttons on <span class="name">iPad</span> and <span class="name">Mac</span>?</h3>
+      <p>The steps and tools are the same on every device; only their places differ:</p>
+      <ul>
+        <li><strong>iPhone:</strong> the photo button at the top left holds <span class="ui" lang="en">Open photo</span>, <span class="ui" lang="en">Edit target</span> and <span class="ui" lang="en">Add mask</span>, and <span class="ui" lang="en">More options</span> is the ... button at the top right.</li>
+        <li><strong>iPad:</strong> the palette at the top left holds <span class="ui" lang="en">Open photo</span>, <span class="ui" lang="en">Edit target</span> and <span class="ui" lang="en">Add mask</span>, and <span class="ui" lang="en">More options</span> (the ... button) and <span class="ui" lang="en">Save</span> are at the top right. You can drag the palettes anywhere.</li>
+        <li><strong>Mac:</strong> <span class="ui" lang="en">Open photo</span> and the steps are in the toolbar, <span class="ui" lang="en">Edit target</span> and <span class="ui" lang="en">Add mask</span> are in the inspector beside the photo, and <span class="ui" lang="en">Editor options</span> (the sliders button) and <span class="ui" lang="en">Export</span> are at the top right.</li>
+      </ul>
     </section>
 
     <section>
@@ -397,12 +410,12 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
     <section>
       <h3>Why does the app ask for Photos access?</h3>
-      <p>RawMask Studio opens photos from, and saves edits back to, your Apple Photos library, so iOS asks for your permission. You can allow full access or limited access to only the photos you pick. Either way, the app only opens the photo you choose. See the <a href="../privacy/">privacy policy</a> for details.</p>
+      <p>RawMask Studio opens photos from, and saves edits back to, your Apple Photos library, so iOS, iPadOS or macOS asks for your permission. On iPhone and iPad you can allow full access or limited access to only the photos you pick; on a Mac, access covers the whole library. Either way, the app only opens the photo you choose. See the <a href="../privacy/">privacy policy</a> for details.</p>
     </section>
 
     <section>
       <h3>I chose limited access and cannot find a photo</h3>
-      <p>With limited access, the app can only open the photos you have allowed. To allow more photos:</p>
+      <p>Limited access is available on iPhone and iPad. With it, the app can only open the photos you have allowed. To allow more photos:</p>
       <ul>
         <li>In the app, tap <span class="ui" lang="en">More options</span> (the ... button), then under <span class="ui" lang="en">Photos access</span> tap <span class="ui" lang="en">Manage allowed photos</span>, or</li>
         <li>open <span class="path">Settings &gt; Privacy &amp; Security &gt; Photos &gt; RawMask Studio</span> and change the selection or choose Full Access.</li>
@@ -411,42 +424,42 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
     <section>
       <h3>The app says Photos access is off</h3>
-      <p>Open <span class="path">Settings &gt; Privacy &amp; Security &gt; Photos &gt; RawMask Studio</span>, choose Limited Access or Full Access, then return to the app and open a photo again.</p>
+      <p>On iPhone or iPad, open <span class="path">Settings &gt; Privacy &amp; Security &gt; Photos &gt; RawMask Studio</span> and choose Limited Access or Full Access. On a Mac, open <span class="path">System Settings &gt; Privacy &amp; Security &gt; Photos</span> and allow RawMask Studio. Then return to the app and open a photo again.</p>
     </section>
 
     <section>
       <h3>How do masks work?</h3>
-      <p>Adjustments apply either to the whole photo or to a mask. Open the photo button menu at the top left: use <span class="ui" lang="en">Edit target</span> to choose what you are editing, and <span class="ui" lang="en">Add mask</span> to add a <span class="ui" lang="en">Radial</span>, <span class="ui" lang="en">Linear</span>, <span class="ui" lang="en">Brush</span>, or <span class="ui" lang="en">Rectangle</span> mask. You can move and resize a mask, paint to add to or subtract from it, and soften its edge with <span class="ui" lang="en">Feather</span>.</p>
+      <p>Adjustments apply either to the whole photo or to a mask. Use <span class="ui" lang="en">Edit target</span> to choose what you are editing, and <span class="ui" lang="en">Add mask</span> to add a <span class="ui" lang="en">Radial</span>, <span class="ui" lang="en">Linear</span>, <span class="ui" lang="en">Brush</span>, or <span class="ui" lang="en">Rectangle</span> mask (see where these are on each device above). You can move and resize a mask, paint to add to or subtract from it, and soften its edge with <span class="ui" lang="en">Feather</span>.</p>
     </section>
 
     <section>
       <h3>What are automatic object masks?</h3>
-      <p>RawMask Studio includes an image segmentation model that finds objects in your photo, such as people, animals, and everyday things, and offers each one as a mask you can edit on its own. The model runs entirely on your iPhone. If it does not pick up the object you want, use a manual mask instead, or adjust <span class="ui" lang="en">Detection confidence</span> and <span class="ui" lang="en">Mask threshold</span> under <span class="ui" lang="en">More options</span> &gt; <span class="ui" lang="en">Advanced</span> &gt; <span class="ui" lang="en">Object detection</span>.</p>
+      <p>RawMask Studio includes an image segmentation model that finds objects in your photo, such as people, animals, and everyday things, and offers each one as a mask you can edit on its own. The model runs entirely on your device. If it does not pick up the object you want, use a manual mask instead, or adjust <span class="ui" lang="en">Detection confidence</span> and <span class="ui" lang="en">Mask threshold</span> under <span class="ui" lang="en">More options</span> (<span class="ui" lang="en">Editor options</span> on a Mac) &gt; <span class="ui" lang="en">Advanced</span> &gt; <span class="ui" lang="en">Object detection</span>.</p>
     </section>
 
     <section>
       <h3>Do I need an internet connection?</h3>
-      <p>No. Editing and automatic masks work offline. The one exception is a photo stored in iCloud Photos whose original is not on your iPhone: Photos has to download the original from iCloud before it can be edited.</p>
+      <p>No. Editing and automatic masks work offline. The one exception is a photo stored in iCloud Photos whose original is not on your device: Photos has to download the original from iCloud before it can be edited.</p>
     </section>
 
     <section>
       <h3>How do I save or export my edit?</h3>
-      <p>Tap <span class="ui" lang="en">More options</span> (the ... button) and go to <span class="ui" lang="en">Save and export</span>:</p>
+      <p>On iPhone, tap <span class="ui" lang="en">More options</span> (the ... button) and go to <span class="ui" lang="en">Save and export</span>. On iPad, use the <span class="ui" lang="en">Save</span> menu at the top right, where the first two choices are called <span class="ui" lang="en">Save to Photos</span> and <span class="ui" lang="en">Save a Copy</span>. On a Mac, click <span class="ui" lang="en">Export</span> in the toolbar. The choices are:</p>
       <ul>
         <li><strong><span class="ui" lang="en">Save edit to Photos</span></strong> updates the photo in your library. Photos keeps the original, so you can go back to it later with Revert in the Photos app.</li>
         <li><strong><span class="ui" lang="en">Save a copy to Photos</span></strong> adds the edited image as a new photo and leaves the original unchanged.</li>
-        <li><strong><span class="ui" lang="en">Export photo</span></strong> creates a JPEG, HEIF, or TIFF file in the size and quality you choose and opens the share sheet, so you can save it to Files or send it to another app.</li>
+        <li><strong><span class="ui" lang="en">Export photo</span></strong> creates a JPEG, HEIF, or TIFF file in the size and quality you choose. On iPhone and iPad it opens the share sheet, so you can save it to Files or send it to another app; on a Mac, you choose where to save the file.</li>
       </ul>
     </section>
 
     <section>
       <h3>Where are my presets stored?</h3>
-      <p>On your iPhone, in the app's own storage. They are not uploaded anywhere. You can delete presets in the app, and deleting the app removes them.</p>
+      <p>On your device, in the app's own storage. They are not uploaded anywhere. You can delete presets in the app, and deleting the app removes them.</p>
     </section>
 
     <section>
       <h3>Which devices are supported?</h3>
-      <p>iPhone with iOS 17 or later.</p>
+      <p>iPhone with iOS 17 or later, iPad with iPadOS 17 or later, and Mac computers with Apple silicon and macOS 14 or later. It is one free app for all three.</p>
     </section>
 
     <section>

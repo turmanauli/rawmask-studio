@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#081b16">
-<meta name="description" content="RawMask Studio er en bilderedigeringsapp for RAW-bilder på iPhone, med automatiske og manuelle masker. Alt skjer på iPhonen din.">
+<meta name="description" content="RawMask Studio er en bilderedigeringsapp for RAW-bilder på iPhone, iPad og Mac, med automatiske og manuelle masker. Alt skjer på enheten din.">
 <meta name="apple-itunes-app" content="app-id=6814994539">
 <title>RawMask Studio - Bilderedigering: RAW og masker</title>
 <link rel="canonical" href="https://turmanauli.github.io/rawmask-studio/no/">
@@ -64,7 +64,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RawMask Studio">
 <meta property="og:title" content="RawMask Studio - Bilderedigering: RAW og masker">
-<meta property="og:description" content="RawMask Studio er en bilderedigeringsapp for RAW-bilder på iPhone, med automatiske og manuelle masker. Alt skjer på iPhonen din.">
+<meta property="og:description" content="RawMask Studio er en bilderedigeringsapp for RAW-bilder på iPhone, iPad og Mac, med automatiske og manuelle masker. Alt skjer på enheten din.">
 <meta property="og:url" content="https://turmanauli.github.io/rawmask-studio/no/">
 <meta property="og:locale" content="nb_NO">
 <meta name="twitter:card" content="summary">
@@ -290,16 +290,18 @@ h1 {
   overflow-wrap: anywhere;
 }
 .capabilities > p { margin: 0; max-width: 690px; color: var(--muted); font-size: 17px; line-height: 1.75; }
+/* Masonry-style columns: each card goes under the previous one, so short cards fill the gaps. */
 .features.sections {
   grid-column: 1 / -1;
-  columns: auto;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 44px 40px;
+  display: block;
+  columns: 3;
+  column-gap: 40px;
   margin-top: 62px;
+  margin-bottom: -44px;
 }
 .features.sections > li {
-  margin: 0;
+  margin: 0 0 44px;
+  break-inside: avoid;
   padding: 24px 0 0;
   border: 0;
   border-top: 2px solid var(--border);
@@ -363,7 +365,8 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 .callout .muted { font-size: 15px; line-height: 1.8; }
 
 @media (max-width: 1100px) {
-  .features.sections { gap: 36px 28px; }
+  .features.sections { column-gap: 28px; margin-bottom: -36px; }
+  .features.sections > li { margin-bottom: 36px; }
   .closing { gap: 40px; }
 }
 
@@ -379,7 +382,8 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
   .capabilities { display: block; padding-top: 35px; }
   .capabilities > h2 { margin-bottom: 24px; font-size: 36px; }
   .capabilities > p { font-size: 16px; }
-  .features.sections { grid-template-columns: 1fr 1fr; margin-top: 36px; gap: 34px 24px; }
+  .features.sections { columns: 2; column-gap: 24px; margin-top: 36px; margin-bottom: -34px; }
+  .features.sections > li { margin-bottom: 34px; }
   .closing { margin-top: 44px; padding: 28px; grid-template-columns: 1fr; gap: 28px; }
   .outro { font-size: 30px; max-width: 25ch; }
 }
@@ -411,11 +415,83 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 
 @media (max-width: 480px) {
   .capabilities > h2 { font-size: 33px; }
-  .features.sections { grid-template-columns: 1fr; }
+  .features.sections { columns: 1; }
   .features h3 { font-size: 21px; }
   .features.sections ul { font-size: 16px; }
   .closing { padding: 28px 22px; }
   .outro { font-size: 28px; }
+}
+
+/* iPhone, iPad and Mac screenshot switch: radio buttons and labels, no script */
+.device-tabs {
+  display: flex;
+  gap: 4px;
+  width: fit-content;
+  margin: -6px auto 34px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.device-tabs label { position: relative; padding: 7px 18px; border-radius: 999px; color: var(--muted); font-size: 14px; font-weight: 500; cursor: pointer; }
+.device-tabs label:hover { color: var(--text); }
+/* The radio covers its label: clicks land on it and focusing it never scrolls. */
+.device-tabs input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.device-tabs label:has(input:checked) { color: var(--accent-ink); background: var(--accent); }
+.device-tabs label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 3px; }
+.device-panel { display: none; }
+.showcase:has(#device-ipad:checked) .device-iphone, .showcase:has(#device-mac:checked) .device-iphone { display: none; }
+.showcase:has(#device-ipad:checked) .device-ipad, .showcase:has(#device-mac:checked) .device-mac { display: block; }
+.device-panel:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 6px; }
+.device-panel ul { list-style: none; display: flex; align-items: flex-start; gap: 20px; margin: 0 0 20px; padding: 0; }
+.device-panel li { flex: var(--ar) 1 0%; min-width: 0; }
+.device-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, .16);
+}
+.device-mac img { border-radius: 10px; }
+/* The same reflection as the iPhone shots; rows leave room for it. */
+@supports (-webkit-box-reflect: below) {
+  .device-panel img { -webkit-box-reflect: below 6px linear-gradient(to bottom, transparent 86%, rgba(0, 0, 0, .18)); }
+  .device-panel ul { margin-bottom: 56px; }
+}
+
+/* New in this version: the capabilities layout with a short paragraph per item */
+.whats-new { margin-bottom: 80px; }
+.whats-new .features.sections p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.features h3 .name { text-transform: none; }
+
+@media (max-width: 900px) {
+  .device-panel ul { gap: 12px; margin-bottom: 12px; }
+  .whats-new { margin-bottom: 58px; }
+}
+
+@media (max-width: 660px) {
+  .device-tabs { margin-bottom: 24px; }
+  .showcase:has(#device-ipad:checked) .device-ipad, .showcase:has(#device-mac:checked) .device-mac { display: flex; }
+  .device-panel {
+    gap: 14px;
+    margin-inline: -22px;
+    padding: 0 22px 21px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 22px;
+    scrollbar-color: var(--border) var(--bg);
+  }
+  .device-panel ul { display: contents; }
+  .device-panel li { flex: none; scroll-snap-align: start; }
+  .device-ipad img { width: auto; height: 260px; }
+  .device-mac img { width: 300px; }
+  .device-panel img { box-shadow: none; }
+  .whats-new { margin-bottom: 43px; }
+}
+@supports (-webkit-box-reflect: below) {
+  @media (max-width: 900px) { .device-panel ul { margin-bottom: 44px; } }
+  @media (max-width: 660px) { .device-panel { padding-bottom: 60px; overflow-y: hidden; } }
 }
 
 /* End site design */
@@ -494,9 +570,9 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 
 <main class="wrap">
 <section class="hero">
-  <p class="eyebrow">Bilderedigering for iPhone</p>
+  <p class="eyebrow">Bilderedigering for iPhone, iPad og Mac</p>
   <h1>RawMask Studio</h1>
-  <p class="lead">Velg et motiv eller tegn en maske, og juster lys, farge, detaljer og uskarphet akkurat der. Støtter RAW, ProRAW, JPEG og HEIC, og all redigering skjer på iPhonen din.</p>
+  <p class="lead">Velg et motiv eller tegn en maske, og juster lys, farge, detaljer og uskarphet akkurat der. Støtter RAW, ProRAW, JPEG og HEIC, og alt skjer på iPhone, iPad eller Mac.</p>
   <div class="actions">
     <a class="badge" href="https://apps.apple.com/app/id6814994539"><img src="../assets/badges/no-no.svg" width="131.6" height="44" alt="Last ned fra App Store"></a>
     <a class="button secondary" href="support/">Få hjelp</a>
@@ -506,17 +582,77 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 </section>
 <section class="showcase">
   <h2 id="screenshots">Skjermbilder</h2>
-  <ul class="shots" tabindex="0" aria-labelledby="screenshots">
+  <div class="device-tabs" role="radiogroup" aria-labelledby="screenshots">
+    <label id="tab-iphone"><input type="radio" name="device" id="device-iphone" checked>iPhone</label>
+    <label id="tab-ipad"><input type="radio" name="device" id="device-ipad">iPad</label>
+    <label id="tab-mac"><input type="radio" name="device" id="device-mac">Mac</label>
+  </div>
+  <ul class="shots device-iphone" tabindex="0" aria-labelledby="screenshots tab-iphone">
     <li><img src="../assets/screenshots/no/01-select-300.webp" srcset="../assets/screenshots/no/01-select-300.webp 300w, ../assets/screenshots/no/01-select-600.webp 600w" sizes="200px" width="300" height="649" alt="Rediger bare det du velger. Masker for RAW-bilder på iPhone." decoding="async"></li>
     <li><img src="../assets/screenshots/no/02-detect-300.webp" srcset="../assets/screenshots/no/02-detect-300.webp 300w, ../assets/screenshots/no/02-detect-600.webp 600w" sizes="200px" width="300" height="649" alt="La appen finne motivet. Gjenkjenning på iPhonen maskerer biler, personer og dyr for deg." decoding="async"></li>
     <li><img src="../assets/screenshots/no/03-masks-300.webp" srcset="../assets/screenshots/no/03-masks-300.webp 300w, ../assets/screenshots/no/03-masks-600.webp 600w" sizes="200px" width="300" height="649" alt="Tegn masker slik du vil. Radial, lineær, pensel, rektangel. Legg til, trekk fra, myk opp kanter." loading="lazy" decoding="async"></li>
     <li><img src="../assets/screenshots/no/04-adjust-300.webp" srcset="../assets/screenshots/no/04-adjust-300.webp 300w, ../assets/screenshots/no/04-adjust-600.webp 600w" sizes="200px" width="300" height="649" alt="Juster lys og farge i masken. Hver maske justeres for seg: eksponering, farge, detaljer og fokus." loading="lazy" decoding="async"></li>
     <li><img src="../assets/screenshots/no/05-save-300.webp" srcset="../assets/screenshots/no/05-save-300.webp 300w, ../assets/screenshots/no/05-save-600.webp 600w" sizes="200px" width="300" height="649" alt="Lagre i Bilder. Angre når du vil. Originalen blir aldri overskrevet, og ingenting forlater iPhonen din." loading="lazy" decoding="async"></li>
   </ul>
+  <div class="device-panel device-ipad" role="group" tabindex="0" aria-labelledby="screenshots tab-ipad">
+    <ul>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/no/ipad/01-select-300.webp" srcset="../assets/screenshots/no/ipad/01-select-300.webp 300w, ../assets/screenshots/no/ipad/01-select-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="Rediger bare det du velger. Masker for RAW-bilder på iPad." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/no/ipad/02-palettes-480.webp" srcset="../assets/screenshots/no/ipad/02-palettes-480.webp 480w, ../assets/screenshots/no/ipad/02-palettes-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="Alle verktøy svever over bildet. Dra palettene hvor du vil, stående eller liggende." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/no/ipad/03-masks-480.webp" srcset="../assets/screenshots/no/ipad/03-masks-480.webp 480w, ../assets/screenshots/no/ipad/03-masks-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="Tegn masker slik du vil. Radial, lineær, pensel, rektangel. Legg til, trekk fra, myk opp kanter." loading="lazy" decoding="async"></li>
+    </ul>
+    <ul>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/no/ipad/04-style-480.webp" srcset="../assets/screenshots/no/ipad/04-style-480.webp 480w, ../assets/screenshots/no/ipad/04-style-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="Gi bildet et nytt uttrykk. Stiler som film, svart-hvitt, vintage, noir, grunge og retro." loading="lazy" decoding="async"></li>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/no/ipad/05-frame-300.webp" srcset="../assets/screenshots/no/ipad/05-frame-300.webp 300w, ../assets/screenshots/no/ipad/05-frame-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="Beskjær, rett opp og ramme inn. Åtte rammer, fra en tynn strek til en filmkant." loading="lazy" decoding="async"></li>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/no/ipad/06-save-300.webp" srcset="../assets/screenshots/no/ipad/06-save-300.webp 300w, ../assets/screenshots/no/ipad/06-save-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="Lagre i Bilder. Angre når du vil. Originalen blir aldri overskrevet, og ingenting forlater iPaden din." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/no/ipad/07-options-480.webp" srcset="../assets/screenshots/no/ipad/07-options-480.webp 480w, ../assets/screenshots/no/ipad/07-options-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="Gjør editoren til din egen. Lagre forhåndsinnstillinger, og behold bare stegene du bruker, i din rekkefølge." loading="lazy" decoding="async"></li>
+    </ul>
+  </div>
+  <div class="device-panel device-mac" role="group" tabindex="0" aria-labelledby="screenshots tab-mac">
+    <ul>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/no/mac/01-select-480.webp" srcset="../assets/screenshots/no/mac/01-select-480.webp 480w, ../assets/screenshots/no/mac/01-select-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Rediger bare det du velger. Masker for RAW-bilder på Mac." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/no/mac/02-detect-480.webp" srcset="../assets/screenshots/no/mac/02-detect-480.webp 480w, ../assets/screenshots/no/mac/02-detect-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="La appen finne motivet. Gjenkjenning på Macen maskerer biler, personer og dyr for deg." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/no/mac/03-frame-480.webp" srcset="../assets/screenshots/no/mac/03-frame-480.webp 480w, ../assets/screenshots/no/mac/03-frame-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Beskjær, rett opp og ramme inn. Åtte rammer, fra en tynn strek til en filmkant." loading="lazy" decoding="async"></li>
+    </ul>
+    <ul>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/no/mac/04-save-480.webp" srcset="../assets/screenshots/no/mac/04-save-480.webp 480w, ../assets/screenshots/no/mac/04-save-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Lagre i Bilder. Angre når du vil. Originalen blir aldri overskrevet, og ingenting forlater Macen din." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/no/mac/05-steps-480.webp" srcset="../assets/screenshots/no/mac/05-steps-480.webp 480w, ../assets/screenshots/no/mac/05-steps-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Gjør editoren til din egen. Lagre forhåndsinnstillinger, og behold bare stegene du bruker, i din rekkefølge." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/no/mac/06-detection-480.webp" srcset="../assets/screenshots/no/mac/06-detection-480.webp 480w, ../assets/screenshots/no/mac/06-detection-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Juster hva den finner. Angi sikkerhet, maskekant og antall objekter. Alt kjører på Macen din." loading="lazy" decoding="async"></li>
+    </ul>
+  </div>
+</section>
+<section class="capabilities whats-new">
+  <h2 id="whats-new">Nytt i versjon 1.2.0</h2>
+  <p>RawMask Studio kjører nå på iPad og Mac i tillegg til iPhone. Det er én gratis app for alle tre, og all redigering skjer fortsatt på enheten din.</p>
+  <ul class="features sections">
+    <li>
+      <h3>Nå på <span class="name">iPad</span></h3>
+      <p>Bildet fyller skjermen, og verktøyene svever over det som paletter du kan dra dit du vil, både stående og liggende.</p>
+    </li>
+    <li>
+      <h3>Nå på <span class="name">Mac</span></h3>
+      <p>Stegene ligger i verktøylinjen, og inspektøren ved siden av bildet inneholder maskene og skyveknappene. Zoom inn for å sjekke fine detaljer, og eksporter til en fil som JPEG, HEIF eller TIFF.</p>
+    </li>
+    <li>
+      <h3>Nytt steg: Tone</h3>
+      <p>En tonekurve for høylys, lyse toner, mørke toner og dype skygger, pluss skarp lokal kontrast i høylys, mellomtoner og skygger.</p>
+    </li>
+    <li>
+      <h3>Nytt steg: Stil (Style)</h3>
+      <p>HDR, Drama, Glow, Bloom, Halation og Aberration, pluss lookene Film, B&amp;W, Vintage, Noir, Grunge og Retro.</p>
+    </li>
+    <li>
+      <h3>HSL-farge</h3>
+      <p>Fargetone, kroma og lyshet for åtte fargeområder, direkte i steget Farge (Color).</p>
+    </li>
+    <li>
+      <h3>Mer for utsnitt og effekter</h3>
+      <p>Perspektiv, kantfyll og åtte rammer i Utsnitt (Frame), og størrelse, form og mykhet på vignetten i Effekter (Effects).</p>
+    </li>
+  </ul>
 </section>
 <section class="capabilities">
   <h2>Dette kan du gjøre</h2>
-  <p>Rediger bare den delen av bildet du velger. RawMask Studio er et program for RAW-redigering, bygget rundt masker: velg et motiv appen har funnet, eller tegn din egen maske, og endre lys, farge, detaljer og fokus bare i det området. Resten av bildet forblir urørt. Appen åpner RAW- og ProRAW-filer i tillegg til vanlige JPEG- og HEIC-bilder, og all redigering skjer direkte på iPhonen din.</p>
+  <p>Rediger hele bildet, eller bare den delen du velger. RawMask Studio er et program for RAW-redigering, bygget rundt masker: velg et motiv appen har funnet, eller tegn din egen maske, og endre lys, farge, detaljer og fokus bare i det området. Resten av bildet forblir urørt. Appen åpner RAW- og ProRAW-filer i tillegg til vanlige JPEG- og HEIC-bilder, og all redigering skjer direkte på iPhonen, iPaden eller Macen din.</p>
   <ul class="features sections">
     <li>
       <h3>Masker for selektiv redigering</h3>
@@ -538,19 +674,21 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
     <li>
       <h3>En oversiktlig arbeidsflyt, steg for steg</h3>
       <ul>
-        <li>Utsnitt (Frame): beskjær, rett opp, roter, velg sideforhold og zoom</li>
+        <li>Utsnitt (Frame): beskjær, rett opp, roter, velg sideforhold, zoom og perspektiv, pluss kantfyll og rammer</li>
         <li>Lys (Light): eksponering, kontrast, høylys, skygger, hvitpunkt og svartpunkt</li>
-        <li>Farge (Color): temperatur, fargetone, livfullhet og metning</li>
+        <li>Tone: tonekurve for høylys, lyse toner, mørke toner og dype skygger, pluss skarp lokal kontrast i høylys, mellomtoner og skygger</li>
+        <li>Farge (Color): temperatur, fargetone, livfullhet og metning, pluss HSL (fargetone, kroma og lyshet) for åtte fargeområder</li>
         <li>Detaljer (Detail): tekstur, klarhet, fjern dis, skarphet og støyreduksjon</li>
         <li>Fokus (Focus): uskarp bakgrunn med styrke, område, myk kant og bokeh</li>
-        <li>Effekter (Effects): vignett, korn og falming</li>
+        <li>Stil (Style): HDR, Drama, Glow, Bloom, Halation og Aberration, pluss lookene Film, B&amp;W, Vintage, Noir, Grunge og Retro</li>
+        <li>Effekter (Effects): vignett med størrelse, form og mykhet, korn og falming</li>
         <li>Endre rekkefølgen på stegene eller skjul dem i Editor options, slik at arbeidsflyten passer deg</li>
       </ul>
     </li>
     <li>
       <h3>Sammenlign og gjenbruk</h3>
       <ul>
-        <li>Hold to Compare: hold inne for å se før og etter når som helst</li>
+        <li>Hold to Compare: hold inne for å se før og etter når som helst (på Mac holder du inne \-tasten)</li>
         <li>Lagre justeringene for hele bildet som en forhåndsinnstilling (Preset), og bruk den på et annet bilde</li>
       </ul>
     </li>
@@ -559,7 +697,7 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
       <ul>
         <li>Save edit to Photos endrer ikke originalen: den forblir intakt, og du kan tilbakestille redigeringen i Bilder når som helst</li>
         <li>Save a copy to Photos lagrer den redigerte versjonen som et nytt bilde</li>
-        <li>Eksporter som JPEG, HEIF eller TIFF via delingsarket</li>
+        <li>Eksporter som JPEG, HEIF eller TIFF via delingsarket på iPhone og iPad, eller til en fil på Mac</li>
       </ul>
     </li>
     <li>
@@ -567,7 +705,7 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
       <ul>
         <li>Ingen konto, ingen innlogging og ingen reklame</li>
         <li>Redigering og motivgjenkjenning skjer helt på enheten, så bildene dine lastes aldri opp</li>
-        <li>Gratis, uten kjøp i appen</li>
+        <li>Gratis på iPhone, iPad og Mac, uten kjøp i appen</li>
       </ul>
     </li>
   </ul>
@@ -575,10 +713,10 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 <section class="closing">
   <div class="closing-copy">
   <p class="outro">Appens grensesnitt er foreløpig på engelsk, derfor nevner vi de engelske navnene på verktøy og knapper der det er nyttig.</p>
-  <p class="outro">Åpne et bilde, velg en maske og løft frem akkurat den delen du vil.</p>
+  <p class="outro">Åpne et bilde og rediger hele bildet, eller velg én del og løft den frem.</p>
   </div>
   <div class="callout">
-    <p><strong>Systemkrav:</strong> iPhone med iOS 17 eller nyere.</p>
+    <p><strong>Systemkrav:</strong> iPhone med iOS 17 eller nyere, iPad med iPadOS 17 eller nyere, eller en Mac med Apple-brikke og macOS 14 eller nyere.</p>
     <p class="muted">Spørsmål eller problemer? Gå til <a href="support/">brukerstøttesiden</a>. I <a href="privacy/">personvernerklæringen</a> finner du nærmere informasjon om hvordan appen håndterer bildene dine.</p>
   </div>
 </section>

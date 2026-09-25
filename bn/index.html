@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#081b16">
-<meta name="description" content="RawMask Studio হলো অটোমেটিক ও ম্যানুয়াল মাস্কসহ RAW ছবির জন্য একটি iPhone ফটো এডিটর। সবকিছু চলে আপনার iPhone-এই।">
+<meta name="description" content="RawMask Studio হলো iPhone, iPad ও Mac-এর জন্য অটোমেটিক ও ম্যানুয়াল মাস্কসহ একটি RAW ফটো এডিটর। সবকিছু চলে আপনার ডিভাইসেই।">
 <meta name="apple-itunes-app" content="app-id=6814994539">
 <title>RawMask Studio - RAW ফটো এডিটর - মাস্ক ও ব্লার</title>
 <link rel="canonical" href="https://turmanauli.github.io/rawmask-studio/bn/">
@@ -64,7 +64,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RawMask Studio">
 <meta property="og:title" content="RawMask Studio - RAW ফটো এডিটর - মাস্ক ও ব্লার">
-<meta property="og:description" content="RawMask Studio হলো অটোমেটিক ও ম্যানুয়াল মাস্কসহ RAW ছবির জন্য একটি iPhone ফটো এডিটর। সবকিছু চলে আপনার iPhone-এই।">
+<meta property="og:description" content="RawMask Studio হলো iPhone, iPad ও Mac-এর জন্য অটোমেটিক ও ম্যানুয়াল মাস্কসহ একটি RAW ফটো এডিটর। সবকিছু চলে আপনার ডিভাইসেই।">
 <meta property="og:url" content="https://turmanauli.github.io/rawmask-studio/bn/">
 <meta property="og:locale" content="bn_BD">
 <meta name="twitter:card" content="summary">
@@ -290,16 +290,18 @@ h1 {
   overflow-wrap: anywhere;
 }
 .capabilities > p { margin: 0; max-width: 690px; color: var(--muted); font-size: 17px; line-height: 1.75; }
+/* Masonry-style columns: each card goes under the previous one, so short cards fill the gaps. */
 .features.sections {
   grid-column: 1 / -1;
-  columns: auto;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 44px 40px;
+  display: block;
+  columns: 3;
+  column-gap: 40px;
   margin-top: 62px;
+  margin-bottom: -44px;
 }
 .features.sections > li {
-  margin: 0;
+  margin: 0 0 44px;
+  break-inside: avoid;
   padding: 24px 0 0;
   border: 0;
   border-top: 2px solid var(--border);
@@ -363,7 +365,8 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 .callout .muted { font-size: 15px; line-height: 1.8; }
 
 @media (max-width: 1100px) {
-  .features.sections { gap: 36px 28px; }
+  .features.sections { column-gap: 28px; margin-bottom: -36px; }
+  .features.sections > li { margin-bottom: 36px; }
   .closing { gap: 40px; }
 }
 
@@ -379,7 +382,8 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
   .capabilities { display: block; padding-top: 35px; }
   .capabilities > h2 { margin-bottom: 24px; font-size: 36px; }
   .capabilities > p { font-size: 16px; }
-  .features.sections { grid-template-columns: 1fr 1fr; margin-top: 36px; gap: 34px 24px; }
+  .features.sections { columns: 2; column-gap: 24px; margin-top: 36px; margin-bottom: -34px; }
+  .features.sections > li { margin-bottom: 34px; }
   .closing { margin-top: 44px; padding: 28px; grid-template-columns: 1fr; gap: 28px; }
   .outro { font-size: 30px; max-width: 25ch; }
 }
@@ -411,11 +415,83 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 
 @media (max-width: 480px) {
   .capabilities > h2 { font-size: 33px; }
-  .features.sections { grid-template-columns: 1fr; }
+  .features.sections { columns: 1; }
   .features h3 { font-size: 21px; }
   .features.sections ul { font-size: 16px; }
   .closing { padding: 28px 22px; }
   .outro { font-size: 28px; }
+}
+
+/* iPhone, iPad and Mac screenshot switch: radio buttons and labels, no script */
+.device-tabs {
+  display: flex;
+  gap: 4px;
+  width: fit-content;
+  margin: -6px auto 34px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.device-tabs label { position: relative; padding: 7px 18px; border-radius: 999px; color: var(--muted); font-size: 14px; font-weight: 500; cursor: pointer; }
+.device-tabs label:hover { color: var(--text); }
+/* The radio covers its label: clicks land on it and focusing it never scrolls. */
+.device-tabs input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.device-tabs label:has(input:checked) { color: var(--accent-ink); background: var(--accent); }
+.device-tabs label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 3px; }
+.device-panel { display: none; }
+.showcase:has(#device-ipad:checked) .device-iphone, .showcase:has(#device-mac:checked) .device-iphone { display: none; }
+.showcase:has(#device-ipad:checked) .device-ipad, .showcase:has(#device-mac:checked) .device-mac { display: block; }
+.device-panel:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 6px; }
+.device-panel ul { list-style: none; display: flex; align-items: flex-start; gap: 20px; margin: 0 0 20px; padding: 0; }
+.device-panel li { flex: var(--ar) 1 0%; min-width: 0; }
+.device-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, .16);
+}
+.device-mac img { border-radius: 10px; }
+/* The same reflection as the iPhone shots; rows leave room for it. */
+@supports (-webkit-box-reflect: below) {
+  .device-panel img { -webkit-box-reflect: below 6px linear-gradient(to bottom, transparent 86%, rgba(0, 0, 0, .18)); }
+  .device-panel ul { margin-bottom: 56px; }
+}
+
+/* New in this version: the capabilities layout with a short paragraph per item */
+.whats-new { margin-bottom: 80px; }
+.whats-new .features.sections p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.features h3 .name { text-transform: none; }
+
+@media (max-width: 900px) {
+  .device-panel ul { gap: 12px; margin-bottom: 12px; }
+  .whats-new { margin-bottom: 58px; }
+}
+
+@media (max-width: 660px) {
+  .device-tabs { margin-bottom: 24px; }
+  .showcase:has(#device-ipad:checked) .device-ipad, .showcase:has(#device-mac:checked) .device-mac { display: flex; }
+  .device-panel {
+    gap: 14px;
+    margin-inline: -22px;
+    padding: 0 22px 21px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 22px;
+    scrollbar-color: var(--border) var(--bg);
+  }
+  .device-panel ul { display: contents; }
+  .device-panel li { flex: none; scroll-snap-align: start; }
+  .device-ipad img { width: auto; height: 260px; }
+  .device-mac img { width: 300px; }
+  .device-panel img { box-shadow: none; }
+  .whats-new { margin-bottom: 43px; }
+}
+@supports (-webkit-box-reflect: below) {
+  @media (max-width: 900px) { .device-panel ul { margin-bottom: 44px; } }
+  @media (max-width: 660px) { .device-panel { padding-bottom: 60px; overflow-y: hidden; } }
 }
 
 /* End site design */
@@ -494,9 +570,9 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 
 <main class="wrap">
 <section class="hero">
-  <p class="eyebrow">iPhone-এর জন্য ফটো এডিটর</p>
+  <p class="eyebrow">iPhone, iPad ও Mac-এর জন্য ফটো এডিটর</p>
   <h1>RawMask Studio</h1>
-  <p class="lead">শনাক্ত হওয়া সাবজেক্ট বেছে নিন বা নিজে মাস্ক আঁকুন, তারপর শুধু সেই অংশের আলো, রঙ, ডিটেইল আর ব্লার বদলান। RAW, ProRAW, JPEG ও HEIC ছবিতে কাজ করে, আর সব এডিট হয় iPhone-এই।</p>
+  <p class="lead">শনাক্ত হওয়া সাবজেক্ট বেছে নিন বা নিজে মাস্ক আঁকুন, তারপর শুধু সেই অংশের আলো, রঙ, ডিটেইল আর ব্লার বদলান। RAW, ProRAW, JPEG ও HEIC-এ কাজ করে, সবই iPhone, iPad বা Mac-এ।</p>
   <div class="actions">
     <a class="badge" href="https://apps.apple.com/app/id6814994539"><img src="../assets/badges/bn-in.svg" width="157.6" height="44" alt="App Store থেকে ডাউনলোড করুন"></a>
     <a class="button secondary" href="support/">সহায়তা নিন</a>
@@ -506,17 +582,77 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 </section>
 <section class="showcase">
   <h2 id="screenshots">স্ক্রিনশট</h2>
-  <ul class="shots" tabindex="0" aria-labelledby="screenshots">
+  <div class="device-tabs" role="radiogroup" aria-labelledby="screenshots">
+    <label id="tab-iphone"><input type="radio" name="device" id="device-iphone" checked>iPhone</label>
+    <label id="tab-ipad"><input type="radio" name="device" id="device-ipad">iPad</label>
+    <label id="tab-mac"><input type="radio" name="device" id="device-mac">Mac</label>
+  </div>
+  <ul class="shots device-iphone" tabindex="0" aria-labelledby="screenshots tab-iphone">
     <li><img src="../assets/screenshots/bn/01-select-300.webp" srcset="../assets/screenshots/bn/01-select-300.webp 300w, ../assets/screenshots/bn/01-select-600.webp 600w" sizes="200px" width="300" height="649" alt="শুধু বাছাই করা অংশই এডিট করুন। iPhone-এ RAW ছবির জন্য মাস্ক।" decoding="async"></li>
     <li><img src="../assets/screenshots/bn/02-detect-300.webp" srcset="../assets/screenshots/bn/02-detect-300.webp 300w, ../assets/screenshots/bn/02-detect-600.webp 600w" sizes="200px" width="300" height="649" alt="সাবজেক্ট খুঁজে নেবে অ্যাপ নিজেই। iPhone-এই শনাক্ত করে গাড়ি, মানুষ ও প্রাণীর মাস্ক নিজে থেকে বানিয়ে দেয়।" decoding="async"></li>
     <li><img src="../assets/screenshots/bn/03-masks-300.webp" srcset="../assets/screenshots/bn/03-masks-300.webp 300w, ../assets/screenshots/bn/03-masks-600.webp 600w" sizes="200px" width="300" height="649" alt="যেভাবে খুশি মাস্ক আঁকুন। রেডিয়াল, লিনিয়ার, ব্রাশ বা আয়তক্ষেত্র। তারপর যোগ-বাদ ও ফেদার করুন।" loading="lazy" decoding="async"></li>
     <li><img src="../assets/screenshots/bn/04-adjust-300.webp" srcset="../assets/screenshots/bn/04-adjust-300.webp 300w, ../assets/screenshots/bn/04-adjust-600.webp 600w" sizes="200px" width="300" height="649" alt="মাস্কের ভেতরে আলো ও রং ঠিক করুন। প্রতিটি মাস্কের নিজস্ব এক্সপোজার, রং, ডিটেইল ও ফোকাস।" loading="lazy" decoding="async"></li>
     <li><img src="../assets/screenshots/bn/05-save-300.webp" srcset="../assets/screenshots/bn/05-save-300.webp 300w, ../assets/screenshots/bn/05-save-600.webp 600w" sizes="200px" width="300" height="649" alt="ফটো অ্যাপে সেভ করুন। যেকোনো সময় ফেরান। এডিট সবসময় ফেরানো যায়, আর কিছুই আপনার iPhone ছেড়ে যায় না।" loading="lazy" decoding="async"></li>
   </ul>
+  <div class="device-panel device-ipad" role="group" tabindex="0" aria-labelledby="screenshots tab-ipad">
+    <ul>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/bn/ipad/01-select-300.webp" srcset="../assets/screenshots/bn/ipad/01-select-300.webp 300w, ../assets/screenshots/bn/ipad/01-select-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="শুধু বাছাই করা অংশই এডিট করুন। iPad-এ RAW ছবির জন্য মাস্ক।" loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/bn/ipad/02-palettes-480.webp" srcset="../assets/screenshots/bn/ipad/02-palettes-480.webp 480w, ../assets/screenshots/bn/ipad/02-palettes-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="প্রতিটি টুল ভাসে ছবির ওপরে। প্যালেট যেখানে খুশি টেনে নিন, যেকোনো ওরিয়েন্টেশনে।" loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/bn/ipad/03-masks-480.webp" srcset="../assets/screenshots/bn/ipad/03-masks-480.webp 480w, ../assets/screenshots/bn/ipad/03-masks-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="যেভাবে খুশি মাস্ক আঁকুন। রেডিয়াল, লিনিয়ার, ব্রাশ বা আয়তক্ষেত্র। তারপর যোগ-বাদ ও ফেদার করুন।" loading="lazy" decoding="async"></li>
+    </ul>
+    <ul>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/bn/ipad/04-style-480.webp" srcset="../assets/screenshots/bn/ipad/04-style-480.webp 480w, ../assets/screenshots/bn/ipad/04-style-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="ছবিতে দিন নতুন লুক। ফিল্ম, সাদা-কালো, ভিন্টেজ, নোয়া, গ্রাঞ্জ ও রেট্রো স্টাইল।" loading="lazy" decoding="async"></li>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/bn/ipad/05-frame-300.webp" srcset="../assets/screenshots/bn/ipad/05-frame-300.webp 300w, ../assets/screenshots/bn/ipad/05-frame-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="ক্রপ, সোজা আর ফ্রেম করুন। সরু রেখা থেকে ফিল্ম এজ, আটটি বর্ডার।" loading="lazy" decoding="async"></li>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/bn/ipad/06-save-300.webp" srcset="../assets/screenshots/bn/ipad/06-save-300.webp 300w, ../assets/screenshots/bn/ipad/06-save-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="ফটো অ্যাপে সেভ করুন। যেকোনো সময় ফেরান। এডিট সবসময় ফেরানো যায়, আর কিছুই আপনার iPad ছেড়ে যায় না।" loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/bn/ipad/07-options-480.webp" srcset="../assets/screenshots/bn/ipad/07-options-480.webp 480w, ../assets/screenshots/bn/ipad/07-options-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="এডিটর সাজান নিজের মতো। প্রিসেট সেভ করুন, আর নিজের ক্রমে রাখুন শুধু দরকারি ধাপগুলো।" loading="lazy" decoding="async"></li>
+    </ul>
+  </div>
+  <div class="device-panel device-mac" role="group" tabindex="0" aria-labelledby="screenshots tab-mac">
+    <ul>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/bn/mac/01-select-480.webp" srcset="../assets/screenshots/bn/mac/01-select-480.webp 480w, ../assets/screenshots/bn/mac/01-select-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="শুধু বাছাই করা অংশই এডিট করুন। Mac-এ RAW ছবির জন্য মাস্ক।" loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/bn/mac/02-detect-480.webp" srcset="../assets/screenshots/bn/mac/02-detect-480.webp 480w, ../assets/screenshots/bn/mac/02-detect-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="সাবজেক্ট খুঁজে নেবে অ্যাপ নিজেই। Mac-এই শনাক্ত করে গাড়ি, মানুষ ও প্রাণীর মাস্ক নিজে থেকে বানিয়ে দেয়।" loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/bn/mac/03-frame-480.webp" srcset="../assets/screenshots/bn/mac/03-frame-480.webp 480w, ../assets/screenshots/bn/mac/03-frame-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="ক্রপ, সোজা আর ফ্রেম করুন। সরু রেখা থেকে ফিল্ম এজ, আটটি বর্ডার।" loading="lazy" decoding="async"></li>
+    </ul>
+    <ul>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/bn/mac/04-save-480.webp" srcset="../assets/screenshots/bn/mac/04-save-480.webp 480w, ../assets/screenshots/bn/mac/04-save-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="ফটো অ্যাপে সেভ করুন। যেকোনো সময় ফেরান। এডিট সবসময় ফেরানো যায়, আর কিছুই আপনার Mac ছেড়ে যায় না।" loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/bn/mac/05-steps-480.webp" srcset="../assets/screenshots/bn/mac/05-steps-480.webp 480w, ../assets/screenshots/bn/mac/05-steps-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="এডিটর সাজান নিজের মতো। প্রিসেট সেভ করুন, আর নিজের ক্রমে রাখুন শুধু দরকারি ধাপগুলো।" loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/bn/mac/06-detection-480.webp" srcset="../assets/screenshots/bn/mac/06-detection-480.webp 480w, ../assets/screenshots/bn/mac/06-detection-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="কী শনাক্ত হবে, ঠিক করুন। কনফিডেন্স, মাস্কের কিনারা আর অবজেক্টের সংখ্যা ঠিক করুন। সবই চলে আপনার Mac-এ।" loading="lazy" decoding="async"></li>
+    </ul>
+  </div>
+</section>
+<section class="capabilities whats-new">
+  <h2 id="whats-new">সংস্করণ 1.2.0-এ যা নতুন</h2>
+  <p>RawMask Studio এখন iPhone-এর পাশাপাশি iPad ও Mac-এও চলে। তিনটির জন্যই এটি একটিই ফ্রি অ্যাপ, আর প্রতিটি এডিট এখনও হয় আপনার ডিভাইসেই।</p>
+  <ul class="features sections">
+    <li>
+      <h3>এখন <span class="name">iPad</span>-এ</h3>
+      <p>ছবি পুরো স্ক্রিন জুড়ে থাকে, আর টুলগুলো ছবির ওপর প্যালেট হয়ে ভাসে, যেগুলো পোর্ট্রেট ও ল্যান্ডস্কেপ দুই দিকেই যেখানে খুশি টেনে নেওয়া যায়।</p>
+    </li>
+    <li>
+      <h3>এখন <span class="name">Mac</span>-এ</h3>
+      <p>ধাপগুলো থাকে টুলবারে, আর ছবির পাশের ইন্সপেক্টরে থাকে মাস্ক ও স্লাইডারগুলো। খুঁটিনাটি দেখতে জুম ইন করুন, আর JPEG, HEIF বা TIFF ফাইল হিসেবে এক্সপোর্ট করুন।</p>
+    </li>
+    <li>
+      <h3>নতুন Tone (টোন) ধাপ</h3>
+      <p>হাইস, লাইটস, ডার্কস ও লোস-এর জন্য টোন কার্ভ, আর হাইলাইট, মিডটোন ও শ্যাডোতে ঝকঝকে লোকাল কনট্রাস্ট।</p>
+    </li>
+    <li>
+      <h3>নতুন Style (স্টাইল) ধাপ</h3>
+      <p>HDR, Drama, Glow, Bloom, Halation ও Aberration, সঙ্গে Film, B&amp;W, Vintage, Noir, Grunge ও Retro লুক।</p>
+    </li>
+    <li>
+      <h3>HSL রঙ</h3>
+      <p>আটটি কালার ব্যান্ডের জন্য হিউ, ক্রোমা ও লাইটনেস, সরাসরি Color (রঙ) ধাপেই।</p>
+    </li>
+    <li>
+      <h3>আরও ফ্রেমিং ও ইফেক্ট</h3>
+      <p>Frame-এ পার্সপেক্টিভ, কিনারা ফিল ও আটটি বর্ডার, আর Effects-এ ভিগনেটের সাইজ, শেপ ও সফটনেস।</p>
+    </li>
+  </ul>
 </section>
 <section class="capabilities">
   <h2>যা যা করতে পারবেন</h2>
-  <p>ছবির যে অংশটুকু বেছে নেবেন, শুধু সেটুকুই এডিট করুন। RawMask Studio মাস্ক-নির্ভর একটি RAW ফটো এডিটর: শনাক্ত হওয়া সাবজেক্ট বেছে নিন বা নিজেই মাস্ক আঁকুন, তারপর শুধু সেই অংশের আলো, রঙ, ডিটেইল আর ফোকাস বদলান - বাকি ছবি থাকবে আগের মতোই। RAW ও ProRAW ফাইলের পাশাপাশি রোজকার JPEG ও HEIC ছবিও এতে খোলা যায়, আর প্রতিটি এডিট হয় আপনার iPhone-এই।</p>
+  <p>পুরো ছবি এডিট করুন, অথবা শুধু আপনার বেছে নেওয়া অংশটুকু। RawMask Studio মাস্ক-নির্ভর একটি RAW ফটো এডিটর: শনাক্ত হওয়া সাবজেক্ট বেছে নিন বা নিজেই মাস্ক আঁকুন, তারপর শুধু সেই অংশের আলো, রঙ, ডিটেইল আর ফোকাস বদলান - বাকি ছবি থাকবে আগের মতোই। RAW ও ProRAW ফাইলের পাশাপাশি রোজকার JPEG ও HEIC ছবিও এতে খোলা যায়, আর প্রতিটি এডিট হয় আপনার iPhone, iPad বা Mac-এই।</p>
   <ul class="features sections">
     <li>
       <h3>সিলেক্টিভ এডিটের জন্য মাস্ক</h3>
@@ -538,19 +674,21 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
     <li>
       <h3>ধাপে ধাপে সহজ ওয়ার্কফ্লো</h3>
       <ul>
-        <li>Frame (ফ্রেম): ক্রপ, স্ট্রেইটেন, রোটেট, অ্যাসপেক্ট রেশিও ও জুম</li>
+        <li>Frame (ফ্রেম): ক্রপ, স্ট্রেইটেন, রোটেট, অ্যাসপেক্ট রেশিও, জুম ও পার্সপেক্টিভ, সঙ্গে কিনারা ফিল আর বর্ডার</li>
         <li>Light (আলো): এক্সপোজার, কনট্রাস্ট, হাইলাইট, শ্যাডো, হোয়াইট ও ব্ল্যাক</li>
-        <li>Color (রঙ): টেম্পারেচার, টিন্ট, ভাইব্রেন্স ও স্যাচুরেশন</li>
+        <li>Tone (টোন): হাইস, লাইটস, ডার্কস ও লোস-এর টোন কার্ভ, আর হাইলাইট, মিডটোন ও শ্যাডোতে লোকাল কনট্রাস্ট</li>
+        <li>Color (রঙ): টেম্পারেচার, টিন্ট, ভাইব্রেন্স ও স্যাচুরেশন, সঙ্গে আটটি কালার ব্যান্ডের জন্য HSL (হিউ, ক্রোমা ও লাইটনেস)</li>
         <li>Detail (ডিটেইল): টেক্সচার, ক্ল্যারিটি, ডিহেজ, শার্পনেস ও নয়েজ রিডাকশন</li>
         <li>Focus (ফোকাস): ব্যাকগ্রাউন্ড ব্লার, সঙ্গে স্ট্রেংথ, রেঞ্জ, ফেদার ও বোকে কন্ট্রোল</li>
-        <li>Effects (ইফেক্ট): ভিগনেট, গ্রেইন ও ফেড</li>
+        <li>Style (স্টাইল): HDR, Drama, Glow, Bloom, Halation ও Aberration, সঙ্গে Film, B&amp;W, Vintage, Noir, Grunge ও Retro লুক</li>
+        <li>Effects (ইফেক্ট): সাইজ, শেপ ও সফটনেসসহ ভিগনেট, গ্রেইন ও ফেড</li>
         <li>Editor options-এ ধাপগুলো নিজের মতো সাজিয়ে নিন বা লুকিয়ে রাখুন</li>
       </ul>
     </li>
     <li>
       <h3>তুলনা করুন, আবার ব্যবহার করুন</h3>
       <ul>
-        <li>Hold to Compare: চেপে ধরে যেকোনো মুহূর্তে এডিটের আগে আর পরে মিলিয়ে দেখুন</li>
+        <li>Hold to Compare: চেপে ধরে যেকোনো মুহূর্তে এডিটের আগে আর পরে মিলিয়ে দেখুন; Mac-এ \ কি চেপে ধরুন</li>
         <li>পুরো ছবির অ্যাডজাস্টমেন্ট Preset হিসেবে সেভ করে অন্য ছবিতে লাগান</li>
       </ul>
     </li>
@@ -559,7 +697,7 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
       <ul>
         <li>Save edit to Photos নন-ডেস্ট্রাকটিভ: আসল ছবি অক্ষত থাকে, আর Photos-এ যেকোনো সময় এডিট বাতিল করে আগের অবস্থায় ফেরা যায়</li>
         <li>Save a copy to Photos দিয়ে এডিট করা ভার্সনটি নতুন ছবি হিসেবে রাখুন</li>
-        <li>শেয়ার শিট দিয়ে JPEG, HEIF বা TIFF ফরম্যাটে এক্সপোর্ট করুন</li>
+        <li>JPEG, HEIF বা TIFF ফরম্যাটে এক্সপোর্ট করুন: iPhone ও iPad-এ শেয়ার শিট দিয়ে, Mac-এ ফাইল হিসেবে</li>
       </ul>
     </li>
     <li>
@@ -567,18 +705,18 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
       <ul>
         <li>কোনো অ্যাকাউন্ট, সাইন-ইন বা বিজ্ঞাপন নেই</li>
         <li>এডিটিং আর সাবজেক্ট ডিটেকশন পুরোটাই ডিভাইসে চলে, তাই আপনার ছবি কোথাও আপলোড হয় না</li>
-        <li>সম্পূর্ণ ফ্রি, কোনো ইন-অ্যাপ পারচেজ নেই</li>
+        <li>iPhone, iPad ও Mac-এ সম্পূর্ণ ফ্রি, কোনো ইন-অ্যাপ পারচেজ নেই</li>
       </ul>
     </li>
   </ul>
 </section>
 <section class="closing">
   <div class="closing-copy">
-  <p class="outro">একটা ছবি খুলুন, একটা মাস্ক বেছে নিন, আর ছবির ঠিক সেই অংশটাকে ফুটিয়ে তুলুন।</p>
+  <p class="outro">একটা ছবি খুলুন, তারপর পুরোটাই এডিট করুন, কিংবা একটা অংশ বেছে নিয়ে সেটাকে ফুটিয়ে তুলুন।</p>
   <p class="outro">অ্যাপের ইন্টারফেস আপাতত ইংরেজিতে রয়েছে।</p>
   </div>
   <div class="callout">
-    <p><strong>প্রয়োজনীয়তা:</strong> iOS 17 বা পরবর্তী সংস্করণে চলা iPhone।</p>
+    <p><strong>প্রয়োজনীয়তা:</strong> iOS 17 বা পরবর্তী সংস্করণে চলা iPhone, iPadOS 17 বা পরবর্তী সংস্করণে চলা iPad, অথবা macOS 14 বা পরবর্তী সংস্করণে চলা Apple চিপযুক্ত Mac।</p>
     <p class="muted">কোনো প্রশ্ন বা সমস্যা আছে? <a href="support/">সহায়তা পৃষ্ঠায়</a> যান। অ্যাপটি আপনার ছবি নিয়ে কীভাবে কাজ করে, তার বিস্তারিত রয়েছে <a href="privacy/">গোপনীয়তা নীতিতে</a>।</p>
   </div>
 </section>

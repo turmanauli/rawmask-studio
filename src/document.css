@@ -98,3 +98,6 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   .document .callout { margin: 28px 0 36px; padding: 24px 22px; border-radius: 16px; }
   .document .faq section { padding-block: 24px; }
 }
+
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.name { text-transform: none; }

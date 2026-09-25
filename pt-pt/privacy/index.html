@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#081b16">
-<meta name="description" content="Política de privacidade do RawMask Studio para iPhone. A app não recolhe quaisquer dados; as fotografias são editadas no seu iPhone.">
+<meta name="description" content="Política de privacidade do RawMask Studio para iPhone, iPad e Mac. A app não recolhe quaisquer dados; as fotografias são editadas no seu dispositivo.">
 <meta name="apple-itunes-app" content="app-id=6814994539">
 <title>Política de privacidade - RawMask Studio</title>
 <link rel="canonical" href="https://turmanauli.github.io/rawmask-studio/pt-pt/privacy/">
@@ -64,7 +64,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RawMask Studio">
 <meta property="og:title" content="Política de privacidade - RawMask Studio">
-<meta property="og:description" content="Política de privacidade do RawMask Studio para iPhone. A app não recolhe quaisquer dados; as fotografias são editadas no seu iPhone.">
+<meta property="og:description" content="Política de privacidade do RawMask Studio para iPhone, iPad e Mac. A app não recolhe quaisquer dados; as fotografias são editadas no seu dispositivo.">
 <meta property="og:url" content="https://turmanauli.github.io/rawmask-studio/pt-pt/privacy/">
 <meta property="og:locale" content="pt_PT">
 <meta name="twitter:card" content="summary">
@@ -297,6 +297,9 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   .document .faq section { padding-block: 24px; }
 }
 
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.name { text-transform: none; }
+
 /* End site design */
 </style>
 </head>
@@ -373,11 +376,11 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
 <main class="wrap document">
   <h1>Política de privacidade</h1>
-  <p class="meta">RawMask Studio para iPhone. Data de entrada em vigor: 23 de setembro de 2026.</p>
+  <p class="meta">RawMask Studio para iPhone, iPad e Mac. Data de entrada em vigor: 26 de setembro de 2026.</p>
   <p class="note">Esta página é uma tradução da <a href="../../privacy/">versão em inglês</a>. Em caso de divergência entre as duas versões, prevalece a versão em inglês.</p>
 
   <div class="callout">
-    <p><strong>Em resumo:</strong> o RawMask Studio não recolhe quaisquer dados. Não há conta, análise de utilização, publicidade nem rastreio. As suas fotografias são editadas no seu iPhone e a app nunca envia as suas fotografias, as suas edições nem quaisquer outras informações, nem para nós nem para mais ninguém.</p>
+    <p><strong>Em resumo:</strong> o RawMask Studio não recolhe quaisquer dados. Não há conta, análise de utilização, publicidade nem rastreio. As suas fotografias são editadas no seu iPhone, iPad ou Mac e a app nunca envia as suas fotografias, as suas edições nem quaisquer outras informações, nem para nós nem para mais ninguém.</p>
   </div>
 
   <h2 id="who-we-are">Quem somos</h2>
@@ -386,12 +389,12 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   <h2 id="information-we-collect">Informações que recolhemos</h2>
   <p>Nenhuma. O RawMask Studio não recolhe, transmite, vende nem partilha informações pessoais. A app não envia as suas fotografias, edições, máscaras, predefinições, definições, identificadores do dispositivo, dados de utilização nem dados de diagnóstico, nem para nós nem para quaisquer terceiros, e não operamos nenhum servidor que receba dados da app. Não há início de sessão nem conta.</p>
 
-  <h2 id="on-device-processing">O processamento é feito no seu iPhone</h2>
+  <h2 id="on-device-processing">O processamento é feito no seu dispositivo</h2>
   <p>Todo o processamento das fotografias é feito no seu dispositivo. Isto inclui a leitura de ficheiros RAW, a aplicação de ajustes de luz, cor, detalhe, foco e efeitos, a renderização de pré-visualizações e a criação de máscaras.</p>
-  <p>As máscaras automáticas de objetos são criadas por um modelo de segmentação de imagem (RF-DETR) que está incluído na app e é executado no seu iPhone com o Core ML da Apple. O modelo não é descarregado da Internet e as suas fotografias não são enviadas para lado nenhum para serem analisadas.</p>
+  <p>As máscaras automáticas de objetos são criadas por um modelo de segmentação de imagem (RF-DETR) que está incluído na app e é executado no seu iPhone, iPad ou Mac com o Core ML da Apple. O modelo não é descarregado da Internet e as suas fotografias não são enviadas para lado nenhum para serem analisadas.</p>
 
   <h2 id="photos-access">Acesso à sua fototeca</h2>
-  <p>O RawMask Studio utiliza a app Fotografias da Apple para abrir e guardar imagens. O iOS pede a sua autorização antes de a app poder aceder à sua fototeca. Pode permitir o acesso a toda a fototeca ou apenas às fotografias que selecionar, e pode alterar esta opção a qualquer momento em <span class="path">Definições &gt; Privacidade e segurança &gt; Fotografias &gt; RawMask Studio</span>.</p>
+  <p>O RawMask Studio utiliza a app Fotografias da Apple para abrir e guardar imagens. O iOS, o iPadOS e o macOS pedem a sua autorização antes de a app poder aceder à sua fototeca. No iPhone e no iPad, pode permitir o acesso a toda a fototeca ou apenas às fotografias que selecionar; no Mac, o acesso abrange toda a fototeca. Pode alterar esta opção a qualquer momento em <span class="path">Definições &gt; Privacidade e segurança &gt; Fotografias &gt; RawMask Studio</span> no iPhone e no iPad, ou em <span class="path">Definições do Sistema &gt; Privacidade e segurança &gt; Fotografias</span> no Mac.</p>
   <h3>O que a app lê</h3>
   <p>Apenas a fotografia que escolher no seletor de fotografias, uma fotografia de cada vez. Para a editar, a app lê os dados de imagem dessa fotografia e os detalhes necessários para a edição, como as dimensões, a data de captura, o formato do ficheiro e qualquer edição anterior do RawMask Studio guardada com ela. A app não percorre, não examina nem indexa o resto da sua fototeca.</p>
   <h3>O que a app escreve</h3>
@@ -401,23 +404,24 @@ html.no-tracking .document h3 { letter-spacing: normal; }
     <li><strong><span class="ui" lang="en">Save a copy to Photos</span></strong> adiciona a imagem editada como uma nova fotografia. O original não é alterado.</li>
   </ul>
   <h3>Fotografias em iCloud</h3>
-  <p>Se utilizar Fotografias em iCloud e o original em resolução total da fotografia que escolher não estiver guardado no seu iPhone, a framework Fotografias da Apple pode descarregá-lo do iCloud para que possa ser editado. As fotografias que guardar também podem ser sincronizadas por Fotografias em iCloud, de acordo com as suas definições da Apple. Estas transferências ocorrem entre o seu dispositivo e a sua própria conta iCloud, são geridas pela Apple e estão abrangidas pela política de privacidade da Apple. Nada nos é enviado.</p>
+  <p>Se utilizar Fotografias em iCloud e o original em resolução total da fotografia que escolher não estiver guardado no seu dispositivo, a framework Fotografias da Apple pode descarregá-lo do iCloud para que possa ser editado. As fotografias que guardar também podem ser sincronizadas por Fotografias em iCloud, de acordo com as suas definições da Apple. Estas transferências ocorrem entre o seu dispositivo e a sua própria conta iCloud, são geridas pela Apple e estão abrangidas pela política de privacidade da Apple. Nada nos é enviado.</p>
 
   <h2 id="export">Exportação e partilha</h2>
-  <p>Quando toca em <span class="ui" lang="en">Export photo</span>, a app cria o ficheiro de imagem que pediu e abre a folha de partilha do iOS. O ficheiro vai apenas para onde escolher enviá-lo, como Ficheiros, Mensagens ou outra app, e esse destino trata-o de acordo com as respetivas práticas de privacidade. O ficheiro temporário que a app cria para a exportação é mantido no armazenamento privado da app no seu iPhone e é apagado automaticamente quando deixa de ser necessário.</p>
+  <p>Quando escolhe <span class="ui" lang="en">Export photo</span> no iPhone ou no iPad, a app cria o ficheiro de imagem que pediu e abre a folha de partilha. O ficheiro vai apenas para onde escolher enviá-lo, como Ficheiros, Mensagens ou outra app, e esse destino trata-o de acordo com as respetivas práticas de privacidade. O ficheiro temporário que a app cria para a exportação é mantido no armazenamento privado da app e é apagado automaticamente quando deixa de ser necessário.</p>
+  <p>No Mac, <span class="ui" lang="en">Export photo</span> abre a janela Guardar e o ficheiro é escrito apenas no local que escolher.</p>
 
   <h2 id="on-device-storage">Informações guardadas no seu dispositivo</h2>
-  <p>Para que a app funcione tal como a deixou, mantém uma pequena quantidade de informações no respetivo armazenamento, no seu iPhone:</p>
+  <p>Para que a app funcione tal como a deixou, mantém uma pequena quantidade de informações no respetivo armazenamento, no seu dispositivo:</p>
   <ul>
     <li>as predefinições que guardar (os respetivos nomes e valores de ajuste),</li>
     <li>as preferências do editor, como as secções de edição apresentadas, a respetiva ordem e o estilo de comparação antes e depois, e</li>
     <li>as definições das máscaras automáticas.</li>
   </ul>
-  <p>Estas informações permanecem no seu dispositivo e não nos são enviadas. Pode apagar uma predefinição na app a qualquer momento e, se apagar a app, todas estas informações são removidas. Tal como outros dados de apps, podem ser incluídas nas cópias de segurança do seu iPhone que fizer, de acordo com as suas definições do iOS.</p>
+  <p>Estas informações permanecem no seu dispositivo e não nos são enviadas. Pode apagar uma predefinição na app a qualquer momento e, se apagar a app, todas estas informações são removidas. Tal como outros dados de apps, podem ser incluídas nas cópias de segurança do seu iPhone, iPad ou Mac que fizer, de acordo com as suas definições.</p>
 
   <h2 id="no-third-parties">Sem serviços de terceiros, análise de utilização, publicidade nem rastreio</h2>
   <p>O RawMask Studio não contém software de terceiros para análise, publicidade, relatórios de falhas ou rastreio. Não utiliza o identificador de publicidade e não rastreia a sua atividade em apps ou sites pertencentes a outras empresas.</p>
-  <p>Se tiver optado, no iOS, por partilhar dados de análise com os programadores de apps (<span class="path">Definições &gt; Privacidade e segurança &gt; Análise e melhorias</span>), a Apple pode fornecer-nos relatórios de falhas e estatísticas de utilização agregadas, num formato que não o identifica. Isto é controlado pela Apple e pelas suas definições, não pela app.</p>
+  <p>Se tiver optado por partilhar dados de análise com os programadores de apps (<span class="path">Definições &gt; Privacidade e segurança &gt; Análise e melhorias</span> no iPhone e no iPad, ou <span class="path">Definições do Sistema &gt; Privacidade e segurança &gt; Análise e melhorias</span> no Mac), a Apple pode fornecer-nos relatórios de falhas e estatísticas de utilização agregadas, num formato que não o identifica. Isto é controlado pela Apple e pelas suas definições, não pela app.</p>
 
   <h2 id="purchases">Compras</h2>
   <p>O RawMask Studio é atualmente gratuito. Se, no futuro, forem adicionadas compras integradas ou funcionalidades pagas, os pagamentos serão processados pela Apple através da App Store, ao abrigo dos termos e da política de privacidade da Apple, e não receberemos os seus dados de pagamento. Atualizaremos esta política antes de qualquer alteração deste tipo entrar em vigor.</p>
@@ -426,7 +430,7 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   <p>O RawMask Studio é uma app de edição de fotografias de uso geral e não se destina especificamente a crianças. Uma vez que a app não recolhe informações pessoais de ninguém, não recolhe informações pessoais de crianças.</p>
 
   <h2 id="your-choices">As suas opções</h2>
-  <p>Como não recolhemos nem conservamos quaisquer dados sobre si, não existem, do nosso lado, dados pessoais que possam ser acedidos, corrigidos, exportados ou apagados. O controlo continua a ser seu, no seu dispositivo: pode alterar ou revogar o acesso a Fotografias nas Definições do iOS, apagar predefinições na app, remover edições ou cópias na app Fotografias e apagar a app para remover os respetivos dados locais.</p>
+  <p>Como não recolhemos nem conservamos quaisquer dados sobre si, não existem, do nosso lado, dados pessoais que possam ser acedidos, corrigidos, exportados ou apagados. O controlo continua a ser seu, no seu dispositivo: pode alterar ou revogar o acesso a Fotografias nas Definições (Definições do Sistema no Mac), apagar predefinições na app, remover edições ou cópias na app Fotografias e apagar a app para remover os respetivos dados locais.</p>
 
   <h2 id="changes">Alterações a esta política</h2>
   <p>Se a forma como a app trata as informações mudar, por exemplo, se uma funcionalidade futura precisar de enviar dados para fora do seu dispositivo, atualizaremos esta política e os detalhes de privacidade da app na App Store antes de essa versão ser lançada, e alteraremos a data de entrada em vigor no topo desta página.</p>

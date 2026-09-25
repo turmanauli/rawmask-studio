@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#081b16">
-<meta name="description" content="RawMask Studio este un editor de fotografii RAW pentru iPhone, cu măști automate și manuale. Totul rulează pe iPhone-ul tău.">
+<meta name="description" content="RawMask Studio este un editor de fotografii RAW cu măști automate și manuale pentru iPhone, iPad și Mac. Totul rulează pe dispozitivul tău.">
 <meta name="apple-itunes-app" content="app-id=6814994539">
 <title>RawMask Studio - Editor foto RAW, măști și blur</title>
 <link rel="canonical" href="https://turmanauli.github.io/rawmask-studio/ro/">
@@ -64,7 +64,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RawMask Studio">
 <meta property="og:title" content="RawMask Studio - Editor foto RAW, măști și blur">
-<meta property="og:description" content="RawMask Studio este un editor de fotografii RAW pentru iPhone, cu măști automate și manuale. Totul rulează pe iPhone-ul tău.">
+<meta property="og:description" content="RawMask Studio este un editor de fotografii RAW cu măști automate și manuale pentru iPhone, iPad și Mac. Totul rulează pe dispozitivul tău.">
 <meta property="og:url" content="https://turmanauli.github.io/rawmask-studio/ro/">
 <meta property="og:locale" content="ro_RO">
 <meta name="twitter:card" content="summary">
@@ -290,16 +290,18 @@ h1 {
   overflow-wrap: anywhere;
 }
 .capabilities > p { margin: 0; max-width: 690px; color: var(--muted); font-size: 17px; line-height: 1.75; }
+/* Masonry-style columns: each card goes under the previous one, so short cards fill the gaps. */
 .features.sections {
   grid-column: 1 / -1;
-  columns: auto;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 44px 40px;
+  display: block;
+  columns: 3;
+  column-gap: 40px;
   margin-top: 62px;
+  margin-bottom: -44px;
 }
 .features.sections > li {
-  margin: 0;
+  margin: 0 0 44px;
+  break-inside: avoid;
   padding: 24px 0 0;
   border: 0;
   border-top: 2px solid var(--border);
@@ -363,7 +365,8 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 .callout .muted { font-size: 15px; line-height: 1.8; }
 
 @media (max-width: 1100px) {
-  .features.sections { gap: 36px 28px; }
+  .features.sections { column-gap: 28px; margin-bottom: -36px; }
+  .features.sections > li { margin-bottom: 36px; }
   .closing { gap: 40px; }
 }
 
@@ -379,7 +382,8 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
   .capabilities { display: block; padding-top: 35px; }
   .capabilities > h2 { margin-bottom: 24px; font-size: 36px; }
   .capabilities > p { font-size: 16px; }
-  .features.sections { grid-template-columns: 1fr 1fr; margin-top: 36px; gap: 34px 24px; }
+  .features.sections { columns: 2; column-gap: 24px; margin-top: 36px; margin-bottom: -34px; }
+  .features.sections > li { margin-bottom: 34px; }
   .closing { margin-top: 44px; padding: 28px; grid-template-columns: 1fr; gap: 28px; }
   .outro { font-size: 30px; max-width: 25ch; }
 }
@@ -411,11 +415,83 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 
 @media (max-width: 480px) {
   .capabilities > h2 { font-size: 33px; }
-  .features.sections { grid-template-columns: 1fr; }
+  .features.sections { columns: 1; }
   .features h3 { font-size: 21px; }
   .features.sections ul { font-size: 16px; }
   .closing { padding: 28px 22px; }
   .outro { font-size: 28px; }
+}
+
+/* iPhone, iPad and Mac screenshot switch: radio buttons and labels, no script */
+.device-tabs {
+  display: flex;
+  gap: 4px;
+  width: fit-content;
+  margin: -6px auto 34px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.device-tabs label { position: relative; padding: 7px 18px; border-radius: 999px; color: var(--muted); font-size: 14px; font-weight: 500; cursor: pointer; }
+.device-tabs label:hover { color: var(--text); }
+/* The radio covers its label: clicks land on it and focusing it never scrolls. */
+.device-tabs input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.device-tabs label:has(input:checked) { color: var(--accent-ink); background: var(--accent); }
+.device-tabs label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 3px; }
+.device-panel { display: none; }
+.showcase:has(#device-ipad:checked) .device-iphone, .showcase:has(#device-mac:checked) .device-iphone { display: none; }
+.showcase:has(#device-ipad:checked) .device-ipad, .showcase:has(#device-mac:checked) .device-mac { display: block; }
+.device-panel:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 6px; }
+.device-panel ul { list-style: none; display: flex; align-items: flex-start; gap: 20px; margin: 0 0 20px; padding: 0; }
+.device-panel li { flex: var(--ar) 1 0%; min-width: 0; }
+.device-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, .16);
+}
+.device-mac img { border-radius: 10px; }
+/* The same reflection as the iPhone shots; rows leave room for it. */
+@supports (-webkit-box-reflect: below) {
+  .device-panel img { -webkit-box-reflect: below 6px linear-gradient(to bottom, transparent 86%, rgba(0, 0, 0, .18)); }
+  .device-panel ul { margin-bottom: 56px; }
+}
+
+/* New in this version: the capabilities layout with a short paragraph per item */
+.whats-new { margin-bottom: 80px; }
+.whats-new .features.sections p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.features h3 .name { text-transform: none; }
+
+@media (max-width: 900px) {
+  .device-panel ul { gap: 12px; margin-bottom: 12px; }
+  .whats-new { margin-bottom: 58px; }
+}
+
+@media (max-width: 660px) {
+  .device-tabs { margin-bottom: 24px; }
+  .showcase:has(#device-ipad:checked) .device-ipad, .showcase:has(#device-mac:checked) .device-mac { display: flex; }
+  .device-panel {
+    gap: 14px;
+    margin-inline: -22px;
+    padding: 0 22px 21px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 22px;
+    scrollbar-color: var(--border) var(--bg);
+  }
+  .device-panel ul { display: contents; }
+  .device-panel li { flex: none; scroll-snap-align: start; }
+  .device-ipad img { width: auto; height: 260px; }
+  .device-mac img { width: 300px; }
+  .device-panel img { box-shadow: none; }
+  .whats-new { margin-bottom: 43px; }
+}
+@supports (-webkit-box-reflect: below) {
+  @media (max-width: 900px) { .device-panel ul { margin-bottom: 44px; } }
+  @media (max-width: 660px) { .device-panel { padding-bottom: 60px; overflow-y: hidden; } }
 }
 
 /* End site design */
@@ -494,9 +570,9 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 
 <main class="wrap">
 <section class="hero">
-  <p class="eyebrow">Editor foto pentru iPhone</p>
+  <p class="eyebrow">Editor foto pentru iPhone, iPad și Mac</p>
   <h1>RawMask Studio</h1>
-  <p class="lead">Alege un subiect sau desenează o mască, apoi reglează lumina, culoarea, detaliile și blurul doar acolo. Funcționează cu RAW, ProRAW, JPEG și HEIC, direct pe iPhone.</p>
+  <p class="lead">Alege un subiect sau desenează o mască, apoi reglează lumina, culoarea, detaliile și blurul doar acolo. Acceptă RAW, ProRAW, JPEG și HEIC, totul pe iPhone, iPad sau Mac.</p>
   <div class="actions">
     <a class="badge" href="https://apps.apple.com/app/id6814994539"><img src="../assets/badges/ro-ro.svg" width="131.6" height="44" alt="Descărcați de pe App Store"></a>
     <a class="button secondary" href="support/">Obține asistență</a>
@@ -506,17 +582,77 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 </section>
 <section class="showcase">
   <h2 id="screenshots">Capturi de ecran</h2>
-  <ul class="shots" tabindex="0" aria-labelledby="screenshots">
+  <div class="device-tabs" role="radiogroup" aria-labelledby="screenshots">
+    <label id="tab-iphone"><input type="radio" name="device" id="device-iphone" checked>iPhone</label>
+    <label id="tab-ipad"><input type="radio" name="device" id="device-ipad">iPad</label>
+    <label id="tab-mac"><input type="radio" name="device" id="device-mac">Mac</label>
+  </div>
+  <ul class="shots device-iphone" tabindex="0" aria-labelledby="screenshots tab-iphone">
     <li><img src="../assets/screenshots/ro/01-select-300.webp" srcset="../assets/screenshots/ro/01-select-300.webp 300w, ../assets/screenshots/ro/01-select-600.webp 600w" sizes="200px" width="300" height="649" alt="Editezi doar ce selectezi. Măști pentru fotografii RAW pe iPhone." decoding="async"></li>
     <li><img src="../assets/screenshots/ro/02-detect-300.webp" srcset="../assets/screenshots/ro/02-detect-300.webp 300w, ../assets/screenshots/ro/02-detect-600.webp 600w" sizes="200px" width="300" height="649" alt="Subiectul, găsit automat. Măști automate pentru mașini, oameni și animale, detectate pe iPhone." decoding="async"></li>
     <li><img src="../assets/screenshots/ro/03-masks-300.webp" srcset="../assets/screenshots/ro/03-masks-300.webp 300w, ../assets/screenshots/ro/03-masks-600.webp 600w" sizes="200px" width="300" height="649" alt="Desenează masca așa cum vrei. Radială, liniară, pensulă sau dreptunghi. Adaugi, scazi, estompezi." loading="lazy" decoding="async"></li>
     <li><img src="../assets/screenshots/ro/04-adjust-300.webp" srcset="../assets/screenshots/ro/04-adjust-300.webp 300w, ../assets/screenshots/ro/04-adjust-600.webp 600w" sizes="200px" width="300" height="649" alt="Lumină și culoare, în mască. Fiecare mască are expunere, culoare, detaliu și focalizare proprii." loading="lazy" decoding="async"></li>
     <li><img src="../assets/screenshots/ro/05-save-300.webp" srcset="../assets/screenshots/ro/05-save-300.webp 300w, ../assets/screenshots/ro/05-save-600.webp 600w" sizes="200px" width="300" height="649" alt="Salvezi în Poze. Anulezi oricând. Modificările rămân reversibile și nimic nu părăsește iPhone-ul." loading="lazy" decoding="async"></li>
   </ul>
+  <div class="device-panel device-ipad" role="group" tabindex="0" aria-labelledby="screenshots tab-ipad">
+    <ul>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/ro/ipad/01-select-300.webp" srcset="../assets/screenshots/ro/ipad/01-select-300.webp 300w, ../assets/screenshots/ro/ipad/01-select-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="Editezi doar ce selectezi. Măști pentru fotografii RAW pe iPad." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/ro/ipad/02-palettes-480.webp" srcset="../assets/screenshots/ro/ipad/02-palettes-480.webp 480w, ../assets/screenshots/ro/ipad/02-palettes-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="Fiecare unealtă plutește peste poză. Muți paletele oriunde, pe verticală sau pe orizontală." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/ro/ipad/03-masks-480.webp" srcset="../assets/screenshots/ro/ipad/03-masks-480.webp 480w, ../assets/screenshots/ro/ipad/03-masks-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="Desenează masca așa cum vrei. Radială, liniară, pensulă sau dreptunghi. Adaugi, scazi, estompezi." loading="lazy" decoding="async"></li>
+    </ul>
+    <ul>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/ro/ipad/04-style-480.webp" srcset="../assets/screenshots/ro/ipad/04-style-480.webp 480w, ../assets/screenshots/ro/ipad/04-style-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="Dă-i un stil. Stiluri film, alb-negru, vintage, noir, grunge și retro." loading="lazy" decoding="async"></li>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/ro/ipad/05-frame-300.webp" srcset="../assets/screenshots/ro/ipad/05-frame-300.webp 300w, ../assets/screenshots/ro/ipad/05-frame-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="Decupezi, îndrepți, încadrezi. Opt chenare, de la o linie fină la marginea de film." loading="lazy" decoding="async"></li>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/ro/ipad/06-save-300.webp" srcset="../assets/screenshots/ro/ipad/06-save-300.webp 300w, ../assets/screenshots/ro/ipad/06-save-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="Salvezi în Poze. Anulezi oricând. Modificările rămân reversibile și nimic nu părăsește iPad-ul." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/ro/ipad/07-options-480.webp" srcset="../assets/screenshots/ro/ipad/07-options-480.webp 480w, ../assets/screenshots/ro/ipad/07-options-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="Editorul, pe gustul tău. Salvezi presetări și păstrezi doar pașii pe care îi folosești, în ordinea ta." loading="lazy" decoding="async"></li>
+    </ul>
+  </div>
+  <div class="device-panel device-mac" role="group" tabindex="0" aria-labelledby="screenshots tab-mac">
+    <ul>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/ro/mac/01-select-480.webp" srcset="../assets/screenshots/ro/mac/01-select-480.webp 480w, ../assets/screenshots/ro/mac/01-select-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Editezi doar ce selectezi. Măști pentru fotografii RAW pe Mac." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/ro/mac/02-detect-480.webp" srcset="../assets/screenshots/ro/mac/02-detect-480.webp 480w, ../assets/screenshots/ro/mac/02-detect-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Subiectul, găsit automat. Măști automate pentru mașini, oameni și animale, detectate pe Mac." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/ro/mac/03-frame-480.webp" srcset="../assets/screenshots/ro/mac/03-frame-480.webp 480w, ../assets/screenshots/ro/mac/03-frame-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Decupezi, îndrepți, încadrezi. Opt chenare, de la o linie fină la marginea de film." loading="lazy" decoding="async"></li>
+    </ul>
+    <ul>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/ro/mac/04-save-480.webp" srcset="../assets/screenshots/ro/mac/04-save-480.webp 480w, ../assets/screenshots/ro/mac/04-save-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Salvezi în Poze. Anulezi oricând. Modificările rămân reversibile și nimic nu părăsește Mac-ul." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/ro/mac/05-steps-480.webp" srcset="../assets/screenshots/ro/mac/05-steps-480.webp 480w, ../assets/screenshots/ro/mac/05-steps-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Editorul, pe gustul tău. Salvezi presetări și păstrezi doar pașii pe care îi folosești, în ordinea ta." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/ro/mac/06-detection-480.webp" srcset="../assets/screenshots/ro/mac/06-detection-480.webp 480w, ../assets/screenshots/ro/mac/06-detection-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="Reglezi ce detectează. Setezi încrederea, marginea măștii și numărul de obiecte. Totul rulează pe Mac." loading="lazy" decoding="async"></li>
+    </ul>
+  </div>
+</section>
+<section class="capabilities whats-new">
+  <h2 id="whats-new">Noutăți în versiunea 1.2.0</h2>
+  <p>RawMask Studio funcționează acum pe iPad și pe Mac, nu doar pe iPhone. Este o singură aplicație gratuită pentru toate cele trei, iar fiecare editare are loc în continuare pe dispozitivul tău.</p>
+  <ul class="features sections">
+    <li>
+      <h3>Acum pe <span class="name">iPad</span></h3>
+      <p>Poza umple ecranul, iar instrumentele plutesc deasupra ei ca palete pe care le poți muta oriunde, în portret și peisaj.</p>
+    </li>
+    <li>
+      <h3>Acum pe <span class="name">Mac</span></h3>
+      <p>Pașii stau în bara de instrumente, iar inspectorul de lângă poză conține măștile și glisoarele. Mărește imaginea ca să verifici detaliile fine și exportă într-un fișier JPEG, HEIF sau TIFF.</p>
+    </li>
+    <li>
+      <h3>Pas nou: Ton</h3>
+      <p>O curbă de tonuri pentru zonele foarte luminoase, luminoase, întunecate și foarte întunecate, plus un contrast local clar în lumini, tonuri medii și umbre.</p>
+    </li>
+    <li>
+      <h3>Pas nou: Stil</h3>
+      <p>HDR, dramatism, strălucire, bloom, halație și aberație cromatică, plus look-urile Film, alb-negru, Vintage, Noir, Grunge și Retro.</p>
+    </li>
+    <li>
+      <h3>Culori HSL</h3>
+      <p>Nuanță, croma și luminozitate pentru opt game de culori, direct în pasul Culoare.</p>
+    </li>
+    <li>
+      <h3>Mai multe opțiuni de încadrare și efecte</h3>
+      <p>Perspectivă, umplerea marginilor și opt chenare la Încadrare, plus mărimea, forma și moliciunea vinietei la Efecte.</p>
+    </li>
+  </ul>
 </section>
 <section class="capabilities">
   <h2>Ce poți face</h2>
-  <p>Editează doar partea din fotografie pe care o alegi. RawMask Studio este un editor foto RAW construit în jurul măștilor: alege un subiect detectat automat sau desenează-ți propria mască, apoi modifică lumina, culoarea, detaliile și focalizarea doar în acea zonă, în timp ce restul imaginii rămâne neatins. Deschide fișiere RAW și ProRAW, dar și poze obișnuite JPEG și HEIC, iar toată editarea are loc direct pe iPhone.</p>
+  <p>Editează întreaga fotografie sau doar partea pe care o alegi. RawMask Studio este un editor foto RAW construit în jurul măștilor: alege un subiect detectat automat sau desenează-ți propria mască, apoi modifică lumina, culoarea, detaliile și focalizarea doar în acea zonă, în timp ce restul imaginii rămâne neatins. Deschide fișiere RAW și ProRAW, dar și poze obișnuite JPEG și HEIC, iar toată editarea are loc direct pe iPhone, iPad sau Mac.</p>
   <ul class="features sections">
     <li>
       <h3>Măști pentru editare selectivă</h3>
@@ -538,19 +674,21 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
     <li>
       <h3>Un flux de lucru clar, pas cu pas</h3>
       <ul>
-        <li>Încadrare: decupare, îndreptare, rotire, proporții și zoom</li>
+        <li>Încadrare: decupare, îndreptare, rotire, proporții, zoom și perspectivă, plus umplerea marginilor și chenare</li>
         <li>Lumină: expunere, contrast, zone luminoase, umbre, albe și negre</li>
-        <li>Culoare: temperatură, nuanță, vibranță și saturație</li>
+        <li>Ton: curbă de tonuri pentru zonele foarte luminoase, luminoase, întunecate și foarte întunecate, plus contrast local în lumini, tonuri medii și umbre</li>
+        <li>Culoare: temperatură, nuanță, vibranță și saturație, plus HSL (nuanță, croma și luminozitate) pentru opt game de culori</li>
         <li>Detalii: textură, claritate, eliminarea ceții, accentuare și reducerea zgomotului</li>
         <li>Focalizare: blur pe fundal, cu intensitate, interval, tranziție și efect bokeh</li>
-        <li>Efecte: vinietă, granulație și atenuare (fade)</li>
+        <li>Stil: HDR, dramatism, strălucire, bloom, halație și aberație cromatică, plus look-urile Film, alb-negru, Vintage, Noir, Grunge și Retro</li>
+        <li>Efecte: vinietă cu mărime, formă și moliciune, granulație și atenuare (fade)</li>
         <li>Reordonează sau ascunde pașii din opțiunile editorului, după cum îți place să lucrezi</li>
       </ul>
     </li>
     <li>
       <h3>Compară și refolosește</h3>
       <ul>
-        <li>Ține apăsat pentru a compara oricând imaginea înainte și după editare</li>
+        <li>Ține apăsat pentru a compara oricând imaginea înainte și după editare; pe Mac, ține apăsată tasta \</li>
         <li>Salvează reglajele aplicate întregii fotografii ca presetare și folosește-o pe o altă poză</li>
       </ul>
     </li>
@@ -559,7 +697,7 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
       <ul>
         <li>Salvarea editării în Poze este nedistructivă: originalul rămâne intact, iar editarea poate fi anulată oricând din Poze</li>
         <li>Salvează o copie pentru a păstra varianta editată ca fotografie nouă</li>
-        <li>Exportă în JPEG, HEIF sau TIFF din meniul de partajare</li>
+        <li>Exportă în JPEG, HEIF sau TIFF din meniul de partajare pe iPhone și iPad sau într-un fișier pe Mac</li>
       </ul>
     </li>
     <li>
@@ -567,18 +705,18 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
       <ul>
         <li>Fără cont, fără autentificare și fără reclame</li>
         <li>Editarea și detecția subiectelor rulează în întregime pe dispozitiv, așa că pozele tale nu sunt încărcate nicăieri</li>
-        <li>Gratuită, fără achiziții în aplicație</li>
+        <li>Gratuită pe iPhone, iPad și Mac, fără achiziții în aplicație</li>
       </ul>
     </li>
   </ul>
 </section>
 <section class="closing">
   <div class="closing-copy">
-  <p class="outro">Deschide o poză, alege o mască și scoate în evidență exact partea care contează.</p>
+  <p class="outro">Deschide o poză și editeaz-o în întregime sau alege o parte și scoate-o în evidență.</p>
   <p class="outro">Interfața aplicației este deocamdată în limba engleză.</p>
   </div>
   <div class="callout">
-    <p><strong>Cerințe:</strong> iPhone cu iOS 17 sau o versiune ulterioară.</p>
+    <p><strong>Cerințe:</strong> iPhone cu iOS 17 sau o versiune ulterioară, iPad cu iPadOS 17 sau o versiune ulterioară ori un Mac cu cip Apple și macOS 14 sau o versiune ulterioară.</p>
     <p class="muted">Ai întrebări sau probleme? Accesează <a href="support/">pagina de asistență</a>. Detalii despre modul în care aplicația gestionează fotografiile tale găsești în <a href="privacy/">politica de confidențialitate</a>.</p>
   </div>
 </section>

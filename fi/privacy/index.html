@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#081b16">
-<meta name="description" content="iPhonen RawMask Studio -sovelluksen tietosuojakäytäntö. Sovellus ei kerää mitään tietoja, ja kuvat muokataan iPhonessasi.">
+<meta name="description" content="iPhonen, iPadin ja Macin RawMask Studio -sovelluksen tietosuojakäytäntö. Sovellus ei kerää mitään tietoja, ja kuvat muokataan laitteellasi.">
 <meta name="apple-itunes-app" content="app-id=6814994539">
 <title>Tietosuojakäytäntö - RawMask Studio</title>
 <link rel="canonical" href="https://turmanauli.github.io/rawmask-studio/fi/privacy/">
@@ -64,7 +64,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RawMask Studio">
 <meta property="og:title" content="Tietosuojakäytäntö - RawMask Studio">
-<meta property="og:description" content="iPhonen RawMask Studio -sovelluksen tietosuojakäytäntö. Sovellus ei kerää mitään tietoja, ja kuvat muokataan iPhonessasi.">
+<meta property="og:description" content="iPhonen, iPadin ja Macin RawMask Studio -sovelluksen tietosuojakäytäntö. Sovellus ei kerää mitään tietoja, ja kuvat muokataan laitteellasi.">
 <meta property="og:url" content="https://turmanauli.github.io/rawmask-studio/fi/privacy/">
 <meta property="og:locale" content="fi_FI">
 <meta name="twitter:card" content="summary">
@@ -297,6 +297,9 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   .document .faq section { padding-block: 24px; }
 }
 
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.name { text-transform: none; }
+
 /* End site design */
 </style>
 </head>
@@ -373,11 +376,11 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
 <main class="wrap document">
   <h1>Tietosuojakäytäntö</h1>
-  <p class="meta">RawMask Studio iPhonelle. Voimaantulopäivä: 23. syyskuuta 2026.</p>
+  <p class="meta">RawMask Studio iPhonelle, iPadille ja Macille. Voimaantulopäivä: 26. syyskuuta 2026.</p>
   <p class="note">Tämä sivu on käännös <a href="../../privacy/">englanninkielisestä versiosta</a>. Jos versiot poikkeavat toisistaan, englanninkielinen versio on ratkaiseva.</p>
 
   <div class="callout">
-    <p><strong>Lyhyesti:</strong> RawMask Studio ei kerää mitään tietoja. Sovelluksessa ei ole tiliä, analytiikkaa, mainontaa eikä seurantaa. Kuvasi muokataan iPhonessasi, eikä sovellus koskaan lähetä kuviasi, muokkauksiasi tai mitään muita tietoja meille eikä kenellekään muulle.</p>
+    <p><strong>Lyhyesti:</strong> RawMask Studio ei kerää mitään tietoja. Sovelluksessa ei ole tiliä, analytiikkaa, mainontaa eikä seurantaa. Kuvasi muokataan iPhonessasi, iPadissasi tai Macissasi, eikä sovellus koskaan lähetä kuviasi, muokkauksiasi tai mitään muita tietoja meille eikä kenellekään muulle.</p>
   </div>
 
   <h2 id="who-we-are">Keitä olemme</h2>
@@ -386,12 +389,12 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   <h2 id="information-we-collect">Keräämämme tiedot</h2>
   <p>Ei mitään. RawMask Studio ei kerää, siirrä, myy eikä jaa henkilötietoja. Sovellus ei lähetä kuviasi, muokkauksiasi, maskejasi, esiasetuksiasi, asetuksiasi, laitetunnisteita, käyttötietoja eikä diagnostiikkatietoja meille eikä millekään kolmannelle osapuolelle, emmekä ylläpidä mitään palvelinta, joka vastaanottaisi tietoja sovelluksesta. Sovelluksessa ei ole kirjautumista eikä tiliä.</p>
 
-  <h2 id="on-device-processing">Käsittely tapahtuu iPhonessasi</h2>
+  <h2 id="on-device-processing">Käsittely tapahtuu laitteellasi</h2>
   <p>Kaikki kuvankäsittely tapahtuu laitteellasi. Tähän kuuluvat RAW-tiedostojen lukeminen, valo-, väri-, yksityiskohta-, tarkennus- ja tehostesäätöjen tekeminen, esikatselujen muodostaminen ja maskien luominen.</p>
-  <p>Automaattiset kohdemaskit luodaan kuvasegmentointimallilla (RF-DETR), joka sisältyy sovellukseen ja toimii iPhonessasi Applen Core ML:n avulla. Mallia ei ladata internetistä, eikä kuviasi lähetetä minnekään analysoitaviksi.</p>
+  <p>Automaattiset kohdemaskit luodaan kuvasegmentointimallilla (RF-DETR), joka sisältyy sovellukseen ja toimii iPhonessasi, iPadissasi tai Macissasi Applen Core ML:n avulla. Mallia ei ladata internetistä, eikä kuviasi lähetetä minnekään analysoitaviksi.</p>
 
   <h2 id="photos-access">Pääsy Kuvat-kirjastoosi</h2>
-  <p>RawMask Studio käyttää kuvien avaamiseen ja tallentamiseen Applen Kuvat-kirjastoa. iOS pyytää lupaasi, ennen kuin sovellus voi käyttää kirjastoasi. Voit sallia pääsyn koko kirjastoosi tai vain valitsemiisi kuviin, ja voit muuttaa tätä milloin tahansa kohdassa <span class="path">Asetukset &gt; Tietosuoja ja turvallisuus &gt; Kuvat &gt; RawMask Studio</span>.</p>
+  <p>RawMask Studio käyttää kuvien avaamiseen ja tallentamiseen Applen Kuvat-kirjastoa. iOS, iPadOS ja macOS pyytävät lupaasi, ennen kuin sovellus voi käyttää kirjastoasi. iPhonessa ja iPadissa voit sallia pääsyn koko kirjastoosi tai vain valitsemiisi kuviin. Macissa pääsy koskee koko kirjastoa. Voit muuttaa tätä milloin tahansa iPhonessa ja iPadissa kohdassa <span class="path">Asetukset &gt; Tietosuoja ja turvallisuus &gt; Kuvat &gt; RawMask Studio</span> tai Macissa kohdassa <span class="path">Järjestelmäasetukset &gt; Tietosuoja ja turvallisuus &gt; Kuvat</span>.</p>
   <h3>Mitä sovellus lukee</h3>
   <p>Vain kuvan, jonka valitset kuvanvalitsimessa, yhden kuvan kerrallaan. Muokatakseen kuvaa sovellus lukee sen kuvadatan ja muokkaamiseen tarvittavat tiedot, kuten kuvan mitat, kuvauspäivän, tiedostomuodon ja mahdollisen aiemman RawMask Studio -muokkauksen, joka on tallennettu kuvan yhteyteen. Sovellus ei selaa, skannaa eikä indeksoi muuta kirjastoasi.</p>
   <h3>Mitä sovellus tallentaa</h3>
@@ -401,23 +404,24 @@ html.no-tracking .document h3 { letter-spacing: normal; }
     <li><strong><span class="ui" lang="en">Save a copy to Photos</span></strong> lisää muokatun kuvan uutena kuvana. Alkuperäistä ei muuteta.</li>
   </ul>
   <h3>iCloud-kuvat</h3>
-  <p>Jos käytät iCloud-kuvia eikä valitsemasi kuvan täyden resoluution alkuperäistä ole tallennettu iPhoneesi, Applen Kuvat-ohjelmistokehys voi ladata sen iCloudista, jotta sitä voidaan muokata. Lisäksi iCloud-kuvat voi synkronoida tallentamasi kuvat Apple-asetustesi mukaisesti. Nämä siirrot tapahtuvat laitteesi ja oman iCloud-tilisi välillä, Apple hoitaa ne, ja niihin sovelletaan Applen tietosuojakäytäntöä. Meille ei lähetetä mitään.</p>
+  <p>Jos käytät iCloud-kuvia eikä valitsemasi kuvan täyden resoluution alkuperäistä ole tallennettu laitteeseesi, Applen Kuvat-ohjelmistokehys voi ladata sen iCloudista, jotta sitä voidaan muokata. Lisäksi iCloud-kuvat voi synkronoida tallentamasi kuvat Apple-asetustesi mukaisesti. Nämä siirrot tapahtuvat laitteesi ja oman iCloud-tilisi välillä, Apple hoitaa ne, ja niihin sovelletaan Applen tietosuojakäytäntöä. Meille ei lähetetä mitään.</p>
 
   <h2 id="export">Vieminen ja jakaminen</h2>
-  <p>Kun napautat <span class="ui" lang="en">Export photo</span>, sovellus luo pyytämäsi kuvatiedoston ja avaa iOS:n Jaa-valikon. Tiedosto menee vain sinne, minne itse päätät sen lähettää, esimerkiksi Tiedostoihin, Viesteihin tai toiseen sovellukseen, ja kyseinen kohde käsittelee sitä omien tietosuojakäytäntöjensä mukaisesti. Väliaikainen tiedosto, jonka sovellus luo vientiä varten, säilytetään sovelluksen yksityisessä tallennustilassa iPhonessasi, ja se poistetaan automaattisesti, kun sitä ei enää tarvita.</p>
+  <p>Kun valitset iPhonessa tai iPadissa <span class="ui" lang="en">Export photo</span>, sovellus luo pyytämäsi kuvatiedoston ja avaa Jaa-valikon. Tiedosto menee vain sinne, minne itse päätät sen lähettää, esimerkiksi Tiedostoihin, Viesteihin tai toiseen sovellukseen, ja kyseinen kohde käsittelee sitä omien tietosuojakäytäntöjensä mukaisesti. Väliaikainen tiedosto, jonka sovellus luo vientiä varten, säilytetään sovelluksen yksityisessä tallennustilassa, ja se poistetaan automaattisesti, kun sitä ei enää tarvita.</p>
+  <p>Macissa <span class="ui" lang="en">Export photo</span> avaa tallennusikkunan, ja tiedosto tallennetaan vain valitsemaasi paikkaan.</p>
 
   <h2 id="on-device-storage">Laitteellesi tallennettavat tiedot</h2>
-  <p>Jotta sovellus pysyisi sellaisena kuin sen jätit, se säilyttää pienen määrän tietoja omassa tallennustilassaan iPhonessasi:</p>
+  <p>Jotta sovellus pysyisi sellaisena kuin sen jätit, se säilyttää pienen määrän tietoja omassa tallennustilassaan laitteellasi:</p>
   <ul>
     <li>tallentamasi esiasetukset (niiden nimet ja säätöarvot),</li>
     <li>editorin asetukset, kuten näytettävät muokkausosiot, niiden järjestys ja ennen ja jälkeen -vertailun tyyli, sekä</li>
     <li>automaattisten maskien asetukset.</li>
   </ul>
-  <p>Nämä tiedot pysyvät laitteellasi, eikä niitä lähetetä meille. Voit poistaa esiasetuksen sovelluksessa milloin tahansa, ja sovelluksen poistaminen poistaa kaikki nämä tiedot. Muiden sovellustietojen tavoin ne voivat sisältyä tekemiisi iPhonen varmuuskopioihin iOS-asetustesi mukaisesti.</p>
+  <p>Nämä tiedot pysyvät laitteellasi, eikä niitä lähetetä meille. Voit poistaa esiasetuksen sovelluksessa milloin tahansa, ja sovelluksen poistaminen poistaa kaikki nämä tiedot. Muiden sovellustietojen tavoin ne voivat sisältyä tekemiisi iPhonen, iPadin tai Macin varmuuskopioihin asetustesi mukaisesti.</p>
 
   <h2 id="no-third-parties">Ei kolmansien osapuolten palveluita, analytiikkaa, mainontaa eikä seurantaa</h2>
   <p>RawMask Studio ei sisällä kolmansien osapuolten analytiikka-, mainonta-, kaatumisraportointi- eikä seurantaohjelmistoja. Se ei käytä mainostunnistetta eikä seuraa sinua muiden yritysten omistamissa sovelluksissa tai verkkosivustoilla.</p>
-  <p>Jos olet valinnut iOS:ssä, että analyysitietoja jaetaan apin kehittäjien kanssa (<span class="path">Asetukset &gt; Tietosuoja ja turvallisuus &gt; Analyysi ja parannukset</span>), Apple voi antaa meille kaatumisraportteja ja koostettuja käyttötilastoja muodossa, josta sinua ei voi tunnistaa. Tätä hallitsevat Apple ja omat asetuksesi, ei sovellus.</p>
+  <p>Jos olet valinnut, että analyysitietoja jaetaan apin kehittäjien kanssa (<span class="path">Asetukset &gt; Tietosuoja ja turvallisuus &gt; Analyysi ja parannukset</span> iPhonessa ja iPadissa tai <span class="path">Järjestelmäasetukset &gt; Tietosuoja ja turvallisuus &gt; Analyysi ja parannukset</span> Macissa), Apple voi antaa meille kaatumisraportteja ja koostettuja käyttötilastoja muodossa, josta sinua ei voi tunnistaa. Tätä hallitsevat Apple ja omat asetuksesi, ei sovellus.</p>
 
   <h2 id="purchases">Ostot</h2>
   <p>RawMask Studio on tällä hetkellä ilmainen. Jos tulevaisuudessa lisätään sovelluksen sisäisiä ostoja tai maksullisia ominaisuuksia, Apple käsittelee maksut App Storen kautta Applen ehtojen ja tietosuojakäytännön mukaisesti, emmekä saa maksutietojasi. Päivitämme tämän käytännön, ennen kuin mikään tällainen muutos tulee voimaan.</p>
@@ -426,7 +430,7 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   <p>RawMask Studio on yleiskäyttöinen kuvankäsittelysovellus, eikä sitä ole suunnattu erityisesti lapsille. Koska sovellus ei kerää henkilötietoja keneltäkään, se ei kerää henkilötietoja myöskään lapsilta.</p>
 
   <h2 id="your-choices">Valintasi</h2>
-  <p>Koska emme kerää emmekä säilytä sinusta mitään tietoja, meillä ei ole hallussamme henkilötietoja, joita voisi tarkastella, korjata, viedä tai poistaa. Päätösvalta säilyy sinulla omalla laitteellasi: voit muuttaa tai perua pääsyn Kuviin iOS:n Asetuksissa, poistaa esiasetuksia sovelluksessa, poistaa muokkauksia tai kopioita Kuvat-apissa sekä poistaa sovelluksen, jolloin myös sen paikalliset tiedot poistuvat.</p>
+  <p>Koska emme kerää emmekä säilytä sinusta mitään tietoja, meillä ei ole hallussamme henkilötietoja, joita voisi tarkastella, korjata, viedä tai poistaa. Päätösvalta säilyy sinulla omalla laitteellasi: voit muuttaa tai perua pääsyn Kuviin Asetuksissa (Macissa Järjestelmäasetuksissa), poistaa esiasetuksia sovelluksessa, poistaa muokkauksia tai kopioita Kuvat-apissa sekä poistaa sovelluksen, jolloin myös sen paikalliset tiedot poistuvat.</p>
 
   <h2 id="changes">Muutokset tähän käytäntöön</h2>
   <p>Jos sovelluksen tapa käsitellä tietoja muuttuu, esimerkiksi jos jokin tuleva ominaisuus edellyttää tietojen lähettämistä laitteeltasi, päivitämme tämän käytännön ja sovelluksen App Store -tietosuojatiedot ennen kyseisen version julkaisua ja muutamme tämän sivun yläosassa olevan voimaantulopäivän.</p>

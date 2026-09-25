@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#081b16">
-<meta name="description" content="RawMask Studio הוא עורך תמונות RAW ל-iPhone, עם מסכות אוטומטיות וידניות. הכול פועל ב-iPhone שלכם.">
+<meta name="description" content="RawMask Studio הוא עורך תמונות RAW ל-iPhone, ל-iPad ול-Mac, עם מסכות אוטומטיות וידניות. הכול פועל במכשיר שלכם.">
 <meta name="apple-itunes-app" content="app-id=6814994539">
 <title>RawMask Studio - עריכת תמונות RAW, מסכות, טשטוש</title>
 <link rel="canonical" href="https://turmanauli.github.io/rawmask-studio/he/">
@@ -64,7 +64,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RawMask Studio">
 <meta property="og:title" content="RawMask Studio - עריכת תמונות RAW, מסכות, טשטוש">
-<meta property="og:description" content="RawMask Studio הוא עורך תמונות RAW ל-iPhone, עם מסכות אוטומטיות וידניות. הכול פועל ב-iPhone שלכם.">
+<meta property="og:description" content="RawMask Studio הוא עורך תמונות RAW ל-iPhone, ל-iPad ול-Mac, עם מסכות אוטומטיות וידניות. הכול פועל במכשיר שלכם.">
 <meta property="og:url" content="https://turmanauli.github.io/rawmask-studio/he/">
 <meta property="og:locale" content="he_IL">
 <meta name="twitter:card" content="summary">
@@ -290,16 +290,18 @@ h1 {
   overflow-wrap: anywhere;
 }
 .capabilities > p { margin: 0; max-width: 690px; color: var(--muted); font-size: 17px; line-height: 1.75; }
+/* Masonry-style columns: each card goes under the previous one, so short cards fill the gaps. */
 .features.sections {
   grid-column: 1 / -1;
-  columns: auto;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 44px 40px;
+  display: block;
+  columns: 3;
+  column-gap: 40px;
   margin-top: 62px;
+  margin-bottom: -44px;
 }
 .features.sections > li {
-  margin: 0;
+  margin: 0 0 44px;
+  break-inside: avoid;
   padding: 24px 0 0;
   border: 0;
   border-top: 2px solid var(--border);
@@ -363,7 +365,8 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 .callout .muted { font-size: 15px; line-height: 1.8; }
 
 @media (max-width: 1100px) {
-  .features.sections { gap: 36px 28px; }
+  .features.sections { column-gap: 28px; margin-bottom: -36px; }
+  .features.sections > li { margin-bottom: 36px; }
   .closing { gap: 40px; }
 }
 
@@ -379,7 +382,8 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
   .capabilities { display: block; padding-top: 35px; }
   .capabilities > h2 { margin-bottom: 24px; font-size: 36px; }
   .capabilities > p { font-size: 16px; }
-  .features.sections { grid-template-columns: 1fr 1fr; margin-top: 36px; gap: 34px 24px; }
+  .features.sections { columns: 2; column-gap: 24px; margin-top: 36px; margin-bottom: -34px; }
+  .features.sections > li { margin-bottom: 34px; }
   .closing { margin-top: 44px; padding: 28px; grid-template-columns: 1fr; gap: 28px; }
   .outro { font-size: 30px; max-width: 25ch; }
 }
@@ -411,11 +415,83 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 
 @media (max-width: 480px) {
   .capabilities > h2 { font-size: 33px; }
-  .features.sections { grid-template-columns: 1fr; }
+  .features.sections { columns: 1; }
   .features h3 { font-size: 21px; }
   .features.sections ul { font-size: 16px; }
   .closing { padding: 28px 22px; }
   .outro { font-size: 28px; }
+}
+
+/* iPhone, iPad and Mac screenshot switch: radio buttons and labels, no script */
+.device-tabs {
+  display: flex;
+  gap: 4px;
+  width: fit-content;
+  margin: -6px auto 34px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.device-tabs label { position: relative; padding: 7px 18px; border-radius: 999px; color: var(--muted); font-size: 14px; font-weight: 500; cursor: pointer; }
+.device-tabs label:hover { color: var(--text); }
+/* The radio covers its label: clicks land on it and focusing it never scrolls. */
+.device-tabs input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.device-tabs label:has(input:checked) { color: var(--accent-ink); background: var(--accent); }
+.device-tabs label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 3px; }
+.device-panel { display: none; }
+.showcase:has(#device-ipad:checked) .device-iphone, .showcase:has(#device-mac:checked) .device-iphone { display: none; }
+.showcase:has(#device-ipad:checked) .device-ipad, .showcase:has(#device-mac:checked) .device-mac { display: block; }
+.device-panel:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 6px; }
+.device-panel ul { list-style: none; display: flex; align-items: flex-start; gap: 20px; margin: 0 0 20px; padding: 0; }
+.device-panel li { flex: var(--ar) 1 0%; min-width: 0; }
+.device-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, .16);
+}
+.device-mac img { border-radius: 10px; }
+/* The same reflection as the iPhone shots; rows leave room for it. */
+@supports (-webkit-box-reflect: below) {
+  .device-panel img { -webkit-box-reflect: below 6px linear-gradient(to bottom, transparent 86%, rgba(0, 0, 0, .18)); }
+  .device-panel ul { margin-bottom: 56px; }
+}
+
+/* New in this version: the capabilities layout with a short paragraph per item */
+.whats-new { margin-bottom: 80px; }
+.whats-new .features.sections p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.features h3 .name { text-transform: none; }
+
+@media (max-width: 900px) {
+  .device-panel ul { gap: 12px; margin-bottom: 12px; }
+  .whats-new { margin-bottom: 58px; }
+}
+
+@media (max-width: 660px) {
+  .device-tabs { margin-bottom: 24px; }
+  .showcase:has(#device-ipad:checked) .device-ipad, .showcase:has(#device-mac:checked) .device-mac { display: flex; }
+  .device-panel {
+    gap: 14px;
+    margin-inline: -22px;
+    padding: 0 22px 21px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 22px;
+    scrollbar-color: var(--border) var(--bg);
+  }
+  .device-panel ul { display: contents; }
+  .device-panel li { flex: none; scroll-snap-align: start; }
+  .device-ipad img { width: auto; height: 260px; }
+  .device-mac img { width: 300px; }
+  .device-panel img { box-shadow: none; }
+  .whats-new { margin-bottom: 43px; }
+}
+@supports (-webkit-box-reflect: below) {
+  @media (max-width: 900px) { .device-panel ul { margin-bottom: 44px; } }
+  @media (max-width: 660px) { .device-panel { padding-bottom: 60px; overflow-y: hidden; } }
 }
 
 /* End site design */
@@ -494,9 +570,9 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 
 <main class="wrap">
 <section class="hero">
-  <p class="eyebrow">עורך תמונות ל-iPhone</p>
+  <p class="eyebrow">עורך תמונות ל-iPhone, ל-iPad ול-Mac</p>
   <h1>RawMask Studio</h1>
-  <p class="lead">בחרו אובייקט שזוהה או ציירו מסכה, ואז כוונו אור, צבע, פרטים וטשטוש רק באזור הזה. תמיכה ב-RAW, ProRAW, JPEG ו-HEIC, וכל העריכה מתבצעת ישירות ב-iPhone שלכם.</p>
+  <p class="lead">בחרו אובייקט שזוהה או ציירו מסכה, ואז כוונו אור, צבע, פרטים וטשטוש רק באזור הזה. תמיכה ב-RAW, ProRAW, JPEG ו-HEIC, וכל העריכה מתבצעת ב-iPhone, ב-iPad או ב-Mac שלכם.</p>
   <div class="actions">
     <a class="badge" href="https://apps.apple.com/app/id6814994539"><img src="../assets/badges/he-il.svg" width="127.5" height="44" alt="להורדה ב-App Store"></a>
     <a class="button secondary" href="support/">קבלת תמיכה</a>
@@ -506,17 +582,77 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 </section>
 <section class="showcase">
   <h2 id="screenshots">צילומי מסך</h2>
-  <ul class="shots" tabindex="0" aria-labelledby="screenshots">
+  <div class="device-tabs" role="radiogroup" aria-labelledby="screenshots">
+    <label id="tab-iphone"><input type="radio" name="device" id="device-iphone" checked>iPhone</label>
+    <label id="tab-ipad"><input type="radio" name="device" id="device-ipad">iPad</label>
+    <label id="tab-mac"><input type="radio" name="device" id="device-mac">Mac</label>
+  </div>
+  <ul class="shots device-iphone" tabindex="0" aria-labelledby="screenshots tab-iphone">
     <li><img src="../assets/screenshots/he/01-select-300.webp" srcset="../assets/screenshots/he/01-select-300.webp 300w, ../assets/screenshots/he/01-select-600.webp 600w" sizes="200px" width="300" height="649" alt="ערכו רק את מה שבחרתם. מסכות לתמונות RAW ב-⁠iPhone." decoding="async"></li>
     <li><img src="../assets/screenshots/he/02-detect-300.webp" srcset="../assets/screenshots/he/02-detect-300.webp 300w, ../assets/screenshots/he/02-detect-600.webp 600w" sizes="200px" width="300" height="649" alt="האפליקציה מוצאת את האובייקט. זיהוי במכשיר עצמו יוצר עבורכם מסכות לאנשים, למכוניות ולבעלי חיים." decoding="async"></li>
     <li><img src="../assets/screenshots/he/03-masks-300.webp" srcset="../assets/screenshots/he/03-masks-300.webp 300w, ../assets/screenshots/he/03-masks-600.webp 600w" sizes="200px" width="300" height="649" alt="ציירו מסכה בכל דרך שתרצו. רדיאלית, ליניארית, במכחול או במלבן. ואז הוסיפו, החסירו או רככו קצוות." loading="lazy" decoding="async"></li>
     <li><img src="../assets/screenshots/he/04-adjust-300.webp" srcset="../assets/screenshots/he/04-adjust-300.webp 300w, ../assets/screenshots/he/04-adjust-600.webp 600w" sizes="200px" width="300" height="649" alt="כוונו אור וצבע בתוך המסכה. לכל מסכה חשיפה, צבע, פרטים ופוקוס משלה." loading="lazy" decoding="async"></li>
     <li><img src="../assets/screenshots/he/05-save-300.webp" srcset="../assets/screenshots/he/05-save-300.webp 300w, ../assets/screenshots/he/05-save-600.webp 600w" sizes="200px" width="300" height="649" alt="שמרו בתמונות. חזרו למקור בכל עת. העריכות נשארות הפיכות, ושום דבר לא יוצא מה-⁠iPhone שלכם." loading="lazy" decoding="async"></li>
   </ul>
+  <div class="device-panel device-ipad" role="group" tabindex="0" aria-labelledby="screenshots tab-ipad">
+    <ul>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/he/ipad/01-select-300.webp" srcset="../assets/screenshots/he/ipad/01-select-300.webp 300w, ../assets/screenshots/he/ipad/01-select-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="ערכו רק את מה שבחרתם. מסכות לתמונות RAW ב-⁠iPad." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/he/ipad/02-palettes-480.webp" srcset="../assets/screenshots/he/ipad/02-palettes-480.webp 480w, ../assets/screenshots/he/ipad/02-palettes-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="כל כלי מרחף מעל התמונה. גררו את הלוחות לכל מקום, לאורך ולרוחב." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/he/ipad/03-masks-480.webp" srcset="../assets/screenshots/he/ipad/03-masks-480.webp 480w, ../assets/screenshots/he/ipad/03-masks-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="ציירו מסכה בכל דרך שתרצו. רדיאלית, ליניארית, במכחול או במלבן. ואז הוסיפו, החסירו או רככו קצוות." loading="lazy" decoding="async"></li>
+    </ul>
+    <ul>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/he/ipad/04-style-480.webp" srcset="../assets/screenshots/he/ipad/04-style-480.webp 480w, ../assets/screenshots/he/ipad/04-style-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="תנו לתמונה מראה. סגנונות פילם, שחור-לבן, וינטג&#x27;, נואר, גראנג&#x27; ורטרו." loading="lazy" decoding="async"></li>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/he/ipad/05-frame-300.webp" srcset="../assets/screenshots/he/ipad/05-frame-300.webp 300w, ../assets/screenshots/he/ipad/05-frame-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="חתכו, יישרו ומסגרו. שמונה מסגרות, מקו דק ועד שולי פילם." loading="lazy" decoding="async"></li>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/he/ipad/06-save-300.webp" srcset="../assets/screenshots/he/ipad/06-save-300.webp 300w, ../assets/screenshots/he/ipad/06-save-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="שמרו בתמונות. חזרו למקור בכל עת. העריכות נשארות הפיכות, ושום דבר לא יוצא מה-⁠iPad שלכם." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/he/ipad/07-options-480.webp" srcset="../assets/screenshots/he/ipad/07-options-480.webp 480w, ../assets/screenshots/he/ipad/07-options-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="התאימו את העורך לעצמכם. שמרו פריסטים והשאירו רק את השלבים שאתם צריכים, בסדר שלכם." loading="lazy" decoding="async"></li>
+    </ul>
+  </div>
+  <div class="device-panel device-mac" role="group" tabindex="0" aria-labelledby="screenshots tab-mac">
+    <ul>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/he/mac/01-select-480.webp" srcset="../assets/screenshots/he/mac/01-select-480.webp 480w, ../assets/screenshots/he/mac/01-select-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="ערכו רק את מה שבחרתם. מסכות לתמונות RAW ב-⁠Mac." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/he/mac/02-detect-480.webp" srcset="../assets/screenshots/he/mac/02-detect-480.webp 480w, ../assets/screenshots/he/mac/02-detect-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="האפליקציה מוצאת את האובייקט. זיהוי במכשיר עצמו יוצר עבורכם מסכות לאנשים, למכוניות ולבעלי חיים." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/he/mac/03-frame-480.webp" srcset="../assets/screenshots/he/mac/03-frame-480.webp 480w, ../assets/screenshots/he/mac/03-frame-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="חתכו, יישרו ומסגרו. שמונה מסגרות, מקו דק ועד שולי פילם." loading="lazy" decoding="async"></li>
+    </ul>
+    <ul>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/he/mac/04-save-480.webp" srcset="../assets/screenshots/he/mac/04-save-480.webp 480w, ../assets/screenshots/he/mac/04-save-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="שמרו בתמונות. חזרו למקור בכל עת. העריכות נשארות הפיכות, ושום דבר לא יוצא מה-⁠Mac שלכם." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/he/mac/05-steps-480.webp" srcset="../assets/screenshots/he/mac/05-steps-480.webp 480w, ../assets/screenshots/he/mac/05-steps-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="התאימו את העורך לעצמכם. שמרו פריסטים והשאירו רק את השלבים שאתם צריכים, בסדר שלכם." loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/he/mac/06-detection-480.webp" srcset="../assets/screenshots/he/mac/06-detection-480.webp 480w, ../assets/screenshots/he/mac/06-detection-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="כוונו את הזיהוי. הגדירו רמת ביטחון, קצה מסכה ומספר אובייקטים. הכול רץ ב-⁠Mac שלכם." loading="lazy" decoding="async"></li>
+    </ul>
+  </div>
+</section>
+<section class="capabilities whats-new">
+  <h2 id="whats-new">חדש בגרסה 1.2.0</h2>
+  <p>RawMask Studio פועל עכשיו גם ב-iPad וב-Mac, בנוסף ל-iPhone. זו אפליקציה אחת בחינם לכל שלושת המכשירים, וכל עריכה עדיין מתבצעת במכשיר שלכם.</p>
+  <ul class="features sections">
+    <li>
+      <h3>עכשיו גם ב-<span class="name">iPad</span></h3>
+      <p>התמונה ממלאת את המסך, והכלים מרחפים מעליה כלוחות שאפשר לגרור לכל מקום, לאורך ולרוחב.</p>
+    </li>
+    <li>
+      <h3>עכשיו גם ב-<span class="name">Mac</span></h3>
+      <p>השלבים נמצאים בסרגל הכלים, והמפקח שליד התמונה מכיל את המסכות ואת המחוונים. הגדילו את התצוגה כדי לבדוק פרטים עדינים, וייצאו לקובץ JPEG, HEIF או TIFF.</p>
+    </li>
+    <li>
+      <h3>שלב חדש: טון (Tone)</h3>
+      <p>עקומת טונים לאזורים הבהירים מאוד, הבהירים, הכהים והכהים מאוד, וניגודיות מקומית באזורים הבהירים, בטונים האמצעיים ובצללים.</p>
+    </li>
+    <li>
+      <h3>שלב חדש: סגנון (Style)</h3>
+      <p>האפקטים HDR, Drama, Glow, Bloom, Halation ו-Aberration, וגם המראות Film, B&amp;W, Vintage, Noir, Grunge ו-Retro.</p>
+    </li>
+    <li>
+      <h3>צבע HSL</h3>
+      <p>גוון, כרומה ובהירות לשמונה טווחי צבע, ישירות בשלב הצבע (Color).</p>
+    </li>
+    <li>
+      <h3>עוד אפשרויות מסגור ואפקטים</h3>
+      <p>פרספקטיבה, מילוי שוליים ושמונה מסגרות בשלב המסגור (Frame), וגודל, צורה ורכות של הווינייט בשלב האפקטים (Effects).</p>
+    </li>
+  </ul>
 </section>
 <section class="capabilities">
   <h2>מה אפשר לעשות</h2>
-  <p>ערכו רק את החלק בתמונה שבחרתם. RawMask Studio הוא עורך תמונות RAW שבנוי סביב מסכות: בחרו אובייקט שזוהה או ציירו מסכה משלכם, ואז שנו את האור, הצבע, הפרטים והפוקוס רק באזור הזה, בזמן ששאר התמונה נשארת בדיוק כפי שהייתה. האפליקציה פותחת קובצי RAW ו-ProRAW וגם תמונות JPEG ו-HEIC רגילות, וכל עריכה מתבצעת ישירות ב-iPhone שלכם.</p>
+  <p>ערכו את התמונה כולה, או רק את החלק שבחרתם. RawMask Studio הוא עורך תמונות RAW שבנוי סביב מסכות: בחרו אובייקט שזוהה או ציירו מסכה משלכם, ואז שנו את האור, הצבע, הפרטים והפוקוס רק באזור הזה, בזמן ששאר התמונה נשארת בדיוק כפי שהייתה. האפליקציה פותחת קובצי RAW ו-ProRAW וגם תמונות JPEG ו-HEIC רגילות, וכל עריכה מתבצעת ישירות ב-iPhone, ב-iPad או ב-Mac שלכם.</p>
   <ul class="features sections">
     <li>
       <h3>מסכות לעריכה סלקטיבית</h3>
@@ -538,19 +674,21 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
     <li>
       <h3>תהליך עבודה ברור, שלב אחר שלב</h3>
       <ul>
-        <li>מסגור (Frame): חיתוך, יישור, סיבוב, יחסי גובה-רוחב וזום</li>
+        <li>מסגור (Frame): חיתוך, יישור, סיבוב, יחסי גובה-רוחב, זום ופרספקטיבה, וגם מילוי שוליים ומסגרות</li>
         <li>אור (Light): חשיפה, ניגודיות, אזורים בהירים, צללים, לבנים ושחורים</li>
-        <li>צבע (Color): טמפרטורה, גוון, חיוניות ורוויה</li>
+        <li>טון (Tone): עקומת טונים לאזורים הבהירים מאוד, הבהירים, הכהים והכהים מאוד, וניגודיות מקומית באזורים הבהירים, בטונים האמצעיים ובצללים</li>
+        <li>צבע (Color): טמפרטורה, גוון, חיוניות ורוויה, וגם HSL (גוון, כרומה ובהירות) לשמונה טווחי צבע</li>
         <li>פרטים (Detail): מרקם, צלילות, הסרת אובך, חדות והפחתת רעש</li>
         <li>פוקוס (Focus): טשטוש רקע עם עוצמה, טווח, ריכוך קצוות ובוקה</li>
-        <li>אפקטים (Effects): וינייט, גרעיניות ודהייה</li>
+        <li>סגנון (Style): HDR, Drama, Glow, Bloom, Halation ו-Aberration, וגם המראות Film, B&amp;W, Vintage, Noir, Grunge ו-Retro</li>
+        <li>אפקטים (Effects): וינייט עם גודל, צורה ורכות, גרעיניות ודהייה</li>
         <li>שנו את סדר השלבים או הסתירו שלבים ב-Editor options, כדי שתהליך העבודה יתאים לדרך שבה אתם עובדים</li>
       </ul>
     </li>
     <li>
       <h3>השוואה ושימוש חוזר</h3>
       <ul>
-        <li>Hold to Compare: החזיקו לחוץ כדי להשוות בין לפני ואחרי בכל רגע</li>
+        <li>Hold to Compare: החזיקו לחוץ כדי להשוות בין לפני ואחרי בכל רגע; ב-Mac, החזיקו את המקש \</li>
         <li>שמרו את ההתאמות של התמונה כולה כ-Preset והחילו אותן על תמונה אחרת</li>
       </ul>
     </li>
@@ -559,7 +697,7 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
       <ul>
         <li>Save edit to Photos היא שמירה לא הרסנית: התמונה המקורית נשארת כמו שהיא, ואפשר לבטל את העריכה ביישום תמונות בכל עת</li>
         <li>Save a copy to Photos שומר את הגרסה הערוכה כתמונה חדשה</li>
-        <li>ייצאו בפורמט JPEG, HEIF או TIFF דרך גיליון השיתוף</li>
+        <li>ייצאו בפורמט JPEG, HEIF או TIFF דרך גיליון השיתוף ב-iPhone וב-iPad, או לקובץ ב-Mac</li>
       </ul>
     </li>
     <li>
@@ -567,7 +705,7 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
       <ul>
         <li>בלי חשבון, בלי התחברות ובלי פרסומות</li>
         <li>העריכה וזיהוי האובייקטים פועלים במכשיר בלבד, כך שהתמונות שלכם אף פעם לא מועלות לשום מקום</li>
-        <li>חינם, בלי רכישות בתוך האפליקציה</li>
+        <li>חינם ב-iPhone, ב-iPad וב-Mac, בלי רכישות בתוך האפליקציה</li>
       </ul>
     </li>
   </ul>
@@ -575,10 +713,10 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 <section class="closing">
   <div class="closing-copy">
   <p class="outro">ממשק האפליקציה זמין כרגע באנגלית, ולכן שמות הכלים מופיעים כאן גם באנגלית, בדיוק כפי שהם מופיעים באפליקציה.</p>
-  <p class="outro">פתחו תמונה, בחרו מסכה ותנו לחלק אחד בתמונה לבלוט.</p>
+  <p class="outro">פתחו תמונה וערכו את כולה, או בחרו חלק אחד ותנו לו לבלוט.</p>
   </div>
   <div class="callout">
-    <p><strong>דרישות:</strong> iPhone עם iOS 17 ואילך.</p>
+    <p><strong>דרישות:</strong> iPhone עם iOS 17 ואילך, iPad עם iPadOS 17 ואילך, או Mac עם שבב Apple ו-macOS 14 ואילך.</p>
     <p class="muted">יש לכם שאלות או בעיות? בקרו ב<a href="support/">דף התמיכה</a>. פרטים על האופן שבו האפליקציה מטפלת בתמונות שלכם מופיעים ב<a href="privacy/">מדיניות הפרטיות</a>.</p>
   </div>
 </section>

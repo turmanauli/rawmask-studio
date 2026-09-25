@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#081b16">
-<meta name="description" content="iPhone用RawMask Studioのプライバシーポリシー。本アプリはデータを一切収集せず、写真はiPhone上で編集されます。">
+<meta name="description" content="iPhone、iPad、Mac用RawMask Studioのプライバシーポリシー。本アプリはデータを一切収集せず、写真はデバイス上で編集されます。">
 <meta name="apple-itunes-app" content="app-id=6814994539">
 <title>プライバシーポリシー - RawMask Studio</title>
 <link rel="canonical" href="https://turmanauli.github.io/rawmask-studio/ja/privacy/">
@@ -64,7 +64,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RawMask Studio">
 <meta property="og:title" content="プライバシーポリシー - RawMask Studio">
-<meta property="og:description" content="iPhone用RawMask Studioのプライバシーポリシー。本アプリはデータを一切収集せず、写真はiPhone上で編集されます。">
+<meta property="og:description" content="iPhone、iPad、Mac用RawMask Studioのプライバシーポリシー。本アプリはデータを一切収集せず、写真はデバイス上で編集されます。">
 <meta property="og:url" content="https://turmanauli.github.io/rawmask-studio/ja/privacy/">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary">
@@ -297,6 +297,9 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   .document .faq section { padding-block: 24px; }
 }
 
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.name { text-transform: none; }
+
 /* End site design */
 </style>
 </head>
@@ -373,11 +376,11 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
 <main class="wrap document">
   <h1>プライバシーポリシー</h1>
-  <p class="meta">iPhone用RawMask Studio。施行日：2026年9月23日。</p>
+  <p class="meta">iPhone、iPad、Mac用RawMask Studio。施行日：2026年9月26日。</p>
   <p class="note">このページは<a href="../../privacy/">英語版</a>を翻訳したものです。両者の内容に相違がある場合は、英語版が優先されます。</p>
 
   <div class="callout">
-    <p><strong>要約：</strong>RawMask Studioはデータを一切収集しません。アカウント、アナリティクス、広告、トラッキングはいずれもありません。写真はiPhone上で編集され、アプリが写真、編集内容、その他の情報を当方やほかの誰かに送信することは決してありません。</p>
+    <p><strong>要約：</strong>RawMask Studioはデータを一切収集しません。アカウント、アナリティクス、広告、トラッキングはいずれもありません。写真はiPhone、iPad、Mac上で編集され、アプリが写真、編集内容、その他の情報を当方やほかの誰かに送信することは決してありません。</p>
   </div>
 
   <h2 id="who-we-are">開発者について</h2>
@@ -386,12 +389,12 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   <h2 id="information-we-collect">収集する情報</h2>
   <p>ありません。RawMask Studioは、個人情報を収集、送信、販売、共有することはありません。アプリが写真、編集内容、マスク、プリセット、設定、デバイス識別子、使用状況データ、診断データを、当方にもいかなる第三者にも送信することはありません。また、当方はアプリからデータを受信するサーバーを一切運用していません。サインインもアカウントもありません。</p>
 
-  <h2 id="on-device-processing">処理はiPhone上で行われます</h2>
+  <h2 id="on-device-processing">処理はデバイス上で行われます</h2>
   <p>写真の処理はすべてデバイス上で行われます。これには、RAWファイルの読み込み、ライト・カラー・ディテール・フォーカス・エフェクトの各調整の適用、プレビューのレンダリング、マスクの作成が含まれます。</p>
-  <p>被写体の自動マスクは、アプリに内蔵された画像セグメンテーションモデル（RF-DETR）によって作成されます。このモデルは、AppleのCore MLを使ってiPhone上で動作します。モデルがインターネットからダウンロードされることはなく、写真が解析のためにどこかへ送信されることもありません。</p>
+  <p>被写体の自動マスクは、アプリに内蔵された画像セグメンテーションモデル（RF-DETR）によって作成されます。このモデルは、AppleのCore MLを使ってiPhone、iPad、Mac上で動作します。モデルがインターネットからダウンロードされることはなく、写真が解析のためにどこかへ送信されることもありません。</p>
 
   <h2 id="photos-access">写真ライブラリへのアクセス</h2>
-  <p>RawMask Studioは、画像を開いたり保存したりするためにAppleの「写真」を使用します。アプリがライブラリにアクセスする前に、iOSがユーザーに許可を求めます。ライブラリ全体へのアクセスを許可することも、選択した写真だけへのアクセスを許可することもでき、この選択は<span class="path">設定 &gt; プライバシーとセキュリティ &gt; 写真 &gt; RawMask Studio</span>でいつでも変更できます。</p>
+  <p>RawMask Studioは、画像を開いたり保存したりするためにAppleの「写真」を使用します。アプリがライブラリにアクセスする前に、iOS、iPadOS、macOSがユーザーに許可を求めます。iPhoneとiPadでは、ライブラリ全体へのアクセスを許可することも、選択した写真だけへのアクセスを許可することもできます。Macでは、アクセスはライブラリ全体が対象になります。この選択は、iPhoneとiPadでは<span class="path">設定 &gt; プライバシーとセキュリティ &gt; 写真 &gt; RawMask Studio</span>、Macでは<span class="path">システム設定 &gt; プライバシーとセキュリティ &gt; 写真</span>でいつでも変更できます。</p>
   <h3>アプリが読み取る情報</h3>
   <p>写真ピッカーで選択した写真だけを、一度に1枚ずつ読み取ります。編集のために、アプリはその写真の画像データと、編集に必要な情報（画像サイズ、撮影日、ファイル形式、その写真とともに保存された以前のRawMask Studioでの編集内容など）を読み取ります。アプリがライブラリのほかの部分を閲覧、スキャン、インデックス化することはありません。</p>
   <h3>アプリが書き込む情報</h3>
@@ -401,23 +404,24 @@ html.no-tracking .document h3 { letter-spacing: normal; }
     <li><strong><span class="ui" lang="en">Save a copy to Photos</span></strong>は、編集した画像を新しい写真として追加します。オリジナルは変更されません。</li>
   </ul>
   <h3>iCloud写真</h3>
-  <p>iCloud写真を使用していて、選択した写真のフル解像度のオリジナルがiPhoneに保存されていない場合、編集できるようにするため、Appleの写真フレームワークがiCloudからオリジナルをダウンロードすることがあります。また、保存した写真は、ご自身のAppleの設定に従ってiCloud写真で同期されることがあります。これらの転送はデバイスとご自身のiCloudアカウントとの間で行われ、Appleによって処理され、Appleのプライバシーポリシーの対象となります。当方には何も送信されません。</p>
+  <p>iCloud写真を使用していて、選択した写真のフル解像度のオリジナルがデバイスに保存されていない場合、編集できるようにするため、Appleの写真フレームワークがiCloudからオリジナルをダウンロードすることがあります。また、保存した写真は、ご自身のAppleの設定に従ってiCloud写真で同期されることがあります。これらの転送はデバイスとご自身のiCloudアカウントとの間で行われ、Appleによって処理され、Appleのプライバシーポリシーの対象となります。当方には何も送信されません。</p>
 
   <h2 id="export">書き出しと共有</h2>
-  <p>「<span class="ui" lang="en">Export photo</span>」をタップすると、アプリはユーザーが指定した画像ファイルを作成し、iOSの共有シートを開きます。ファイルは、「ファイル」、「メッセージ」、その他のアプリなど、ユーザーが送信先として選んだ場所にのみ送られ、その送信先が独自のプライバシー方針に従ってファイルを取り扱います。書き出しのためにアプリが作成する一時ファイルは、iPhone上のアプリ専用のプライベートなストレージに保存され、不要になると自動的に削除されます。</p>
+  <p>iPhoneまたはiPadで「<span class="ui" lang="en">Export photo</span>」を選択すると、アプリはユーザーが指定した画像ファイルを作成し、共有シートを開きます。ファイルは、「ファイル」、「メッセージ」、その他のアプリなど、ユーザーが送信先として選んだ場所にのみ送られ、その送信先が独自のプライバシー方針に従ってファイルを取り扱います。書き出しのためにアプリが作成する一時ファイルは、アプリ専用のプライベートなストレージに保存され、不要になると自動的に削除されます。</p>
+  <p>Macでは、「<span class="ui" lang="en">Export photo</span>」を選択すると保存パネルが開き、ファイルはユーザーが選んだ場所にのみ書き込まれます。</p>
 
   <h2 id="on-device-storage">デバイスに保存される情報</h2>
-  <p>前回使ったときの状態でアプリを使えるように、アプリはiPhone上の専用のストレージに少量の情報を保存します：</p>
+  <p>前回使ったときの状態でアプリを使えるように、アプリはデバイス上の専用のストレージに少量の情報を保存します：</p>
   <ul>
     <li>保存したプリセット（名前と調整値）</li>
     <li>エディターの環境設定（表示する編集セクション、その並び順、編集前と編集後の比較スタイルなど）</li>
     <li>自動マスクの設定</li>
   </ul>
-  <p>これらの情報はデバイス上にとどまり、当方に送信されることはありません。プリセットはアプリ内でいつでも削除でき、アプリを削除するとこれらの情報はすべて削除されます。ほかのアプリデータと同様に、iOSの設定に応じて、ご自身で作成したiPhoneのバックアップに含まれる場合があります。</p>
+  <p>これらの情報はデバイス上にとどまり、当方に送信されることはありません。プリセットはアプリ内でいつでも削除でき、アプリを削除するとこれらの情報はすべて削除されます。ほかのアプリデータと同様に、設定に応じて、ご自身で作成したiPhone、iPad、Macのバックアップに含まれる場合があります。</p>
 
   <h2 id="no-third-parties">第三者のサービス、アナリティクス、広告、トラッキングはありません</h2>
   <p>RawMask Studioには、第三者によるアナリティクス、広告、クラッシュレポート、トラッキングのソフトウェアは含まれていません。広告識別子は使用せず、他社が所有するアプリやWebサイトを横断してユーザーをトラッキングすることもありません。</p>
-  <p>iOSで解析データをAppデベロッパと共有することを選択している場合（<span class="path">設定 &gt; プライバシーとセキュリティ &gt; 解析および改善</span>）、Appleが、個人を特定しない形式で、クラッシュレポートや集計された使用状況の統計を当方に提供することがあります。これはアプリが制御するものではなく、Appleが管理し、ユーザーの設定によって決まります。</p>
+  <p>解析データをAppデベロッパと共有することを選択している場合（iPhoneとiPadでは<span class="path">設定 &gt; プライバシーとセキュリティ &gt; 解析および改善</span>、Macでは<span class="path">システム設定 &gt; プライバシーとセキュリティ &gt; 解析および改善</span>）、Appleが、個人を特定しない形式で、クラッシュレポートや集計された使用状況の統計を当方に提供することがあります。これはアプリが制御するものではなく、Appleが管理し、ユーザーの設定によって決まります。</p>
 
   <h2 id="purchases">購入</h2>
   <p>RawMask Studioは現在無料です。将来、アプリ内課金や有料機能が追加された場合、支払いはAppleの規約とプライバシーポリシーに基づき、App Storeを通じてAppleによって処理され、当方がユーザーの支払い情報を受け取ることはありません。そのような変更が有効になる前に、当方は本ポリシーを更新します。</p>
@@ -426,7 +430,7 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   <p>RawMask Studioは一般向けの写真編集アプリであり、特にお子様を対象としたものではありません。本アプリは誰からも個人情報を収集しないため、お子様から個人情報を収集することもありません。</p>
 
   <h2 id="your-choices">ユーザーの選択肢</h2>
-  <p>当方はユーザーに関するデータを収集も保持もしていないため、当方の側には、アクセス、訂正、エクスポート、削除の対象となる個人データは存在しません。管理はご自身のデバイス上で、ご自身の手で行えます。iOSの「設定」で写真へのアクセスを変更または取り消したり、アプリ内でプリセットを削除したり、「写真」アプリで編集内容やコピーを削除したり、アプリを削除してそのローカルデータを消去したりできます。</p>
+  <p>当方はユーザーに関するデータを収集も保持もしていないため、当方の側には、アクセス、訂正、エクスポート、削除の対象となる個人データは存在しません。管理はご自身のデバイス上で、ご自身の手で行えます。「設定」（Macでは「システム設定」）で写真へのアクセスを変更または取り消したり、アプリ内でプリセットを削除したり、「写真」アプリで編集内容やコピーを削除したり、アプリを削除してそのローカルデータを消去したりできます。</p>
 
   <h2 id="changes">本ポリシーの変更</h2>
   <p>アプリにおける情報の取り扱いが変わる場合（たとえば、将来の機能でデバイスの外にデータを送信する必要が生じる場合）、当方はそのバージョンをリリースする前に本ポリシーとApp Storeに掲載しているアプリのプライバシー情報を更新し、このページ上部の施行日を変更します。</p>

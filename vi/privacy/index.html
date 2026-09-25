@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#081b16">
-<meta name="description" content="Chính sách quyền riêng tư của RawMask Studio dành cho iPhone. Ứng dụng không thu thập bất kỳ dữ liệu nào; ảnh được chỉnh sửa ngay trên iPhone của bạn.">
+<meta name="description" content="Chính sách quyền riêng tư của RawMask Studio dành cho iPhone, iPad và Mac. Ứng dụng không thu thập bất kỳ dữ liệu nào; ảnh được chỉnh sửa ngay trên thiết bị của bạn.">
 <meta name="apple-itunes-app" content="app-id=6814994539">
 <title>Chính sách quyền riêng tư - RawMask Studio</title>
 <link rel="canonical" href="https://turmanauli.github.io/rawmask-studio/vi/privacy/">
@@ -64,7 +64,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RawMask Studio">
 <meta property="og:title" content="Chính sách quyền riêng tư - RawMask Studio">
-<meta property="og:description" content="Chính sách quyền riêng tư của RawMask Studio dành cho iPhone. Ứng dụng không thu thập bất kỳ dữ liệu nào; ảnh được chỉnh sửa ngay trên iPhone của bạn.">
+<meta property="og:description" content="Chính sách quyền riêng tư của RawMask Studio dành cho iPhone, iPad và Mac. Ứng dụng không thu thập bất kỳ dữ liệu nào; ảnh được chỉnh sửa ngay trên thiết bị của bạn.">
 <meta property="og:url" content="https://turmanauli.github.io/rawmask-studio/vi/privacy/">
 <meta property="og:locale" content="vi_VN">
 <meta name="twitter:card" content="summary">
@@ -297,6 +297,9 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   .document .faq section { padding-block: 24px; }
 }
 
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.name { text-transform: none; }
+
 /* End site design */
 </style>
 </head>
@@ -373,11 +376,11 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
 <main class="wrap document">
   <h1>Chính sách quyền riêng tư</h1>
-  <p class="meta">RawMask Studio dành cho iPhone. Ngày có hiệu lực: 23 tháng 9 năm 2026.</p>
+  <p class="meta">RawMask Studio dành cho iPhone, iPad và Mac. Ngày có hiệu lực: 26 tháng 9 năm 2026.</p>
   <p class="note">Trang này là bản dịch của <a href="../../privacy/">phiên bản tiếng Anh</a>. Trong trường hợp có sự khác biệt giữa hai phiên bản, phiên bản tiếng Anh sẽ được ưu tiên áp dụng.</p>
 
   <div class="callout">
-    <p><strong>Tóm tắt:</strong> RawMask Studio không thu thập bất kỳ dữ liệu nào. Không có tài khoản, không có công cụ phân tích, không có quảng cáo và không theo dõi. Ảnh của bạn được chỉnh sửa trên iPhone của bạn, và ứng dụng không bao giờ gửi ảnh, bản chỉnh sửa hay bất kỳ thông tin nào khác của bạn cho chúng tôi hoặc cho bất kỳ ai khác.</p>
+    <p><strong>Tóm tắt:</strong> RawMask Studio không thu thập bất kỳ dữ liệu nào. Không có tài khoản, không có công cụ phân tích, không có quảng cáo và không theo dõi. Ảnh của bạn được chỉnh sửa trên iPhone, iPad hoặc Mac của bạn, và ứng dụng không bao giờ gửi ảnh, bản chỉnh sửa hay bất kỳ thông tin nào khác của bạn cho chúng tôi hoặc cho bất kỳ ai khác.</p>
   </div>
 
   <h2 id="who-we-are">Chúng tôi là ai</h2>
@@ -386,12 +389,12 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   <h2 id="information-we-collect">Thông tin chúng tôi thu thập</h2>
   <p>Không có. RawMask Studio không thu thập, truyền, bán hoặc chia sẻ thông tin cá nhân. Ứng dụng không gửi ảnh, bản chỉnh sửa, mặt nạ, preset, cài đặt, mã định danh thiết bị, dữ liệu sử dụng hay dữ liệu chẩn đoán của bạn cho chúng tôi hoặc cho bất kỳ bên thứ ba nào, và chúng tôi không vận hành bất kỳ máy chủ nào nhận dữ liệu từ ứng dụng. Ứng dụng không có chức năng đăng nhập và không có tài khoản.</p>
 
-  <h2 id="on-device-processing">Việc xử lý diễn ra trên iPhone của bạn</h2>
+  <h2 id="on-device-processing">Việc xử lý diễn ra trên thiết bị của bạn</h2>
   <p>Toàn bộ quá trình xử lý ảnh đều diễn ra trên thiết bị của bạn. Việc này bao gồm đọc tệp RAW, áp dụng các điều chỉnh về ánh sáng, màu sắc, chi tiết, lấy nét và hiệu ứng, kết xuất bản xem trước và tạo mặt nạ.</p>
-  <p>Mặt nạ đối tượng tự động được tạo bởi một mô hình phân đoạn ảnh (RF-DETR) được tích hợp sẵn trong ứng dụng và chạy trên iPhone của bạn bằng Core ML của Apple. Mô hình này không được tải về từ internet, và ảnh của bạn không bị gửi đi bất cứ đâu để phân tích.</p>
+  <p>Mặt nạ đối tượng tự động được tạo bởi một mô hình phân đoạn ảnh (RF-DETR) được tích hợp sẵn trong ứng dụng và chạy trên iPhone, iPad hoặc Mac của bạn bằng Core ML của Apple. Mô hình này không được tải về từ internet, và ảnh của bạn không bị gửi đi bất cứ đâu để phân tích.</p>
 
   <h2 id="photos-access">Quyền truy cập thư viện Ảnh của bạn</h2>
-  <p>RawMask Studio dùng thư viện Ảnh của Apple để mở và lưu hình ảnh. iOS sẽ xin phép bạn trước khi ứng dụng có thể truy cập thư viện của bạn. Bạn có thể cho phép truy cập toàn bộ thư viện hoặc chỉ những ảnh bạn chọn, và có thể thay đổi lựa chọn này bất cứ lúc nào trong <span class="path">Cài đặt &gt; Quyền riêng tư &amp; Bảo mật &gt; Ảnh &gt; RawMask Studio</span>.</p>
+  <p>RawMask Studio dùng thư viện Ảnh của Apple để mở và lưu hình ảnh. iOS, iPadOS và macOS sẽ xin phép bạn trước khi ứng dụng có thể truy cập thư viện của bạn. Trên iPhone và iPad, bạn có thể cho phép truy cập toàn bộ thư viện hoặc chỉ những ảnh bạn chọn; trên Mac, quyền truy cập áp dụng cho toàn bộ thư viện. Bạn có thể thay đổi lựa chọn này bất cứ lúc nào trong <span class="path">Cài đặt &gt; Quyền riêng tư &amp; Bảo mật &gt; Ảnh &gt; RawMask Studio</span> trên iPhone và iPad, hoặc trong <span class="path">Cài đặt hệ thống &gt; Quyền riêng tư &amp; Bảo mật &gt; Ảnh</span> trên Mac.</p>
   <h3>Những gì ứng dụng đọc</h3>
   <p>Chỉ bức ảnh bạn chọn trong trình chọn ảnh, mỗi lần một ảnh. Để chỉnh sửa ảnh đó, ứng dụng đọc dữ liệu hình ảnh của ảnh đó và các thông tin cần thiết cho việc chỉnh sửa, chẳng hạn như kích thước, ngày chụp, định dạng tệp và mọi bản chỉnh sửa trước đó bằng RawMask Studio được lưu cùng ảnh. Ứng dụng không duyệt, quét hay lập chỉ mục phần còn lại trong thư viện của bạn.</p>
   <h3>Những gì ứng dụng ghi</h3>
@@ -401,23 +404,24 @@ html.no-tracking .document h3 { letter-spacing: normal; }
     <li><strong><span class="ui" lang="en">Save a copy to Photos</span></strong> thêm ảnh đã chỉnh sửa thành một ảnh mới. Bản gốc không bị thay đổi.</li>
   </ul>
   <h3>Ảnh iCloud</h3>
-  <p>Nếu bạn dùng Ảnh iCloud và bản gốc có độ phân giải đầy đủ của bức ảnh bạn chọn không được lưu trên iPhone của bạn, framework Photos của Apple có thể tải bản gốc đó về từ iCloud để ảnh có thể được chỉnh sửa. Những ảnh bạn lưu cũng có thể được Ảnh iCloud đồng bộ hóa theo cài đặt Apple của bạn. Các hoạt động truyền dữ liệu này diễn ra giữa thiết bị của bạn và tài khoản iCloud của chính bạn, do Apple xử lý và thuộc phạm vi điều chỉnh của chính sách quyền riêng tư của Apple. Không có gì được gửi cho chúng tôi.</p>
+  <p>Nếu bạn dùng Ảnh iCloud và bản gốc có độ phân giải đầy đủ của bức ảnh bạn chọn không được lưu trên thiết bị của bạn, framework Photos của Apple có thể tải bản gốc đó về từ iCloud để ảnh có thể được chỉnh sửa. Những ảnh bạn lưu cũng có thể được Ảnh iCloud đồng bộ hóa theo cài đặt Apple của bạn. Các hoạt động truyền dữ liệu này diễn ra giữa thiết bị của bạn và tài khoản iCloud của chính bạn, do Apple xử lý và thuộc phạm vi điều chỉnh của chính sách quyền riêng tư của Apple. Không có gì được gửi cho chúng tôi.</p>
 
   <h2 id="export">Xuất và chia sẻ</h2>
-  <p>Khi bạn chạm vào <span class="ui" lang="en">Export photo</span>, ứng dụng tạo tệp ảnh theo yêu cầu của bạn và mở bảng chia sẻ của iOS. Tệp chỉ được gửi đến nơi bạn chọn, chẳng hạn như ứng dụng Tệp, Tin nhắn hoặc một ứng dụng khác, và nơi nhận đó sẽ xử lý tệp theo cách thức bảo vệ quyền riêng tư của riêng mình. Tệp tạm thời mà ứng dụng tạo ra để xuất được lưu trong bộ nhớ riêng của ứng dụng trên iPhone của bạn và sẽ tự động bị xóa khi không còn cần thiết.</p>
+  <p>Khi bạn chọn <span class="ui" lang="en">Export photo</span> trên iPhone hoặc iPad, ứng dụng tạo tệp ảnh theo yêu cầu của bạn và mở bảng chia sẻ. Tệp chỉ được gửi đến nơi bạn chọn, chẳng hạn như ứng dụng Tệp, Tin nhắn hoặc một ứng dụng khác, và nơi nhận đó sẽ xử lý tệp theo cách thức bảo vệ quyền riêng tư của riêng mình. Tệp tạm thời mà ứng dụng tạo ra để xuất được lưu trong bộ nhớ riêng của ứng dụng và sẽ tự động bị xóa khi không còn cần thiết.</p>
+  <p>Trên Mac, <span class="ui" lang="en">Export photo</span> mở hộp thoại Lưu, và tệp chỉ được ghi vào vị trí bạn chọn.</p>
 
   <h2 id="on-device-storage">Thông tin được lưu trên thiết bị của bạn</h2>
-  <p>Để ứng dụng hoạt động đúng như lúc bạn rời đi, ứng dụng lưu một lượng nhỏ thông tin trong bộ nhớ riêng của mình trên iPhone của bạn:</p>
+  <p>Để ứng dụng hoạt động đúng như lúc bạn rời đi, ứng dụng lưu một lượng nhỏ thông tin trong bộ nhớ riêng của mình trên thiết bị của bạn:</p>
   <ul>
     <li>các preset bạn lưu (tên và giá trị điều chỉnh của chúng),</li>
     <li>tùy chọn của trình chỉnh sửa, chẳng hạn như những phần chỉnh sửa nào được hiển thị, thứ tự của chúng và kiểu so sánh trước và sau, và</li>
     <li>cài đặt mặt nạ tự động.</li>
   </ul>
-  <p>Thông tin này nằm trên thiết bị của bạn và không được gửi cho chúng tôi. Bạn có thể xóa preset trong ứng dụng bất cứ lúc nào, và việc xóa ứng dụng sẽ xóa toàn bộ thông tin này. Giống như dữ liệu của các ứng dụng khác, thông tin này có thể được đưa vào các bản sao lưu iPhone do bạn tạo, tùy theo cài đặt iOS của bạn.</p>
+  <p>Thông tin này nằm trên thiết bị của bạn và không được gửi cho chúng tôi. Bạn có thể xóa preset trong ứng dụng bất cứ lúc nào, và việc xóa ứng dụng sẽ xóa toàn bộ thông tin này. Giống như dữ liệu của các ứng dụng khác, thông tin này có thể được đưa vào các bản sao lưu iPhone, iPad hoặc Mac do bạn tạo, tùy theo cài đặt của bạn.</p>
 
   <h2 id="no-third-parties">Không có dịch vụ bên thứ ba, phân tích, quảng cáo hay theo dõi</h2>
   <p>RawMask Studio không chứa phần mềm phân tích, quảng cáo, báo cáo sự cố hay theo dõi của bên thứ ba. Ứng dụng không sử dụng mã định danh quảng cáo và không theo dõi bạn trên các ứng dụng hoặc trang web thuộc sở hữu của các công ty khác.</p>
-  <p>Nếu bạn đã chọn chia sẻ dữ liệu phân tích với nhà phát triển ứng dụng trong iOS (<span class="path">Cài đặt &gt; Quyền riêng tư &amp; Bảo mật &gt; Phân tích &amp; Cải tiến</span>), Apple có thể cung cấp cho chúng tôi báo cáo sự cố và số liệu thống kê sử dụng tổng hợp ở dạng không nhận dạng được bạn. Việc này do Apple và cài đặt của bạn kiểm soát, không phải do ứng dụng.</p>
+  <p>Nếu bạn đã chọn chia sẻ dữ liệu phân tích với nhà phát triển ứng dụng (<span class="path">Cài đặt &gt; Quyền riêng tư &amp; Bảo mật &gt; Phân tích &amp; Cải tiến</span> trên iPhone và iPad, hoặc <span class="path">Cài đặt hệ thống &gt; Quyền riêng tư &amp; Bảo mật &gt; Phân tích &amp; Cải tiến</span> trên Mac), Apple có thể cung cấp cho chúng tôi báo cáo sự cố và số liệu thống kê sử dụng tổng hợp ở dạng không nhận dạng được bạn. Việc này do Apple và cài đặt của bạn kiểm soát, không phải do ứng dụng.</p>
 
   <h2 id="purchases">Giao dịch mua</h2>
   <p>RawMask Studio hiện được cung cấp miễn phí. Nếu sau này có thêm giao dịch mua trong ứng dụng hoặc tính năng trả phí, các khoản thanh toán sẽ được Apple xử lý thông qua App Store theo các điều khoản và chính sách quyền riêng tư của Apple, và chúng tôi sẽ không nhận được thông tin thanh toán của bạn. Chúng tôi sẽ cập nhật chính sách này trước khi bất kỳ thay đổi nào như vậy có hiệu lực.</p>
@@ -426,7 +430,7 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   <p>RawMask Studio là ứng dụng chỉnh sửa ảnh phổ thông và không dành riêng cho trẻ em. Vì ứng dụng không thu thập thông tin cá nhân từ bất kỳ ai, nên ứng dụng cũng không thu thập thông tin cá nhân từ trẻ em.</p>
 
   <h2 id="your-choices">Lựa chọn của bạn</h2>
-  <p>Vì chúng tôi không thu thập hay lưu giữ bất kỳ dữ liệu nào về bạn, nên phía chúng tôi không có dữ liệu cá nhân nào để truy cập, sửa đổi, xuất hoặc xóa. Bạn luôn nắm quyền kiểm soát trên thiết bị của mình: bạn có thể thay đổi hoặc thu hồi quyền truy cập Ảnh trong Cài đặt của iOS, xóa preset trong ứng dụng, gỡ bỏ bản chỉnh sửa hoặc bản sao trong ứng dụng Ảnh, và xóa ứng dụng để xóa dữ liệu cục bộ của ứng dụng.</p>
+  <p>Vì chúng tôi không thu thập hay lưu giữ bất kỳ dữ liệu nào về bạn, nên phía chúng tôi không có dữ liệu cá nhân nào để truy cập, sửa đổi, xuất hoặc xóa. Bạn luôn nắm quyền kiểm soát trên thiết bị của mình: bạn có thể thay đổi hoặc thu hồi quyền truy cập Ảnh trong Cài đặt (Cài đặt hệ thống trên Mac), xóa preset trong ứng dụng, gỡ bỏ bản chỉnh sửa hoặc bản sao trong ứng dụng Ảnh, và xóa ứng dụng để xóa dữ liệu cục bộ của ứng dụng.</p>
 
   <h2 id="changes">Thay đổi đối với chính sách này</h2>
   <p>Nếu cách ứng dụng xử lý thông tin thay đổi, chẳng hạn khi một tính năng trong tương lai cần gửi dữ liệu ra khỏi thiết bị của bạn, chúng tôi sẽ cập nhật chính sách này và thông tin chi tiết về quyền riêng tư của ứng dụng trên App Store trước khi phát hành phiên bản đó, đồng thời thay đổi ngày có hiệu lực ở đầu trang này.</p>

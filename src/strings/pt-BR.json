@@ -10,11 +10,41 @@
     "translation_notice": "Esta página é uma tradução da <a href=\"{english_url}\">versão em inglês</a>. Em caso de divergência entre as duas versões, prevalece a versão em inglês."
   },
   "home": {
-    "description": "O RawMask Studio é um editor de fotos RAW para iPhone, com máscaras automáticas e manuais. Tudo acontece no seu iPhone.",
-    "eyebrow": "Editor de fotos para iPhone",
+    "description": "O RawMask Studio é um editor de fotos RAW com máscaras automáticas e manuais para iPhone, iPad e Mac. Tudo acontece no seu dispositivo.",
+    "eyebrow": "Editor de fotos para iPhone, iPad e Mac",
     "btn_support": "Obter suporte",
     "btn_privacy": "Política de privacidade",
     "screenshots_heading": "Capturas de tela",
+    "whats_new": {
+      "heading": "Novidades da versão 1.2.0",
+      "intro": "O RawMask Studio agora funciona no iPad e no Mac, além do iPhone. É um só app gratuito para os três, e toda a edição continua acontecendo no seu dispositivo.",
+      "items": [
+        {
+          "h3": "Agora no <span class=\"name\">iPad</span>",
+          "p": "A foto ocupa a tela inteira e as ferramentas flutuam sobre ela em paletas que você pode arrastar para qualquer lugar, na vertical e na horizontal."
+        },
+        {
+          "h3": "Agora no <span class=\"name\">Mac</span>",
+          "p": "As etapas ficam na barra de ferramentas, e o inspetor ao lado da foto reúne as máscaras e os controles. Amplie a imagem para conferir cada detalhe e exporte para um arquivo JPEG, HEIF ou TIFF."
+        },
+        {
+          "h3": "Nova etapa Tom",
+          "p": "Uma curva de tons para realces, claros, escuros e sombras, e contraste local nítido em realces, meios-tons e sombras."
+        },
+        {
+          "h3": "Nova etapa Estilo",
+          "p": "HDR, drama, brilho, bloom, halação e aberração cromática, além dos looks Film, P&amp;B, Vintage, Noir, Grunge e Retro."
+        },
+        {
+          "h3": "Cor HSL",
+          "p": "Matiz, croma e luminosidade para oito faixas de cor, direto na etapa Cor."
+        },
+        {
+          "h3": "Mais opções de enquadramento e efeitos",
+          "p": "Perspectiva, preenchimento das bordas e oito molduras em Enquadrar, e tamanho, forma e suavidade da vinheta em Efeitos."
+        }
+      ]
+    },
     "features_heading": "O que você pode fazer",
     "store_headings": [
       "Máscaras para edição seletiva",
@@ -24,24 +54,39 @@
       "Salve sem perder o original",
       "Privacidade em primeiro lugar"
     ],
-    "requirements": "<strong>Requisitos:</strong> iPhone com iOS 17 ou posterior.",
+    "requirements": "<strong>Requisitos:</strong> iPhone com iOS 17 ou posterior, iPad com iPadOS 17 ou posterior, ou Mac com chip da Apple e macOS 14 ou posterior.",
     "help": "Dúvidas ou problemas? Acesse a <a href=\"{support_url}\">página de suporte</a>. Os detalhes sobre como o app trata as suas fotos estão na <a href=\"{privacy_url}\">política de privacidade</a>."
   },
   "support": {
     "title": "Suporte - RawMask Studio",
-    "description": "Ajuda e contato do RawMask Studio para iPhone: como abrir fotos, acesso às fotos, máscaras, como salvar e exportar.",
+    "description": "Ajuda e contato do RawMask Studio no iPhone, iPad e Mac: como abrir fotos, acesso às fotos, máscaras, como salvar e exportar.",
     "h1": "Suporte",
-    "meta": "Ajuda do RawMask Studio para iPhone.",
+    "meta": "Ajuda do RawMask Studio no iPhone, iPad e Mac.",
     "ui_labels_note": "Por isso, os nomes de botões e menus abaixo estão em inglês, exatamente como aparecem no app.",
     "contact": "<strong>Contato:</strong> e-mail <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>",
-    "contact_note": "Na mensagem, informe o modelo do seu iPhone, a versão do iOS e uma breve descrição do que aconteceu e do que você esperava. Não é preciso enviar fotos; descrever a foto (por exemplo, a câmera ou o formato do arquivo) costuma ser suficiente.",
+    "contact_note": "Na mensagem, informe o seu dispositivo (iPhone, iPad ou Mac) e a versão do iOS, iPadOS ou macOS, além de uma breve descrição do que aconteceu e do que você esperava. Não é preciso enviar fotos; descrever a foto (por exemplo, a câmera ou o formato do arquivo) costuma ser suficiente.",
     "faq_heading": "Perguntas frequentes",
     "faq": [
       {
         "q": "Como abro uma foto?",
         "blocks": [
           {
-            "p": "Toque no botão de foto no canto superior esquerdo do editor e escolha <span class=\"ui\" lang=\"en\">Open photo</span>. O seletor de fotos se abre e você escolhe uma foto. O RawMask Studio edita uma foto por vez. No momento, as Live Photos não aparecem no seletor."
+            "p": "No iPhone, toque no botão de foto no canto superior esquerdo do editor e escolha <span class=\"ui\" lang=\"en\">Open photo</span>. No iPad, toque em <span class=\"ui\" lang=\"en\">Open photo</span> na paleta do canto superior esquerdo. No Mac, clique em <span class=\"ui\" lang=\"en\">Open photo</span> na barra de ferramentas. O seletor de fotos se abre e você escolhe uma foto. O RawMask Studio edita uma foto por vez. No momento, as Live Photos não aparecem no seletor."
+          }
+        ]
+      },
+      {
+        "q": "Onde ficam os botões no <span class=\"name\">iPad</span> e no <span class=\"name\">Mac</span>?",
+        "blocks": [
+          {
+            "p": "As etapas e as ferramentas são as mesmas em todos os dispositivos; só muda o lugar onde elas ficam:"
+          },
+          {
+            "ul": [
+              "<strong>iPhone:</strong> o botão de foto no canto superior esquerdo reúne <span class=\"ui\" lang=\"en\">Open photo</span>, <span class=\"ui\" lang=\"en\">Edit target</span> e <span class=\"ui\" lang=\"en\">Add mask</span>, e <span class=\"ui\" lang=\"en\">More options</span> é o botão ... no canto superior direito.",
+              "<strong>iPad:</strong> a paleta do canto superior esquerdo reúne <span class=\"ui\" lang=\"en\">Open photo</span>, <span class=\"ui\" lang=\"en\">Edit target</span> e <span class=\"ui\" lang=\"en\">Add mask</span>, e <span class=\"ui\" lang=\"en\">More options</span> (o botão ...) e <span class=\"ui\" lang=\"en\">Save</span> ficam no canto superior direito. Você pode arrastar as paletas para qualquer lugar.",
+              "<strong>Mac:</strong> <span class=\"ui\" lang=\"en\">Open photo</span> e as etapas ficam na barra de ferramentas, <span class=\"ui\" lang=\"en\">Edit target</span> e <span class=\"ui\" lang=\"en\">Add mask</span> ficam no inspetor ao lado da foto, e <span class=\"ui\" lang=\"en\">Editor options</span> (o botão de controles deslizantes) e <span class=\"ui\" lang=\"en\">Export</span> ficam no canto superior direito."
+            ]
           }
         ]
       },
@@ -57,7 +102,7 @@
         "q": "Por que o app pede acesso às fotos?",
         "blocks": [
           {
-            "p": "O RawMask Studio abre fotos da sua biblioteca do app Fotos da Apple e salva as edições nessa mesma biblioteca, por isso o iOS pede a sua permissão. Você pode permitir o acesso total ou o acesso limitado apenas às fotos que selecionar. Em ambos os casos, o app só abre a foto que você escolher. Consulte a <a href=\"{privacy_url}\">política de privacidade</a> para ver os detalhes."
+            "p": "O RawMask Studio abre fotos da sua biblioteca do app Fotos da Apple e salva as edições nessa mesma biblioteca, por isso o iOS, o iPadOS ou o macOS pede a sua permissão. No iPhone e no iPad, você pode permitir o acesso total ou o acesso limitado apenas às fotos que selecionar; no Mac, o acesso abrange a biblioteca inteira. Em todos os casos, o app só abre a foto que você escolher. Consulte a <a href=\"{privacy_url}\">política de privacidade</a> para ver os detalhes."
           }
         ]
       },
@@ -65,7 +110,7 @@
         "q": "Escolhi o acesso limitado e não encontro uma foto",
         "blocks": [
           {
-            "p": "Com o acesso limitado, o app só consegue abrir as fotos que você permitiu. Para permitir mais fotos:"
+            "p": "O acesso limitado está disponível no iPhone e no iPad. Com ele, o app só consegue abrir as fotos que você permitiu. Para permitir mais fotos:"
           },
           {
             "ul": [
@@ -79,7 +124,7 @@
         "q": "O app diz que o acesso às fotos está desativado",
         "blocks": [
           {
-            "p": "Abra <span class=\"path\">Ajustes &gt; Privacidade e Segurança &gt; Fotos &gt; RawMask Studio</span>, escolha Acesso Limitado ou Acesso Total, volte ao app e abra uma foto novamente."
+            "p": "No iPhone ou iPad, abra <span class=\"path\">Ajustes &gt; Privacidade e Segurança &gt; Fotos &gt; RawMask Studio</span> e escolha Acesso Limitado ou Acesso Total. No Mac, abra <span class=\"path\">Ajustes do Sistema &gt; Privacidade e Segurança &gt; Fotos</span> e permita o acesso do RawMask Studio. Depois, volte ao app e abra uma foto novamente."
           }
         ]
       },
@@ -87,7 +132,7 @@
         "q": "Como funcionam as máscaras?",
         "blocks": [
           {
-            "p": "Os ajustes se aplicam à foto inteira ou a uma máscara. Abra o menu do botão de foto no canto superior esquerdo: use <span class=\"ui\" lang=\"en\">Edit target</span> para escolher o que você está editando e <span class=\"ui\" lang=\"en\">Add mask</span> para adicionar uma máscara <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span> ou <span class=\"ui\" lang=\"en\">Rectangle</span>. Você pode mover e redimensionar uma máscara, pintar para adicionar ou subtrair áreas dela e suavizar a borda com <span class=\"ui\" lang=\"en\">Feather</span>."
+            "p": "Os ajustes se aplicam à foto inteira ou a uma máscara. Use <span class=\"ui\" lang=\"en\">Edit target</span> para escolher o que você está editando e <span class=\"ui\" lang=\"en\">Add mask</span> para adicionar uma máscara <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span> ou <span class=\"ui\" lang=\"en\">Rectangle</span> (veja acima onde eles ficam em cada dispositivo). Você pode mover e redimensionar uma máscara, pintar para adicionar ou subtrair áreas dela e suavizar a borda com <span class=\"ui\" lang=\"en\">Feather</span>."
           }
         ]
       },
@@ -95,7 +140,7 @@
         "q": "O que são as máscaras automáticas de objetos?",
         "blocks": [
           {
-            "p": "O RawMask Studio inclui um modelo de segmentação de imagem que encontra objetos na sua foto, como pessoas, animais e coisas do dia a dia, e oferece cada um deles como uma máscara que você pode editar separadamente. O modelo é executado inteiramente no seu iPhone. Se ele não detectar o objeto que você quer, use uma máscara manual ou ajuste as opções <span class=\"ui\" lang=\"en\">Detection confidence</span> e <span class=\"ui\" lang=\"en\">Mask threshold</span> em <span class=\"ui\" lang=\"en\">More options</span> &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>."
+            "p": "O RawMask Studio inclui um modelo de segmentação de imagem que encontra objetos na sua foto, como pessoas, animais e coisas do dia a dia, e oferece cada um deles como uma máscara que você pode editar separadamente. O modelo é executado inteiramente no seu dispositivo. Se ele não detectar o objeto que você quer, use uma máscara manual ou ajuste as opções <span class=\"ui\" lang=\"en\">Detection confidence</span> e <span class=\"ui\" lang=\"en\">Mask threshold</span> em <span class=\"ui\" lang=\"en\">More options</span> (<span class=\"ui\" lang=\"en\">Editor options</span> no Mac) &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>."
           }
         ]
       },
@@ -103,7 +148,7 @@
         "q": "Preciso de conexão com a internet?",
         "blocks": [
           {
-            "p": "Não. A edição e as máscaras automáticas funcionam offline. A única exceção é uma foto armazenada nas Fotos do iCloud cujo original não está no seu iPhone: o app Fotos precisa baixar o original do iCloud antes que ela possa ser editada."
+            "p": "Não. A edição e as máscaras automáticas funcionam offline. A única exceção é uma foto armazenada nas Fotos do iCloud cujo original não está no seu dispositivo: o app Fotos precisa baixar o original do iCloud antes que ela possa ser editada."
           }
         ]
       },
@@ -111,13 +156,13 @@
         "q": "Como salvo ou exporto a minha edição?",
         "blocks": [
           {
-            "p": "Toque em <span class=\"ui\" lang=\"en\">More options</span> (o botão ...) e vá até <span class=\"ui\" lang=\"en\">Save and export</span>:"
+            "p": "No iPhone, toque em <span class=\"ui\" lang=\"en\">More options</span> (o botão ...) e vá até <span class=\"ui\" lang=\"en\">Save and export</span>. No iPad, use o menu <span class=\"ui\" lang=\"en\">Save</span> no canto superior direito, em que as duas primeiras opções se chamam <span class=\"ui\" lang=\"en\">Save to Photos</span> e <span class=\"ui\" lang=\"en\">Save a Copy</span>. No Mac, clique em <span class=\"ui\" lang=\"en\">Export</span> na barra de ferramentas. As opções são:"
           },
           {
             "ul": [
               "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> atualiza a foto na sua biblioteca. O Fotos mantém o original, então você pode voltar a ele mais tarde com a opção Reverter do app Fotos.",
               "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> adiciona a imagem editada como uma nova foto e mantém o original inalterado.",
-              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> cria um arquivo JPEG, HEIF ou TIFF no tamanho e na qualidade que você escolher e abre o menu de compartilhamento, para que você possa salvá-lo no app Arquivos ou enviá-lo para outro app."
+              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> cria um arquivo JPEG, HEIF ou TIFF no tamanho e na qualidade que você escolher. No iPhone e no iPad, ele abre o menu de compartilhamento, para que você possa salvá-lo no app Arquivos ou enviá-lo para outro app; no Mac, você escolhe onde salvar o arquivo."
             ]
           }
         ]
@@ -126,7 +171,7 @@
         "q": "Onde os meus presets ficam armazenados?",
         "blocks": [
           {
-            "p": "No seu iPhone, no armazenamento do próprio app. Eles não são enviados para lugar nenhum. Você pode apagar presets no app, e eles são removidos quando você apaga o app."
+            "p": "No seu dispositivo, no armazenamento do próprio app. Eles não são enviados para lugar nenhum. Você pode apagar presets no app, e eles são removidos quando você apaga o app."
           }
         ]
       },
@@ -134,7 +179,7 @@
         "q": "Quais dispositivos são compatíveis?",
         "blocks": [
           {
-            "p": "iPhone com iOS 17 ou posterior."
+            "p": "iPhone com iOS 17 ou posterior, iPad com iPadOS 17 ou posterior e computadores Mac com chip da Apple e macOS 14 ou posterior. É um só app gratuito para os três."
           }
         ]
       },
@@ -152,10 +197,10 @@
   },
   "privacy": {
     "title": "Política de Privacidade - RawMask Studio",
-    "description": "Política de privacidade do RawMask Studio para iPhone. O app não coleta nenhum dado; as fotos são editadas no seu iPhone.",
+    "description": "Política de privacidade do RawMask Studio para iPhone, iPad e Mac. O app não coleta nenhum dado; as fotos são editadas no seu dispositivo.",
     "h1": "Política de Privacidade",
-    "meta": "RawMask Studio para iPhone. Data de vigência: 23 de setembro de 2026.",
-    "summary": "<strong>Em resumo:</strong> o RawMask Studio não coleta nenhum dado. Não há conta, análise de uso, publicidade nem rastreamento. As suas fotos são editadas no seu iPhone, e o app nunca envia as suas fotos, as suas edições ou qualquer outra informação para nós ou para qualquer outra pessoa.",
+    "meta": "RawMask Studio para iPhone, iPad e Mac. Data de vigência: 26 de setembro de 2026.",
+    "summary": "<strong>Em resumo:</strong> o RawMask Studio não coleta nenhum dado. Não há conta, análise de uso, publicidade nem rastreamento. As suas fotos são editadas no seu iPhone, iPad ou Mac, e o app nunca envia as suas fotos, as suas edições ou qualquer outra informação para nós ou para qualquer outra pessoa.",
     "sections": [
       {
         "id": "who-we-are",
@@ -177,13 +222,13 @@
       },
       {
         "id": "on-device-processing",
-        "h2": "O processamento acontece no seu iPhone",
+        "h2": "O processamento acontece no seu dispositivo",
         "blocks": [
           {
             "p": "Todo o processamento das fotos acontece no seu dispositivo. Isso inclui a leitura de arquivos RAW, a aplicação de ajustes de luz, cor, detalhe, foco e efeitos, a renderização das pré-visualizações e a criação de máscaras."
           },
           {
-            "p": "As máscaras automáticas de objetos são criadas por um modelo de segmentação de imagem (RF-DETR) que vem incluído no app e é executado no seu iPhone com o Core ML da Apple. O modelo não é baixado da internet, e as suas fotos não são enviadas a lugar nenhum para análise."
+            "p": "As máscaras automáticas de objetos são criadas por um modelo de segmentação de imagem (RF-DETR) que vem incluído no app e é executado no seu iPhone, iPad ou Mac com o Core ML da Apple. O modelo não é baixado da internet, e as suas fotos não são enviadas a lugar nenhum para análise."
           }
         ]
       },
@@ -192,7 +237,7 @@
         "h2": "Acesso à sua biblioteca do Fotos",
         "blocks": [
           {
-            "p": "O RawMask Studio usa o app Fotos da Apple para abrir e salvar imagens. O iOS pede a sua permissão antes que o app possa acessar a sua biblioteca. Você pode permitir o acesso à biblioteca inteira ou apenas às fotos que selecionar, e pode alterar isso a qualquer momento em <span class=\"path\">Ajustes &gt; Privacidade e Segurança &gt; Fotos &gt; RawMask Studio</span>."
+            "p": "O RawMask Studio usa o app Fotos da Apple para abrir e salvar imagens. O iOS, o iPadOS e o macOS pedem a sua permissão antes que o app possa acessar a sua biblioteca. No iPhone e no iPad, você pode permitir o acesso à biblioteca inteira ou apenas às fotos que selecionar; no Mac, o acesso abrange a biblioteca inteira. Você pode alterar isso a qualquer momento em <span class=\"path\">Ajustes &gt; Privacidade e Segurança &gt; Fotos &gt; RawMask Studio</span> no iPhone e no iPad, ou em <span class=\"path\">Ajustes do Sistema &gt; Privacidade e Segurança &gt; Fotos</span> no Mac."
           },
           {
             "h3": "O que o app lê"
@@ -216,7 +261,7 @@
             "h3": "Fotos do iCloud"
           },
           {
-            "p": "Se você usar as Fotos do iCloud e o original em resolução total da foto que você escolher não estiver armazenado no seu iPhone, o framework de fotos da Apple poderá baixá-lo do iCloud para que ele possa ser editado. As fotos que você salvar também poderão ser sincronizadas pelas Fotos do iCloud de acordo com as suas configurações da Apple. Essas transferências ocorrem entre o seu dispositivo e a sua própria conta do iCloud, são realizadas pela Apple e estão sujeitas à política de privacidade da Apple. Nada é enviado para nós."
+            "p": "Se você usar as Fotos do iCloud e o original em resolução total da foto que você escolher não estiver armazenado no seu dispositivo, o framework de fotos da Apple poderá baixá-lo do iCloud para que ele possa ser editado. As fotos que você salvar também poderão ser sincronizadas pelas Fotos do iCloud de acordo com as suas configurações da Apple. Essas transferências ocorrem entre o seu dispositivo e a sua própria conta do iCloud, são realizadas pela Apple e estão sujeitas à política de privacidade da Apple. Nada é enviado para nós."
           }
         ]
       },
@@ -225,7 +270,10 @@
         "h2": "Exportação e compartilhamento",
         "blocks": [
           {
-            "p": "Quando você toca em <span class=\"ui\" lang=\"en\">Export photo</span>, o app cria o arquivo de imagem que você pediu e abre o menu de compartilhamento do iOS. O arquivo vai apenas para onde você escolher enviá-lo, como o app Arquivos, o Mensagens ou outro app, e esse destino o trata de acordo com as próprias práticas de privacidade. O arquivo temporário que o app cria para a exportação fica no armazenamento privado do app no seu iPhone e é apagado automaticamente quando não é mais necessário."
+            "p": "Quando você escolhe <span class=\"ui\" lang=\"en\">Export photo</span> no iPhone ou no iPad, o app cria o arquivo de imagem que você pediu e abre o menu de compartilhamento. O arquivo vai apenas para onde você escolher enviá-lo, como o app Arquivos, o Mensagens ou outro app, e esse destino o trata de acordo com as próprias práticas de privacidade. O arquivo temporário que o app cria para a exportação fica no armazenamento privado do app e é apagado automaticamente quando não é mais necessário."
+          },
+          {
+            "p": "No Mac, <span class=\"ui\" lang=\"en\">Export photo</span> abre a janela Salvar, e o arquivo é gravado apenas no local que você escolher."
           }
         ]
       },
@@ -234,7 +282,7 @@
         "h2": "Informações armazenadas no seu dispositivo",
         "blocks": [
           {
-            "p": "Para que o app funcione do jeito que você o deixou, ele mantém uma pequena quantidade de informações no armazenamento do próprio app no seu iPhone:"
+            "p": "Para que o app funcione do jeito que você o deixou, ele mantém uma pequena quantidade de informações no armazenamento do próprio app no seu dispositivo:"
           },
           {
             "ul": [
@@ -244,7 +292,7 @@
             ]
           },
           {
-            "p": "Essas informações ficam no seu dispositivo e não são enviadas para nós. Você pode apagar um preset no app a qualquer momento, e apagar o app remove todas essas informações. Assim como outros dados de apps, elas podem ser incluídas nos backups do iPhone que você fizer, de acordo com os seus ajustes do iOS."
+            "p": "Essas informações ficam no seu dispositivo e não são enviadas para nós. Você pode apagar um preset no app a qualquer momento, e apagar o app remove todas essas informações. Assim como outros dados de apps, elas podem ser incluídas nos backups do iPhone, iPad ou Mac que você fizer, de acordo com os seus ajustes."
           }
         ]
       },
@@ -256,7 +304,7 @@
             "p": "O RawMask Studio não contém nenhum software de terceiros para análise de uso, publicidade, relatórios de falhas ou rastreamento. Ele não usa o identificador de publicidade e não rastreia você em apps ou sites pertencentes a outras empresas."
           },
           {
-            "p": "Se você optou, no iOS, por compartilhar dados de análise com desenvolvedores de apps (<span class=\"path\">Ajustes &gt; Privacidade e Segurança &gt; Análise e Melhorias</span>), a Apple poderá nos fornecer relatórios de falhas e estatísticas de uso agregadas de uma forma que não identifica você. Isso é controlado pela Apple e pelos seus ajustes, não pelo app."
+            "p": "Se você optou por compartilhar dados de análise com desenvolvedores de apps (<span class=\"path\">Ajustes &gt; Privacidade e Segurança &gt; Análise e Melhorias</span> no iPhone e no iPad, ou <span class=\"path\">Ajustes do Sistema &gt; Privacidade e Segurança &gt; Análise e Melhorias</span> no Mac), a Apple poderá nos fornecer relatórios de falhas e estatísticas de uso agregadas de uma forma que não identifica você. Isso é controlado pela Apple e pelos seus ajustes, não pelo app."
           }
         ]
       },
@@ -283,7 +331,7 @@
         "h2": "Suas opções",
         "blocks": [
           {
-            "p": "Como não coletamos nem mantemos nenhum dado sobre você, não há dados pessoais do nosso lado para acessar, corrigir, exportar ou apagar. Você mantém o controle no seu dispositivo: pode alterar ou revogar o acesso às fotos nos Ajustes do iOS, apagar presets no app, remover edições ou cópias no app Fotos e apagar o app para remover os dados locais dele."
+            "p": "Como não coletamos nem mantemos nenhum dado sobre você, não há dados pessoais do nosso lado para acessar, corrigir, exportar ou apagar. Você mantém o controle no seu dispositivo: pode alterar ou revogar o acesso às fotos nos Ajustes (Ajustes do Sistema no Mac), apagar presets no app, remover edições ou cópias no app Fotos e apagar o app para remover os dados locais dele."
           }
         ]
       },

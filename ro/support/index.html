@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#081b16">
-<meta name="description" content="Ajutor și contact pentru RawMask Studio pe iPhone: deschiderea fotografiilor, accesul la Poze, măștile, salvarea și exportul.">
+<meta name="description" content="Ajutor și contact pentru RawMask Studio pe iPhone, iPad și Mac: deschiderea fotografiilor, accesul la Poze, măștile, salvarea și exportul.">
 <meta name="apple-itunes-app" content="app-id=6814994539">
 <title>Asistență - RawMask Studio</title>
 <link rel="canonical" href="https://turmanauli.github.io/rawmask-studio/ro/support/">
@@ -64,7 +64,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RawMask Studio">
 <meta property="og:title" content="Asistență - RawMask Studio">
-<meta property="og:description" content="Ajutor și contact pentru RawMask Studio pe iPhone: deschiderea fotografiilor, accesul la Poze, măștile, salvarea și exportul.">
+<meta property="og:description" content="Ajutor și contact pentru RawMask Studio pe iPhone, iPad și Mac: deschiderea fotografiilor, accesul la Poze, măștile, salvarea și exportul.">
 <meta property="og:url" content="https://turmanauli.github.io/rawmask-studio/ro/support/">
 <meta property="og:locale" content="ro_RO">
 <meta name="twitter:card" content="summary">
@@ -300,6 +300,9 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   .document .faq section { padding-block: 24px; }
 }
 
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.name { text-transform: none; }
+
 /* End site design */
 </style>
 </head>
@@ -376,12 +379,12 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
 <main class="wrap document">
   <h1>Asistență</h1>
-  <p class="meta">Ajutor pentru RawMask Studio pe iPhone.</p>
+  <p class="meta">Ajutor pentru RawMask Studio pe iPhone, iPad și Mac.</p>
   <p class="note">Această pagină este o traducere a <a href="../../support/">versiunii în limba engleză</a>. În cazul unor diferențe între cele două versiuni, prevalează versiunea în limba engleză.</p>
 
   <div class="callout" id="contact">
     <p><strong>Contact:</strong> trimite un e-mail la <a href="mailto:turmanauli.beso@gmail.com">turmanauli.beso@gmail.com</a></p>
-    <p>Te rugăm să menționezi modelul de iPhone, versiunea iOS și o scurtă descriere a ceea ce s-a întâmplat și a ceea ce te așteptai să se întâmple. Nu este nevoie să trimiți fotografii; de obicei este suficient să descrii fotografia (de exemplu, aparatul foto sau formatul fișierului).</p>
+    <p>Te rugăm să menționezi dispozitivul (iPhone, iPad sau Mac), versiunea de iOS, iPadOS sau macOS și o scurtă descriere a ceea ce s-a întâmplat și a ceea ce te așteptai să se întâmple. Nu este nevoie să trimiți fotografii; de obicei este suficient să descrii fotografia (de exemplu, aparatul foto sau formatul fișierului).</p>
     <p class="muted">Interfața aplicației este deocamdată în limba engleză. Denumirile butoanelor și ale meniurilor de mai jos sunt în engleză, exact așa cum apar în aplicație.</p>
   </div>
 
@@ -389,7 +392,17 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   <div class="faq">
     <section>
       <h3>Cum deschid o fotografie?</h3>
-      <p>Atinge butonul foto din stânga sus a editorului și alege <span class="ui" lang="en">Open photo</span>. Se deschide selectorul de poze, în care alegi o fotografie. RawMask Studio editează câte o fotografie pe rând. Deocamdată, Live Photos nu sunt afișate în selector.</p>
+      <p>Pe iPhone, atinge butonul foto din stânga sus a editorului și alege <span class="ui" lang="en">Open photo</span>. Pe iPad, atinge <span class="ui" lang="en">Open photo</span> în paleta din stânga sus. Pe Mac, fă clic pe <span class="ui" lang="en">Open photo</span> în bara de instrumente. Se deschide selectorul de poze, în care alegi o fotografie. RawMask Studio editează câte o fotografie pe rând. Deocamdată, Live Photos nu sunt afișate în selector.</p>
+    </section>
+
+    <section>
+      <h3>Unde sunt butoanele pe <span class="name">iPad</span> și pe <span class="name">Mac</span>?</h3>
+      <p>Pașii și instrumentele sunt aceleași pe toate dispozitivele; diferă doar locul lor:</p>
+      <ul>
+        <li><strong>iPhone:</strong> butonul foto din stânga sus conține <span class="ui" lang="en">Open photo</span>, <span class="ui" lang="en">Edit target</span> și <span class="ui" lang="en">Add mask</span>, iar <span class="ui" lang="en">More options</span> este butonul ... din dreapta sus.</li>
+        <li><strong>iPad:</strong> paleta din stânga sus conține <span class="ui" lang="en">Open photo</span>, <span class="ui" lang="en">Edit target</span> și <span class="ui" lang="en">Add mask</span>, iar <span class="ui" lang="en">More options</span> (butonul ...) și <span class="ui" lang="en">Save</span> se află în dreapta sus. Poți muta paletele oriunde.</li>
+        <li><strong>Mac:</strong> <span class="ui" lang="en">Open photo</span> și pașii se află în bara de instrumente, <span class="ui" lang="en">Edit target</span> și <span class="ui" lang="en">Add mask</span> se află în inspectorul de lângă fotografie, iar <span class="ui" lang="en">Editor options</span> (butonul cu glisoare) și <span class="ui" lang="en">Export</span> se află în dreapta sus.</li>
+      </ul>
     </section>
 
     <section>
@@ -399,12 +412,12 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
     <section>
       <h3>De ce cere aplicația acces la Poze?</h3>
-      <p>RawMask Studio deschide fotografii din biblioteca ta Poze și salvează editările tot acolo, așa că iOS îți cere permisiunea. Poți permite accesul complet sau accesul limitat doar la fotografiile pe care le alegi. În ambele cazuri, aplicația deschide doar fotografia pe care o alegi. Consultă <a href="../privacy/">politica de confidențialitate</a> pentru detalii.</p>
+      <p>RawMask Studio deschide fotografii din biblioteca ta Poze și salvează editările tot acolo, așa că iOS, iPadOS sau macOS îți cere permisiunea. Pe iPhone și iPad poți permite accesul complet sau accesul limitat doar la fotografiile pe care le alegi; pe Mac, accesul include întreaga bibliotecă. În orice caz, aplicația deschide doar fotografia pe care o alegi. Consultă <a href="../privacy/">politica de confidențialitate</a> pentru detalii.</p>
     </section>
 
     <section>
       <h3>Am ales accesul limitat și nu găsesc o fotografie</h3>
-      <p>Cu accesul limitat, aplicația poate deschide doar fotografiile la care i-ai permis accesul. Pentru a permite accesul la mai multe fotografii:</p>
+      <p>Accesul limitat este disponibil pe iPhone și iPad. În acest caz, aplicația poate deschide doar fotografiile la care i-ai permis accesul. Pentru a permite accesul la mai multe fotografii:</p>
       <ul>
         <li>în aplicație, atinge <span class="ui" lang="en">More options</span> (butonul ...), apoi, în secțiunea <span class="ui" lang="en">Photos access</span>, atinge <span class="ui" lang="en">Manage allowed photos</span> sau</li>
         <li>deschide <span class="path">Configurări &gt; Intimitate și securitate &gt; Poze &gt; RawMask Studio</span> și modifică selecția sau alege Acces complet.</li>
@@ -413,42 +426,42 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
     <section>
       <h3>Aplicația spune că accesul la Poze este dezactivat</h3>
-      <p>Deschide <span class="path">Configurări &gt; Intimitate și securitate &gt; Poze &gt; RawMask Studio</span>, alege Acces limitat sau Acces complet, apoi revino în aplicație și deschide din nou o fotografie.</p>
+      <p>Pe iPhone sau iPad, deschide <span class="path">Configurări &gt; Intimitate și securitate &gt; Poze &gt; RawMask Studio</span> și alege Acces limitat sau Acces complet. Pe Mac, deschide <span class="path">Configurări sistem &gt; Intimitate și securitate &gt; Poze</span> și permite accesul pentru RawMask Studio. Apoi revino în aplicație și deschide din nou o fotografie.</p>
     </section>
 
     <section>
       <h3>Cum funcționează măștile?</h3>
-      <p>Reglajele se aplică fie întregii fotografii, fie unei măști. Deschide meniul butonului foto din stânga sus: folosește <span class="ui" lang="en">Edit target</span> pentru a alege ce editezi și <span class="ui" lang="en">Add mask</span> pentru a adăuga o mască <span class="ui" lang="en">Radial</span>, <span class="ui" lang="en">Linear</span>, <span class="ui" lang="en">Brush</span> sau <span class="ui" lang="en">Rectangle</span>. Poți muta și redimensiona o mască, poți picta pe ea pentru a adăuga sau a scoate zone și îi poți estompa marginea cu <span class="ui" lang="en">Feather</span>.</p>
+      <p>Reglajele se aplică fie întregii fotografii, fie unei măști. Folosește <span class="ui" lang="en">Edit target</span> pentru a alege ce editezi și <span class="ui" lang="en">Add mask</span> pentru a adăuga o mască <span class="ui" lang="en">Radial</span>, <span class="ui" lang="en">Linear</span>, <span class="ui" lang="en">Brush</span> sau <span class="ui" lang="en">Rectangle</span> (mai sus vezi unde se află pe fiecare dispozitiv). Poți muta și redimensiona o mască, poți picta pe ea pentru a adăuga sau a scoate zone și îi poți estompa marginea cu <span class="ui" lang="en">Feather</span>.</p>
     </section>
 
     <section>
       <h3>Ce sunt măștile automate pentru obiecte?</h3>
-      <p>RawMask Studio include un model de segmentare a imaginii care găsește obiecte în fotografie, precum oameni, animale și lucruri de zi cu zi, și îl oferă pe fiecare sub forma unei măști pe care o poți edita separat. Modelul rulează în întregime pe iPhone-ul tău. Dacă nu detectează obiectul dorit, folosește în schimb o mască manuală sau ajustează setările <span class="ui" lang="en">Detection confidence</span> și <span class="ui" lang="en">Mask threshold</span> din <span class="ui" lang="en">More options</span> &gt; <span class="ui" lang="en">Advanced</span> &gt; <span class="ui" lang="en">Object detection</span>.</p>
+      <p>RawMask Studio include un model de segmentare a imaginii care găsește obiecte în fotografie, precum oameni, animale și lucruri de zi cu zi, și îl oferă pe fiecare sub forma unei măști pe care o poți edita separat. Modelul rulează în întregime pe dispozitivul tău. Dacă nu detectează obiectul dorit, folosește în schimb o mască manuală sau ajustează setările <span class="ui" lang="en">Detection confidence</span> și <span class="ui" lang="en">Mask threshold</span> din <span class="ui" lang="en">More options</span> (<span class="ui" lang="en">Editor options</span> pe Mac) &gt; <span class="ui" lang="en">Advanced</span> &gt; <span class="ui" lang="en">Object detection</span>.</p>
     </section>
 
     <section>
       <h3>Am nevoie de o conexiune la internet?</h3>
-      <p>Nu. Editarea și măștile automate funcționează offline. Singura excepție este o fotografie stocată în Poze iCloud al cărei original nu se află pe iPhone-ul tău: Poze trebuie să descarce originalul din iCloud înainte ca fotografia să poată fi editată.</p>
+      <p>Nu. Editarea și măștile automate funcționează offline. Singura excepție este o fotografie stocată în Poze iCloud al cărei original nu se află pe dispozitivul tău: Poze trebuie să descarce originalul din iCloud înainte ca fotografia să poată fi editată.</p>
     </section>
 
     <section>
       <h3>Cum salvez sau export editarea?</h3>
-      <p>Atinge <span class="ui" lang="en">More options</span> (butonul ...) și mergi la <span class="ui" lang="en">Save and export</span>:</p>
+      <p>Pe iPhone, atinge <span class="ui" lang="en">More options</span> (butonul ...) și mergi la <span class="ui" lang="en">Save and export</span>. Pe iPad, folosește meniul <span class="ui" lang="en">Save</span> din dreapta sus, unde primele două opțiuni se numesc <span class="ui" lang="en">Save to Photos</span> și <span class="ui" lang="en">Save a Copy</span>. Pe Mac, fă clic pe <span class="ui" lang="en">Export</span> în bara de instrumente. Opțiunile sunt:</p>
       <ul>
         <li><strong><span class="ui" lang="en">Save edit to Photos</span></strong> actualizează fotografia din biblioteca ta. Poze păstrează originalul, așa că poți reveni la el mai târziu folosind opțiunea Reveniți la original din aplicația Poze.</li>
         <li><strong><span class="ui" lang="en">Save a copy to Photos</span></strong> adaugă imaginea editată ca fotografie nouă și lasă originalul neschimbat.</li>
-        <li><strong><span class="ui" lang="en">Export photo</span></strong> creează un fișier JPEG, HEIF sau TIFF la dimensiunea și calitatea alese de tine și deschide meniul de partajare, ca să îl poți salva în Fișiere sau trimite către altă aplicație.</li>
+        <li><strong><span class="ui" lang="en">Export photo</span></strong> creează un fișier JPEG, HEIF sau TIFF la dimensiunea și calitatea alese de tine. Pe iPhone și iPad deschide meniul de partajare, ca să îl poți salva în Fișiere sau trimite către altă aplicație; pe Mac, alegi unde să salvezi fișierul.</li>
       </ul>
     </section>
 
     <section>
       <h3>Unde sunt stocate presetările mele?</h3>
-      <p>Pe iPhone-ul tău, în spațiul de stocare propriu al aplicației. Nu sunt încărcate nicăieri. Poți șterge presetări din aplicație, iar ștergerea aplicației le elimină.</p>
+      <p>Pe dispozitivul tău, în spațiul de stocare propriu al aplicației. Nu sunt încărcate nicăieri. Poți șterge presetări din aplicație, iar ștergerea aplicației le elimină.</p>
     </section>
 
     <section>
       <h3>Ce dispozitive sunt compatibile?</h3>
-      <p>iPhone cu iOS 17 sau o versiune ulterioară.</p>
+      <p>iPhone cu iOS 17 sau o versiune ulterioară, iPad cu iPadOS 17 sau o versiune ulterioară și computere Mac cu cip Apple și macOS 14 sau o versiune ulterioară. Este o singură aplicație gratuită pentru toate cele trei.</p>
     </section>
 
     <section>

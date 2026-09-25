@@ -10,11 +10,41 @@
     "translation_notice": "Ta stran je prevod <a href=\"{english_url}\">angleške različice</a>. Če se različici razlikujeta, prevlada angleška različica."
   },
   "home": {
-    "description": "RawMask Studio je urejevalnik RAW fotografij za iPhone s samodejnimi in ročnimi maskami. Vse poteka na vašem iPhonu.",
-    "eyebrow": "Urejevalnik fotografij za iPhone",
+    "description": "RawMask Studio je urejevalnik RAW fotografij s samodejnimi in ročnimi maskami za iPhone, iPad in Mac. Vse poteka v vaši napravi.",
+    "eyebrow": "Urejevalnik fotografij za iPhone, iPad in Mac",
     "btn_support": "Poiščite pomoč",
     "btn_privacy": "Pravilnik o zasebnosti",
     "screenshots_heading": "Posnetki zaslona",
+    "whats_new": {
+      "heading": "Novo v različici 1.2.0",
+      "intro": "RawMask Studio zdaj poleg iPhona deluje tudi na iPadu in Macu. To je ena brezplačna aplikacija za vse tri naprave, vse urejanje pa še vedno poteka v vaši napravi.",
+      "items": [
+        {
+          "h3": "Zdaj tudi za <span class=\"name\">iPad</span>",
+          "p": "Fotografija zapolni zaslon, orodja pa lebdijo nad njo kot palete, ki jih lahko povlečete kamor koli, pokončno in ležeče."
+        },
+        {
+          "h3": "Zdaj tudi za <span class=\"name\">Mac</span>",
+          "p": "Koraki so v orodni vrstici, stranska plošča ob fotografiji pa vsebuje maske in drsnike. Povečajte sliko, da preverite drobne podrobnosti, in jo izvozite v datoteko JPEG, HEIF ali TIFF."
+        },
+        {
+          "h3": "Nov korak Ton",
+          "p": "Tonska krivulja za najsvetlejše, svetle, temne in najtemnejše tone ter lokalni kontrast v svetlih delih, srednjih tonih in sencah."
+        },
+        {
+          "h3": "Nov korak Slog",
+          "p": "HDR, drama, sij, bloom, halacija in kromatska aberacija ter videzi Film, Č/B, Vintage, Noir, Grunge in Retro."
+        },
+        {
+          "h3": "Barve HSL",
+          "p": "Odtenek, kroma in svetlost za osem barvnih območij, neposredno v koraku Barva."
+        },
+        {
+          "h3": "Več možnosti za kader in učinke",
+          "p": "Perspektiva, zapolnitev robov in osem okvirjev v koraku Kader ter velikost, oblika in mehkoba vinjete v koraku Učinki."
+        }
+      ]
+    },
     "features_heading": "Kaj vse lahko počnete",
     "store_headings": [
       "Maske za selektivno urejanje",
@@ -24,24 +54,39 @@
       "Shranjevanje brez izgube izvirnika",
       "Zasebnost na prvem mestu"
     ],
-    "requirements": "<strong>Zahteve:</strong> iPhone s sistemom iOS 17 ali novejšim.",
+    "requirements": "<strong>Zahteve:</strong> iPhone s sistemom iOS 17 ali novejšim, iPad s sistemom iPadOS 17 ali novejšim ali Mac s čipom Apple in sistemom macOS 14 ali novejšim.",
     "help": "Imate vprašanja ali težave? Obiščite <a href=\"{support_url}\">stran za podporo</a>. Podrobnosti o tem, kako aplikacija ravna z vašimi fotografijami, najdete v <a href=\"{privacy_url}\">pravilniku o zasebnosti</a>."
   },
   "support": {
     "title": "Podpora - RawMask Studio",
-    "description": "Pomoč in kontakt za RawMask Studio za iPhone: odpiranje fotografij, dostop do knjižnice fotografij, maske, shranjevanje in izvoz.",
+    "description": "Pomoč in kontakt za RawMask Studio na iPhonu, iPadu in Macu: odpiranje fotografij, dostop do knjižnice fotografij, maske, shranjevanje in izvoz.",
     "h1": "Podpora",
-    "meta": "Pomoč za RawMask Studio za iPhone.",
+    "meta": "Pomoč za RawMask Studio na iPhonu, iPadu in Macu.",
     "ui_labels_note": "Imena gumbov in menijev v nadaljevanju so navedena v angleščini, natanko tako, kot so prikazana v aplikaciji.",
     "contact": "<strong>Kontakt:</strong> e-pošta <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>",
-    "contact_note": "V sporočilu navedite model svojega iPhona in različico sistema iOS ter na kratko opišite, kaj se je zgodilo in kaj ste pričakovali. Fotografij ni treba pošiljati; običajno zadošča opis fotografije (na primer fotoaparat ali format datoteke).",
+    "contact_note": "V sporočilu navedite svojo napravo (iPhone, iPad ali Mac) in različico njenega sistema iOS, iPadOS ali macOS ter na kratko opišite, kaj se je zgodilo in kaj ste pričakovali. Fotografij ni treba pošiljati; običajno zadošča opis fotografije (na primer fotoaparat ali format datoteke).",
     "faq_heading": "Pogosta vprašanja",
     "faq": [
       {
         "q": "Kako odprem fotografijo?",
         "blocks": [
           {
-            "p": "Tapnite gumb za fotografijo v zgornjem levem kotu urejevalnika in izberite <span class=\"ui\" lang=\"en\">Open photo</span>. Odpre se izbirnik fotografij, v katerem izberete eno fotografijo. RawMask Studio ureja po eno fotografijo naenkrat. Fotografije Live Photo v izbirniku trenutno niso prikazane."
+            "p": "Na iPhonu tapnite gumb za fotografijo v zgornjem levem kotu urejevalnika in izberite <span class=\"ui\" lang=\"en\">Open photo</span>. Na iPadu tapnite <span class=\"ui\" lang=\"en\">Open photo</span> na paleti v zgornjem levem kotu. Na Macu kliknite <span class=\"ui\" lang=\"en\">Open photo</span> v orodni vrstici. Odpre se izbirnik fotografij, v katerem izberete eno fotografijo. RawMask Studio ureja po eno fotografijo naenkrat. Fotografije Live Photo v izbirniku trenutno niso prikazane."
+          }
+        ]
+      },
+      {
+        "q": "Kje so gumbi na <span class=\"name\">iPadu</span> in <span class=\"name\">Macu</span>?",
+        "blocks": [
+          {
+            "p": "Koraki in orodja so v vseh napravah enaki, razlikuje se le njihov položaj:"
+          },
+          {
+            "ul": [
+              "<strong>iPhone:</strong> gumb za fotografijo v zgornjem levem kotu vsebuje <span class=\"ui\" lang=\"en\">Open photo</span>, <span class=\"ui\" lang=\"en\">Edit target</span> in <span class=\"ui\" lang=\"en\">Add mask</span>, <span class=\"ui\" lang=\"en\">More options</span> pa je gumb ... v zgornjem desnem kotu.",
+              "<strong>iPad:</strong> paleta v zgornjem levem kotu vsebuje <span class=\"ui\" lang=\"en\">Open photo</span>, <span class=\"ui\" lang=\"en\">Edit target</span> in <span class=\"ui\" lang=\"en\">Add mask</span>, <span class=\"ui\" lang=\"en\">More options</span> (gumb ...) in <span class=\"ui\" lang=\"en\">Save</span> pa sta v zgornjem desnem kotu. Palete lahko povlečete kamor koli.",
+              "<strong>Mac:</strong> <span class=\"ui\" lang=\"en\">Open photo</span> in koraki so v orodni vrstici, <span class=\"ui\" lang=\"en\">Edit target</span> in <span class=\"ui\" lang=\"en\">Add mask</span> sta na stranski plošči ob fotografiji, <span class=\"ui\" lang=\"en\">Editor options</span> (gumb z drsniki) in <span class=\"ui\" lang=\"en\">Export</span> pa sta v zgornjem desnem kotu."
+            ]
           }
         ]
       },
@@ -57,7 +102,7 @@
         "q": "Zakaj aplikacija prosi za dostop do fotografij?",
         "blocks": [
           {
-            "p": "RawMask Studio odpira fotografije iz vaše knjižnice v Applovi aplikaciji Fotografije in vanjo shranjuje urejanja, zato iOS prosi za vaše dovoljenje. Dovolite lahko poln dostop ali omejen dostop samo do fotografij, ki jih izberete. V obeh primerih aplikacija odpre samo fotografijo, ki jo izberete. Podrobnosti najdete v <a href=\"{privacy_url}\">pravilniku o zasebnosti</a>."
+            "p": "RawMask Studio odpira fotografije iz vaše knjižnice v Applovi aplikaciji Fotografije in vanjo shranjuje urejanja, zato iOS, iPadOS ali macOS prosi za vaše dovoljenje. Na iPhonu in iPadu lahko dovolite poln dostop ali omejen dostop samo do fotografij, ki jih izberete; na Macu dostop velja za celotno knjižnico. V vsakem primeru aplikacija odpre samo fotografijo, ki jo izberete. Podrobnosti najdete v <a href=\"{privacy_url}\">pravilniku o zasebnosti</a>."
           }
         ]
       },
@@ -65,7 +110,7 @@
         "q": "Izbran je omejen dostop in ne najdem fotografije",
         "blocks": [
           {
-            "p": "Pri omejenem dostopu lahko aplikacija odpre samo fotografije, do katerih ste ji dovolili dostop. Če želite dovoliti dostop do več fotografij:"
+            "p": "Omejen dostop je na voljo na iPhonu in iPadu. Pri njem lahko aplikacija odpre samo fotografije, do katerih ste ji dovolili dostop. Če želite dovoliti dostop do več fotografij:"
           },
           {
             "ul": [
@@ -79,7 +124,7 @@
         "q": "Aplikacija sporoča, da je dostop do fotografij izklopljen",
         "blocks": [
           {
-            "p": "Odprite <span class=\"path\">Nastavitve &gt; Zasebnost in varnost &gt; Fotografije &gt; RawMask Studio</span>, izberite Omejen dostop ali Poln dostop, nato se vrnite v aplikacijo in znova odprite fotografijo."
+            "p": "Na iPhonu ali iPadu odprite <span class=\"path\">Nastavitve &gt; Zasebnost in varnost &gt; Fotografije &gt; RawMask Studio</span> in izberite Omejen dostop ali Poln dostop. Na Macu odprite <span class=\"path\">Sistemske nastavitve &gt; Zasebnost in varnost &gt; Fotografije</span> in dovolite dostop aplikaciji RawMask Studio. Nato se vrnite v aplikacijo in znova odprite fotografijo."
           }
         ]
       },
@@ -87,7 +132,7 @@
         "q": "Kako delujejo maske?",
         "blocks": [
           {
-            "p": "Nastavitve urejanja veljajo bodisi za celotno fotografijo bodisi za masko. Odprite meni gumba za fotografijo v zgornjem levem kotu: z možnostjo <span class=\"ui\" lang=\"en\">Edit target</span> izberete, kaj urejate, z možnostjo <span class=\"ui\" lang=\"en\">Add mask</span> pa dodate masko vrste <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span> ali <span class=\"ui\" lang=\"en\">Rectangle</span>. Masko lahko premaknete in ji spremenite velikost, s čopičem ji dodate ali odvzamete območja, z možnostjo <span class=\"ui\" lang=\"en\">Feather</span> pa zmehčate njen rob."
+            "p": "Nastavitve urejanja veljajo bodisi za celotno fotografijo bodisi za masko. Z možnostjo <span class=\"ui\" lang=\"en\">Edit target</span> izberete, kaj urejate, z možnostjo <span class=\"ui\" lang=\"en\">Add mask</span> pa dodate masko vrste <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span> ali <span class=\"ui\" lang=\"en\">Rectangle</span> (kje so te možnosti v posamezni napravi, je opisano zgoraj). Masko lahko premaknete in ji spremenite velikost, s čopičem ji dodate ali odvzamete območja, z možnostjo <span class=\"ui\" lang=\"en\">Feather</span> pa zmehčate njen rob."
           }
         ]
       },
@@ -95,7 +140,7 @@
         "q": "Kaj so samodejne maske motivov?",
         "blocks": [
           {
-            "p": "RawMask Studio vključuje model za segmentacijo slik, ki na fotografiji poišče motive, kot so ljudje, živali in vsakdanji predmeti, ter vsakega ponudi kot masko, ki jo lahko urejate ločeno. Model deluje v celoti na vašem iPhonu. Če model ne zazna motiva, ki ga želite, uporabite ročno masko ali pa prilagodite vrednosti <span class=\"ui\" lang=\"en\">Detection confidence</span> in <span class=\"ui\" lang=\"en\">Mask threshold</span> v razdelku <span class=\"ui\" lang=\"en\">More options</span> &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>."
+            "p": "RawMask Studio vključuje model za segmentacijo slik, ki na fotografiji poišče motive, kot so ljudje, živali in vsakdanji predmeti, ter vsakega ponudi kot masko, ki jo lahko urejate ločeno. Model deluje v celoti v vaši napravi. Če model ne zazna motiva, ki ga želite, uporabite ročno masko ali pa prilagodite vrednosti <span class=\"ui\" lang=\"en\">Detection confidence</span> in <span class=\"ui\" lang=\"en\">Mask threshold</span> v razdelku <span class=\"ui\" lang=\"en\">More options</span> (na Macu <span class=\"ui\" lang=\"en\">Editor options</span>) &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>."
           }
         ]
       },
@@ -103,7 +148,7 @@
         "q": "Ali potrebujem internetno povezavo?",
         "blocks": [
           {
-            "p": "Ne. Urejanje in samodejne maske delujejo brez povezave. Edina izjema je fotografija, shranjena v storitvi Fotografije iCloud, katere izvirnik ni na vašem iPhonu: aplikacija Fotografije mora izvirnik najprej prenesti iz storitve iCloud, šele nato ga je mogoče urejati."
+            "p": "Ne. Urejanje in samodejne maske delujejo brez povezave. Edina izjema je fotografija, shranjena v storitvi Fotografije iCloud, katere izvirnik ni v vaši napravi: aplikacija Fotografije mora izvirnik najprej prenesti iz storitve iCloud, šele nato ga je mogoče urejati."
           }
         ]
       },
@@ -111,13 +156,13 @@
         "q": "Kako shranim ali izvozim urejeno fotografijo?",
         "blocks": [
           {
-            "p": "Tapnite <span class=\"ui\" lang=\"en\">More options</span> (gumb ...) in odprite razdelek <span class=\"ui\" lang=\"en\">Save and export</span>:"
+            "p": "Na iPhonu tapnite <span class=\"ui\" lang=\"en\">More options</span> (gumb ...) in odprite razdelek <span class=\"ui\" lang=\"en\">Save and export</span>. Na iPadu uporabite meni <span class=\"ui\" lang=\"en\">Save</span> v zgornjem desnem kotu, v katerem se prvi dve možnosti imenujeta <span class=\"ui\" lang=\"en\">Save to Photos</span> in <span class=\"ui\" lang=\"en\">Save a Copy</span>. Na Macu kliknite <span class=\"ui\" lang=\"en\">Export</span> v orodni vrstici. Možnosti so:"
           },
           {
             "ul": [
               "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> posodobi fotografijo v vaši knjižnici. Aplikacija Fotografije ohrani izvirnik, zato se lahko nanj pozneje vrnete z ukazom Povrni izvirnik v aplikaciji Fotografije.",
               "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> doda urejeno sliko kot novo fotografijo, izvirnik pa ostane nespremenjen.",
-              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> ustvari datoteko JPEG, HEIF ali TIFF v velikosti in kakovosti, ki ju izberete, ter odpre meni za deljenje, tako da jo lahko shranite v aplikacijo Datoteke ali pošljete v drugo aplikacijo."
+              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> ustvari datoteko JPEG, HEIF ali TIFF v velikosti in kakovosti, ki ju izberete. Na iPhonu in iPadu odpre meni za deljenje, tako da jo lahko shranite v aplikacijo Datoteke ali pošljete v drugo aplikacijo; na Macu sami izberete, kam se datoteka shrani."
             ]
           }
         ]
@@ -126,7 +171,7 @@
         "q": "Kje so shranjene moje prednastavitve?",
         "blocks": [
           {
-            "p": "Na vašem iPhonu, v lastni shrambi aplikacije. Nikamor se ne nalagajo. Prednastavitve lahko izbrišete v aplikaciji, z izbrisom aplikacije pa se odstranijo."
+            "p": "V vaši napravi, v lastni shrambi aplikacije. Nikamor se ne nalagajo. Prednastavitve lahko izbrišete v aplikaciji, z izbrisom aplikacije pa se odstranijo."
           }
         ]
       },
@@ -134,7 +179,7 @@
         "q": "Katere naprave so podprte?",
         "blocks": [
           {
-            "p": "iPhone s sistemom iOS 17 ali novejšim."
+            "p": "iPhone s sistemom iOS 17 ali novejšim, iPad s sistemom iPadOS 17 ali novejšim in računalniki Mac s čipom Apple in sistemom macOS 14 ali novejšim. To je ena brezplačna aplikacija za vse tri naprave."
           }
         ]
       },
@@ -152,10 +197,10 @@
   },
   "privacy": {
     "title": "Pravilnik o zasebnosti - RawMask Studio",
-    "description": "Pravilnik o zasebnosti za RawMask Studio za iPhone. Aplikacija ne zbira nobenih podatkov; fotografije se urejajo na vašem iPhonu.",
+    "description": "Pravilnik o zasebnosti za RawMask Studio za iPhone, iPad in Mac. Aplikacija ne zbira nobenih podatkov; fotografije se urejajo v vaši napravi.",
     "h1": "Pravilnik o zasebnosti",
-    "meta": "RawMask Studio za iPhone. Datum začetka veljavnosti: 23. september 2026.",
-    "summary": "<strong>Na kratko:</strong> RawMask Studio ne zbira nobenih podatkov. Ni računa, ni analitike, ni oglaševanja in ni sledenja. Vaše fotografije se urejajo na vašem iPhonu, aplikacija pa nikoli ne pošilja vaših fotografij, vaših urejanj ali kakršnih koli drugih podatkov nam ali komur koli drugemu.",
+    "meta": "RawMask Studio za iPhone, iPad in Mac. Datum začetka veljavnosti: 26. september 2026.",
+    "summary": "<strong>Na kratko:</strong> RawMask Studio ne zbira nobenih podatkov. Ni računa, ni analitike, ni oglaševanja in ni sledenja. Vaše fotografije se urejajo na vašem iPhonu, iPadu ali Macu, aplikacija pa nikoli ne pošilja vaših fotografij, vaših urejanj ali kakršnih koli drugih podatkov nam ali komur koli drugemu.",
     "sections": [
       {
         "id": "who-we-are",
@@ -177,13 +222,13 @@
       },
       {
         "id": "on-device-processing",
-        "h2": "Obdelava poteka na vašem iPhonu",
+        "h2": "Obdelava poteka v vaši napravi",
         "blocks": [
           {
             "p": "Vsa obdelava fotografij poteka v vaši napravi. To vključuje branje datotek RAW, uporabo nastavitev svetlobe, barv, detajlov, fokusa in učinkov, izrisovanje predogledov in ustvarjanje mask."
           },
           {
-            "p": "Samodejne maske motivov ustvarja model za segmentacijo slik (RF-DETR), ki je vključen v aplikacijo in se izvaja na vašem iPhonu z Applovim ogrodjem Core ML. Model se ne prenaša z interneta, vaše fotografije pa se nikamor ne pošiljajo v analizo."
+            "p": "Samodejne maske motivov ustvarja model za segmentacijo slik (RF-DETR), ki je vključen v aplikacijo in se izvaja na vašem iPhonu, iPadu ali Macu z Applovim ogrodjem Core ML. Model se ne prenaša z interneta, vaše fotografije pa se nikamor ne pošiljajo v analizo."
           }
         ]
       },
@@ -192,7 +237,7 @@
         "h2": "Dostop do vaše knjižnice fotografij",
         "blocks": [
           {
-            "p": "RawMask Studio za odpiranje in shranjevanje slik uporablja Applovo aplikacijo Fotografije. iOS vas prosi za dovoljenje, preden lahko aplikacija dostopa do vaše knjižnice. Dovolite lahko dostop do celotne knjižnice ali samo do fotografij, ki jih izberete, to pa lahko kadar koli spremenite v razdelku <span class=\"path\">Nastavitve &gt; Zasebnost in varnost &gt; Fotografije &gt; RawMask Studio</span>."
+            "p": "RawMask Studio za odpiranje in shranjevanje slik uporablja Applovo aplikacijo Fotografije. iOS, iPadOS ali macOS vas prosi za dovoljenje, preden lahko aplikacija dostopa do vaše knjižnice. Na iPhonu in iPadu lahko dovolite dostop do celotne knjižnice ali samo do fotografij, ki jih izberete; na Macu dostop velja za celotno knjižnico. To lahko kadar koli spremenite na iPhonu in iPadu v razdelku <span class=\"path\">Nastavitve &gt; Zasebnost in varnost &gt; Fotografije &gt; RawMask Studio</span>, na Macu pa v razdelku <span class=\"path\">Sistemske nastavitve &gt; Zasebnost in varnost &gt; Fotografije</span>."
           },
           {
             "h3": "Kaj aplikacija bere"
@@ -216,7 +261,7 @@
             "h3": "Fotografije iCloud"
           },
           {
-            "p": "Če uporabljate storitev Fotografije iCloud in izvirnik izbrane fotografije v polni ločljivosti ni shranjen na vašem iPhonu, ga lahko Applovo ogrodje Photos prenese iz storitve iCloud, da ga je mogoče urejati. Tudi fotografije, ki jih shranite, lahko storitev Fotografije iCloud sinhronizira v skladu z nastavitvami vašega računa Apple. Ti prenosi potekajo med vašo napravo in vašim lastnim računom iCloud, izvaja jih Apple, zanje pa velja Applov pravilnik o zasebnosti. Nam se ne pošlje ničesar."
+            "p": "Če uporabljate storitev Fotografije iCloud in izvirnik izbrane fotografije v polni ločljivosti ni shranjen v vaši napravi, ga lahko Applovo ogrodje Photos prenese iz storitve iCloud, da ga je mogoče urejati. Tudi fotografije, ki jih shranite, lahko storitev Fotografije iCloud sinhronizira v skladu z nastavitvami vašega računa Apple. Ti prenosi potekajo med vašo napravo in vašim lastnim računom iCloud, izvaja jih Apple, zanje pa velja Applov pravilnik o zasebnosti. Nam se ne pošlje ničesar."
           }
         ]
       },
@@ -225,7 +270,10 @@
         "h2": "Izvoz in deljenje",
         "blocks": [
           {
-            "p": "Ko tapnete <span class=\"ui\" lang=\"en\">Export photo</span>, aplikacija ustvari slikovno datoteko, ki ste jo zahtevali, in odpre meni za deljenje v sistemu iOS. Datoteka gre samo tja, kamor jo pošljete sami, na primer v aplikacijo Datoteke ali Sporočila ali v drugo aplikacijo, ciljna aplikacija ali storitev pa z njo ravna v skladu s svojimi praksami glede zasebnosti. Začasna datoteka, ki jo aplikacija ustvari za izvoz, se hrani v zasebni shrambi aplikacije na vašem iPhonu in se samodejno izbriše, ko ni več potrebna."
+            "p": "Ko na iPhonu ali iPadu izberete <span class=\"ui\" lang=\"en\">Export photo</span>, aplikacija ustvari slikovno datoteko, ki ste jo zahtevali, in odpre meni za deljenje. Datoteka gre samo tja, kamor jo pošljete sami, na primer v aplikacijo Datoteke ali Sporočila ali v drugo aplikacijo, ciljna aplikacija ali storitev pa z njo ravna v skladu s svojimi praksami glede zasebnosti. Začasna datoteka, ki jo aplikacija ustvari za izvoz, se hrani v zasebni shrambi aplikacije in se samodejno izbriše, ko ni več potrebna."
+          },
+          {
+            "p": "Na Macu možnost <span class=\"ui\" lang=\"en\">Export photo</span> odpre okno za shranjevanje, datoteka pa se zapiše samo na mesto, ki ga izberete."
           }
         ]
       },
@@ -234,7 +282,7 @@
         "h2": "Podatki, shranjeni v vaši napravi",
         "blocks": [
           {
-            "p": "Da aplikacija deluje tako, kot ste jo pustili, v svoji shrambi na vašem iPhonu hrani majhno količino podatkov:"
+            "p": "Da aplikacija deluje tako, kot ste jo pustili, v svoji shrambi v vaši napravi hrani majhno količino podatkov:"
           },
           {
             "ul": [
@@ -244,7 +292,7 @@
             ]
           },
           {
-            "p": "Ti podatki ostanejo v vaši napravi in se nam ne pošiljajo. Prednastavitev lahko v aplikaciji kadar koli izbrišete, z izbrisom aplikacije pa se odstranijo vsi ti podatki. Tako kot drugi podatki aplikacij so lahko v skladu z vašimi nastavitvami sistema iOS vključeni v varnostne kopije vašega iPhona, ki jih ustvarite."
+            "p": "Ti podatki ostanejo v vaši napravi in se nam ne pošiljajo. Prednastavitev lahko v aplikaciji kadar koli izbrišete, z izbrisom aplikacije pa se odstranijo vsi ti podatki. Tako kot drugi podatki aplikacij so lahko v skladu z vašimi nastavitvami vključeni v varnostne kopije vašega iPhona, iPada ali Maca, ki jih ustvarite."
           }
         ]
       },
@@ -256,7 +304,7 @@
             "p": "RawMask Studio ne vsebuje programske opreme tretjih oseb za analitiko, oglaševanje, poročanje o zrušitvah ali sledenje. Ne uporablja oglaševalskega identifikatorja in vam ne sledi prek aplikacij ali spletnih mest, ki so v lasti drugih podjetij."
           },
           {
-            "p": "Če ste v sistemu iOS izbrali deljenje analitike z razvijalci aplikacij (<span class=\"path\">Nastavitve &gt; Zasebnost in varnost &gt; Analitika in izboljšave</span>), nam lahko Apple posreduje poročila o zrušitvah in zbirne statistične podatke o uporabi v obliki, ki vas ne identificira. To nadzorujeta Apple in vaše nastavitve, ne aplikacija."
+            "p": "Če ste izbrali deljenje analitike z razvijalci aplikacij (<span class=\"path\">Nastavitve &gt; Zasebnost in varnost &gt; Analitika in izboljšave</span> na iPhonu in iPadu ali <span class=\"path\">Sistemske nastavitve &gt; Zasebnost in varnost &gt; Analitika in izboljšave</span> na Macu), nam lahko Apple posreduje poročila o zrušitvah in zbirne statistične podatke o uporabi v obliki, ki vas ne identificira. To nadzorujeta Apple in vaše nastavitve, ne aplikacija."
           }
         ]
       },
@@ -283,7 +331,7 @@
         "h2": "Vaše možnosti",
         "blocks": [
           {
-            "p": "Ker o vas ne zbiramo in ne hranimo nobenih podatkov, pri nas ni osebnih podatkov, do katerih bi lahko dostopali ali jih popravili, izvozili ali izbrisali. Nadzor ostaja v vaših rokah, v vaši napravi: dostop do fotografij lahko spremenite ali prekličete v Nastavitvah sistema iOS, prednastavitve izbrišete v aplikaciji, urejanja ali kopije odstranite v aplikaciji Fotografije, aplikacijo pa lahko izbrišete, da odstranite njene lokalne podatke."
+            "p": "Ker o vas ne zbiramo in ne hranimo nobenih podatkov, pri nas ni osebnih podatkov, do katerih bi lahko dostopali ali jih popravili, izvozili ali izbrisali. Nadzor ostaja v vaših rokah, v vaši napravi: dostop do fotografij lahko spremenite ali prekličete v Nastavitvah (na Macu v Sistemskih nastavitvah), prednastavitve izbrišete v aplikaciji, urejanja ali kopije odstranite v aplikaciji Fotografije, aplikacijo pa lahko izbrišete, da odstranite njene lokalne podatke."
           }
         ]
       },

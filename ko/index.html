@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#081b16">
-<meta name="description" content="RawMask Studio는 자동 마스크와 수동 마스크로 RAW 사진을 보정하는 iPhone용 사진 편집 앱입니다. 모든 작업은 iPhone 안에서 처리됩니다.">
+<meta name="description" content="RawMask Studio는 자동 마스크와 수동 마스크로 RAW 사진을 보정하는 iPhone, iPad, Mac용 사진 편집 앱입니다. 모든 작업은 기기 안에서 처리됩니다.">
 <meta name="apple-itunes-app" content="app-id=6814994539">
 <title>RawMask Studio - RAW 사진 보정·마스크 부분 편집·배경 흐림·보케</title>
 <link rel="canonical" href="https://turmanauli.github.io/rawmask-studio/ko/">
@@ -64,7 +64,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RawMask Studio">
 <meta property="og:title" content="RawMask Studio - RAW 사진 보정·마스크 부분 편집·배경 흐림·보케">
-<meta property="og:description" content="RawMask Studio는 자동 마스크와 수동 마스크로 RAW 사진을 보정하는 iPhone용 사진 편집 앱입니다. 모든 작업은 iPhone 안에서 처리됩니다.">
+<meta property="og:description" content="RawMask Studio는 자동 마스크와 수동 마스크로 RAW 사진을 보정하는 iPhone, iPad, Mac용 사진 편집 앱입니다. 모든 작업은 기기 안에서 처리됩니다.">
 <meta property="og:url" content="https://turmanauli.github.io/rawmask-studio/ko/">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary">
@@ -290,16 +290,18 @@ h1 {
   overflow-wrap: anywhere;
 }
 .capabilities > p { margin: 0; max-width: 690px; color: var(--muted); font-size: 17px; line-height: 1.75; }
+/* Masonry-style columns: each card goes under the previous one, so short cards fill the gaps. */
 .features.sections {
   grid-column: 1 / -1;
-  columns: auto;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 44px 40px;
+  display: block;
+  columns: 3;
+  column-gap: 40px;
   margin-top: 62px;
+  margin-bottom: -44px;
 }
 .features.sections > li {
-  margin: 0;
+  margin: 0 0 44px;
+  break-inside: avoid;
   padding: 24px 0 0;
   border: 0;
   border-top: 2px solid var(--border);
@@ -363,7 +365,8 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 .callout .muted { font-size: 15px; line-height: 1.8; }
 
 @media (max-width: 1100px) {
-  .features.sections { gap: 36px 28px; }
+  .features.sections { column-gap: 28px; margin-bottom: -36px; }
+  .features.sections > li { margin-bottom: 36px; }
   .closing { gap: 40px; }
 }
 
@@ -379,7 +382,8 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
   .capabilities { display: block; padding-top: 35px; }
   .capabilities > h2 { margin-bottom: 24px; font-size: 36px; }
   .capabilities > p { font-size: 16px; }
-  .features.sections { grid-template-columns: 1fr 1fr; margin-top: 36px; gap: 34px 24px; }
+  .features.sections { columns: 2; column-gap: 24px; margin-top: 36px; margin-bottom: -34px; }
+  .features.sections > li { margin-bottom: 34px; }
   .closing { margin-top: 44px; padding: 28px; grid-template-columns: 1fr; gap: 28px; }
   .outro { font-size: 30px; max-width: 25ch; }
 }
@@ -411,11 +415,83 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 
 @media (max-width: 480px) {
   .capabilities > h2 { font-size: 33px; }
-  .features.sections { grid-template-columns: 1fr; }
+  .features.sections { columns: 1; }
   .features h3 { font-size: 21px; }
   .features.sections ul { font-size: 16px; }
   .closing { padding: 28px 22px; }
   .outro { font-size: 28px; }
+}
+
+/* iPhone, iPad and Mac screenshot switch: radio buttons and labels, no script */
+.device-tabs {
+  display: flex;
+  gap: 4px;
+  width: fit-content;
+  margin: -6px auto 34px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.device-tabs label { position: relative; padding: 7px 18px; border-radius: 999px; color: var(--muted); font-size: 14px; font-weight: 500; cursor: pointer; }
+.device-tabs label:hover { color: var(--text); }
+/* The radio covers its label: clicks land on it and focusing it never scrolls. */
+.device-tabs input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.device-tabs label:has(input:checked) { color: var(--accent-ink); background: var(--accent); }
+.device-tabs label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 3px; }
+.device-panel { display: none; }
+.showcase:has(#device-ipad:checked) .device-iphone, .showcase:has(#device-mac:checked) .device-iphone { display: none; }
+.showcase:has(#device-ipad:checked) .device-ipad, .showcase:has(#device-mac:checked) .device-mac { display: block; }
+.device-panel:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 6px; }
+.device-panel ul { list-style: none; display: flex; align-items: flex-start; gap: 20px; margin: 0 0 20px; padding: 0; }
+.device-panel li { flex: var(--ar) 1 0%; min-width: 0; }
+.device-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, .16);
+}
+.device-mac img { border-radius: 10px; }
+/* The same reflection as the iPhone shots; rows leave room for it. */
+@supports (-webkit-box-reflect: below) {
+  .device-panel img { -webkit-box-reflect: below 6px linear-gradient(to bottom, transparent 86%, rgba(0, 0, 0, .18)); }
+  .device-panel ul { margin-bottom: 56px; }
+}
+
+/* New in this version: the capabilities layout with a short paragraph per item */
+.whats-new { margin-bottom: 80px; }
+.whats-new .features.sections p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.features h3 .name { text-transform: none; }
+
+@media (max-width: 900px) {
+  .device-panel ul { gap: 12px; margin-bottom: 12px; }
+  .whats-new { margin-bottom: 58px; }
+}
+
+@media (max-width: 660px) {
+  .device-tabs { margin-bottom: 24px; }
+  .showcase:has(#device-ipad:checked) .device-ipad, .showcase:has(#device-mac:checked) .device-mac { display: flex; }
+  .device-panel {
+    gap: 14px;
+    margin-inline: -22px;
+    padding: 0 22px 21px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 22px;
+    scrollbar-color: var(--border) var(--bg);
+  }
+  .device-panel ul { display: contents; }
+  .device-panel li { flex: none; scroll-snap-align: start; }
+  .device-ipad img { width: auto; height: 260px; }
+  .device-mac img { width: 300px; }
+  .device-panel img { box-shadow: none; }
+  .whats-new { margin-bottom: 43px; }
+}
+@supports (-webkit-box-reflect: below) {
+  @media (max-width: 900px) { .device-panel ul { margin-bottom: 44px; } }
+  @media (max-width: 660px) { .device-panel { padding-bottom: 60px; overflow-y: hidden; } }
 }
 
 /* End site design */
@@ -494,9 +570,9 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 
 <main class="wrap">
 <section class="hero">
-  <p class="eyebrow">iPhone용 사진 편집 앱</p>
+  <p class="eyebrow">iPhone, iPad, Mac용 사진 편집 앱</p>
   <h1>RawMask Studio</h1>
-  <p class="lead">인식된 피사체를 고르거나 마스크를 직접 그린 뒤, 그 부분의 빛과 색, 디테일, 흐림만 바꿔 보세요. RAW와 ProRAW는 물론 JPEG, HEIC 사진도 편집할 수 있고, 모든 작업은 iPhone 안에서 처리됩니다. 계정도 광고도 없습니다.</p>
+  <p class="lead">인식된 피사체를 고르거나 마스크를 직접 그린 뒤, 그 부분의 빛과 색, 디테일, 흐림만 바꿔 보세요. RAW와 ProRAW는 물론 JPEG, HEIC 사진도 편집할 수 있고, 모든 작업은 iPhone, iPad, Mac 안에서 처리됩니다. 계정도 광고도 없습니다.</p>
   <div class="actions">
     <a class="badge" href="https://apps.apple.com/app/id6814994539"><img src="../assets/badges/ko-kr.svg" width="142.7" height="44" alt="App Store에서 다운로드 하기"></a>
     <a class="button secondary" href="support/">고객 지원</a>
@@ -506,17 +582,77 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 </section>
 <section class="showcase">
   <h2 id="screenshots">스크린샷</h2>
-  <ul class="shots" tabindex="0" aria-labelledby="screenshots">
+  <div class="device-tabs" role="radiogroup" aria-labelledby="screenshots">
+    <label id="tab-iphone"><input type="radio" name="device" id="device-iphone" checked>iPhone</label>
+    <label id="tab-ipad"><input type="radio" name="device" id="device-ipad">iPad</label>
+    <label id="tab-mac"><input type="radio" name="device" id="device-mac">Mac</label>
+  </div>
+  <ul class="shots device-iphone" tabindex="0" aria-labelledby="screenshots tab-iphone">
     <li><img src="../assets/screenshots/ko/01-select-300.webp" srcset="../assets/screenshots/ko/01-select-300.webp 300w, ../assets/screenshots/ko/01-select-600.webp 600w" sizes="200px" width="300" height="649" alt="선택한 곳만 편집하세요 iPhone에서 RAW 사진을 마스크로 보정해요" decoding="async"></li>
     <li><img src="../assets/screenshots/ko/02-detect-300.webp" srcset="../assets/screenshots/ko/02-detect-300.webp 300w, ../assets/screenshots/ko/02-detect-600.webp 600w" sizes="200px" width="300" height="649" alt="피사체는 알아서 찾아요 기기에서 바로 사람, 자동차, 동물을 찾아 마스킹해요" decoding="async"></li>
     <li><img src="../assets/screenshots/ko/03-masks-300.webp" srcset="../assets/screenshots/ko/03-masks-300.webp 300w, ../assets/screenshots/ko/03-masks-600.webp 600w" sizes="200px" width="300" height="649" alt="마스크는 원하는 대로 원형, 선형, 브러시, 사각형. 더하기, 빼기, 페더까지" loading="lazy" decoding="async"></li>
     <li><img src="../assets/screenshots/ko/04-adjust-300.webp" srcset="../assets/screenshots/ko/04-adjust-300.webp 300w, ../assets/screenshots/ko/04-adjust-600.webp 600w" sizes="200px" width="300" height="649" alt="빛과 색을 마스크별로 마스크마다 노출, 색상, 디테일, 초점을 따로 조절해요" loading="lazy" decoding="async"></li>
     <li><img src="../assets/screenshots/ko/05-save-300.webp" srcset="../assets/screenshots/ko/05-save-300.webp 300w, ../assets/screenshots/ko/05-save-600.webp 600w" sizes="200px" width="300" height="649" alt="사진에 저장, 언제든 복원 편집은 되돌릴 수 있고, 아무것도 업로드되지 않아요" loading="lazy" decoding="async"></li>
   </ul>
+  <div class="device-panel device-ipad" role="group" tabindex="0" aria-labelledby="screenshots tab-ipad">
+    <ul>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/ko/ipad/01-select-300.webp" srcset="../assets/screenshots/ko/ipad/01-select-300.webp 300w, ../assets/screenshots/ko/ipad/01-select-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="선택한 곳만 편집하세요 iPad에서 RAW 사진을 마스크로 보정해요" loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/ko/ipad/02-palettes-480.webp" srcset="../assets/screenshots/ko/ipad/02-palettes-480.webp 480w, ../assets/screenshots/ko/ipad/02-palettes-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="모든 도구가 사진 위에 떠 있어요 팔레트는 가로, 세로 어디서든 원하는 곳으로 옮겨요" loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/ko/ipad/03-masks-480.webp" srcset="../assets/screenshots/ko/ipad/03-masks-480.webp 480w, ../assets/screenshots/ko/ipad/03-masks-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="마스크는 원하는 대로 원형, 선형, 브러시, 사각형. 더하기, 빼기, 페더까지" loading="lazy" decoding="async"></li>
+    </ul>
+    <ul>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/ko/ipad/04-style-480.webp" srcset="../assets/screenshots/ko/ipad/04-style-480.webp 480w, ../assets/screenshots/ko/ipad/04-style-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="사진에 분위기를 더하세요 필름, 흑백, 빈티지, 누아르, 그런지, 레트로 스타일" loading="lazy" decoding="async"></li>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/ko/ipad/05-frame-300.webp" srcset="../assets/screenshots/ko/ipad/05-frame-300.webp 300w, ../assets/screenshots/ko/ipad/05-frame-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="자르고, 수평 맞추고, 프레임까지 가는 선부터 필름 가장자리까지, 테두리 8종" loading="lazy" decoding="async"></li>
+      <li style="--ar: 0.7500"><img src="../assets/screenshots/ko/ipad/06-save-300.webp" srcset="../assets/screenshots/ko/ipad/06-save-300.webp 300w, ../assets/screenshots/ko/ipad/06-save-600.webp 600w" sizes="(max-width: 660px) 195px, 240px" width="300" height="400" alt="사진에 저장, 언제든 복원 편집은 되돌릴 수 있고, 아무것도 업로드되지 않아요" loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.3333"><img src="../assets/screenshots/ko/ipad/07-options-480.webp" srcset="../assets/screenshots/ko/ipad/07-options-480.webp 480w, ../assets/screenshots/ko/ipad/07-options-960.webp 960w" sizes="(max-width: 660px) 347px, 427px" width="480" height="360" alt="편집기를 내 방식대로 프리셋을 저장하고, 쓰는 단계만 원하는 순서로 남겨요" loading="lazy" decoding="async"></li>
+    </ul>
+  </div>
+  <div class="device-panel device-mac" role="group" tabindex="0" aria-labelledby="screenshots tab-mac">
+    <ul>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/ko/mac/01-select-480.webp" srcset="../assets/screenshots/ko/mac/01-select-480.webp 480w, ../assets/screenshots/ko/mac/01-select-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="선택한 곳만 편집하세요 Mac에서 RAW 사진을 마스크로 보정해요" loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/ko/mac/02-detect-480.webp" srcset="../assets/screenshots/ko/mac/02-detect-480.webp 480w, ../assets/screenshots/ko/mac/02-detect-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="피사체는 알아서 찾아요 기기에서 바로 사람, 자동차, 동물을 찾아 마스킹해요" loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/ko/mac/03-frame-480.webp" srcset="../assets/screenshots/ko/mac/03-frame-480.webp 480w, ../assets/screenshots/ko/mac/03-frame-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="자르고, 수평 맞추고, 프레임까지 가는 선부터 필름 가장자리까지, 테두리 8종" loading="lazy" decoding="async"></li>
+    </ul>
+    <ul>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/ko/mac/04-save-480.webp" srcset="../assets/screenshots/ko/mac/04-save-480.webp 480w, ../assets/screenshots/ko/mac/04-save-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="사진에 저장, 언제든 복원 편집은 되돌릴 수 있고, 아무것도 업로드되지 않아요" loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/ko/mac/05-steps-480.webp" srcset="../assets/screenshots/ko/mac/05-steps-480.webp 480w, ../assets/screenshots/ko/mac/05-steps-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="편집기를 내 방식대로 프리셋을 저장하고, 쓰는 단계만 원하는 순서로 남겨요" loading="lazy" decoding="async"></li>
+      <li style="--ar: 1.6000"><img src="../assets/screenshots/ko/mac/06-detection-480.webp" srcset="../assets/screenshots/ko/mac/06-detection-480.webp 480w, ../assets/screenshots/ko/mac/06-detection-960.webp 960w" sizes="(max-width: 660px) 300px, 370px" width="480" height="300" alt="감지 방식도 직접 조절 신뢰도, 마스크 경계, 객체 수를 설정해요. 모두 Mac에서 실행돼요" loading="lazy" decoding="async"></li>
+    </ul>
+  </div>
+</section>
+<section class="capabilities whats-new">
+  <h2 id="whats-new">버전 1.2.0의 새로운 기능</h2>
+  <p>이제 RawMask Studio를 iPhone뿐 아니라 iPad와 Mac에서도 사용할 수 있습니다. 세 기기 모두에서 쓰는 하나의 무료 앱이며, 모든 편집은 여전히 기기 안에서 이루어집니다.</p>
+  <ul class="features sections">
+    <li>
+      <h3>이제 <span class="name">iPad</span>에서도</h3>
+      <p>사진이 화면을 가득 채우고, 도구는 어디로든 드래그할 수 있는 팔레트로 사진 위에 떠 있습니다. 세로와 가로 방향을 모두 지원합니다.</p>
+    </li>
+    <li>
+      <h3>이제 <span class="name">Mac</span>에서도</h3>
+      <p>단계는 도구 막대에 있고, 사진 옆 속성 패널에 마스크와 슬라이더가 모여 있습니다. 확대해서 세밀한 디테일을 확인하고, JPEG, HEIF 또는 TIFF 파일로 내보낼 수 있습니다.</p>
+    </li>
+    <li>
+      <h3>새로운 톤(Tone) 단계</h3>
+      <p>하이·라이트·다크·로우 톤 커브와 하이라이트·중간 톤·그림자의 선명한 로컬 대비를 조절할 수 있습니다.</p>
+    </li>
+    <li>
+      <h3>새로운 스타일(Style) 단계</h3>
+      <p>HDR, 드라마, 글로우, 블룸, 헐레이션, 색수차와 함께 Film, B&amp;W, Vintage, Noir, Grunge, Retro 룩을 제공합니다.</p>
+    </li>
+    <li>
+      <h3>HSL 색상 조절</h3>
+      <p>색상(Color) 단계에서 8개 색상 범위마다 색상, 크로마, 명도를 바로 조절할 수 있습니다.</p>
+    </li>
+    <li>
+      <h3>더 풍부해진 구도와 효과</h3>
+      <p>구도(Frame)에 원근 보정, 여백 채우기, 8종의 테두리가 추가되었고, 효과(Effects)에서 비네팅의 크기, 모양, 부드러움을 조절할 수 있습니다.</p>
+    </li>
+  </ul>
 </section>
 <section class="capabilities">
   <h2>주요 기능</h2>
-  <p>사진 전체가 아니라, 원하는 부분만 보정하세요. RawMask Studio는 마스크를 중심으로 만든 RAW 사진 편집 앱입니다. 자동으로 찾아낸 피사체를 고르거나 마스크를 직접 그린 다음, 그 영역의 빛, 색, 디테일, 초점만 따로 조절하세요. 나머지 부분은 그대로 유지됩니다. RAW와 ProRAW는 물론 평소 찍은 JPEG, HEIC 사진도 열 수 있고, 모든 편집은 iPhone 안에서 이루어집니다.</p>
+  <p>사진 전체를 보정하거나, 원하는 부분만 골라 보정하세요. RawMask Studio는 마스크를 중심으로 만든 RAW 사진 편집 앱입니다. 자동으로 찾아낸 피사체를 고르거나 마스크를 직접 그린 다음, 그 영역의 빛, 색, 디테일, 초점만 따로 조절하세요. 나머지 부분은 그대로 유지됩니다. RAW와 ProRAW는 물론 평소 찍은 JPEG, HEIC 사진도 열 수 있고, 모든 편집은 iPhone, iPad, Mac 안에서 이루어집니다.</p>
   <ul class="features sections">
     <li>
       <h3>마스크로 원하는 부분만 보정</h3>
@@ -538,19 +674,21 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
     <li>
       <h3>단계별로 따라가는 편집 흐름</h3>
       <ul>
-        <li>구도(Frame): 자르기, 수평 맞추기, 회전, 비율, 확대</li>
+        <li>구도(Frame): 자르기, 수평 맞추기, 회전, 비율, 확대, 원근 보정, 여백 채우기와 테두리</li>
         <li>빛(Light): 노출, 대비, 하이라이트, 그림자, 흰색 계열, 검정 계열</li>
-        <li>색상(Color): 색온도, 색조, 생동감, 채도</li>
+        <li>톤(Tone): 하이·라이트·다크·로우 톤 커브와 하이라이트·중간 톤·그림자의 로컬 대비</li>
+        <li>색상(Color): 색온도, 색조, 생동감, 채도에 8개 색상 범위별 HSL(색상, 크로마, 명도) 추가</li>
         <li>디테일(Detail): 텍스처, 명료도, 디헤이즈, 선명도, 노이즈 감소</li>
         <li>초점(Focus): 강도, 범위, 페더, 보케를 조절하는 배경 흐림</li>
-        <li>효과(Effects): 비네팅, 그레인, 페이드</li>
+        <li>스타일(Style): HDR, 드라마, 글로우, 블룸, 헐레이션, 색수차와 Film, B&amp;W, Vintage, Noir, Grunge, Retro 룩</li>
+        <li>효과(Effects): 크기, 모양, 부드러움을 조절하는 비네팅, 그레인, 페이드</li>
         <li>편집기 옵션(Editor options)에서 단계 순서를 바꾸거나 숨겨 작업 방식에 맞게 구성</li>
       </ul>
     </li>
     <li>
       <h3>전후 비교와 프리셋</h3>
       <ul>
-        <li>길게 눌러 비교(Hold to Compare)로 언제든 보정 전후 확인</li>
+        <li>길게 눌러 비교(Hold to Compare)로 언제든 보정 전후 확인, Mac에서는 \ 키를 누르고 있으면 됩니다</li>
         <li>사진 전체 보정값을 프리셋으로 저장해 다른 사진에 그대로 적용</li>
       </ul>
     </li>
@@ -559,7 +697,7 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
       <ul>
         <li>사진 앱에 편집 저장(Save edit to Photos)은 비파괴 방식이라 원본이 그대로 남고, 사진 앱에서 언제든 원래대로 되돌릴 수 있습니다</li>
         <li>사본 저장(Save a copy to Photos)으로 편집본을 새 사진으로 따로 보관</li>
-        <li>공유 시트로 JPEG, HEIF, TIFF 내보내기</li>
+        <li>iPhone과 iPad에서는 공유 시트로, Mac에서는 파일로 JPEG, HEIF, TIFF 내보내기</li>
       </ul>
     </li>
     <li>
@@ -567,7 +705,7 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
       <ul>
         <li>계정도, 로그인도, 광고도 없습니다</li>
         <li>편집과 피사체 인식이 모두 기기 안에서 처리되어 사진이 어디에도 업로드되지 않습니다</li>
-        <li>무료이며 앱 내 구입이 없습니다</li>
+        <li>iPhone, iPad, Mac 모두 무료이며 앱 내 구입이 없습니다</li>
       </ul>
     </li>
   </ul>
@@ -575,10 +713,10 @@ html.no-tracking .features h3, html.no-tracking .outro { letter-spacing: normal;
 <section class="closing">
   <div class="closing-copy">
   <p class="outro">앱 화면은 현재 영어로 제공되며, 괄호 안에 실제 메뉴 이름을 함께 적어 두었습니다.</p>
-  <p class="outro">사진을 열고 마스크를 골라, 가장 빛나야 할 부분을 살려 보세요.</p>
+  <p class="outro">사진을 열어 전체를 보정하거나, 한 부분을 골라 돋보이게 만들어 보세요.</p>
   </div>
   <div class="callout">
-    <p><strong>요구 사항:</strong> iOS 17 이상이 설치된 iPhone.</p>
+    <p><strong>요구 사항:</strong> iOS 17 이상이 설치된 iPhone, iPadOS 17 이상이 설치된 iPad 또는 macOS 14 이상이 설치된 Apple 실리콘 탑재 Mac.</p>
     <p class="muted">궁금한 점이나 문제가 있으신가요? <a href="support/">지원 페이지</a>를 방문해 주세요. 앱이 사진을 어떻게 다루는지는 <a href="privacy/">개인정보 처리방침</a>에서 자세히 확인할 수 있습니다.</p>
   </div>
 </section>

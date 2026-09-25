@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#081b16">
-<meta name="description" content="Az iPhone-ra készült RawMask Studio adatvédelmi szabályzata. Az app semmilyen adatot nem gyűjt; a fotók szerkesztése az iPhone-odon történik.">
+<meta name="description" content="Az iPhone-ra, iPadre és Macre készült RawMask Studio adatvédelmi szabályzata. Az app semmilyen adatot nem gyűjt; a fotók szerkesztése az eszközödön történik.">
 <meta name="apple-itunes-app" content="app-id=6814994539">
 <title>Adatvédelmi szabályzat - RawMask Studio</title>
 <link rel="canonical" href="https://turmanauli.github.io/rawmask-studio/hu/privacy/">
@@ -64,7 +64,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RawMask Studio">
 <meta property="og:title" content="Adatvédelmi szabályzat - RawMask Studio">
-<meta property="og:description" content="Az iPhone-ra készült RawMask Studio adatvédelmi szabályzata. Az app semmilyen adatot nem gyűjt; a fotók szerkesztése az iPhone-odon történik.">
+<meta property="og:description" content="Az iPhone-ra, iPadre és Macre készült RawMask Studio adatvédelmi szabályzata. Az app semmilyen adatot nem gyűjt; a fotók szerkesztése az eszközödön történik.">
 <meta property="og:url" content="https://turmanauli.github.io/rawmask-studio/hu/privacy/">
 <meta property="og:locale" content="hu_HU">
 <meta name="twitter:card" content="summary">
@@ -297,6 +297,9 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   .document .faq section { padding-block: 24px; }
 }
 
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.name { text-transform: none; }
+
 /* End site design */
 </style>
 </head>
@@ -373,11 +376,11 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
 <main class="wrap document">
   <h1>Adatvédelmi szabályzat</h1>
-  <p class="meta">RawMask Studio iPhone-ra. Hatálybalépés napja: 2026. szeptember 23.</p>
+  <p class="meta">RawMask Studio iPhone-ra, iPadre és Macre. Hatálybalépés napja: 2026. szeptember 26.</p>
   <p class="note">Ez az oldal az <a href="../../privacy/">angol nyelvű változat</a> fordítása. Ha a két változat eltér egymástól, az angol nyelvű változat az irányadó.</p>
 
   <div class="callout">
-    <p><strong>Röviden:</strong> a RawMask Studio semmilyen adatot nem gyűjt. Nincs fiók, nincs analitika, nincsenek hirdetések, és nincs követés. A fotóid szerkesztése az iPhone-odon történik, és az app soha nem küldi el sem nekünk, sem másnak a fotóidat, a szerkesztéseidet vagy bármilyen más információt.</p>
+    <p><strong>Röviden:</strong> a RawMask Studio semmilyen adatot nem gyűjt. Nincs fiók, nincs analitika, nincsenek hirdetések, és nincs követés. A fotóid szerkesztése az iPhone-odon, iPadeden vagy Maceden történik, és az app soha nem küldi el sem nekünk, sem másnak a fotóidat, a szerkesztéseidet vagy bármilyen más információt.</p>
   </div>
 
   <h2 id="who-we-are">Kik vagyunk</h2>
@@ -386,12 +389,12 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   <h2 id="information-we-collect">Az általunk gyűjtött adatok</h2>
   <p>Nincsenek ilyenek. A RawMask Studio nem gyűjt, nem továbbít, nem értékesít és nem oszt meg személyes adatokat. Az app nem küldi el sem nekünk, sem harmadik félnek a fotóidat, szerkesztéseidet, maszkjaidat, preseteidet, beállításaidat, eszközazonosítóidat, használati adataidat vagy diagnosztikai adataidat, és nem üzemeltetünk olyan szervert, amely adatokat fogadna az appból. Nincs bejelentkezés, és nincs fiók.</p>
 
-  <h2 id="on-device-processing">A feldolgozás az iPhone-odon történik</h2>
+  <h2 id="on-device-processing">A feldolgozás az eszközödön történik</h2>
   <p>A fotók feldolgozása teljes egészében az eszközödön történik. Ide tartozik a RAW-fájlok beolvasása, a fény-, szín-, részlet-, fókusz- és effektbeállítások alkalmazása, az előnézetek renderelése és a maszkok létrehozása.</p>
-  <p>Az automatikus objektummaszkokat egy képszegmentáló modell (RF-DETR) hozza létre, amely az app része, és az Apple Core ML technológiájával az iPhone-odon fut. Az app nem tölti le a modellt az internetről, és a fotóidat sem küldi el sehová elemzésre.</p>
+  <p>Az automatikus objektummaszkokat egy képszegmentáló modell (RF-DETR) hozza létre, amely az app része, és az Apple Core ML technológiájával az iPhone-odon, iPadeden vagy Maceden fut. Az app nem tölti le a modellt az internetről, és a fotóidat sem küldi el sehová elemzésre.</p>
 
   <h2 id="photos-access">Hozzáférés a fotókönyvtáradhoz</h2>
-  <p>A RawMask Studio az Apple Fotók appot használja a képek megnyitásához és mentéséhez. Mielőtt az app hozzáférhetne a könyvtáradhoz, az iOS engedélyt kér tőled. Engedélyezheted a hozzáférést a teljes könyvtáradhoz vagy csak az általad kiválasztott fotókhoz, és ezt bármikor módosíthatod a <span class="path">Beállítások &gt; Adatvédelem és biztonság &gt; Fotók &gt; RawMask Studio</span> menüpontban.</p>
+  <p>A RawMask Studio az Apple Fotók appot használja a képek megnyitásához és mentéséhez. Mielőtt az app hozzáférhetne a könyvtáradhoz, az iOS, az iPadOS, illetve a macOS engedélyt kér tőled. iPhone-on és iPaden engedélyezheted a hozzáférést a teljes könyvtáradhoz vagy csak az általad kiválasztott fotókhoz; Macen a hozzáférés a teljes könyvtárra vonatkozik. Ezt bármikor módosíthatod iPhone-on és iPaden a <span class="path">Beállítások &gt; Adatvédelem és biztonság &gt; Fotók &gt; RawMask Studio</span> menüpontban, Macen pedig a <span class="path">Rendszerbeállítások &gt; Adatvédelem és biztonság &gt; Fotók</span> menüpontban.</p>
   <h3>Mit olvas be az app</h3>
   <p>Csak azt a fotót, amelyet a fotóválasztóban kiválasztasz, egyszerre egyet. A szerkesztéshez az app beolvassa a fotó képadatait és az ehhez szükséges további adatait, például a méreteit, a készítés dátumát, a fájlformátumát, valamint a vele együtt mentett esetleges korábbi RawMask Studio-szerkesztést. Az app nem böngészi, nem vizsgálja át és nem indexeli a könyvtárad többi részét.</p>
   <h3>Mit ír az app a könyvtáradba</h3>
@@ -401,23 +404,24 @@ html.no-tracking .document h3 { letter-spacing: normal; }
     <li><strong><span class="ui" lang="en">Save a copy to Photos</span></strong>: új fotóként adja hozzá a szerkesztett képet. Az eredeti nem változik.</li>
   </ul>
   <h3>iCloud-fotók</h3>
-  <p>Ha használod az iCloud-fotókat, és a kiválasztott fotó teljes felbontású eredetije nincs az iPhone-odon tárolva, az Apple Fotók keretrendszere letöltheti azt az iCloudból, hogy szerkeszthető legyen. Emellett az általad mentett fotókat az iCloud-fotók az Apple-beállításaidnak megfelelően szinkronizálhatja. Ezek az adatátvitelek az eszközöd és a saját iCloud-fiókod között zajlanak, az Apple kezeli őket, és az Apple adatvédelmi szabályzata vonatkozik rájuk. Hozzánk semmi sem jut el.</p>
+  <p>Ha használod az iCloud-fotókat, és a kiválasztott fotó teljes felbontású eredetije nincs az eszközödön tárolva, az Apple Fotók keretrendszere letöltheti azt az iCloudból, hogy szerkeszthető legyen. Emellett az általad mentett fotókat az iCloud-fotók az Apple-beállításaidnak megfelelően szinkronizálhatja. Ezek az adatátvitelek az eszközöd és a saját iCloud-fiókod között zajlanak, az Apple kezeli őket, és az Apple adatvédelmi szabályzata vonatkozik rájuk. Hozzánk semmi sem jut el.</p>
 
   <h2 id="export">Exportálás és megosztás</h2>
-  <p>Amikor az <span class="ui" lang="en">Export photo</span> gombra koppintasz, az app létrehozza a kért képfájlt, és megnyitja az iOS Megosztás menüjét. A fájl csak oda kerül, ahová te küldöd, például a Fájlokba, az Üzenetekbe vagy egy másik appba, és azt a célhely a saját adatvédelmi gyakorlata szerint kezeli. Az exportáláshoz létrehozott ideiglenes fájlt az app az iPhone-odon, a saját privát tárhelyén tartja, és automatikusan törli, amikor már nincs rá szükség.</p>
+  <p>Amikor iPhone-on vagy iPaden az <span class="ui" lang="en">Export photo</span> lehetőséget választod, az app létrehozza a kért képfájlt, és megnyitja a Megosztás menüt. A fájl csak oda kerül, ahová te küldöd, például a Fájlokba, az Üzenetekbe vagy egy másik appba, és azt a célhely a saját adatvédelmi gyakorlata szerint kezeli. Az exportáláshoz létrehozott ideiglenes fájlt az app a saját privát tárhelyén tartja, és automatikusan törli, amikor már nincs rá szükség.</p>
+  <p>Macen az <span class="ui" lang="en">Export photo</span> egy mentési ablakot nyit meg, és a fájl csak az általad kiválasztott helyre kerül.</p>
 
   <h2 id="on-device-storage">Az eszközödön tárolt adatok</h2>
-  <p>Annak érdekében, hogy az app úgy működjön, ahogy legutóbb hagytad, kis mennyiségű adatot tárol a saját tárhelyén az iPhone-odon:</p>
+  <p>Annak érdekében, hogy az app úgy működjön, ahogy legutóbb hagytad, kis mennyiségű adatot tárol a saját tárhelyén az eszközödön:</p>
   <ul>
     <li>az általad mentett preseteket (a nevüket és a beállítási értékeiket),</li>
     <li>a szerkesztő beállításait, például azt, hogy mely szerkesztési részek jelennek meg és milyen sorrendben, valamint az előtte-utána összevetés módját, és</li>
     <li>az automatikus maszkok beállításait.</li>
   </ul>
-  <p>Ezek az adatok az eszközödön maradnak, és az app nem küldi el őket nekünk. Egy presetet bármikor törölhetsz az appban, az app törlésével pedig ezek az adatok mind törlődnek. Más appadatokhoz hasonlóan ezek is bekerülhetnek az iPhone-odról általad készített biztonsági mentésekbe, az iOS-beállításaidnak megfelelően.</p>
+  <p>Ezek az adatok az eszközödön maradnak, és az app nem küldi el őket nekünk. Egy presetet bármikor törölhetsz az appban, az app törlésével pedig ezek az adatok mind törlődnek. Más appadatokhoz hasonlóan ezek is bekerülhetnek az iPhone-odról, iPadedről vagy Macedről általad készített biztonsági mentésekbe, a beállításaidnak megfelelően.</p>
 
   <h2 id="no-third-parties">Nincs harmadik féltől származó szolgáltatás, analitika, hirdetés vagy követés</h2>
   <p>A RawMask Studio nem tartalmaz harmadik féltől származó analitikai, hirdetési, összeomlás-jelentő vagy követő szoftvert. Nem használja a hirdetési azonosítót, és nem követ téged más cégek tulajdonában lévő appokban vagy webhelyeken.</p>
-  <p>Ha az iOS-ben úgy döntöttél, hogy megosztod az elemzési adatokat az appfejlesztőkkel (<span class="path">Beállítások &gt; Adatvédelem és biztonság &gt; Elemzések és fejlesztések</span>), az Apple összeomlási jelentéseket és összesített használati statisztikákat adhat át nekünk olyan formában, amely nem azonosít téged. Ezt az Apple és a beállításaid szabályozzák, nem az app.</p>
+  <p>Ha úgy döntöttél, hogy megosztod az elemzési adatokat az appfejlesztőkkel (iPhone-on és iPaden: <span class="path">Beállítások &gt; Adatvédelem és biztonság &gt; Elemzések és fejlesztések</span>, Macen: <span class="path">Rendszerbeállítások &gt; Adatvédelem és biztonság &gt; Elemzések és fejlesztések</span>), az Apple összeomlási jelentéseket és összesített használati statisztikákat adhat át nekünk olyan formában, amely nem azonosít téged. Ezt az Apple és a beállításaid szabályozzák, nem az app.</p>
 
   <h2 id="purchases">Vásárlások</h2>
   <p>A RawMask Studio jelenleg ingyenes. Ha a jövőben alkalmazáson belüli vásárlások vagy fizetős funkciók kerülnek az appba, a fizetéseket az Apple dolgozza fel az App Store-on keresztül, az Apple feltételei és adatvédelmi szabályzata szerint, és mi nem kapjuk meg a fizetési adataidat. Minden ilyen változás hatálybalépése előtt frissíteni fogjuk ezt a szabályzatot.</p>
@@ -426,7 +430,7 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   <p>A RawMask Studio általános fotószerkesztő app, és nem kifejezetten gyermekeknek szól. Mivel az app senkitől sem gyűjt személyes adatokat, gyermekektől sem gyűjt személyes adatokat.</p>
 
   <h2 id="your-choices">Választási lehetőségeid</h2>
-  <p>Mivel semmilyen adatot nem gyűjtünk és nem tárolunk rólad, nálunk nincs olyan személyes adat, amelyhez hozzáférhetnél, vagy amelyet helyesbíthetnél, exportálhatnál vagy törölhetnél. Az irányítás az eszközödön a te kezedben marad: az iOS Beállításaiban módosíthatod vagy visszavonhatod a Fotókhoz való hozzáférést, az appban törölheted a preseteket, a Fotók appban eltávolíthatod a szerkesztéseket vagy a másolatokat, és az app törlésével eltávolíthatod a helyi adatait.</p>
+  <p>Mivel semmilyen adatot nem gyűjtünk és nem tárolunk rólad, nálunk nincs olyan személyes adat, amelyhez hozzáférhetnél, vagy amelyet helyesbíthetnél, exportálhatnál vagy törölhetnél. Az irányítás az eszközödön a te kezedben marad: a Beállításokban (Macen a Rendszerbeállításokban) módosíthatod vagy visszavonhatod a Fotókhoz való hozzáférést, az appban törölheted a preseteket, a Fotók appban eltávolíthatod a szerkesztéseket vagy a másolatokat, és az app törlésével eltávolíthatod a helyi adatait.</p>
 
   <h2 id="changes">A szabályzat módosításai</h2>
   <p>Ha megváltozik az, ahogyan az app az adatokat kezeli, például ha egy jövőbeli funkciónak adatokat kellene küldenie az eszközödről, akkor az adott verzió megjelenése előtt frissítjük ezt a szabályzatot és az app App Store-ban közzétett adatvédelmi információit, és módosítjuk az oldal tetején szereplő hatálybalépési dátumot.</p>

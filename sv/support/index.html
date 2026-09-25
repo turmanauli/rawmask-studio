@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#081b16">
-<meta name="description" content="Hjälp och kontakt för RawMask Studio för iPhone: öppna bilder, åtkomst till Bilder, masker, spara och exportera.">
+<meta name="description" content="Hjälp och kontakt för RawMask Studio på iPhone, iPad och Mac: öppna bilder, åtkomst till Bilder, masker, spara och exportera.">
 <meta name="apple-itunes-app" content="app-id=6814994539">
 <title>Support - RawMask Studio</title>
 <link rel="canonical" href="https://turmanauli.github.io/rawmask-studio/sv/support/">
@@ -64,7 +64,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RawMask Studio">
 <meta property="og:title" content="Support - RawMask Studio">
-<meta property="og:description" content="Hjälp och kontakt för RawMask Studio för iPhone: öppna bilder, åtkomst till Bilder, masker, spara och exportera.">
+<meta property="og:description" content="Hjälp och kontakt för RawMask Studio på iPhone, iPad och Mac: öppna bilder, åtkomst till Bilder, masker, spara och exportera.">
 <meta property="og:url" content="https://turmanauli.github.io/rawmask-studio/sv/support/">
 <meta property="og:locale" content="sv_SE">
 <meta name="twitter:card" content="summary">
@@ -300,6 +300,9 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   .document .faq section { padding-block: 24px; }
 }
 
+/* Product names keep their casing in the uppercase headings, as Apple writes them. */
+.name { text-transform: none; }
+
 /* End site design */
 </style>
 </head>
@@ -376,12 +379,12 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
 <main class="wrap document">
   <h1>Support</h1>
-  <p class="meta">Hjälp för RawMask Studio för iPhone.</p>
+  <p class="meta">Hjälp för RawMask Studio på iPhone, iPad och Mac.</p>
   <p class="note">Den här sidan är en översättning av den <a href="../../support/">engelska versionen</a>. Om de två versionerna skiljer sig åt har den engelska versionen företräde.</p>
 
   <div class="callout" id="contact">
     <p><strong>Kontakt:</strong> e-post <a href="mailto:turmanauli.beso@gmail.com">turmanauli.beso@gmail.com</a></p>
-    <p>Ange gärna din iPhone-modell, iOS-version och en kort beskrivning av vad som hände och vad du förväntade dig. Du behöver inte skicka några bilder. Det räcker oftast att beskriva bilden (till exempel kameran eller filformatet).</p>
+    <p>Ange gärna vilken enhet du har (iPhone, iPad eller Mac), vilken version av iOS, iPadOS eller macOS den kör och en kort beskrivning av vad som hände och vad du förväntade dig. Du behöver inte skicka några bilder. Det räcker oftast att beskriva bilden (till exempel kameran eller filformatet).</p>
     <p class="muted">Appens gränssnitt är för närvarande på engelska. Namnen på knappar och menyer nedan står på engelska, precis som de visas i appen.</p>
   </div>
 
@@ -389,7 +392,17 @@ html.no-tracking .document h3 { letter-spacing: normal; }
   <div class="faq">
     <section>
       <h3>Hur öppnar jag en bild?</h3>
-      <p>Tryck på bildknappen längst upp till vänster i redigeraren och välj <span class="ui" lang="en">Open photo</span>. Bildväljaren öppnas och du väljer en bild. RawMask Studio redigerar en bild i taget. Live Photos visas för närvarande inte i bildväljaren.</p>
+      <p>På iPhone trycker du på bildknappen längst upp till vänster i redigeraren och väljer <span class="ui" lang="en">Open photo</span>. På iPad trycker du på <span class="ui" lang="en">Open photo</span> i paletten längst upp till vänster. På Mac klickar du på <span class="ui" lang="en">Open photo</span> i verktygsfältet. Bildväljaren öppnas och du väljer en bild. RawMask Studio redigerar en bild i taget. Live Photos visas för närvarande inte i bildväljaren.</p>
+    </section>
+
+    <section>
+      <h3>Var finns knapparna på <span class="name">iPad</span> och <span class="name">Mac</span>?</h3>
+      <p>Stegen och verktygen är desamma på alla enheter, det är bara placeringen som skiljer sig:</p>
+      <ul>
+        <li><strong>iPhone:</strong> bildknappen längst upp till vänster innehåller <span class="ui" lang="en">Open photo</span>, <span class="ui" lang="en">Edit target</span> och <span class="ui" lang="en">Add mask</span>, och <span class="ui" lang="en">More options</span> är knappen ... längst upp till höger.</li>
+        <li><strong>iPad:</strong> paletten längst upp till vänster innehåller <span class="ui" lang="en">Open photo</span>, <span class="ui" lang="en">Edit target</span> och <span class="ui" lang="en">Add mask</span>, och <span class="ui" lang="en">More options</span> (knappen ...) och <span class="ui" lang="en">Save</span> finns längst upp till höger. Du kan dra paletterna vart du vill.</li>
+        <li><strong>Mac:</strong> <span class="ui" lang="en">Open photo</span> och stegen finns i verktygsfältet, <span class="ui" lang="en">Edit target</span> och <span class="ui" lang="en">Add mask</span> finns i inspektören bredvid bilden, och <span class="ui" lang="en">Editor options</span> (knappen med reglage) och <span class="ui" lang="en">Export</span> finns längst upp till höger.</li>
+      </ul>
     </section>
 
     <section>
@@ -399,12 +412,12 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
     <section>
       <h3>Varför ber appen om åtkomst till Bilder?</h3>
-      <p>RawMask Studio öppnar bilder från ditt bibliotek i Apples app Bilder och sparar redigeringar tillbaka dit, så iOS ber om ditt tillstånd. Du kan ge full åtkomst, eller begränsad åtkomst till bara de bilder du väljer ut. I båda fallen öppnar appen bara den bild du väljer. Mer information finns i <a href="../privacy/">integritetspolicyn</a>.</p>
+      <p>RawMask Studio öppnar bilder från ditt bibliotek i Apples app Bilder och sparar redigeringar tillbaka dit, så iOS, iPadOS eller macOS ber om ditt tillstånd. På iPhone och iPad kan du ge full åtkomst, eller begränsad åtkomst till bara de bilder du väljer ut. På Mac gäller åtkomsten hela biblioteket. Oavsett vilket öppnar appen bara den bild du väljer. Mer information finns i <a href="../privacy/">integritetspolicyn</a>.</p>
     </section>
 
     <section>
       <h3>Jag valde begränsad åtkomst och hittar inte en bild</h3>
-      <p>Med begränsad åtkomst kan appen bara öppna de bilder som du har tillåtit. Så här tillåter du fler bilder:</p>
+      <p>Begränsad åtkomst finns på iPhone och iPad. Med den kan appen bara öppna de bilder som du har tillåtit. Så här tillåter du fler bilder:</p>
       <ul>
         <li>Tryck på <span class="ui" lang="en">More options</span> (knappen ...) i appen och sedan på <span class="ui" lang="en">Manage allowed photos</span> under <span class="ui" lang="en">Photos access</span>, eller</li>
         <li>öppna <span class="path">Inställningar &gt; Integritet och säkerhet &gt; Bilder &gt; RawMask Studio</span> och ändra urvalet eller välj Full åtkomst.</li>
@@ -413,42 +426,42 @@ html.no-tracking .document h3 { letter-spacing: normal; }
 
     <section>
       <h3>Appen säger att åtkomsten till Bilder är avstängd</h3>
-      <p>Öppna <span class="path">Inställningar &gt; Integritet och säkerhet &gt; Bilder &gt; RawMask Studio</span>, välj Begränsad åtkomst eller Full åtkomst, gå sedan tillbaka till appen och öppna en bild igen.</p>
+      <p>På iPhone eller iPad öppnar du <span class="path">Inställningar &gt; Integritet och säkerhet &gt; Bilder &gt; RawMask Studio</span> och väljer Begränsad åtkomst eller Full åtkomst. På Mac öppnar du <span class="path">Systeminställningar &gt; Integritet och säkerhet &gt; Bilder</span> och ger RawMask Studio åtkomst. Gå sedan tillbaka till appen och öppna en bild igen.</p>
     </section>
 
     <section>
       <h3>Hur fungerar masker?</h3>
-      <p>Justeringar gäller antingen hela bilden eller en mask. Öppna bildknappens meny längst upp till vänster: använd <span class="ui" lang="en">Edit target</span> för att välja vad du redigerar och <span class="ui" lang="en">Add mask</span> för att lägga till en mask av typen <span class="ui" lang="en">Radial</span>, <span class="ui" lang="en">Linear</span>, <span class="ui" lang="en">Brush</span> eller <span class="ui" lang="en">Rectangle</span>. Du kan flytta en mask och ändra dess storlek, måla för att lägga till i den eller dra ifrån den, och mjuka upp kanten med <span class="ui" lang="en">Feather</span>.</p>
+      <p>Justeringar gäller antingen hela bilden eller en mask. Använd <span class="ui" lang="en">Edit target</span> för att välja vad du redigerar och <span class="ui" lang="en">Add mask</span> för att lägga till en mask av typen <span class="ui" lang="en">Radial</span>, <span class="ui" lang="en">Linear</span>, <span class="ui" lang="en">Brush</span> eller <span class="ui" lang="en">Rectangle</span> (se ovan var de finns på varje enhet). Du kan flytta en mask och ändra dess storlek, måla för att lägga till i den eller dra ifrån den, och mjuka upp kanten med <span class="ui" lang="en">Feather</span>.</p>
     </section>
 
     <section>
       <h3>Vad är automatiska objektmasker?</h3>
-      <p>RawMask Studio innehåller en modell för bildsegmentering som hittar objekt i din bild, till exempel människor, djur och vardagliga föremål, och erbjuder vart och ett av dem som en mask som du kan redigera för sig. Modellen körs helt på din iPhone. Om den inte hittar objektet du vill ha kan du använda en manuell mask i stället, eller justera <span class="ui" lang="en">Detection confidence</span> och <span class="ui" lang="en">Mask threshold</span> under <span class="ui" lang="en">More options</span> &gt; <span class="ui" lang="en">Advanced</span> &gt; <span class="ui" lang="en">Object detection</span>.</p>
+      <p>RawMask Studio innehåller en modell för bildsegmentering som hittar objekt i din bild, till exempel människor, djur och vardagliga föremål, och erbjuder vart och ett av dem som en mask som du kan redigera för sig. Modellen körs helt på din enhet. Om den inte hittar objektet du vill ha kan du använda en manuell mask i stället, eller justera <span class="ui" lang="en">Detection confidence</span> och <span class="ui" lang="en">Mask threshold</span> under <span class="ui" lang="en">More options</span> (<span class="ui" lang="en">Editor options</span> på Mac) &gt; <span class="ui" lang="en">Advanced</span> &gt; <span class="ui" lang="en">Object detection</span>.</p>
     </section>
 
     <section>
       <h3>Behöver jag en internetanslutning?</h3>
-      <p>Nej. Redigering och automatiska masker fungerar offline. Det enda undantaget är en bild i iCloud-bilder vars original inte finns på din iPhone: appen Bilder måste då hämta originalet från iCloud innan bilden kan redigeras.</p>
+      <p>Nej. Redigering och automatiska masker fungerar offline. Det enda undantaget är en bild i iCloud-bilder vars original inte finns på din enhet: appen Bilder måste då hämta originalet från iCloud innan bilden kan redigeras.</p>
     </section>
 
     <section>
       <h3>Hur sparar eller exporterar jag min redigering?</h3>
-      <p>Tryck på <span class="ui" lang="en">More options</span> (knappen ...) och gå till <span class="ui" lang="en">Save and export</span>:</p>
+      <p>På iPhone trycker du på <span class="ui" lang="en">More options</span> (knappen ...) och går till <span class="ui" lang="en">Save and export</span>. På iPad använder du menyn <span class="ui" lang="en">Save</span> längst upp till höger, där de två första alternativen heter <span class="ui" lang="en">Save to Photos</span> och <span class="ui" lang="en">Save a Copy</span>. På Mac klickar du på <span class="ui" lang="en">Export</span> i verktygsfältet. Alternativen är:</p>
       <ul>
         <li><strong><span class="ui" lang="en">Save edit to Photos</span></strong> uppdaterar bilden i ditt bibliotek. Appen Bilder behåller originalet, så du kan gå tillbaka till det senare med Återställ i Bilder.</li>
         <li><strong><span class="ui" lang="en">Save a copy to Photos</span></strong> lägger till den redigerade bilden som en ny bild och lämnar originalet oförändrat.</li>
-        <li><strong><span class="ui" lang="en">Export photo</span></strong> skapar en JPEG-, HEIF- eller TIFF-fil i den storlek och kvalitet du väljer och öppnar delningsmenyn, så att du kan spara filen i Filer eller skicka den till en annan app.</li>
+        <li><strong><span class="ui" lang="en">Export photo</span></strong> skapar en JPEG-, HEIF- eller TIFF-fil i den storlek och kvalitet du väljer. På iPhone och iPad öppnas delningsmenyn, så att du kan spara filen i Filer eller skicka den till en annan app. På Mac väljer du själv var filen ska sparas.</li>
       </ul>
     </section>
 
     <section>
       <h3>Var sparas mina förinställningar?</h3>
-      <p>På din iPhone, i appens eget lagringsutrymme. De laddas inte upp någonstans. Du kan radera förinställningar i appen, och om du raderar appen tas de bort.</p>
+      <p>På din enhet, i appens eget lagringsutrymme. De laddas inte upp någonstans. Du kan radera förinställningar i appen, och om du raderar appen tas de bort.</p>
     </section>
 
     <section>
       <h3>Vilka enheter stöds?</h3>
-      <p>iPhone med iOS 17 eller senare.</p>
+      <p>iPhone med iOS 17 eller senare, iPad med iPadOS 17 eller senare och Mac-datorer med Apple Chip och macOS 14 eller senare. Det är en gratis app för alla tre.</p>
     </section>
 
     <section>

@@ -341,6 +341,8 @@ class Site:
         self.locales = [l for l in self.all_locales if l["id"] in self.strings]
         store = os.path.join(SRC, "store")
         self.captions = {c["locale"]: c for c in load_json(os.path.join(store, "captions.json"))}
+        device_path = os.path.join(store, "device_captions.json")
+        self.device_captions = {c["locale"]: c for c in load_json(device_path)} if os.path.exists(device_path) else {}
         self.ui_notes = load_json(os.path.join(store, "ui_notes.json"))
         meta_path = os.path.join(store, "metadata.json")
         self.metadata = load_json(meta_path) if os.path.exists(meta_path) else {}
@@ -356,6 +358,42 @@ class Site:
             return EN_CAPTIONS[i]
         c = self.captions[loc["id"]]
         return c["titles"][i], c["subs"][i]
+
+    def device_panels(self, loc, here):
+        """The iPad and Mac screenshot panels, or [] while the language has none yet."""
+        folder = "en" if loc["id"] == "en" else loc["slug"]
+        if not all(os.path.isdir(os.path.join(ROOT, "assets", "screenshots", folder, d)) for d in DEVICE_SHOTS):
+            return []
+        if loc["id"] == "en":
+            captions = EN_DEVICE_CAPTIONS
+        elif loc["id"] in self.device_captions:
+            c = self.device_captions[loc["id"]]
+            captions = {d: list(zip(c[d]["titles"], c[d]["subs"])) for d in DEVICE_SHOTS}
+        else:
+            raise SystemExit("%s has iPad and Mac screenshots but no captions in src/store/device_captions.json" % loc["id"])
+        out = []
+        for device, (names, rows) in DEVICE_SHOTS.items():
+            out.append('  <div class="device-panel device-%s" role="group" tabindex="0" aria-labelledby="screenshots tab-%s">'
+                       % (device, device))
+            start = 0
+            for count in rows:
+                out.append('    <ul>')
+                for i in range(start, start + count):
+                    name = names[i]
+                    small, large = device_widths(folder, device, name)
+                    w, h = screenshot_size(folder + "/" + device, name, small)
+                    ratio = w / h
+                    mobile = 300 if device == "mac" else round(260 * ratio)
+                    desktop = 370 if device == "mac" else round(320 * ratio)
+                    base = rel(here, "assets/screenshots/%s/%s/%s" % (folder, device, name), is_dir=False)
+                    cap_title, cap_sub = captions[device][i]
+                    out.append('      <li style="--ar: %.4f"><img src="%s-%d.webp" srcset="%s-%d.webp %dw, %s-%d.webp %dw" sizes="(max-width: 660px) %dpx, %dpx" width="%d" height="%d" alt="%s" loading="lazy" decoding="async"></li>' % (
+                        ratio, base, small, base, small, small, base, large, large, mobile, desktop, w, h,
+                        attr("%s %s" % (cap_title, cap_sub))))
+                out.append('    </ul>')
+                start += count
+            out.append('  </div>')
+        return out
 
     def head(self, loc, page, title, description):
         out = ['<!doctype html>',
@@ -509,9 +547,20 @@ class Site:
                '  </div>']
         if loc["id"] != "en":
             out.append('  <p class="ui-note">%s</p>' % html.escape(self.ui_notes[loc["id"]]))
+        devices = self.device_panels(loc, here)
         out += ['</section>', '<section class="showcase">',
-                '  <h2 id="screenshots">%s</h2>' % s["screenshots_heading"],
-                '  <ul class="shots" tabindex="0" aria-labelledby="screenshots">']
+                '  <h2 id="screenshots">%s</h2>' % s["screenshots_heading"]]
+        if devices:
+            # A radio button per device switches the panels in CSS; the site allows no scripts.
+            # Each radio covers its own label, so focusing it never scrolls the page.
+            out.append('  <div class="device-tabs" role="radiogroup" aria-labelledby="screenshots">')
+            out += ['    <label id="tab-%s"><input type="radio" name="device" id="device-%s"%s>%s</label>' % (
+                d, d, " checked" if d == "iphone" else "", name)
+                for d, name in (("iphone", "iPhone"), ("ipad", "iPad"), ("mac", "Mac"))]
+            out += ['  </div>',
+                    '  <ul class="shots device-iphone" tabindex="0" aria-labelledby="screenshots tab-iphone">']
+        else:
+            out.append('  <ul class="shots" tabindex="0" aria-labelledby="screenshots">')
         folder = "en" if loc["id"] == "en" else loc["slug"]
         for i, name in enumerate(SHOTS):
             base = rel(here, "assets/screenshots/%s/%s" % (folder, name), is_dir=False)
@@ -520,7 +569,16 @@ class Site:
             lazy = "" if i < 2 else ' loading="lazy"'
             out.append('    <li><img src="%s-300.webp" srcset="%s-300.webp 300w, %s-600.webp 600w" sizes="200px" width="%d" height="%d" alt="%s"%s decoding="async"></li>' % (
                 base, base, base, w, h, attr("%s %s" % (cap_title.strip(), cap_sub.strip())), lazy))
-        out += ['  </ul>', '</section>', '<section class="capabilities">',
+        out += ['  </ul>', *devices, '</section>']
+        news = s["whats_new"]
+        out += ['<section class="capabilities whats-new">',
+                '  <h2 id="whats-new">%s</h2>' % news["heading"],
+                '  <p>%s</p>' % news["intro"],
+                '  <ul class="features sections">']
+        for item in news["items"]:
+            out += ['    <li>', '      <h3>%s</h3>' % item["h3"], '      <p>%s</p>' % item["p"], '    </li>']
+        out += ['  </ul>', '</section>']
+        out += ['<section class="capabilities">',
                 '  <h2>%s</h2>' % s["features_heading"]]
         intro, sections, outro = split_description(store["description"])
         if len(sections) != len(s["store_headings"]):
@@ -619,6 +677,39 @@ EN_CAPTIONS = [
     ("Tune light and color inside it.", "Each mask gets its own exposure, color, detail and focus."),
     ("Save to Photos. Revert anytime.", "Edits stay reversible, and nothing leaves your iPhone."),
 ]
+
+# Screenshot names and how many go in each row (rows of one height on wide screens).
+DEVICE_SHOTS = {
+    "ipad": (["01-select", "02-palettes", "03-masks", "04-style", "05-frame", "06-save", "07-options"], [3, 4]),
+    "mac": (["01-select", "02-detect", "03-frame", "04-save", "05-steps", "06-detection"], [3, 3]),
+}
+EN_DEVICE_CAPTIONS = {
+    "ipad": [
+        ("Edit only what you select.", "Masks for RAW photos on iPad."),
+        ("Every tool floats over your photo.", "Drag the palettes anywhere, in either orientation."),
+        ("Draw a mask any way you like.", "Radial, linear, brush or rectangle. Then add, subtract or feather."),
+        ("Give it a look.", "Film, black and white, vintage, noir, grunge and retro styles."),
+        ("Crop, straighten and frame.", "Eight borders, from a thin line to a film edge."),
+        ("Save to Photos. Revert anytime.", "Edits stay reversible, and nothing leaves your iPad."),
+        ("Make the editor yours.", "Save presets, and keep only the steps you use, in your order."),
+    ],
+    "mac": [
+        ("Edit only what you select.", "Masks for RAW photos on Mac."),
+        ("Let it find the subject.", "On-device detection masks cars, people and animals for you."),
+        ("Crop, straighten and frame.", "Eight borders, from a thin line to a film edge."),
+        ("Save to Photos. Revert anytime.", "Edits stay reversible, and nothing leaves your Mac."),
+        ("Make the editor yours.", "Save presets, and keep only the steps you use, in your order."),
+        ("Tune what it detects.", "Set confidence, mask edge and object count. It all runs on your Mac."),
+    ],
+}
+
+
+def device_widths(folder, device, name):
+    """The 1x and 2x widths make_screenshots.py wrote: 300/600 portrait, 480/960 landscape."""
+    for widths in ((300, 600), (480, 960)):
+        if os.path.exists(os.path.join(ROOT, "assets", "screenshots", folder, device, "%s-%d.webp" % (name, widths[0]))):
+            return widths
+    raise SystemExit("missing screenshot %s/%s/%s" % (folder, device, name))
 
 _SIZES = {}
 

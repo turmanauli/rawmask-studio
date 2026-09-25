@@ -10,11 +10,41 @@
     "translation_notice": "本页面为<a href=\"{english_url}\">英文版本</a>的译文。如两个版本的内容存在任何不一致，以英文版本为准。"
   },
   "home": {
-    "description": "RawMask Studio 是一款适用于 iPhone 的 RAW 照片编辑器，提供自动蒙版和手动蒙版。所有处理都在你的 iPhone 上完成。",
-    "eyebrow": "iPhone 照片编辑器",
+    "description": "RawMask Studio 是一款适用于 iPhone、iPad 和 Mac 的 RAW 照片编辑器，提供自动蒙版和手动蒙版。所有处理都在你的设备上完成。",
+    "eyebrow": "iPhone、iPad 和 Mac 照片编辑器",
     "btn_support": "获取支持",
     "btn_privacy": "隐私政策",
     "screenshots_heading": "屏幕截图",
+    "whats_new": {
+      "heading": "1.2.0 版新功能",
+      "intro": "RawMask Studio 现在除了 iPhone，也能在 iPad 和 Mac 上使用。三种设备通用同一个免费 App，所有编辑依然在你的设备上完成。",
+      "items": [
+        {
+          "h3": "现已支持 <span class=\"name\">iPad</span>",
+          "p": "照片铺满屏幕，工具以浮动面板的形式悬于照片上方，可以拖到任意位置，竖屏和横屏均可使用。"
+        },
+        {
+          "h3": "现已登陆 <span class=\"name\">Mac</span>",
+          "p": "步骤位于工具栏，照片旁的检查器汇集了蒙版和滑块。放大即可查看细节，还能以 JPEG、HEIF 或 TIFF 格式导出为文件。"
+        },
+        {
+          "h3": "新增“影调”步骤",
+          "p": "高、亮、暗、低四段色调曲线，以及高光、中间调和阴影的清晰局部对比。"
+        },
+        {
+          "h3": "新增“风格”步骤",
+          "p": "HDR、戏剧、柔光、泛光、光晕与色差，另有 Film、B&amp;W、Vintage、Noir、Grunge、Retro 等滤镜。"
+        },
+        {
+          "h3": "HSL 色彩调整",
+          "p": "直接在“色彩”步骤中，为八个色彩范围分别调整色相、彩度和明度。"
+        },
+        {
+          "h3": "更多构图与效果选项",
+          "p": "“构图”新增透视校正、边缘填充和八种边框，“效果”中的暗角可以调整大小、形状与柔和度。"
+        }
+      ]
+    },
     "features_heading": "你可以用它做什么",
     "store_headings": [
       "蒙版局部调整，想修哪里修哪里",
@@ -24,24 +54,39 @@
       "保存时原图不受影响",
       "隐私优先的设计"
     ],
-    "requirements": "<strong>系统要求：</strong>运行 iOS 17 或更高版本的 iPhone。",
+    "requirements": "<strong>系统要求：</strong>运行 iOS 17 或更高版本的 iPhone、运行 iPadOS 17 或更高版本的 iPad，或者搭载 Apple 芯片并运行 macOS 14 或更高版本的 Mac。",
     "help": "有疑问或遇到问题？请访问<a href=\"{support_url}\">支持页面</a>。关于本应用如何处理你的照片，详见<a href=\"{privacy_url}\">隐私政策</a>。"
   },
   "support": {
     "title": "支持 - RawMask Studio",
-    "description": "iPhone 版 RawMask Studio 的帮助与联系方式：打开照片、照片访问权限、蒙版、存储和导出。",
+    "description": "iPhone、iPad 和 Mac 版 RawMask Studio 的帮助与联系方式：打开照片、照片访问权限、蒙版、存储和导出。",
     "h1": "支持",
-    "meta": "iPhone 版 RawMask Studio 使用帮助。",
+    "meta": "iPhone、iPad 和 Mac 版 RawMask Studio 使用帮助。",
     "ui_labels_note": "下文中的按钮和菜单名称均为英文，与本应用中显示的完全一致。",
     "contact": "<strong>联系方式：</strong>发送电子邮件至 <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>",
-    "contact_note": "请在邮件中注明你的 iPhone 型号和 iOS 版本，并简要描述发生了什么以及你原本预期的结果。无需发送照片，通常描述一下照片（例如拍摄所用的相机或文件格式）就足够了。",
+    "contact_note": "请在邮件中注明你使用的设备（iPhone、iPad 或 Mac）及其 iOS、iPadOS 或 macOS 版本，并简要描述发生了什么以及你原本预期的结果。无需发送照片，通常描述一下照片（例如拍摄所用的相机或文件格式）就足够了。",
     "faq_heading": "常见问题",
     "faq": [
       {
         "q": "如何打开照片？",
         "blocks": [
           {
-            "p": "轻点编辑器左上角的照片按钮，然后选择 <span class=\"ui\" lang=\"en\">Open photo</span>。随后会打开照片选择器，你可以从中选择一张照片。RawMask Studio 一次只编辑一张照片。目前，选择器中不会显示实况照片。"
+            "p": "在 iPhone 上，轻点编辑器左上角的照片按钮，然后选择 <span class=\"ui\" lang=\"en\">Open photo</span>。在 iPad 上，轻点左上角面板中的 <span class=\"ui\" lang=\"en\">Open photo</span>。在 Mac 上，点按工具栏中的 <span class=\"ui\" lang=\"en\">Open photo</span>。随后会打开照片选择器，你可以从中选择一张照片。RawMask Studio 一次只编辑一张照片。目前，选择器中不会显示实况照片。"
+          }
+        ]
+      },
+      {
+        "q": "在 <span class=\"name\">iPad</span> 和 <span class=\"name\">Mac</span> 上，按钮在哪里？",
+        "blocks": [
+          {
+            "p": "所有设备上的步骤和工具都相同，只是位置不同："
+          },
+          {
+            "ul": [
+              "<strong>iPhone：</strong>左上角的照片按钮中有 <span class=\"ui\" lang=\"en\">Open photo</span>、<span class=\"ui\" lang=\"en\">Edit target</span> 和 <span class=\"ui\" lang=\"en\">Add mask</span>，<span class=\"ui\" lang=\"en\">More options</span> 则是右上角的 ... 按钮。",
+              "<strong>iPad：</strong>左上角的面板中有 <span class=\"ui\" lang=\"en\">Open photo</span>、<span class=\"ui\" lang=\"en\">Edit target</span> 和 <span class=\"ui\" lang=\"en\">Add mask</span>，<span class=\"ui\" lang=\"en\">More options</span>（... 按钮）和 <span class=\"ui\" lang=\"en\">Save</span> 位于右上角。你可以将面板拖到任意位置。",
+              "<strong>Mac：</strong><span class=\"ui\" lang=\"en\">Open photo</span> 和各个步骤位于工具栏中，<span class=\"ui\" lang=\"en\">Edit target</span> 和 <span class=\"ui\" lang=\"en\">Add mask</span> 位于照片旁的检查器中，<span class=\"ui\" lang=\"en\">Editor options</span>（滑块按钮）和 <span class=\"ui\" lang=\"en\">Export</span> 位于右上角。"
+            ]
           }
         ]
       },
@@ -57,7 +102,7 @@
         "q": "为什么本应用需要照片访问权限？",
         "blocks": [
           {
-            "p": "RawMask Studio 从你的 Apple“照片”图库中打开照片，并将编辑结果存储回该图库，因此 iOS 会请求你的许可。你可以允许完全访问，也可以选择有限访问，仅允许访问你挑选的照片。无论选择哪种方式，本应用都只会打开你选择的那张照片。详情请参阅<a href=\"{privacy_url}\">隐私政策</a>。"
+            "p": "RawMask Studio 从你的 Apple“照片”图库中打开照片，并将编辑结果存储回该图库，因此 iOS、iPadOS 或 macOS 会请求你的许可。在 iPhone 和 iPad 上，你可以允许完全访问，也可以选择有限访问，仅允许访问你挑选的照片；在 Mac 上，访问权限涵盖整个图库。无论哪种情况，本应用都只会打开你选择的那张照片。详情请参阅<a href=\"{privacy_url}\">隐私政策</a>。"
           }
         ]
       },
@@ -65,7 +110,7 @@
         "q": "我选择了有限访问，但找不到某张照片",
         "blocks": [
           {
-            "p": "在有限访问模式下，本应用只能打开你已允许访问的照片。要允许访问更多照片，可以："
+            "p": "有限访问仅适用于 iPhone 和 iPad。在有限访问模式下，本应用只能打开你已允许访问的照片。要允许访问更多照片，可以："
           },
           {
             "ul": [
@@ -79,7 +124,7 @@
         "q": "本应用提示照片访问权限已关闭",
         "blocks": [
           {
-            "p": "打开<span class=\"path\">设置 &gt; 隐私与安全性 &gt; 照片 &gt; RawMask Studio</span>，选择“有限访问”或“完全访问”，然后返回本应用，重新打开照片。"
+            "p": "在 iPhone 或 iPad 上，打开<span class=\"path\">设置 &gt; 隐私与安全性 &gt; 照片 &gt; RawMask Studio</span>，选择“有限访问”或“完全访问”。在 Mac 上，打开<span class=\"path\">系统设置 &gt; 隐私与安全性 &gt; 照片</span>，然后允许 RawMask Studio。之后返回本应用，重新打开照片。"
           }
         ]
       },
@@ -87,7 +132,7 @@
         "q": "蒙版如何使用？",
         "blocks": [
           {
-            "p": "调整既可以应用于整张照片，也可以应用于某个蒙版。打开左上角的照片按钮菜单：用 <span class=\"ui\" lang=\"en\">Edit target</span> 选择当前要编辑的对象，用 <span class=\"ui\" lang=\"en\">Add mask</span> 添加 <span class=\"ui\" lang=\"en\">Radial</span>、<span class=\"ui\" lang=\"en\">Linear</span>、<span class=\"ui\" lang=\"en\">Brush</span> 或 <span class=\"ui\" lang=\"en\">Rectangle</span> 蒙版。你可以移动蒙版、调整其大小，通过涂抹来增加或减去蒙版区域，还可以用 <span class=\"ui\" lang=\"en\">Feather</span> 柔化蒙版边缘。"
+            "p": "调整既可以应用于整张照片，也可以应用于某个蒙版。用 <span class=\"ui\" lang=\"en\">Edit target</span> 选择当前要编辑的对象，用 <span class=\"ui\" lang=\"en\">Add mask</span> 添加 <span class=\"ui\" lang=\"en\">Radial</span>、<span class=\"ui\" lang=\"en\">Linear</span>、<span class=\"ui\" lang=\"en\">Brush</span> 或 <span class=\"ui\" lang=\"en\">Rectangle</span> 蒙版（它们在各设备上的位置请见上文）。你可以移动蒙版、调整其大小，通过涂抹来增加或减去蒙版区域，还可以用 <span class=\"ui\" lang=\"en\">Feather</span> 柔化蒙版边缘。"
           }
         ]
       },
@@ -95,7 +140,7 @@
         "q": "什么是自动物体蒙版？",
         "blocks": [
           {
-            "p": "RawMask Studio 内置一个图像分割模型，它会找出照片中的物体，例如人物、动物和日常物品，并为每个物体分别提供一个可单独编辑的蒙版。该模型完全在你的 iPhone 上运行。如果它没有识别出你想要的物体，请改用手动蒙版，或者在 <span class=\"ui\" lang=\"en\">More options</span> &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span> 中调整 <span class=\"ui\" lang=\"en\">Detection confidence</span> 和 <span class=\"ui\" lang=\"en\">Mask threshold</span>。"
+            "p": "RawMask Studio 内置一个图像分割模型，它会找出照片中的物体，例如人物、动物和日常物品，并为每个物体分别提供一个可单独编辑的蒙版。该模型完全在你的设备上运行。如果它没有识别出你想要的物体，请改用手动蒙版，或者在 <span class=\"ui\" lang=\"en\">More options</span>（Mac 上为 <span class=\"ui\" lang=\"en\">Editor options</span>） &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span> 中调整 <span class=\"ui\" lang=\"en\">Detection confidence</span> 和 <span class=\"ui\" lang=\"en\">Mask threshold</span>。"
           }
         ]
       },
@@ -103,7 +148,7 @@
         "q": "需要联网吗？",
         "blocks": [
           {
-            "p": "不需要。编辑和自动蒙版均可离线使用。唯一的例外是存储在 iCloud 照片中、但原件不在你 iPhone 上的照片：“照片”必须先从 iCloud 下载原件，然后才能进行编辑。"
+            "p": "不需要。编辑和自动蒙版均可离线使用。唯一的例外是存储在 iCloud 照片中、但原件不在你设备上的照片：“照片”必须先从 iCloud 下载原件，然后才能进行编辑。"
           }
         ]
       },
@@ -111,13 +156,13 @@
         "q": "如何存储或导出编辑结果？",
         "blocks": [
           {
-            "p": "轻点 <span class=\"ui\" lang=\"en\">More options</span>（... 按钮），然后前往 <span class=\"ui\" lang=\"en\">Save and export</span>："
+            "p": "在 iPhone 上，轻点 <span class=\"ui\" lang=\"en\">More options</span>（... 按钮），然后前往 <span class=\"ui\" lang=\"en\">Save and export</span>。在 iPad 上，使用右上角的 <span class=\"ui\" lang=\"en\">Save</span> 菜单，其中前两个选项名为 <span class=\"ui\" lang=\"en\">Save to Photos</span> 和 <span class=\"ui\" lang=\"en\">Save a Copy</span>。在 Mac 上，点按工具栏中的 <span class=\"ui\" lang=\"en\">Export</span>。可用的选项如下："
           },
           {
             "ul": [
               "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong> 会更新你图库中的这张照片。“照片”会保留原图，因此你之后可以在“照片”App 中使用“复原”回到原图。",
               "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong> 会将编辑后的图像添加为一张新照片，原图保持不变。",
-              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> 会按你选择的尺寸和质量生成 JPEG、HEIF 或 TIFF 文件，并打开共享菜单，你可以将文件存储到“文件”，或发送到其他 App。"
+              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong> 会按你选择的尺寸和质量生成 JPEG、HEIF 或 TIFF 文件。在 iPhone 和 iPad 上，它会打开共享菜单，你可以将文件存储到“文件”，或发送到其他 App；在 Mac 上，由你选择文件的存储位置。"
             ]
           }
         ]
@@ -126,7 +171,7 @@
         "q": "我的预设存储在哪里？",
         "blocks": [
           {
-            "p": "存储在你的 iPhone 上，位于本应用自己的存储空间中，不会上传到任何地方。你可以在本应用中删除预设，删除本应用也会移除这些预设。"
+            "p": "存储在你的设备上，位于本应用自己的存储空间中，不会上传到任何地方。你可以在本应用中删除预设，删除本应用也会移除这些预设。"
           }
         ]
       },
@@ -134,7 +179,7 @@
         "q": "支持哪些设备？",
         "blocks": [
           {
-            "p": "运行 iOS 17 或更高版本的 iPhone。"
+            "p": "运行 iOS 17 或更高版本的 iPhone、运行 iPadOS 17 或更高版本的 iPad，以及搭载 Apple 芯片并运行 macOS 14 或更高版本的 Mac。三种设备通用同一个免费 App。"
           }
         ]
       },
@@ -152,10 +197,10 @@
   },
   "privacy": {
     "title": "隐私政策 - RawMask Studio",
-    "description": "iPhone 版 RawMask Studio 的隐私政策。本应用不收集任何数据，照片在你的 iPhone 上编辑。",
+    "description": "iPhone、iPad 和 Mac 版 RawMask Studio 的隐私政策。本应用不收集任何数据，照片在你的设备上编辑。",
     "h1": "隐私政策",
-    "meta": "iPhone 版 RawMask Studio。生效日期：2026年9月23日。",
-    "summary": "<strong>简而言之：</strong>RawMask Studio 不收集任何数据。没有账户，没有数据分析，没有广告，也没有跟踪。你的照片在你的 iPhone 上编辑，本应用绝不会将你的照片、编辑内容或任何其他信息发送给我们或任何其他人。",
+    "meta": "iPhone、iPad 和 Mac 版 RawMask Studio。生效日期：2026年9月26日。",
+    "summary": "<strong>简而言之：</strong>RawMask Studio 不收集任何数据。没有账户，没有数据分析，没有广告，也没有跟踪。你的照片在你的 iPhone、iPad 或 Mac 上编辑，本应用绝不会将你的照片、编辑内容或任何其他信息发送给我们或任何其他人。",
     "sections": [
       {
         "id": "who-we-are",
@@ -177,13 +222,13 @@
       },
       {
         "id": "on-device-processing",
-        "h2": "处理在你的 iPhone 上进行",
+        "h2": "处理在你的设备上进行",
         "blocks": [
           {
             "p": "所有照片处理都在你的设备上进行，包括读取 RAW 文件，应用光影、色彩、细节、焦点和效果调整，渲染预览，以及创建蒙版。"
           },
           {
-            "p": "自动物体蒙版由内置于本应用中的图像分割模型（RF-DETR）生成，该模型借助 Apple 的 Core ML 在你的 iPhone 上运行。该模型并非从互联网下载，你的照片也不会被发送到任何地方进行分析。"
+            "p": "自动物体蒙版由内置于本应用中的图像分割模型（RF-DETR）生成，该模型借助 Apple 的 Core ML 在你的 iPhone、iPad 或 Mac 上运行。该模型并非从互联网下载，你的照片也不会被发送到任何地方进行分析。"
           }
         ]
       },
@@ -192,7 +237,7 @@
         "h2": "访问你的“照片”图库",
         "blocks": [
           {
-            "p": "RawMask Studio 使用 Apple 的“照片”来打开和存储图片。在本应用能够访问你的图库之前，iOS 会请求你的许可。你可以允许访问整个图库，也可以仅允许访问你选择的照片，并且可以随时在<span class=\"path\">设置 &gt; 隐私与安全性 &gt; 照片 &gt; RawMask Studio</span> 中进行更改。"
+            "p": "RawMask Studio 使用 Apple 的“照片”来打开和存储图片。在本应用能够访问你的图库之前，iOS、iPadOS 和 macOS 会请求你的许可。在 iPhone 和 iPad 上，你可以允许访问整个图库，也可以仅允许访问你选择的照片；在 Mac 上，访问权限涵盖整个图库。你可以随时更改这项设置：在 iPhone 和 iPad 上前往<span class=\"path\">设置 &gt; 隐私与安全性 &gt; 照片 &gt; RawMask Studio</span>，在 Mac 上前往<span class=\"path\">系统设置 &gt; 隐私与安全性 &gt; 照片</span>。"
           },
           {
             "h3": "本应用读取的内容"
@@ -216,7 +261,7 @@
             "h3": "iCloud 照片"
           },
           {
-            "p": "如果你使用 iCloud 照片，而你所选照片的全分辨率原件并未存储在你的 iPhone 上，Apple 的“照片”框架可能会从 iCloud 下载该原件，以便进行编辑。你存储的照片也可能会根据你的 Apple 设置通过 iCloud 照片进行同步。这些传输在你的设备与你自己的 iCloud 账户之间进行，由 Apple 处理，并受 Apple 隐私政策的约束。不会有任何内容发送给我们。"
+            "p": "如果你使用 iCloud 照片，而你所选照片的全分辨率原件并未存储在你的设备上，Apple 的“照片”框架可能会从 iCloud 下载该原件，以便进行编辑。你存储的照片也可能会根据你的 Apple 设置通过 iCloud 照片进行同步。这些传输在你的设备与你自己的 iCloud 账户之间进行，由 Apple 处理，并受 Apple 隐私政策的约束。不会有任何内容发送给我们。"
           }
         ]
       },
@@ -225,7 +270,10 @@
         "h2": "导出与共享",
         "blocks": [
           {
-            "p": "当你轻点 <span class=\"ui\" lang=\"en\">Export photo</span> 时，本应用会生成你所要求的图像文件，并打开 iOS 共享菜单。该文件只会发送到你选择的位置，例如“文件”“信息”或其他 App，并由接收方按照其自身的隐私惯例进行处理。本应用为导出而创建的临时文件保存在你 iPhone 上本应用的私有存储空间中，并会在不再需要时自动删除。"
+            "p": "当你在 iPhone 或 iPad 上选择 <span class=\"ui\" lang=\"en\">Export photo</span> 时，本应用会生成你所要求的图像文件，并打开共享菜单。该文件只会发送到你选择的位置，例如“文件”“信息”或其他 App，并由接收方按照其自身的隐私惯例进行处理。本应用为导出而创建的临时文件保存在本应用的私有存储空间中，并会在不再需要时自动删除。"
+          },
+          {
+            "p": "在 Mac 上，<span class=\"ui\" lang=\"en\">Export photo</span> 会打开存储面板，文件只会写入你选择的位置。"
           }
         ]
       },
@@ -234,7 +282,7 @@
         "h2": "存储在你设备上的信息",
         "blocks": [
           {
-            "p": "为了让本应用保持你上次离开时的状态，它会在你 iPhone 上自己的存储空间中保存少量信息："
+            "p": "为了让本应用保持你上次离开时的状态，它会在你设备上自己的存储空间中保存少量信息："
           },
           {
             "ul": [
@@ -244,7 +292,7 @@
             ]
           },
           {
-            "p": "这些信息保留在你的设备上，不会发送给我们。你可以随时在本应用中删除预设，删除本应用会移除所有这些信息。与其他 App 数据一样，这些信息可能会根据你的 iOS 设置，包含在你为 iPhone 创建的备份中。"
+            "p": "这些信息保留在你的设备上，不会发送给我们。你可以随时在本应用中删除预设，删除本应用会移除所有这些信息。与其他 App 数据一样，这些信息可能会根据你的设置，包含在你为 iPhone、iPad 或 Mac 创建的备份中。"
           }
         ]
       },
@@ -256,7 +304,7 @@
             "p": "RawMask Studio 不包含任何第三方分析、广告、崩溃报告或跟踪软件。本应用不使用广告标识符，也不会跨其他公司拥有的 App 或网站跟踪你。"
           },
           {
-            "p": "如果你已在 iOS 中选择与 App 开发者共享分析数据（<span class=\"path\">设置 &gt; 隐私与安全性 &gt; 分析与改进</span>），Apple 可能会以无法识别你身份的形式向我们提供崩溃报告和汇总的使用统计数据。这由 Apple 和你的设置控制，而非由本应用控制。"
+            "p": "如果你已选择与 App 开发者共享分析数据（在 iPhone 和 iPad 上为<span class=\"path\">设置 &gt; 隐私与安全性 &gt; 分析与改进</span>，在 Mac 上为<span class=\"path\">系统设置 &gt; 隐私与安全性 &gt; 分析与改进</span>），Apple 可能会以无法识别你身份的形式向我们提供崩溃报告和汇总的使用统计数据。这由 Apple 和你的设置控制，而非由本应用控制。"
           }
         ]
       },
@@ -283,7 +331,7 @@
         "h2": "你的选择",
         "blocks": [
           {
-            "p": "由于我们不收集也不持有任何关于你的数据，因此我们一方不存在任何可供访问、更正、导出或删除的个人数据。在你的设备上，你始终拥有掌控权：你可以在 iOS“设置”中更改或撤销照片访问权限，在本应用中删除预设，在“照片”App 中移除编辑或删除副本，以及删除本应用以移除其本地数据。"
+            "p": "由于我们不收集也不持有任何关于你的数据，因此我们一方不存在任何可供访问、更正、导出或删除的个人数据。在你的设备上，你始终拥有掌控权：你可以在“设置”（Mac 上为“系统设置”）中更改或撤销照片访问权限，在本应用中删除预设，在“照片”App 中移除编辑或删除副本，以及删除本应用以移除其本地数据。"
           }
         ]
       },

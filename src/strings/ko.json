@@ -10,11 +10,41 @@
     "translation_notice": "이 페이지는 <a href=\"{english_url}\">영어 원문</a>의 번역본입니다. 번역본과 영어 원문의 내용이 서로 다른 경우 영어 원문이 우선합니다."
   },
   "home": {
-    "description": "RawMask Studio는 자동 마스크와 수동 마스크로 RAW 사진을 보정하는 iPhone용 사진 편집 앱입니다. 모든 작업은 iPhone 안에서 처리됩니다.",
-    "eyebrow": "iPhone용 사진 편집 앱",
+    "description": "RawMask Studio는 자동 마스크와 수동 마스크로 RAW 사진을 보정하는 iPhone, iPad, Mac용 사진 편집 앱입니다. 모든 작업은 기기 안에서 처리됩니다.",
+    "eyebrow": "iPhone, iPad, Mac용 사진 편집 앱",
     "btn_support": "고객 지원",
     "btn_privacy": "개인정보 처리방침",
     "screenshots_heading": "스크린샷",
+    "whats_new": {
+      "heading": "버전 1.2.0의 새로운 기능",
+      "intro": "이제 RawMask Studio를 iPhone뿐 아니라 iPad와 Mac에서도 사용할 수 있습니다. 세 기기 모두에서 쓰는 하나의 무료 앱이며, 모든 편집은 여전히 기기 안에서 이루어집니다.",
+      "items": [
+        {
+          "h3": "이제 <span class=\"name\">iPad</span>에서도",
+          "p": "사진이 화면을 가득 채우고, 도구는 어디로든 드래그할 수 있는 팔레트로 사진 위에 떠 있습니다. 세로와 가로 방향을 모두 지원합니다."
+        },
+        {
+          "h3": "이제 <span class=\"name\">Mac</span>에서도",
+          "p": "단계는 도구 막대에 있고, 사진 옆 속성 패널에 마스크와 슬라이더가 모여 있습니다. 확대해서 세밀한 디테일을 확인하고, JPEG, HEIF 또는 TIFF 파일로 내보낼 수 있습니다."
+        },
+        {
+          "h3": "새로운 톤(Tone) 단계",
+          "p": "하이·라이트·다크·로우 톤 커브와 하이라이트·중간 톤·그림자의 선명한 로컬 대비를 조절할 수 있습니다."
+        },
+        {
+          "h3": "새로운 스타일(Style) 단계",
+          "p": "HDR, 드라마, 글로우, 블룸, 헐레이션, 색수차와 함께 Film, B&amp;W, Vintage, Noir, Grunge, Retro 룩을 제공합니다."
+        },
+        {
+          "h3": "HSL 색상 조절",
+          "p": "색상(Color) 단계에서 8개 색상 범위마다 색상, 크로마, 명도를 바로 조절할 수 있습니다."
+        },
+        {
+          "h3": "더 풍부해진 구도와 효과",
+          "p": "구도(Frame)에 원근 보정, 여백 채우기, 8종의 테두리가 추가되었고, 효과(Effects)에서 비네팅의 크기, 모양, 부드러움을 조절할 수 있습니다."
+        }
+      ]
+    },
     "features_heading": "주요 기능",
     "store_headings": [
       "마스크로 원하는 부분만 보정",
@@ -24,24 +54,39 @@
       "원본은 그대로, 저장은 안심하고",
       "개인정보를 지키는 설계"
     ],
-    "requirements": "<strong>요구 사항:</strong> iOS 17 이상이 설치된 iPhone.",
+    "requirements": "<strong>요구 사항:</strong> iOS 17 이상이 설치된 iPhone, iPadOS 17 이상이 설치된 iPad 또는 macOS 14 이상이 설치된 Apple 실리콘 탑재 Mac.",
     "help": "궁금한 점이나 문제가 있으신가요? <a href=\"{support_url}\">지원 페이지</a>를 방문해 주세요. 앱이 사진을 어떻게 다루는지는 <a href=\"{privacy_url}\">개인정보 처리방침</a>에서 자세히 확인할 수 있습니다."
   },
   "support": {
     "title": "지원 - RawMask Studio",
-    "description": "iPhone용 RawMask Studio 도움말 및 문의: 사진 열기, 사진 접근 권한, 마스크, 저장 및 내보내기.",
+    "description": "iPhone, iPad, Mac용 RawMask Studio 도움말 및 문의: 사진 열기, 사진 접근 권한, 마스크, 저장 및 내보내기.",
     "h1": "지원",
-    "meta": "iPhone용 RawMask Studio 도움말입니다.",
+    "meta": "iPhone, iPad, Mac용 RawMask Studio 도움말입니다.",
     "ui_labels_note": "아래에 나오는 버튼과 메뉴 이름은 앱에 표시되는 그대로 영어로 적었습니다.",
     "contact": "<strong>문의:</strong> 이메일 <a href=\"mailto:turmanauli.beso@gmail.com\">turmanauli.beso@gmail.com</a>",
-    "contact_note": "사용 중인 iPhone 모델과 iOS 버전, 그리고 어떤 일이 있었는지와 원래 기대한 결과가 무엇이었는지를 간단히 적어 보내 주세요. 사진은 보내지 않으셔도 됩니다. 보통은 사진에 대한 설명(예: 촬영한 카메라나 파일 형식)만으로 충분합니다.",
+    "contact_note": "사용 중인 기기(iPhone, iPad 또는 Mac)와 iOS, iPadOS 또는 macOS 버전, 그리고 어떤 일이 있었는지와 원래 기대한 결과가 무엇이었는지를 간단히 적어 보내 주세요. 사진은 보내지 않으셔도 됩니다. 보통은 사진에 대한 설명(예: 촬영한 카메라나 파일 형식)만으로 충분합니다.",
     "faq_heading": "자주 묻는 질문",
     "faq": [
       {
         "q": "사진은 어떻게 여나요?",
         "blocks": [
           {
-            "p": "편집기 왼쪽 상단의 사진 버튼을 탭하고 <span class=\"ui\" lang=\"en\">Open photo</span>를 선택하세요. 사진 선택기가 열리면 사진을 한 장 선택하세요. RawMask Studio는 한 번에 한 장의 사진을 편집합니다. Live Photo는 현재 선택기에 표시되지 않습니다."
+            "p": "iPhone에서는 편집기 왼쪽 상단의 사진 버튼을 탭하고 <span class=\"ui\" lang=\"en\">Open photo</span>를 선택하세요. iPad에서는 왼쪽 상단 팔레트의 <span class=\"ui\" lang=\"en\">Open photo</span>를 탭하세요. Mac에서는 도구 막대의 <span class=\"ui\" lang=\"en\">Open photo</span>를 클릭하세요. 사진 선택기가 열리면 사진을 한 장 선택하세요. RawMask Studio는 한 번에 한 장의 사진을 편집합니다. Live Photo는 현재 선택기에 표시되지 않습니다."
+          }
+        ]
+      },
+      {
+        "q": "<span class=\"name\">iPad</span>와 <span class=\"name\">Mac</span>에서는 버튼이 어디에 있나요?",
+        "blocks": [
+          {
+            "p": "단계와 도구는 모든 기기에서 같으며, 위치만 다음과 같이 다릅니다."
+          },
+          {
+            "ul": [
+              "<strong>iPhone:</strong> 왼쪽 상단의 사진 버튼에 <span class=\"ui\" lang=\"en\">Open photo</span>, <span class=\"ui\" lang=\"en\">Edit target</span>, <span class=\"ui\" lang=\"en\">Add mask</span>가 있고, <span class=\"ui\" lang=\"en\">More options</span>는 오른쪽 상단의 ... 버튼입니다.",
+              "<strong>iPad:</strong> 왼쪽 상단의 팔레트에 <span class=\"ui\" lang=\"en\">Open photo</span>, <span class=\"ui\" lang=\"en\">Edit target</span>, <span class=\"ui\" lang=\"en\">Add mask</span>가 있고, ... 버튼(<span class=\"ui\" lang=\"en\">More options</span>)과 <span class=\"ui\" lang=\"en\">Save</span>는 오른쪽 상단에 있습니다. 팔레트는 어디로든 드래그해 옮길 수 있습니다.",
+              "<strong>Mac:</strong> <span class=\"ui\" lang=\"en\">Open photo</span>와 단계는 도구 막대에, <span class=\"ui\" lang=\"en\">Edit target</span>과 <span class=\"ui\" lang=\"en\">Add mask</span>는 사진 옆 속성 패널에 있고, 슬라이더 버튼(<span class=\"ui\" lang=\"en\">Editor options</span>)과 <span class=\"ui\" lang=\"en\">Export</span>는 오른쪽 상단에 있습니다."
+            ]
           }
         ]
       },
@@ -57,7 +102,7 @@
         "q": "앱에서 사진 접근 권한을 요청하는 이유는 무엇인가요?",
         "blocks": [
           {
-            "p": "RawMask Studio는 Apple 사진 보관함에서 사진을 열고 편집한 내용을 다시 보관함에 저장하므로, iOS에서 사용자에게 권한을 요청합니다. 전체 접근을 허용하거나, 직접 고른 사진에만 접근할 수 있도록 제한된 접근을 허용할 수 있습니다. 어느 쪽이든 앱은 사용자가 선택한 사진만 엽니다. 자세한 내용은 <a href=\"{privacy_url}\">개인정보 처리방침</a>을 참고하세요."
+            "p": "RawMask Studio는 Apple 사진 보관함에서 사진을 열고 편집한 내용을 다시 보관함에 저장하므로, iOS, iPadOS 또는 macOS에서 사용자에게 권한을 요청합니다. iPhone과 iPad에서는 전체 접근을 허용하거나, 직접 고른 사진에만 접근할 수 있도록 제한된 접근을 허용할 수 있습니다. Mac에서는 접근 권한이 보관함 전체에 적용됩니다. 어느 쪽이든 앱은 사용자가 선택한 사진만 엽니다. 자세한 내용은 <a href=\"{privacy_url}\">개인정보 처리방침</a>을 참고하세요."
           }
         ]
       },
@@ -65,7 +110,7 @@
         "q": "제한된 접근을 선택했는데 사진을 찾을 수 없습니다",
         "blocks": [
           {
-            "p": "제한된 접근 상태에서는 허용한 사진만 앱에서 열 수 있습니다. 더 많은 사진을 허용하려면 다음과 같이 하세요."
+            "p": "제한된 접근은 iPhone과 iPad에서 사용할 수 있습니다. 제한된 접근 상태에서는 허용한 사진만 앱에서 열 수 있습니다. 더 많은 사진을 허용하려면 다음과 같이 하세요."
           },
           {
             "ul": [
@@ -79,7 +124,7 @@
         "q": "앱에 사진 접근 권한이 꺼져 있다고 표시됩니다",
         "blocks": [
           {
-            "p": "<span class=\"path\">설정 &gt; 개인정보 보호 및 보안 &gt; 사진 &gt; RawMask Studio</span>로 이동해 제한된 접근 또는 전체 접근을 선택한 다음, 앱으로 돌아와 사진을 다시 여세요."
+            "p": "iPhone 또는 iPad에서는 <span class=\"path\">설정 &gt; 개인정보 보호 및 보안 &gt; 사진 &gt; RawMask Studio</span>로 이동해 제한된 접근 또는 전체 접근을 선택하세요. Mac에서는 <span class=\"path\">시스템 설정 &gt; 개인정보 보호 및 보안 &gt; 사진</span>으로 이동해 RawMask Studio를 허용하세요. 그런 다음 앱으로 돌아와 사진을 다시 여세요."
           }
         ]
       },
@@ -87,7 +132,7 @@
         "q": "마스크는 어떻게 작동하나요?",
         "blocks": [
           {
-            "p": "조정은 사진 전체 또는 마스크에 적용됩니다. 왼쪽 상단의 사진 버튼 메뉴를 열고, <span class=\"ui\" lang=\"en\">Edit target</span>에서 편집할 대상을 선택하고, <span class=\"ui\" lang=\"en\">Add mask</span>로 <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span>, <span class=\"ui\" lang=\"en\">Rectangle</span> 마스크를 추가하세요. 마스크는 이동하거나 크기를 조절할 수 있고, 칠해서 마스크 영역을 더하거나 뺄 수 있으며, <span class=\"ui\" lang=\"en\">Feather</span>로 경계를 부드럽게 만들 수 있습니다."
+            "p": "조정은 사진 전체 또는 마스크에 적용됩니다. <span class=\"ui\" lang=\"en\">Edit target</span>에서 편집할 대상을 선택하고, <span class=\"ui\" lang=\"en\">Add mask</span>로 <span class=\"ui\" lang=\"en\">Radial</span>, <span class=\"ui\" lang=\"en\">Linear</span>, <span class=\"ui\" lang=\"en\">Brush</span>, <span class=\"ui\" lang=\"en\">Rectangle</span> 마스크를 추가하세요(기기별 위치는 위 내용을 참고하세요). 마스크는 이동하거나 크기를 조절할 수 있고, 칠해서 마스크 영역을 더하거나 뺄 수 있으며, <span class=\"ui\" lang=\"en\">Feather</span>로 경계를 부드럽게 만들 수 있습니다."
           }
         ]
       },
@@ -95,7 +140,7 @@
         "q": "자동 피사체 마스크란 무엇인가요?",
         "blocks": [
           {
-            "p": "RawMask Studio에는 이미지 분할 모델이 포함되어 있어, 사진 속 사람, 동물, 일상적인 사물 같은 피사체를 찾아 각각을 따로 편집할 수 있는 마스크로 제공합니다. 이 모델은 오직 iPhone 안에서만 실행됩니다. 원하는 피사체를 찾지 못하면 수동 마스크를 대신 사용하거나, <span class=\"ui\" lang=\"en\">More options</span> &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>에서 <span class=\"ui\" lang=\"en\">Detection confidence</span>와 <span class=\"ui\" lang=\"en\">Mask threshold</span>를 조정하세요."
+            "p": "RawMask Studio에는 이미지 분할 모델이 포함되어 있어, 사진 속 사람, 동물, 일상적인 사물 같은 피사체를 찾아 각각을 따로 편집할 수 있는 마스크로 제공합니다. 이 모델은 오직 기기 안에서만 실행됩니다. 원하는 피사체를 찾지 못하면 수동 마스크를 대신 사용하거나, <span class=\"ui\" lang=\"en\">More options</span>(Mac에서는 <span class=\"ui\" lang=\"en\">Editor options</span>) &gt; <span class=\"ui\" lang=\"en\">Advanced</span> &gt; <span class=\"ui\" lang=\"en\">Object detection</span>에서 <span class=\"ui\" lang=\"en\">Detection confidence</span>와 <span class=\"ui\" lang=\"en\">Mask threshold</span>를 조정하세요."
           }
         ]
       },
@@ -103,7 +148,7 @@
         "q": "인터넷 연결이 필요한가요?",
         "blocks": [
           {
-            "p": "아니요. 편집과 자동 마스크는 오프라인에서도 작동합니다. 유일한 예외는 iCloud 사진에 저장된 사진 중 원본이 iPhone에 없는 경우로, 이때는 사진 앱이 iCloud에서 원본을 다운로드해야 편집할 수 있습니다."
+            "p": "아니요. 편집과 자동 마스크는 오프라인에서도 작동합니다. 유일한 예외는 iCloud 사진에 저장된 사진 중 원본이 기기에 없는 경우로, 이때는 사진 앱이 iCloud에서 원본을 다운로드해야 편집할 수 있습니다."
           }
         ]
       },
@@ -111,13 +156,13 @@
         "q": "편집한 사진은 어떻게 저장하거나 내보내나요?",
         "blocks": [
           {
-            "p": "앱에서 ... 버튼(<span class=\"ui\" lang=\"en\">More options</span>)을 탭한 다음 <span class=\"ui\" lang=\"en\">Save and export</span>로 이동하세요."
+            "p": "iPhone에서는 ... 버튼(<span class=\"ui\" lang=\"en\">More options</span>)을 탭한 다음 <span class=\"ui\" lang=\"en\">Save and export</span>로 이동하세요. iPad에서는 오른쪽 상단의 <span class=\"ui\" lang=\"en\">Save</span> 메뉴를 사용하세요. 이 메뉴의 처음 두 항목은 <span class=\"ui\" lang=\"en\">Save to Photos</span>와 <span class=\"ui\" lang=\"en\">Save a Copy</span>라는 이름으로 표시됩니다. Mac에서는 도구 막대의 <span class=\"ui\" lang=\"en\">Export</span>를 클릭하세요. 선택할 수 있는 항목은 다음과 같습니다."
           },
           {
             "ul": [
               "<strong><span class=\"ui\" lang=\"en\">Save edit to Photos</span></strong>는 보관함에 있는 사진을 업데이트합니다. 사진 앱이 원본을 보관하므로, 나중에 사진 앱에서 ‘복귀’를 사용해 원본으로 되돌릴 수 있습니다.",
               "<strong><span class=\"ui\" lang=\"en\">Save a copy to Photos</span></strong>는 편집한 이미지를 새 사진으로 추가하며, 원본은 변경하지 않고 그대로 둡니다.",
-              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong>는 선택한 크기와 품질로 JPEG, HEIF 또는 TIFF 파일을 만든 다음 공유 시트를 열어, 파일 앱에 저장하거나 다른 앱으로 보낼 수 있게 합니다."
+              "<strong><span class=\"ui\" lang=\"en\">Export photo</span></strong>는 선택한 크기와 품질로 JPEG, HEIF 또는 TIFF 파일을 만듭니다. iPhone과 iPad에서는 공유 시트가 열려 파일 앱에 저장하거나 다른 앱으로 보낼 수 있고, Mac에서는 파일을 저장할 위치를 직접 선택합니다."
             ]
           }
         ]
@@ -126,7 +171,7 @@
         "q": "프리셋은 어디에 저장되나요?",
         "blocks": [
           {
-            "p": "iPhone에 있는 앱 자체 저장 공간에 저장됩니다. 어디에도 업로드되지 않습니다. 프리셋은 앱에서 삭제할 수 있으며, 앱을 삭제하면 프리셋도 함께 삭제됩니다."
+            "p": "기기에 있는 앱 자체 저장 공간에 저장됩니다. 어디에도 업로드되지 않습니다. 프리셋은 앱에서 삭제할 수 있으며, 앱을 삭제하면 프리셋도 함께 삭제됩니다."
           }
         ]
       },
@@ -134,7 +179,7 @@
         "q": "어떤 기기를 지원하나요?",
         "blocks": [
           {
-            "p": "iOS 17 이상이 설치된 iPhone을 지원합니다."
+            "p": "iOS 17 이상이 설치된 iPhone, iPadOS 17 이상이 설치된 iPad, macOS 14 이상이 설치된 Apple 실리콘 탑재 Mac을 지원합니다. 세 기기 모두 하나의 무료 앱으로 사용할 수 있습니다."
           }
         ]
       },
@@ -152,10 +197,10 @@
   },
   "privacy": {
     "title": "개인정보 처리방침 - RawMask Studio",
-    "description": "iPhone용 RawMask Studio의 개인정보 처리방침입니다. 이 앱은 어떠한 데이터도 수집하지 않으며, 사진은 iPhone에서 편집됩니다.",
+    "description": "iPhone, iPad, Mac용 RawMask Studio의 개인정보 처리방침입니다. 이 앱은 어떠한 데이터도 수집하지 않으며, 사진은 기기에서 편집됩니다.",
     "h1": "개인정보 처리방침",
-    "meta": "iPhone용 RawMask Studio. 시행일: 2026년 9월 23일.",
-    "summary": "<strong>요약:</strong> RawMask Studio는 어떠한 데이터도 수집하지 않습니다. 계정, 분석, 광고, 추적이 모두 없습니다. 사진은 사용자의 iPhone에서 편집되며, 앱은 사진, 편집 내용, 그 밖의 어떠한 정보도 저희에게나 다른 누구에게도 절대 보내지 않습니다.",
+    "meta": "iPhone, iPad, Mac용 RawMask Studio. 시행일: 2026년 9월 26일.",
+    "summary": "<strong>요약:</strong> RawMask Studio는 어떠한 데이터도 수집하지 않습니다. 계정, 분석, 광고, 추적이 모두 없습니다. 사진은 사용자의 iPhone, iPad 또는 Mac에서 편집되며, 앱은 사진, 편집 내용, 그 밖의 어떠한 정보도 저희에게나 다른 누구에게도 절대 보내지 않습니다.",
     "sections": [
       {
         "id": "who-we-are",
@@ -177,13 +222,13 @@
       },
       {
         "id": "on-device-processing",
-        "h2": "모든 처리는 iPhone에서 이루어집니다",
+        "h2": "모든 처리는 기기에서 이루어집니다",
         "blocks": [
           {
             "p": "모든 사진 처리는 사용자의 기기에서 이루어집니다. 여기에는 RAW 파일 읽기, 빛·색상·디테일·초점·효과 조정 적용, 미리 보기 렌더링, 마스크 생성이 포함됩니다."
           },
           {
-            "p": "자동 피사체 마스크는 앱에 포함된 이미지 분할 모델(RF-DETR)이 만들며, 이 모델은 Apple의 Core ML을 사용해 iPhone에서 실행됩니다. 모델은 인터넷에서 다운로드되지 않으며, 사진은 분석을 위해 어디에도 전송되지 않습니다."
+            "p": "자동 피사체 마스크는 앱에 포함된 이미지 분할 모델(RF-DETR)이 만들며, 이 모델은 Apple의 Core ML을 사용해 iPhone, iPad 또는 Mac에서 실행됩니다. 모델은 인터넷에서 다운로드되지 않으며, 사진은 분석을 위해 어디에도 전송되지 않습니다."
           }
         ]
       },
@@ -192,7 +237,7 @@
         "h2": "사진 보관함 접근",
         "blocks": [
           {
-            "p": "RawMask Studio는 Apple 사진 보관함을 이용해 이미지를 열고 저장합니다. 앱이 보관함에 접근하기 전에 iOS가 먼저 사용자에게 허락을 구합니다. 보관함 전체에 대한 접근을 허용하거나 선택한 사진에만 접근을 허용할 수 있으며, 이 설정은 <span class=\"path\">설정 &gt; 개인정보 보호 및 보안 &gt; 사진 &gt; RawMask Studio</span>에서 언제든지 변경할 수 있습니다."
+            "p": "RawMask Studio는 Apple 사진 보관함을 이용해 이미지를 열고 저장합니다. 앱이 보관함에 접근하기 전에 iOS, iPadOS, macOS가 먼저 사용자에게 허락을 구합니다. iPhone과 iPad에서는 보관함 전체에 대한 접근을 허용하거나 선택한 사진에만 접근을 허용할 수 있으며, Mac에서는 접근 권한이 보관함 전체에 적용됩니다. 이 설정은 iPhone과 iPad에서는 <span class=\"path\">설정 &gt; 개인정보 보호 및 보안 &gt; 사진 &gt; RawMask Studio</span>에서, Mac에서는 <span class=\"path\">시스템 설정 &gt; 개인정보 보호 및 보안 &gt; 사진</span>에서 언제든지 변경할 수 있습니다."
           },
           {
             "h3": "앱이 읽는 정보"
@@ -216,7 +261,7 @@
             "h3": "iCloud 사진"
           },
           {
-            "p": "iCloud 사진을 사용 중이고 선택한 사진의 전체 해상도 원본이 iPhone에 저장되어 있지 않은 경우, 편집할 수 있도록 Apple의 사진 프레임워크가 iCloud에서 원본을 다운로드할 수 있습니다. 사용자가 저장한 사진도 사용자의 Apple 설정에 따라 iCloud 사진을 통해 동기화될 수 있습니다. 이러한 전송은 사용자의 기기와 사용자 본인의 iCloud 계정 사이에서 이루어지고, Apple이 처리하며, Apple 개인정보 처리방침의 적용을 받습니다. 저희에게는 아무것도 전송되지 않습니다."
+            "p": "iCloud 사진을 사용 중이고 선택한 사진의 전체 해상도 원본이 기기에 저장되어 있지 않은 경우, 편집할 수 있도록 Apple의 사진 프레임워크가 iCloud에서 원본을 다운로드할 수 있습니다. 사용자가 저장한 사진도 사용자의 Apple 설정에 따라 iCloud 사진을 통해 동기화될 수 있습니다. 이러한 전송은 사용자의 기기와 사용자 본인의 iCloud 계정 사이에서 이루어지고, Apple이 처리하며, Apple 개인정보 처리방침의 적용을 받습니다. 저희에게는 아무것도 전송되지 않습니다."
           }
         ]
       },
@@ -225,7 +270,10 @@
         "h2": "내보내기 및 공유",
         "blocks": [
           {
-            "p": "<span class=\"ui\" lang=\"en\">Export photo</span>를 탭하면 앱은 사용자가 요청한 이미지 파일을 만들고 iOS 공유 시트를 엽니다. 파일은 파일 앱, 메시지 또는 다른 앱처럼 사용자가 보내기로 선택한 곳으로만 전달되며, 전달된 곳에서는 그곳의 개인정보 처리 방식에 따라 파일을 다룹니다. 내보내기를 위해 앱이 만드는 임시 파일은 iPhone에 있는 앱 전용 저장 공간에 보관되며, 더 이상 필요하지 않으면 자동으로 삭제됩니다."
+            "p": "iPhone 또는 iPad에서 <span class=\"ui\" lang=\"en\">Export photo</span>를 선택하면 앱은 사용자가 요청한 이미지 파일을 만들고 공유 시트를 엽니다. 파일은 파일 앱, 메시지 또는 다른 앱처럼 사용자가 보내기로 선택한 곳으로만 전달되며, 전달된 곳에서는 그곳의 개인정보 처리 방식에 따라 파일을 다룹니다. 내보내기를 위해 앱이 만드는 임시 파일은 앱 전용 저장 공간에 보관되며, 더 이상 필요하지 않으면 자동으로 삭제됩니다."
+          },
+          {
+            "p": "Mac에서는 <span class=\"ui\" lang=\"en\">Export photo</span>를 선택하면 저장 패널이 열리고, 파일은 사용자가 선택한 위치에만 기록됩니다."
           }
         ]
       },
@@ -234,7 +282,7 @@
         "h2": "기기에 저장되는 정보",
         "blocks": [
           {
-            "p": "앱을 마지막으로 사용하던 상태 그대로 쓸 수 있도록, 앱은 iPhone에 있는 앱 자체 저장 공간에 다음과 같은 소량의 정보를 보관합니다."
+            "p": "앱을 마지막으로 사용하던 상태 그대로 쓸 수 있도록, 앱은 기기에 있는 앱 자체 저장 공간에 다음과 같은 소량의 정보를 보관합니다."
           },
           {
             "ul": [
@@ -244,7 +292,7 @@
             ]
           },
           {
-            "p": "이 정보는 사용자의 기기에 남아 있으며 저희에게 전송되지 않습니다. 프리셋은 언제든지 앱에서 삭제할 수 있으며, 앱을 삭제하면 이 정보가 모두 삭제됩니다. 다른 앱 데이터와 마찬가지로, 이 정보는 iOS 설정에 따라 사용자가 만드는 iPhone 백업에 포함될 수 있습니다."
+            "p": "이 정보는 사용자의 기기에 남아 있으며 저희에게 전송되지 않습니다. 프리셋은 언제든지 앱에서 삭제할 수 있으며, 앱을 삭제하면 이 정보가 모두 삭제됩니다. 다른 앱 데이터와 마찬가지로, 이 정보는 사용자의 설정에 따라 사용자가 만드는 iPhone, iPad 또는 Mac 백업에 포함될 수 있습니다."
           }
         ]
       },
@@ -256,7 +304,7 @@
             "p": "RawMask Studio에는 제3자 분석, 광고, 충돌 보고 또는 추적 소프트웨어가 포함되어 있지 않습니다. 앱은 광고 식별자를 사용하지 않으며, 다른 회사가 소유한 앱이나 웹사이트에 걸쳐 사용자를 추적하지 않습니다."
           },
           {
-            "p": "iOS에서 앱 개발자와 분석 정보를 공유하도록 선택한 경우(<span class=\"path\">설정 &gt; 개인정보 보호 및 보안 &gt; 분석 및 향상</span>), Apple이 사용자를 식별할 수 없는 형태로 충돌 보고서와 집계된 사용 통계를 저희에게 제공할 수 있습니다. 이는 앱이 아니라 Apple이 관리하며, 사용자의 설정에 따라 달라집니다."
+            "p": "앱 개발자와 분석 정보를 공유하도록 선택한 경우(iPhone과 iPad에서는 <span class=\"path\">설정 &gt; 개인정보 보호 및 보안 &gt; 분석 및 향상</span>, Mac에서는 <span class=\"path\">시스템 설정 &gt; 개인정보 보호 및 보안 &gt; 분석 및 향상</span>), Apple이 사용자를 식별할 수 없는 형태로 충돌 보고서와 집계된 사용 통계를 저희에게 제공할 수 있습니다. 이는 앱이 아니라 Apple이 관리하며, 사용자의 설정에 따라 달라집니다."
           }
         ]
       },
@@ -283,7 +331,7 @@
         "h2": "사용자의 선택권",
         "blocks": [
           {
-            "p": "저희는 사용자에 관한 어떠한 데이터도 수집하거나 보유하지 않으므로, 저희 쪽에는 열람, 정정, 내보내기 또는 삭제할 개인 데이터가 없습니다. 모든 관리는 사용자가 기기에서 직접 할 수 있습니다. iOS 설정에서 사진 접근 권한을 변경하거나 철회하고, 앱에서 프리셋을 삭제하고, 사진 앱에서 편집 내용이나 사본을 제거하고, 앱을 삭제해 앱의 로컬 데이터를 지울 수 있습니다."
+            "p": "저희는 사용자에 관한 어떠한 데이터도 수집하거나 보유하지 않으므로, 저희 쪽에는 열람, 정정, 내보내기 또는 삭제할 개인 데이터가 없습니다. 모든 관리는 사용자가 기기에서 직접 할 수 있습니다. 설정(Mac에서는 시스템 설정)에서 사진 접근 권한을 변경하거나 철회하고, 앱에서 프리셋을 삭제하고, 사진 앱에서 편집 내용이나 사본을 제거하고, 앱을 삭제해 앱의 로컬 데이터를 지울 수 있습니다."
           }
         ]
       },
