@@ -23,7 +23,7 @@ from collections import Counter
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "src")
 BASE_URL = "https://turmanauli.github.io/rawmask-studio/"
-APP_STORE_URL = "https://apps.apple.com/app/id6814994539"
+APP_STORE_URL = "https://apps.apple.com/app/apple-store/id6814994539?pt=129497618&ct=GitHub%20Pages&mt=8"
 APP_ID = "6814994539"
 PAGES = {"home": "", "support": "support/", "privacy": "privacy/"}
 SHOTS = ["01-select", "02-detect", "03-masks", "04-adjust", "05-save"]
@@ -478,7 +478,7 @@ class Site:
         s = self.strings[loc["id"]]["common"]
         width, src = badge_img(loc, page_dir(loc, page), height)
         return '%s<a class="badge" href="%s"><img src="%s" width="%s" height="%d" alt="%s"></a>' % (
-            indent, APP_STORE_URL, src, ("%.1f" % width).rstrip("0").rstrip("."), height, attr(plain(s["badge_alt"])))
+            indent, attr(APP_STORE_URL), src, ("%.1f" % width).rstrip("0").rstrip("."), height, attr(plain(s["badge_alt"])))
 
     def footer(self, loc, page):
         s = self.strings[loc["id"]]["common"]
